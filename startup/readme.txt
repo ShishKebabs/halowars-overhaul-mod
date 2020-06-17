@@ -1,2 +1,1 @@
-delete the .bak extension 
-move this "startup" folder to "halo wars" directory 
+move this "startup" folder to "halo wars" directory for it to work properly
