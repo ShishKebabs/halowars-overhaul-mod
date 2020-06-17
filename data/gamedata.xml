@@ -21,14 +21,19 @@
 	<DifficultyNormal>0.34</DifficultyNormal>
 	<DifficultyHard>0.67</DifficultyHard>
 	<DifficultyLegendary>1</DifficultyLegendary>
-	<DifficultyDefault>0.4</DifficultyDefault>
-	<DifficultySPCAIDefault>0.5</DifficultySPCAIDefault>
+	<DifficultyDefault>1</DifficultyDefault>
+	<DifficultySPCAIDefault>1</DifficultySPCAIDefault>
 	<Pops>
 		<Pop>Unit</Pop>
 		<Pop>Temple</Pop>
 		<Pop>Leader</Pop>
 		<Pop>Spartan</Pop>
 		<Pop>Rhino</Pop>
+		<Pop>LimitFieldArmory</Pop>
+		<Pop>LimitReactors</Pop>
+		<Pop>LimitScarabs</Pop>
+		<Pop>LimitCobras</Pop>
+		<Pop>LimitVultures</Pop>
 	</Pops>
 	<RefCounts>
 		<RefCount>EMP</RefCount>
@@ -165,7 +170,7 @@
 	<ReCloakDelay>5</ReCloakDelay>
 	<CloakDetectFrequency>2</CloakDetectFrequency>
 	<ShieldBarColor>200 200 200</ShieldBarColor>
-	<ShieldRegenDelay>20</ShieldRegenDelay>
+	<ShieldRegenDelay>15</ShieldRegenDelay>
 	<ShieldRegenTime>5</ShieldRegenTime>
 	<AmmoBarColor>192 192 192</AmmoBarColor>
 	<ProjectileGravity>30</ProjectileGravity>
@@ -200,10 +205,10 @@
 		<Good>3</Good>
 		<Extreme>4</Extreme>
 	</GoodAgainstReticle>
-	<MaxNumCorpses>75</MaxNumCorpses>
-	<MaxCorpseDisposalCount>10</MaxCorpseDisposalCount>
-	<InfantryCorpseDecayTime>3</InfantryCorpseDecayTime>
-	<CorpseSinkingSpacing>3</CorpseSinkingSpacing>
+	<MaxNumCorpses>50000</MaxNumCorpses>
+	<MaxCorpseDisposalCount>0</MaxCorpseDisposalCount>
+	<InfantryCorpseDecayTime>7200</InfantryCorpseDecayTime>
+	<CorpseSinkingSpacing>1</CorpseSinkingSpacing>
 	<InfectionMap>
 		<InfectionMapEntry base="unsc_inf_flameMarine_01" infected="fld_Inf_flameMarine_01" infectedSquad="fld_Inf_flameMarineSingle_01" />
 		<InfectionMapEntry base="unsc_inf_marine_01" infected="fld_inf_InfectedMarine_01" infectedSquad="fld_Inf_InfectedMarineSingle_01" />
@@ -222,8 +227,8 @@
 		<InfectionMapEntry base="cov_inf_needlergrunt_02" infected="fld_inf_InfectedGrunt_01" infectedSquad="fld_Inf_InfectedGruntSingle_01" />
 		<InfectionMapEntry base="cov_inf_gruntDeacon_01" infected="fld_inf_InfectedGrunt_01" infectedSquad="fld_Inf_InfectedGruntSingle_01" />
 	</InfectionMap>
-	<MaxSquadPathsPerFrame>100</MaxSquadPathsPerFrame>
-	<MaxPlatoonPathsPerFrame>100</MaxPlatoonPathsPerFrame>
+	<MaxSquadPathsPerFrame>10000</MaxSquadPathsPerFrame>
+	<MaxPlatoonPathsPerFrame>10000</MaxPlatoonPathsPerFrame>
 	<DamageReceivedXPFactor>0.2</DamageReceivedXPFactor>
 	<FatalityTransitionScale>0.25</FatalityTransitionScale>
 	<FatalityMaxTransitionTime>0.25</FatalityMaxTransitionTime>
@@ -267,14 +272,14 @@
 	<TransportDropoffHeight>15.0f</TransportDropoffHeight>
 	<TransportMax>3</TransportMax>
 	<HitchOffset>7</HitchOffset>
-	<ALMaxWanderFrequency>20.0f</ALMaxWanderFrequency>
-	<ALPredatorCheckFrequency>2.0f</ALPredatorCheckFrequency>
-	<ALPreyCheckFrequency>0.5f</ALPreyCheckFrequency>
-	<ALOppCheckRadius>20.0f</ALOppCheckRadius>
+	<ALMaxWanderFrequency>30.0f</ALMaxWanderFrequency>
+	<ALPredatorCheckFrequency>10.0f</ALPredatorCheckFrequency>
+	<ALPreyCheckFrequency>10.0f</ALPreyCheckFrequency>
+	<ALOppCheckRadius>10.0f</ALOppCheckRadius>
 	<ALFleeDistance>40.0f</ALFleeDistance>
 	<ALFleeMovementModifier>1.5f</ALFleeMovementModifier>
-	<ALMinWanderDistance>30.0f</ALMinWanderDistance>
-	<ALMaxWanderDistance>200.0f</ALMaxWanderDistance>
+	<ALMinWanderDistance>500.0f</ALMinWanderDistance>
+	<ALMaxWanderDistance>1000.0f</ALMaxWanderDistance>
 	<ALSpawnerCheckFrequency>1.0f</ALSpawnerCheckFrequency>
 	<PlayerStates>
 		<PlayerState>Playing</PlayerState>

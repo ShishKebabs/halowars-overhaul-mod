@@ -23,8 +23,12 @@
 		<RepairDelay>20</RepairDelay>
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
-		<Pop Type="Unit" Max="99">30</Pop>
-		<Pop Type="Spartan" Max="3">3</Pop>
+		<Pop Type="Unit" Max="500">60</Pop>
+		<Pop Type="Spartan" Max="5">5</Pop>
+		<Pop Type="LimitFieldArmory" Max="1">1</Pop>
+		<Pop Type="LimitReactors" Max="5">5</Pop>
+		<Pop Type="LimitCobras" Max="10">10</Pop>
+		<Pop Type="LimitVultures" Max="15">15</Pop>
 	</Leader>
 	<Leader Name="Forge" Icon="ui\game\icon\unsc\leader\Sergeant Forge" LeaderPickerOrder="3" StatsID="2" DefaultPlayerSlotFlags="0x2">
 		<Civ>UNSC</Civ>
@@ -46,8 +50,12 @@
 		<RepairDelay>20</RepairDelay>
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
-		<Pop Type="Unit" Max="99">30</Pop>
-		<Pop Type="Spartan" Max="3">3</Pop>
+		<Pop Type="Unit" Max="500">60</Pop>
+		<Pop Type="Spartan" Max="5">5</Pop>
+		<Pop Type="LimitFieldArmory" Max="1">1</Pop>
+		<Pop Type="LimitReactors" Max="5">5</Pop>
+		<Pop Type="LimitCobras" Max="10">10</Pop>
+		<Pop Type="LimitVultures" Max="15">15</Pop>
 	</Leader>
 	<Leader Name="Anders" Icon="ui\game\icon\unsc\leader\Serina" Alpha="0" LeaderPickerOrder="4" StatsID="3" DefaultPlayerSlotFlags="0x4">
 		<Civ>UNSC</Civ>
@@ -69,8 +77,12 @@
 		<RepairDelay>20</RepairDelay>
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
-		<Pop Type="Unit" Max="99">30</Pop>
-		<Pop Type="Spartan" Max="3">3</Pop>
+		<Pop Type="Unit" Max="500">60</Pop>
+		<Pop Type="Spartan" Max="5">5</Pop>
+		<Pop Type="LimitFieldArmory" Max="1">1</Pop>
+		<Pop Type="LimitReactors" Max="5">5</Pop>
+		<Pop Type="LimitCobras" Max="10">10</Pop>
+		<Pop Type="LimitVultures" Max="15">15</Pop>
 	</Leader>
 	<Leader Name="Random UNSC" LeaderPickerOrder="1" Random="true">
 		<Civ>UNSC</Civ>
@@ -101,9 +113,10 @@
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
 		<ReverseHotDropCost Type="Supplies">100</ReverseHotDropCost>
-		<Pop Type="Unit" Max="99">40</Pop>
+		<Pop Type="Unit" Max="500">70</Pop>
 		<Pop Type="Leader" Max="1">1</Pop>
 		<Pop Type="Temple" Max="1">1</Pop>
+		<Pop Type="LimitScarabs" Max="5">5</Pop>
 	</Leader>
 	<Leader Name="Brute Chieftain" Icon="ui\game\icon\covenant\leader\Brute General" Alpha="0" LeaderPickerOrder="7" StatsID="5" DefaultPlayerSlotFlags="0x10">
 		<Civ>Covenant</Civ>
@@ -119,16 +132,17 @@
 		<Resource Type="CampaignFoo">0</Resource>
 		<Resource Type="Power">0</Resource>
 		<StartingUnit Offset="0,0,0" BuildOther="cov_bldg_builder_02" DoppleOnStart="true">game_base_socket_01</StartingUnit>
-		<StartingSquad FlyIn="false" Offset="60,0,-20">cov_veh_bruteChopper_01</StartingSquad>
+		<StartingSquad FlyIn="false" Offset="60,0,-20">cov_veh_ghost_01</StartingSquad>
 		<RallyPointOffset>50,0,0</RallyPointOffset>
 		<RepairRate>1</RepairRate>
 		<RepairDelay>20</RepairDelay>
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
 		<ReverseHotDropCost Type="Supplies">100</ReverseHotDropCost>
-		<Pop Type="Unit" Max="99">40</Pop>
-		<Pop Type="Temple" Max="1">1</Pop>
+		<Pop Type="Unit" Max="500">70</Pop>
 		<Pop Type="Leader" Max="1">1</Pop>
+		<Pop Type="Temple" Max="1">1</Pop>
+		<Pop Type="LimitScarabs" Max="5">5</Pop>
 	</Leader>
 	<Leader Name="Prophet of Mercy" Icon="ui\game\icon\covenant\leader\Elite General" Alpha="0" LeaderPickerOrder="7" StatsID="6" DefaultPlayerSlotFlags="0x20">
 		<Civ>Covenant</Civ>
@@ -151,9 +165,10 @@
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
 		<ReverseHotDropCost Type="Supplies">100</ReverseHotDropCost>
-		<Pop Type="Unit" Max="99">40</Pop>
+		<Pop Type="Unit" Max="500">70</Pop>
 		<Pop Type="Leader" Max="1">1</Pop>
 		<Pop Type="Temple" Max="1">1</Pop>
+		<Pop Type="LimitScarabs" Max="5">5</Pop>
 	</Leader>
 	<Leader Name="Random Covenant" LeaderPickerOrder="8" Random="true">
 		<Civ>Covenant</Civ>
@@ -163,13 +178,24 @@
 		<FlashPortrait>img://art\ui\flash\shared\textures\pregame\leaderImages\randomCov.ddx</FlashPortrait>
 		<UIControlBackground>img://art\ui\flash\shared\textures\leaders\LeaderPict_random_cov.ddx</UIControlBackground>
 	</Leader>
-	<Leader Name="Random All" LeaderPickerOrder="5" Random="true">
-		<Civ />
-		<NameID>23722</NameID>
-		<DescriptionID>23723</DescriptionID>
+	<Leader Name="Empty Slot" LeaderPickerOrder="5" Random="false">
+		<Civ>UNSC</Civ>
+		<Tech>unsc_LeaderAnders</Tech>
+		<NameID>31112</NameID>
+		<DescriptionID>31113</DescriptionID>
+		<FlashImg>14thdivision</FlashImg>
 		<FlashCivID>2</FlashCivID>
-		<FlashPortrait>img://art\ui\flash\shared\textures\pregame\leaderImages\random.ddx</FlashPortrait>
-		<UIControlBackground>img://art\ui\flash\shared\textures\leaders\leader_pict_random.ddx</UIControlBackground>
+		<Resource Type="Supplies">0</Resource>
+		<Resource Type="Collectable">0</Resource>
+		<Resource Type="CampaignFoo">0</Resource>
+		<Resource Type="Power">0</Resource>
+		<StartingUnit Offset="0,0,0" BuildOther="creep_flood_base_01" DoppleOnStart="true">game_base_socket_01</StartingUnit>
+		<RallyPointOffset>50,0,0</RallyPointOffset>
+		<RepairRate>1</RepairRate>
+		<RepairDelay>20</RepairDelay>
+		<RepairCost Type="Supplies">35</RepairCost>
+		<RepairTime>30</RepairTime>
+		<Pop Type="Unit" Max="25">25</Pop>
 	</Leader>
 	<Leader Name="Major Vanilla" Icon="ui\game\icon\unsc\leader\Lt. Green" Test="true" Alpha="0">
 		<Civ>UNSC</Civ>
@@ -207,7 +233,7 @@
 		<RepairDelay>20</RepairDelay>
 		<RepairCost Type="Supplies">35</RepairCost>
 		<RepairTime>30</RepairTime>
-		<Pop Type="Unit" Max="99">40</Pop>
+		<Pop Type="Unit" Max="99">90</Pop>
 		<Pop Type="Temple" Max="1">1</Pop>
 	</Leader>
 </Leaders>
