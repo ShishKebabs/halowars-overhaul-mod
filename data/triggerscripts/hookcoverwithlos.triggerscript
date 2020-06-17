@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="HookCoverWithLOS.triggerscript" Type="TriggerScript" NextTriggerVarID="840" NextTriggerID="99" NextConditionID="84" NextEffectID="304" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="CoverUnit" IsNull="false" />
+		<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+		<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+		<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="778" Type="Squad" Name="CoverSquad" IsNull="false" />
+		<TriggerVar ID="781" Type="Bool" Name="OnlyCompletelyGarrisonedVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="782" Type="SquadList" Name="GarrisonedSquads" IsNull="false" />
+		<TriggerVar ID="783" Type="Integer" Name="NumGarrisonedVar1" IsNull="true" />
+		<TriggerVar ID="784" Type="Trigger" Name="TriggerVar3" IsNull="false">93</TriggerVar>
+		<TriggerVar ID="785" Type="Trigger" Name="TriggerVar4" IsNull="false">94</TriggerVar>
+		<TriggerVar ID="787" Type="ListPosition" Name="" IsNull="false">First</TriggerVar>
+		<TriggerVar ID="788" Type="Squad" Name="FoundSquad" IsNull="false" />
+		<TriggerVar ID="789" Type="Unit" Name="UnitVar5" IsNull="true" />
+		<TriggerVar ID="791" Type="Player" Name="GarrisoningPlayer" IsNull="false" />
+		<TriggerVar ID="794" Type="VectorList" Name="LocationListVar1" IsNull="true" />
+		<TriggerVar ID="795" Type="Float" Name="" IsNull="false">110</TriggerVar>
+		<TriggerVar ID="796" Type="Time" Name="LifespanVar1" IsNull="true" />
+		<TriggerVar ID="797" Type="Object" Name="Revealer" IsNull="false" />
+		<TriggerVar ID="798" Type="ObjectList" Name="AddToObjectListVar1" IsNull="true" />
+		<TriggerVar ID="799" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="800" Type="Unit" Name="UnitVar6" IsNull="true" />
+		<TriggerVar ID="802" Type="Object" Name="ObjectVar2" IsNull="true" />
+		<TriggerVar ID="803" Type="Vector" Name="Loc" IsNull="false" />
+		<TriggerVar ID="806" Type="Trigger" Name="TriggerVar5" IsNull="false">95</TriggerVar>
+		<TriggerVar ID="807" Type="Unit" Name="DestroyUnitVar1" IsNull="true" />
+		<TriggerVar ID="808" Type="UnitList" Name="DestroyUnitListVar1" IsNull="true" />
+		<TriggerVar ID="809" Type="Squad" Name="DestroySquadVar1" IsNull="true" />
+		<TriggerVar ID="810" Type="SquadList" Name="DestroySquadListVar1" IsNull="true" />
+		<TriggerVar ID="812" Type="ObjectList" Name="ObjectListVar1" IsNull="true" />
+		<TriggerVar ID="813" Type="Trigger" Name="TriggerVar6" IsNull="false">93</TriggerVar>
+		<TriggerVar ID="814" Type="String" Name="" IsNull="false">A1</TriggerVar>
+		<TriggerVar ID="815" Type="String" Name="" IsNull="false">A2</TriggerVar>
+		<TriggerVar ID="816" Type="String" Name="" IsNull="false">B</TriggerVar>
+		<TriggerVar ID="817" Type="String" Name="" IsNull="false">C</TriggerVar>
+		<TriggerVar ID="818" Type="String" Name="" IsNull="false">D</TriggerVar>
+		<TriggerVar ID="820" Type="Integer" Name="NumGarrisonedVar2" IsNull="true" />
+		<TriggerVar ID="822" Type="Integer" Name="NumGarrisonedVar3" IsNull="true" />
+		<TriggerVar ID="826" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+		<TriggerVar ID="827" Type="SquadMode" Name="" IsNull="false">LockDown</TriggerVar>
+		<TriggerVar ID="829" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+		<TriggerVar ID="830" Type="SquadMode" Name="" IsNull="false">Normal</TriggerVar>
+		<TriggerVar ID="835" Type="Bool" Name="SetDirectlyVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="839" Type="Bool" Name="SetDirectlyVar2" IsNull="true">False</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Set cover unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="57" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">638</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">639</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">640</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">641</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">643</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">644</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="282" Type="GetParentSquad" DBID="519" Version="1" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="false">3</Input>
+					<Output Name="ParentSquad" SigID="2" Optional="false">778</Output>
+				</Effect>
+				<Effect ID="284" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">784</Input>
+				</Effect>
+				<Effect ID="288" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">800</Input>
+					<Input Name="Squad" SigID="2" Optional="true">778</Input>
+					<Input Name="Object" SigID="4" Optional="true">802</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">803</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="93" Name="Wait to be garrisoned" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="490" Y="99" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="79" Type="HasGarrisoned" DBID="602" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Squad" SigID="1" Optional="false">778</Input>
+						<Output Name="NumGarrisoned" SigID="2" Optional="true">820</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="283" Type="GetGarrisonedSquads" DBID="767" Version="1" CommentOut="false">
+					<Input Name="ContainerUnit" SigID="1" Optional="false">3</Input>
+					<Input Name="OnlyCompletelyGarrisoned" SigID="4" Optional="true">781</Input>
+					<Output Name="GarrisonedSquads" SigID="2" Optional="true">782</Output>
+					<Output Name="NumGarrisoned" SigID="3" Optional="true">783</Output>
+				</Effect>
+				<Effect ID="285" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">785</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="94" Name="Reveal LOS" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="908" Y="98" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="77" Type="CanGetOneSquad" DBID="357" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="SquadList" SigID="1" Optional="false">782</Input>
+						<Input Name="ListPosition" SigID="2" Optional="false">787</Input>
+						<Output Name="FoundSquad" SigID="3" Optional="false">788</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="286" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">789</Input>
+					<Input Name="Squad" SigID="2" Optional="true">788</Input>
+					<Output Name="Owner" SigID="3" Optional="false">791</Output>
+				</Effect>
+				<Effect ID="287" Type="Revealer" DBID="285" Version="3" CommentOut="false">
+					<Input Name="Owner" SigID="1" Optional="false">791</Input>
+					<Input Name="Location" SigID="2" Optional="true">803</Input>
+					<Input Name="LocationList" SigID="8" Optional="true">794</Input>
+					<Input Name="LOS" SigID="4" Optional="false">795</Input>
+					<Input Name="Lifespan" SigID="3" Optional="true">796</Input>
+					<Output Name="CreatedRevealer" SigID="5" Optional="true">797</Output>
+					<Output Name="AddToObjectList" SigID="6" Optional="true">798</Output>
+					<Output Name="ClearExisting" SigID="7" Optional="true">799</Output>
+				</Effect>
+				<Effect ID="302" Type="ChangeSquadMode" DBID="388" Version="2" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">778</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">826</Input>
+					<Input Name="SquadMode" SigID="3" Optional="false">827</Input>
+					<Input Name="SetDirectly" SigID="4" Optional="true">835</Input>
+				</Effect>
+				<Effect ID="289" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">806</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="95" Name="Wait to be ungarrisoned" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="686" Y="516" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="80" Type="HasGarrisoned" DBID="602" Version="2" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="Squad" SigID="1" Optional="false">778</Input>
+						<Output Name="NumGarrisoned" SigID="2" Optional="true">822</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="290" Type="Destroy" DBID="38" Version="4" CommentOut="false">
+					<Input Name="DestroyUnit" SigID="3" Optional="true">807</Input>
+					<Input Name="DestroyUnitList" SigID="4" Optional="true">808</Input>
+					<Input Name="DestroySquad" SigID="5" Optional="true">809</Input>
+					<Input Name="DestroySquadList" SigID="6" Optional="true">810</Input>
+					<Input Name="Object" SigID="7" Optional="true">797</Input>
+					<Input Name="ObjectList" SigID="8" Optional="true">812</Input>
+				</Effect>
+				<Effect ID="303" Type="ChangeSquadMode" DBID="388" Version="2" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">778</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">829</Input>
+					<Input Name="SquadMode" SigID="3" Optional="false">830</Input>
+					<Input Name="SetDirectly" SigID="4" Optional="true">839</Input>
+				</Effect>
+				<Effect ID="291" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">813</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="840" NextTriggerID="99" NextConditionID="84" NextEffectID="304" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="3" Type="Unit" Name="CoverUnit" IsNull="false" />
+				<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+				<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+				<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="778" Type="Squad" Name="CoverSquad" IsNull="false" />
+				<TriggerVar ID="3" Type="Unit" Name="SpartanUnit" IsNull="false" />
+				<TriggerVar ID="781" Type="Bool" Name="OnlyCompletelyGarrisonedVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="782" Type="SquadList" Name="GarrisonedSquads" IsNull="false" />
+				<TriggerVar ID="783" Type="Integer" Name="NumGarrisonedVar1" IsNull="true" />
+				<TriggerVar ID="784" Type="Trigger" Name="TriggerVar3" IsNull="false">93</TriggerVar>
+				<TriggerVar ID="785" Type="Trigger" Name="TriggerVar4" IsNull="false">94</TriggerVar>
+				<TriggerVar ID="787" Type="ListPosition" Name="" IsNull="false">First</TriggerVar>
+				<TriggerVar ID="788" Type="Squad" Name="FoundSquad" IsNull="false" />
+				<TriggerVar ID="789" Type="Unit" Name="UnitVar5" IsNull="true" />
+				<TriggerVar ID="791" Type="Player" Name="GarrisoningPlayer" IsNull="false" />
+				<TriggerVar ID="794" Type="VectorList" Name="LocationListVar1" IsNull="true" />
+				<TriggerVar ID="795" Type="Float" Name="" IsNull="false">110</TriggerVar>
+				<TriggerVar ID="796" Type="Time" Name="LifespanVar1" IsNull="true" />
+				<TriggerVar ID="797" Type="Object" Name="Revealer" IsNull="false" />
+				<TriggerVar ID="798" Type="ObjectList" Name="AddToObjectListVar1" IsNull="true" />
+				<TriggerVar ID="799" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="800" Type="Unit" Name="UnitVar6" IsNull="true" />
+				<TriggerVar ID="802" Type="Object" Name="ObjectVar2" IsNull="true" />
+				<TriggerVar ID="803" Type="Vector" Name="Loc" IsNull="false" />
+				<TriggerVar ID="806" Type="Trigger" Name="TriggerVar5" IsNull="false">95</TriggerVar>
+				<TriggerVar ID="807" Type="Unit" Name="DestroyUnitVar1" IsNull="true" />
+				<TriggerVar ID="808" Type="UnitList" Name="DestroyUnitListVar1" IsNull="true" />
+				<TriggerVar ID="809" Type="Squad" Name="DestroySquadVar1" IsNull="true" />
+				<TriggerVar ID="810" Type="SquadList" Name="DestroySquadListVar1" IsNull="true" />
+				<TriggerVar ID="812" Type="ObjectList" Name="ObjectListVar1" IsNull="true" />
+				<TriggerVar ID="813" Type="Trigger" Name="TriggerVar6" IsNull="false">93</TriggerVar>
+				<TriggerVar ID="814" Type="String" Name="" IsNull="false">A1</TriggerVar>
+				<TriggerVar ID="815" Type="String" Name="" IsNull="false">A2</TriggerVar>
+				<TriggerVar ID="816" Type="String" Name="" IsNull="false">B</TriggerVar>
+				<TriggerVar ID="817" Type="String" Name="" IsNull="false">C</TriggerVar>
+				<TriggerVar ID="818" Type="String" Name="" IsNull="false">D</TriggerVar>
+				<TriggerVar ID="820" Type="Integer" Name="NumGarrisonedVar2" IsNull="true" />
+				<TriggerVar ID="822" Type="Integer" Name="NumGarrisonedVar3" IsNull="true" />
+				<TriggerVar ID="826" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+				<TriggerVar ID="827" Type="SquadMode" Name="" IsNull="false">LockDown</TriggerVar>
+				<TriggerVar ID="829" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+				<TriggerVar ID="830" Type="SquadMode" Name="" IsNull="false">Normal</TriggerVar>
+				<TriggerVar ID="835" Type="Bool" Name="SetDirectlyVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="839" Type="Bool" Name="SetDirectlyVar2" IsNull="true">False</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Set cover unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="57" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">638</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">639</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">640</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">641</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">643</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">644</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="282" Type="GetParentSquad" DBID="519" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="false">3</Input>
+							<Output Name="ParentSquad" SigID="2" Optional="false">778</Output>
+						</Effect>
+						<Effect ID="284" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">784</Input>
+						</Effect>
+						<Effect ID="288" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">800</Input>
+							<Input Name="Squad" SigID="2" Optional="true">778</Input>
+							<Input Name="Object" SigID="4" Optional="true">802</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">803</Output>
+						</Effect>
+						<Effect ID="292" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">814</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="293" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">815</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="93" Name="Wait to be garrisoned" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="490" Y="99" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="79" Type="HasGarrisoned" DBID="602" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Squad" SigID="1" Optional="false">778</Input>
+								<Output Name="NumGarrisoned" SigID="2" Optional="true">820</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="283" Type="GetGarrisonedSquads" DBID="767" Version="1" CommentOut="false">
+							<Input Name="ContainerUnit" SigID="1" Optional="false">3</Input>
+							<Input Name="OnlyCompletelyGarrisoned" SigID="4" Optional="true">781</Input>
+							<Output Name="GarrisonedSquads" SigID="2" Optional="true">782</Output>
+							<Output Name="NumGarrisoned" SigID="3" Optional="true">783</Output>
+						</Effect>
+						<Effect ID="285" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">785</Input>
+						</Effect>
+						<Effect ID="294" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">816</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="94" Name="Reveal LOS" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="908" Y="98" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="77" Type="CanGetOneSquad" DBID="357" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="SquadList" SigID="1" Optional="false">782</Input>
+								<Input Name="ListPosition" SigID="2" Optional="false">787</Input>
+								<Output Name="FoundSquad" SigID="3" Optional="false">788</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="286" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">789</Input>
+							<Input Name="Squad" SigID="2" Optional="true">788</Input>
+							<Output Name="Owner" SigID="3" Optional="false">791</Output>
+						</Effect>
+						<Effect ID="287" Type="Revealer" DBID="285" Version="3" CommentOut="false">
+							<Input Name="Owner" SigID="1" Optional="false">791</Input>
+							<Input Name="Location" SigID="2" Optional="true">803</Input>
+							<Input Name="LocationList" SigID="8" Optional="true">794</Input>
+							<Input Name="LOS" SigID="4" Optional="false">795</Input>
+							<Input Name="Lifespan" SigID="3" Optional="true">796</Input>
+							<Output Name="CreatedRevealer" SigID="5" Optional="true">797</Output>
+							<Output Name="AddToObjectList" SigID="6" Optional="true">798</Output>
+							<Output Name="ClearExisting" SigID="7" Optional="true">799</Output>
+						</Effect>
+						<Effect ID="302" Type="ChangeSquadMode" DBID="388" Version="2" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">778</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">826</Input>
+							<Input Name="SquadMode" SigID="3" Optional="false">827</Input>
+							<Input Name="SetDirectly" SigID="4" Optional="true">835</Input>
+						</Effect>
+						<Effect ID="295" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">817</Input>
+						</Effect>
+						<Effect ID="289" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">806</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="95" Name="Wait to be ungarrisoned" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="686" Y="516" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="80" Type="HasGarrisoned" DBID="602" Version="2" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+								<Input Name="Squad" SigID="1" Optional="false">778</Input>
+								<Output Name="NumGarrisoned" SigID="2" Optional="true">822</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="290" Type="Destroy" DBID="38" Version="4" CommentOut="false">
+							<Input Name="DestroyUnit" SigID="3" Optional="true">807</Input>
+							<Input Name="DestroyUnitList" SigID="4" Optional="true">808</Input>
+							<Input Name="DestroySquad" SigID="5" Optional="true">809</Input>
+							<Input Name="DestroySquadList" SigID="6" Optional="true">810</Input>
+							<Input Name="Object" SigID="7" Optional="true">797</Input>
+							<Input Name="ObjectList" SigID="8" Optional="true">812</Input>
+						</Effect>
+						<Effect ID="303" Type="ChangeSquadMode" DBID="388" Version="2" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">778</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">829</Input>
+							<Input Name="SquadMode" SigID="3" Optional="false">830</Input>
+							<Input Name="SetDirectly" SigID="4" Optional="true">839</Input>
+						</Effect>
+						<Effect ID="296" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">818</Input>
+						</Effect>
+						<Effect ID="291" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">813</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

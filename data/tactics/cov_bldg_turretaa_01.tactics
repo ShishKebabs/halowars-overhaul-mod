@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>HeavyNeedler</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>75.5</DamagePerSecond>
+		<WeaponType>AntiAir</WeaponType>
+		<Projectile>fx_proj_heavyNeedler_01</Projectile>
+		<ImpactEffect size="Medium">cov_heavyneedler_01</ImpactEffect>
+		<MaxVelocityLead>10</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<TargetPriority type="Flying">10</TargetPriority>
+		<Dodgeable />
+		<Deflectable />
+		<UseGroupRange />
+		<Hardpoint>AddOnTurret</Hardpoint>
+	</Weapon>
+	<Weapon>
+		<Name>ShadePlasma1</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_shadeplasma_01</Projectile>
+		<ImpactEffect size="Small">cov_shadeplasma_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Hardpoint>Turret</Hardpoint>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="Infantry">8</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Weapon>
+		<Name>ShadePlasma2</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_shadeplasma_01</Projectile>
+		<ImpactEffect size="Small">cov_shadeplasma_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Hardpoint>Turret</Hardpoint>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="Infantry">8</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Weapon>
+		<Name>ShadePlasma3</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_shadeplasma_01</Projectile>
+		<ImpactEffect size="Small">cov_shadeplasma_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Hardpoint>Turret</Hardpoint>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="Infantry">8</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Action>
+		<Name>HeavyNeedlerAttackAction</Name>
+		<ActionType>SlaveTurretAttack</ActionType>
+		<Anim>AddOnAttack</Anim>
+		<Weapon>HeavyNeedler</Weapon>
+	</Action>
+	<Action>
+		<Name>ShadePlasma1AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>ShadePlasmaAttack</Anim>
+		<Weapon>ShadePlasma1</Weapon>
+		<SlaveAttackAction>HeavyNeedlerAttackAction</SlaveAttackAction>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>ShadePlasma2AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>ShadePlasmaAttack2</Anim>
+		<Weapon>ShadePlasma2</Weapon>
+		<SlaveAttackAction>HeavyNeedlerAttackAction</SlaveAttackAction>
+		<MainAttack />
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>ShadePlasma3AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>ShadePlasmaAttack3</Anim>
+		<Weapon>ShadePlasma3</Weapon>
+		<SlaveAttackAction>HeavyNeedlerAttackAction</SlaveAttackAction>
+		<MainAttack />
+		<StartDisabled />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>ShadePlasma1AttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>ShadePlasma2AttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>ShadePlasma3AttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

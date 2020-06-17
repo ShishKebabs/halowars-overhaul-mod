@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="UnscSupportSensorJam.power" Type="Power" NextTriggerVarID="939" NextTriggerID="121" NextConditionID="107" NextEffectID="330" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+		<TriggerVar ID="3" Type="Trigger" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="45" Type="Power" Name="Power" IsNull="false" />
+		<TriggerVar ID="285" Type="String" Name="" IsNull="false">repair early shutdown 1</TriggerVar>
+		<TriggerVar ID="286" Type="String" Name="" IsNull="false">repair early shutdown 2</TriggerVar>
+		<TriggerVar ID="812" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="813" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="814" Type="Unit" Name="ExternUnitVar2" IsNull="true" />
+		<TriggerVar ID="815" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="816" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="862" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="863" Type="Squad" Name="TargetVar1" IsNull="true" />
+		<TriggerVar ID="876" Type="Operator" Name="" IsNull="false">GreaterThan</TriggerVar>
+		<TriggerVar ID="877" Type="Time" Name="" IsNull="false">30000</TriggerVar>
+		<TriggerVar ID="891" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="892" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="893" Type="PlayerState" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="894" Type="PlayerList" Name="PlayersInGame" IsNull="false" />
+		<TriggerVar ID="896" Type="Player" Name="Player" IsNull="false" />
+		<TriggerVar ID="913" Type="Team" Name="Team" IsNull="false" />
+		<TriggerVar ID="915" Type="Team" Name="TeamOwner" IsNull="false" />
+		<TriggerVar ID="917" Type="Operator" Name="" IsNull="false">NotEqualTo</TriggerVar>
+		<TriggerVar ID="919" Type="Trigger" Name="TriggerVar1" IsNull="false">114</TriggerVar>
+		<TriggerVar ID="924" Type="Trigger" Name="TriggerVar2" IsNull="false">117</TriggerVar>
+		<TriggerVar ID="925" Type="Operator" Name="" IsNull="false">NotEqualTo</TriggerVar>
+		<TriggerVar ID="927" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="929" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="936" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="938" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="940" Type="Trigger" Name="TriggerVar3" IsNull="false">123</TriggerVar>
+		<TriggerVar ID="941" Type="Iterator" Name="PlayerListIteratorVar1" IsNull="false" />
+		<TriggerVar ID="942" Type="Trigger" Name="TriggerVar4" IsNull="false">125</TriggerVar>
+		<TriggerVar ID="943" Type="Iterator" Name="PlayerListIteratorVar2" IsNull="false" />
+		<TriggerVar ID="944" Type="Trigger" Name="TriggerVar5" IsNull="false">123</TriggerVar>
+		<TriggerVar ID="945" Type="Trigger" Name="TriggerVar6" IsNull="false">123</TriggerVar>
+		<TriggerVar ID="946" Type="Trigger" Name="TriggerVar7" IsNull="false">122</TriggerVar>
+		<TriggerVar ID="947" Type="Trigger" Name="TriggerVar8" IsNull="false">112</TriggerVar>
+		<TriggerVar ID="948" Type="Trigger" Name="TriggerVar9" IsNull="false">110</TriggerVar>
+		<TriggerVar ID="949" Type="Trigger" Name="TriggerVar10" IsNull="false">125</TriggerVar>
+		<TriggerVar ID="950" Type="Trigger" Name="TriggerVar11" IsNull="false">125</TriggerVar>
+		<TriggerVar ID="951" Type="Trigger" Name="TriggerVar12" IsNull="false">124</TriggerVar>
+		<TriggerVar ID="952" Type="Trigger" Name="TriggerVar13" IsNull="false">116</TriggerVar>
+		<TriggerVar ID="953" Type="Trigger" Name="TriggerVar14" IsNull="false">118</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="1" Name="Power start up" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="3" Y="117" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="92" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">45</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">812</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">813</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">814</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">815</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">816</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="3" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">3</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="56" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="2" Name="UI set up" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="405" Y="119" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="74" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Power" SigID="2" Optional="false">45</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="310" Type="PowerChargeUseOf" DBID="77" Version="4" CommentOut="false">
+					<Input Name="Owner" SigID="1" Optional="false">1</Input>
+					<Input Name="Power" SigID="2" Optional="false">45</Input>
+					<Input Name="Squad" SigID="4" Optional="true">862</Input>
+					<Input Name="Target" SigID="5" Optional="true">863</Input>
+				</Effect>
+				<Effect ID="317" Type="GetPlayers" DBID="173" Version="1" CommentOut="false">
+					<Input Name="IncludeGaia" SigID="2" Optional="false">892</Input>
+					<Input Name="PlayerState" SigID="3" Optional="true">893</Input>
+					<Output Name="PlayerList" SigID="1" Optional="false">894</Output>
+				</Effect>
+				<Effect ID="322" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+					<Output Name="Team" SigID="2" Optional="false">915</Output>
+				</Effect>
+				<Effect ID="337" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">946</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="4" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="110" Name="newTrigger110" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1523" Y="106" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="102" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">876</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">877</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="342" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">951</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="112" Name="newTrigger112" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="805" Y="309" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="321" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Output Name="Team" SigID="2" Optional="false">913</Output>
+				</Effect>
+				<Effect ID="323" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">919</Input>
+				</Effect>
+				<Effect ID="328" Type="BlockLeaderPowers" DBID="756" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Input Name="Block" SigID="2" Optional="false">936</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="114" Name="newTrigger114" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1168" Y="309" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="105" Type="CompareTeams" DBID="429" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstTeam" SigID="1" Optional="false">913</Input>
+						<Input Name="Operator" SigID="2" Optional="false">917</Input>
+						<Input Name="SecondTeam" SigID="3" Optional="false">915</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="316" Type="BlockMinimap" DBID="753" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Input Name="Block" SigID="2" Optional="false">891</Input>
+				</Effect>
+				<Effect ID="335" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">944</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="336" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">945</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="116" Name="newTrigger112" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1884" Y="298" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="321" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Output Name="Team" SigID="2" Optional="false">913</Output>
+				</Effect>
+				<Effect ID="323" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">924</Input>
+				</Effect>
+				<Effect ID="329" Type="BlockLeaderPowers" DBID="756" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Input Name="Block" SigID="2" Optional="false">938</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="117" Name="newTrigger114" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="2247" Y="298" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="105" Type="CompareTeams" DBID="429" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstTeam" SigID="1" Optional="false">913</Input>
+						<Input Name="Operator" SigID="2" Optional="false">925</Input>
+						<Input Name="SecondTeam" SigID="3" Optional="false">915</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="316" Type="BlockMinimap" DBID="753" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">896</Input>
+					<Input Name="Block" SigID="2" Optional="false">927</Input>
+				</Effect>
+				<Effect ID="340" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">949</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="341" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">950</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="118" Name="newTrigger118" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2649" Y="106" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="324" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="122" Name="Initialize" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="80" Y="150" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="331" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">940</Input>
+				</Effect>
+				<Effect ID="332" Type="IteratorPlayerList" DBID="120" Version="1" CommentOut="false">
+					<Input Name="PlayerList" SigID="1" Optional="false">894</Input>
+					<Output Name="InitializedIterator" SigID="2" Optional="false">941</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="123" Name="Loop" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="474" Y="186" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="108" Type="NextPlayer" DBID="118" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="PlayerIterator" SigID="1" Optional="false">941</Input>
+						<Output Name="NextPlayer" SigID="2" Optional="false">896</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="338" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">947</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="339" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">948</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="124" Name="Initialize" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="80" Y="150" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="333" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">942</Input>
+				</Effect>
+				<Effect ID="334" Type="IteratorPlayerList" DBID="120" Version="1" CommentOut="false">
+					<Input Name="PlayerList" SigID="1" Optional="false">894</Input>
+					<Output Name="InitializedIterator" SigID="2" Optional="false">943</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="125" Name="Loop" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="474" Y="186" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="109" Type="NextPlayer" DBID="118" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="PlayerIterator" SigID="1" Optional="false">943</Input>
+						<Output Name="NextPlayer" SigID="2" Optional="false">896</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="343" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">952</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="344" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">953</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings>
+			<TriggerTemplateMapping ID="113" Name="\iteratorplayerlist.xml" Image="" X="1064" Y="81" SizeX="138" SizeY="80" GroupID="-1" CommentOut="false" Obsolete="false" DoNotUse="false">
+				<InputMapping Name="PlayerList" SigID="-1" Optional="false" Type="PlayerList" BindID="26">894</InputMapping>
+				<OutputMapping Name="NextPlayer" SigID="-1" Optional="false" Type="Player" BindID="29">896</OutputMapping>
+				<TriggerInput Name="GetNext" BindID="1,Activate">114,Effect.True;114,Effect.False;</TriggerInput>
+				<TriggerInput Name="Init" BindID="0,Activate" Color="0,94,32">2,Effect.True;</TriggerInput>
+				<TriggerOutput Name="GotNext" BindID="1,Effect.True">112,Activate;</TriggerOutput>
+				<TriggerOutput Name="NoneLeft" BindID="1,Effect.False" Color="121,0,0">110,Activate;</TriggerOutput>
+			</TriggerTemplateMapping>
+			<TriggerTemplateMapping ID="115" Name="\iteratorplayerlist.xml" Image="" X="2161" Y="68" SizeX="138" SizeY="80" GroupID="-1" CommentOut="false" Obsolete="false" DoNotUse="false">
+				<InputMapping Name="PlayerList" SigID="-1" Optional="false" Type="PlayerList" BindID="26">894</InputMapping>
+				<OutputMapping Name="NextPlayer" SigID="-1" Optional="false" Type="Player" BindID="29">896</OutputMapping>
+				<TriggerInput Name="GetNext" BindID="1,Activate">117,Effect.True;117,Effect.False;</TriggerInput>
+				<TriggerInput Name="Init" BindID="0,Activate" Color="0,94,32">110,Effect.True;</TriggerInput>
+				<TriggerOutput Name="GotNext" BindID="1,Effect.True">116,Activate;</TriggerOutput>
+				<TriggerOutput Name="NoneLeft" BindID="1,Effect.False" Color="121,0,0">118,Activate;</TriggerOutput>
+			</TriggerTemplateMapping>
+		</TriggerMappings>
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="939" NextTriggerID="121" NextConditionID="107" NextEffectID="330" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+				<TriggerVar ID="3" Type="Trigger" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="45" Type="Power" Name="Power" IsNull="false" />
+				<TriggerVar ID="285" Type="String" Name="" IsNull="false">repair early shutdown 1</TriggerVar>
+				<TriggerVar ID="286" Type="String" Name="" IsNull="false">repair early shutdown 2</TriggerVar>
+				<TriggerVar ID="812" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="813" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="814" Type="Unit" Name="ExternUnitVar2" IsNull="true" />
+				<TriggerVar ID="815" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="816" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="862" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="863" Type="Squad" Name="TargetVar1" IsNull="true" />
+				<TriggerVar ID="876" Type="Operator" Name="" IsNull="false">GreaterThan</TriggerVar>
+				<TriggerVar ID="877" Type="Time" Name="" IsNull="false">30000</TriggerVar>
+				<TriggerVar ID="891" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="892" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="893" Type="PlayerState" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="894" Type="PlayerList" Name="PlayersInGame" IsNull="false" />
+				<TriggerVar ID="896" Type="Player" Name="Player" IsNull="false" />
+				<TriggerVar ID="913" Type="Team" Name="Team" IsNull="false" />
+				<TriggerVar ID="915" Type="Team" Name="TeamOwner" IsNull="false" />
+				<TriggerVar ID="917" Type="Operator" Name="" IsNull="false">NotEqualTo</TriggerVar>
+				<TriggerVar ID="919" Type="Trigger" Name="TriggerVar1" IsNull="false">114</TriggerVar>
+				<TriggerVar ID="924" Type="Trigger" Name="TriggerVar2" IsNull="false">117</TriggerVar>
+				<TriggerVar ID="925" Type="Operator" Name="" IsNull="false">NotEqualTo</TriggerVar>
+				<TriggerVar ID="927" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="929" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="936" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="938" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="1" Name="Power start up" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="3" Y="117" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="92" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">45</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">812</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">813</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">814</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">815</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">816</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="3" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">3</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="109" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">285</Input>
+						</Effect>
+						<Effect ID="56" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="2" Name="UI set up" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="405" Y="119" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="74" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Power" SigID="2" Optional="false">45</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="310" Type="PowerChargeUseOf" DBID="77" Version="4" CommentOut="false">
+							<Input Name="Owner" SigID="1" Optional="false">1</Input>
+							<Input Name="Power" SigID="2" Optional="false">45</Input>
+							<Input Name="Squad" SigID="4" Optional="true">862</Input>
+							<Input Name="Target" SigID="5" Optional="true">863</Input>
+						</Effect>
+						<Effect ID="317" Type="GetPlayers" DBID="173" Version="1" CommentOut="false">
+							<Input Name="IncludeGaia" SigID="2" Optional="false">892</Input>
+							<Input Name="PlayerState" SigID="3" Optional="true">893</Input>
+							<Output Name="PlayerList" SigID="1" Optional="false">894</Output>
+						</Effect>
+						<Effect ID="322" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">1</Input>
+							<Output Name="Team" SigID="2" Optional="false">915</Output>
+						</Effect>
+						<Effect ID="325" Type="BlockMinimap" DBID="753" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="1" Optional="false">1</Input>
+							<Input Name="Block" SigID="2" Optional="false">929</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="110" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">286</Input>
+						</Effect>
+						<Effect ID="4" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="110" Name="newTrigger110" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1523" Y="106" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="102" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">876</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">877</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue />
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="112" Name="newTrigger112" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="805" Y="309" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="321" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Output Name="Team" SigID="2" Optional="false">913</Output>
+						</Effect>
+						<Effect ID="323" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">919</Input>
+						</Effect>
+						<Effect ID="328" Type="BlockLeaderPowers" DBID="756" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Input Name="Block" SigID="2" Optional="false">936</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="114" Name="newTrigger114" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1168" Y="309" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="105" Type="CompareTeams" DBID="429" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstTeam" SigID="1" Optional="false">913</Input>
+								<Input Name="Operator" SigID="2" Optional="false">917</Input>
+								<Input Name="SecondTeam" SigID="3" Optional="false">915</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="316" Type="BlockMinimap" DBID="753" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Input Name="Block" SigID="2" Optional="false">891</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="116" Name="newTrigger112" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1884" Y="298" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="321" Type="GetPlayerTeam" DBID="393" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Output Name="Team" SigID="2" Optional="false">913</Output>
+						</Effect>
+						<Effect ID="323" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">924</Input>
+						</Effect>
+						<Effect ID="329" Type="BlockLeaderPowers" DBID="756" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Input Name="Block" SigID="2" Optional="false">938</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="117" Name="newTrigger114" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="2247" Y="298" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="105" Type="CompareTeams" DBID="429" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstTeam" SigID="1" Optional="false">913</Input>
+								<Input Name="Operator" SigID="2" Optional="false">925</Input>
+								<Input Name="SecondTeam" SigID="3" Optional="false">915</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="316" Type="BlockMinimap" DBID="753" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">896</Input>
+							<Input Name="Block" SigID="2" Optional="false">927</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="118" Name="newTrigger118" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2649" Y="106" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="324" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

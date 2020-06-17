@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Spikes</Name>
+		<AttackRate>2</AttackRate>
+		<DamagePerSecond>55</DamagePerSecond>
+		<WeaponType>AntiAir</WeaponType>
+		<Projectile>fx_proj_floodspit_01</Projectile>
+		<ImpactEffect size="Small">SmallArmsBullet</ImpactEffect>
+		<MaxVelocityLead>10</MaxVelocityLead>
+		<MaxRange>30</MaxRange>
+		<Accuracy>0.1</Accuracy>
+		<MaxDeviation>3</MaxDeviation>
+		<MovingAccuracy>0.05</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="Infantry">7</TargetPriority>
+		<TargetPriority type="GroundVehicle">5</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<Dodgeable />
+	</Weapon>
+	<Action>
+		<Name>SpikesAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Weapon>Spikes</Weapon>
+		<Anim>PlasmaRifleAttack</Anim>
+		<MainAttack />
+		<MaxNumUnitsPerformAction>2</MaxNumUnitsPerformAction>
+	</Action>
+	<Action>
+		<Name>MoveAir</Name>
+		<ActionType>MoveAir</ActionType>
+		<AttackRunDelayMin>5</AttackRunDelayMin>
+		<AttackRunDelayMax>10</AttackRunDelayMax>
+	</Action>
+	<Tactic>
+		<PersistentAction>MoveAir</PersistentAction>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>SpikesAttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

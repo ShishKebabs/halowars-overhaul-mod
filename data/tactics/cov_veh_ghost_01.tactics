@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>PlasmaCannon</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>85.5</DamagePerSecond>
+		<WeaponType>AASmallArms</WeaponType>
+		<Projectile>fx_proj_plasmaCannon_01</Projectile>
+		<ImpactEffect size="small">cov_plasmacannon_01</ImpactEffect>
+		<MaxVelocityLead>15</MaxVelocityLead>
+		<MaxRange>30</MaxRange>
+		<Accuracy>0.1</Accuracy>
+		<MaxDeviation>3</MaxDeviation>
+		<MovingAccuracy>0.05</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="Aircraft">5</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>Ram</Name>
+		<DamagePerSecond>500</DamagePerSecond>
+		<WeaponType>WarthogRam</WeaponType>
+		<MaxRange>5</MaxRange>
+		<AOERadius>40</AOERadius>
+		<ThrowUnits />
+		<FlailThrownUnits />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>30</PhysicsLaunchAngleMax>
+		<PhysicsLaunchAxial />
+		<PhysicsForceMin>700</PhysicsForceMin>
+		<PhysicsForceMax>1000</PhysicsForceMax>
+		<ImpactCameraShake duration="0.4" strength="0.38" />
+		<ImpactRumble leftRumbleType="RandomNoise" leftStrength="0.3" rightRumbleType="RandomNoise" rightStrength="0.3" duration="0.25" />
+		<MaxDamagePerRam>10000</MaxDamagePerRam>
+		<ReflectDamageFactor>1</ReflectDamageFactor>
+	</Weapon>
+	<Action>
+		<Name>PlasmaCannonAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>PlasmaCannonAttack</Anim>
+		<Weapon>PlasmaCannon</Weapon>
+		<MainAttack />
+	</Action>
+	<State>
+		<Name>RamState</Name>
+		<WalkAnim>Run</WalkAnim>
+		<RunAnim>Run</RunAnim>
+		<JogAnim>Run</JogAnim>
+	</State>
+	<Action>
+		<Name>RamAttack</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Weapon>Ram</Weapon>
+		<Overrun />
+	</Action>
+	<Action>
+		<Name>PersistentCollisionAttack</Name>
+		<ActionType>CollisionAttack</ActionType>
+		<Weapon>Ram</Weapon>
+		<NewTacticState>RamState</NewTacticState>
+		<Overrun />
+	</Action>
+	<Action>
+		<Name>GatherSupplies</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Supplies</Resource>
+		<WorkRate>3.75</WorkRate>
+		<WorkRange>3</WorkRange>
+		<RestrictedAutoTarget>true</RestrictedAutoTarget>
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>5</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonSpirit</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>HotDropUp</Anim>
+		<WorkRange>13</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonSpirit</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>HotDropDown</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonHotDrop</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>HotDropUp</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonHotDrop</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>HotDropDown</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonTeleport</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>TeleportOut</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonTeleport</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>TeleportIn</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>Dodge</Name>
+		<ActionType>Dodge</ActionType>
+		<DodgeChanceMin>0</DodgeChanceMin>
+		<DodgeChanceMax>1.5</DodgeChanceMax>
+		<DodgeMaxAngle>135</DodgeMaxAngle>
+		<DodgeCooldown>1</DodgeCooldown>
+		<DodgePhysicsImpulse>60</DodgePhysicsImpulse>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>ShieldAction</Name>
+		<ActionType>EnergyShield</ActionType>
+		<ProtoObject>cov_ghostshield</ProtoObject>
+	</Action>
+	<Action>
+		<Name>GatherCollectables</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Collectable</Resource>
+		<WorkRate>1</WorkRate>
+		<WorkRange>3</WorkRange>
+	</Action>
+	<Tactic>
+		<PersistentAction>Dodge</PersistentAction>
+		<PersistentAction>PersistentCollisionAttack</PersistentAction>
+		<PersistentAction>ShieldAction</PersistentAction>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Collectable</TargetType>
+			<Action>GatherCollectables</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>RamAttack</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>PlasmaCannonAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>Garrison</TargetType>
+			<Action>Garrison</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>GarrisonSpirit</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>UngarrisonSpirit</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Self</Relation>
+			<TargetType>HotDropPickup</TargetType>
+			<Action>GarrisonHotDrop</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>HotDropPickup</TargetType>
+			<Action>UngarrisonHotDrop</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Resource_Supplies</TargetType>
+			<Action>GatherSupplies</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Relation>Self</Relation>
+			<TargetType>TeleportPickup</TargetType>
+			<Action>GarrisonTeleport</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>TeleportDropoff</TargetType>
+			<Action>UngarrisonTeleport</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

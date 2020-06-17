@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Player2Hints.triggerscript" Type="TriggerScript" NextTriggerVarID="28" NextTriggerID="3" NextConditionID="2" NextEffectID="6" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="ExternalUnitVar1" IsNull="true" />
+		<TriggerVar ID="4" Type="UnitList" Name="ExternalUnitListVar1" IsNull="true" />
+		<TriggerVar ID="5" Type="Squad" Name="ExternalSquadVar1" IsNull="true" />
+		<TriggerVar ID="6" Type="SquadList" Name="ExternalSquadListVar1" IsNull="true" />
+		<TriggerVar ID="7" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="8" Type="Power" Name="ExternalPowerVar1" IsNull="true" />
+		<TriggerVar ID="9" Type="Cost" Name="ExternalCostVar1" IsNull="true" />
+		<TriggerVar ID="10" Type="Vector" Name="ExternalLocationVar1" IsNull="true" />
+		<TriggerVar ID="11" Type="VectorList" Name="ExternalLocationListVar1" IsNull="true" />
+		<TriggerVar ID="13" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="14" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="15" Type="ConceptList" Name="EnableListVar1" IsNull="true" />
+		<TriggerVar ID="17" Type="String" Name="" IsNull="false">CoreHints.triggerscript</TriggerVar>
+		<TriggerVar ID="27" Type="Float" Name="ExternalFloatVar1" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="182" Y="242" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="5" Type="LaunchScript" DBID="392" Version="4" CommentOut="false">
+					<Input Name="ScriptName" SigID="15" Optional="false">17</Input>
+					<Input Name="ExternalUnit" SigID="2" Optional="true">3</Input>
+					<Input Name="ExternalUnitList" SigID="3" Optional="true">4</Input>
+					<Input Name="ExternalSquad" SigID="4" Optional="true">5</Input>
+					<Input Name="ExternalSquadList" SigID="5" Optional="true">6</Input>
+					<Input Name="ExternalPlayer" SigID="6" Optional="true">7</Input>
+					<Input Name="ExternalPower" SigID="7" Optional="true">8</Input>
+					<Input Name="ExternalCost" SigID="8" Optional="true">9</Input>
+					<Input Name="ExternalLocation" SigID="11" Optional="true">10</Input>
+					<Input Name="ExternalLocationList" SigID="12" Optional="true">11</Input>
+					<Input Name="ExternalFloat" SigID="13" Optional="true">27</Input>
+				</Effect>
+				<Effect ID="3" Type="ConceptPermission" DBID="924" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">13</Input>
+					<Input Name="EnableAll" SigID="3" Optional="true">14</Input>
+					<Input Name="EnableList" SigID="2" Optional="true">15</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="28" NextTriggerID="3" NextConditionID="2" NextEffectID="6" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="2" Type="ExposedScript" Name="" IsNull="false">23</TriggerVar>
+				<TriggerVar ID="3" Type="Unit" Name="ExternalUnitVar1" IsNull="true" />
+				<TriggerVar ID="4" Type="UnitList" Name="ExternalUnitListVar1" IsNull="true" />
+				<TriggerVar ID="5" Type="Squad" Name="ExternalSquadVar1" IsNull="true" />
+				<TriggerVar ID="6" Type="SquadList" Name="ExternalSquadListVar1" IsNull="true" />
+				<TriggerVar ID="7" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="8" Type="Power" Name="ExternalPowerVar1" IsNull="true" />
+				<TriggerVar ID="9" Type="Cost" Name="ExternalCostVar1" IsNull="true" />
+				<TriggerVar ID="10" Type="Vector" Name="ExternalLocationVar1" IsNull="true" />
+				<TriggerVar ID="11" Type="VectorList" Name="ExternalLocationListVar1" IsNull="true" />
+				<TriggerVar ID="13" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="14" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="15" Type="ConceptList" Name="EnableListVar1" IsNull="true" />
+				<TriggerVar ID="17" Type="String" Name="" IsNull="false">CoreHints.triggerscript</TriggerVar>
+				<TriggerVar ID="27" Type="Float" Name="ExternalFloatVar1" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="182" Y="242" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="5" Type="LaunchScript" DBID="392" Version="4" CommentOut="false">
+							<Input Name="ScriptName" SigID="15" Optional="false">17</Input>
+							<Input Name="ExternalUnit" SigID="2" Optional="true">3</Input>
+							<Input Name="ExternalUnitList" SigID="3" Optional="true">4</Input>
+							<Input Name="ExternalSquad" SigID="4" Optional="true">5</Input>
+							<Input Name="ExternalSquadList" SigID="5" Optional="true">6</Input>
+							<Input Name="ExternalPlayer" SigID="6" Optional="true">7</Input>
+							<Input Name="ExternalPower" SigID="7" Optional="true">8</Input>
+							<Input Name="ExternalCost" SigID="8" Optional="true">9</Input>
+							<Input Name="ExternalLocation" SigID="11" Optional="true">10</Input>
+							<Input Name="ExternalLocationList" SigID="12" Optional="true">11</Input>
+							<Input Name="ExternalFloat" SigID="13" Optional="true">27</Input>
+						</Effect>
+						<Effect ID="3" Type="ConceptPermission" DBID="924" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">13</Input>
+							<Input Name="EnableAll" SigID="3" Optional="true">14</Input>
+							<Input Name="EnableList" SigID="2" Optional="true">15</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

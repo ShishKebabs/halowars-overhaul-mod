@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Machinegun</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>800</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_machinegun_01</Projectile>
+		<ImpactEffect size="Small">unsc_rifle_01</ImpactEffect>
+		<MaxVelocityLead>35</MaxVelocityLead>
+		<MaxRange>30</MaxRange>
+		<Accuracy>0.15</Accuracy>
+		<MaxDeviation>2</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>3</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="Aircraft">5</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>GroundToGroundMissileLauncher</Name>
+		<AttackRate>2</AttackRate>
+		<DamagePerSecond>400</DamagePerSecond>
+		<WeaponType>Missile</WeaponType>
+		<Projectile>fx_proj_missile_01</Projectile>
+		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
+		<MaxVelocityLead>10</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Accuracy>0</Accuracy>
+		<MaxDeviation>10</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>15</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<AOERadius>3</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.25</AOEDistanceFactor>
+		<AOEDamageFactor>0.25</AOEDamageFactor>
+		<DamageRatingOverride type="Air">0</DamageRatingOverride>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>GroundToAirMissileLauncher</Name>
+		<AttackRate>2</AttackRate>
+		<DamagePerSecond>400</DamagePerSecond>
+		<WeaponType>Missile</WeaponType>
+		<Projectile>fx_proj_missile_01</Projectile>
+		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
+		<MaxVelocityLead>10</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<DamageRatingOverride type="Unarmored">0</DamageRatingOverride>
+		<DamageRatingOverride type="Vehicle">0</DamageRatingOverride>
+		<DamageRatingOverride type="Building">0</DamageRatingOverride>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>Ram</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>1000</DamagePerSecond>
+		<WeaponType>WarthogRam</WeaponType>
+		<ThrowUnits />
+		<FlailThrownUnits />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>30</PhysicsLaunchAngleMax>
+		<PhysicsLaunchAxial />
+		<PhysicsForceMin>1000</PhysicsForceMin>
+		<PhysicsForceMax>1400</PhysicsForceMax>
+		<ImpactCameraShake duration="0.4" strength="0.38" />
+		<ImpactRumble leftRumbleType="RandomNoise" leftStrength="0.3" rightRumbleType="RandomNoise" rightStrength="0.3" duration="0.25" />
+	</Weapon>
+	<Action>
+		<Name>MachinegunAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MachinegunAttack</Anim>
+		<Weapon>Machinegun</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>GroundToGroundMissileLauncherAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>CannonAttack</Anim>
+		<Weapon>GroundToGroundMissileLauncher</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>GroundToAirMissileLauncherAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>CannonAttack</Anim>
+		<Weapon>GroundToAirMissileLauncher</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>Capture</Name>
+		<ActionType>Capture</ActionType>
+		<WorkRate>1.3</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Action>
+		<Name>GatherSupplies</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Supplies</Resource>
+		<WorkRate>5</WorkRate>
+		<WorkRange>3</WorkRange>
+		<RestrictedAutoTarget>true</RestrictedAutoTarget>
+	</Action>
+	<Action>
+		<Name>CollisionAttack</Name>
+		<ActionType>CollisionAttack</ActionType>
+		<Weapon>Ram</Weapon>
+	</Action>
+	<Action>
+		<Name>GarrisonPelican</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>PelicanGarrison</Anim>
+		<WorkRange>14</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonPelican</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>PelicanUngarrison</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>Capture</Name>
+		<ActionType>Capture</ActionType>
+		<Anim>Build</Anim>
+		<WorkRate>1</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Neutral</Relation>
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Resource_Supplies</TargetType>
+			<Action>GatherSupplies</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>GroundVehicle</TargetType>
+			<TargetType>Building</TargetType>
+			<Action>GroundToGroundMissileLauncherAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>Flying</TargetType>
+			<Action>GroundToAirMissileLauncherAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>MachinegunAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Self</Relation>
+			<TargetType>unsc_air_pelican_01</TargetType>
+			<Action>GarrisonPelican</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>unsc_air_pelican_01</TargetType>
+			<Action>UngarrisonPelican</Action>
+		</TargetRule>
+		<PersistentAction>CollisionAttack</PersistentAction>
+	</Tactic>
+</TacticData>

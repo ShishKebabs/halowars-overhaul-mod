@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Rumble>
+	<Pattern Name="Test">
+		<Sequence>
+			<Action LeftRumbleType="RandomNoise" LeftStrength="0.5" RightRumbleType="None" RightStrength="0" Duration="5" />
+		</Sequence>
+		<Sequence>
+			<Action LeftRumbleType="None" LeftStrength="0" RightRumbleType="None" RightStrength="0" Duration="2" />
+			<Action LeftRumbleType="None" LeftStrength="0" RightRumbleType="SineWave" RightStrength="0.7" Duration="1" />
+			<Action LeftRumbleType="None" LeftStrength="0" RightRumbleType="SineWave" RightStrength="0.7" Duration="1" />
+			<Action LeftRumbleType="None" LeftStrength="0" RightRumbleType="SineWave" RightStrength="0.7" Duration="1" />
+		</Sequence>
+	</Pattern>
+	<Pattern Name="Flare">
+		<Sequence>
+			<Action LeftRumbleType="Fixed" LeftStrength="0.15" RightRumbleType="None" RightStrength="0" Duration="0.05" />
+			<Action LeftRumbleType="None" LeftStrength="0" RightRumbleType="Fixed" RightStrength="0.1" Duration="0.05" />
+			<Action LeftRumbleType="Fixed" LeftStrength="0.15" RightRumbleType="None" RightStrength="0" Duration="0.05" />
+		</Sequence>
+	</Pattern>
+	<Event Enabled="true" Multiple="true" EventType="Trigger" />
+	<Event Enabled="true" Multiple="true" EventType="Impact" />
+	<Event Enabled="true" Multiple="true" EventType="Collision" />
+	<Event Enabled="true" Multiple="true" EventType="AnimTag" />
+	<Event Enabled="true" Multiple="false" EventType="Flare" Pattern="Flare" />
+	<Event Enabled="false" Multiple="false" EventType="RadialMenuItem" LeftRumbleType="Decline" LeftStrength="0.1" RightRumbleType="None" RightStrength="0" Duration="0.15" />
+	<Event Enabled="false" Multiple="false" EventType="PaintSelect" LeftRumbleType="SineWave" LeftStrength="0.2" RightRumbleType="SineWave" RightStrength="0.2" Duration="0.09" />
+	<Event Enabled="false" Multiple="false" EventType="Attack" LeftRumbleType="Fixed" LeftStrength="0.8" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="TrainComplete" LeftRumbleType="Fixed" LeftStrength="0.3" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="ResearchComplete" LeftRumbleType="Fixed" LeftStrength="0.4" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="BuildComplete" LeftRumbleType="Fixed" LeftStrength="0.4" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="NewObjective" LeftRumbleType="Fixed" LeftStrength="0.5" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="ObjectiveComplete" LeftRumbleType="Fixed" LeftStrength="0.5" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="UnitSelect" LeftRumbleType="Fixed" LeftStrength="0.2" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="UnitHover" LeftRumbleType="Fixed" LeftStrength="0.2" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.4" />
+	<Event Enabled="false" Multiple="false" EventType="UnitHovering" />
+	<Event Enabled="false" Multiple="false" EventType="ConfirmCommand" LeftRumbleType="Fixed" LeftStrength="0.3" RightRumbleType="Fixed" RightStrength="0.6" Duration="0.1" />
+	<Event Enabled="false" Multiple="false" EventType="CantDoCommand" LeftRumbleType="Fixed" LeftStrength="0.6" RightRumbleType="Fixed" RightStrength="0.3" Duration="0.1" />
+	<Event Enabled="false" Multiple="false" EventType="UIRollover" LeftRumbleType="Fixed" LeftStrength="0.2" RightRumbleType="Fixed" RightStrength="0.2" Duration="0.05" />
+</Rumble>

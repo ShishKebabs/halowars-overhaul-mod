@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Rage</Name>
+		<DamagePerSecond>1655</DamagePerSecond>
+		<UseDPSasDPA />
+		<WeaponType>LeaderPower</WeaponType>
+		<Projectile>pow_gp_rage_impact</Projectile>
+		<ImpactEffect size="Medium">arbiterrageimpact_01</ImpactEffect>
+		<ImpactCameraShake duration="0.3" strength="0.5" />
+		<ImpactRumble leftRumbleType="Fixed" leftStrength="0.25" rightRumbleType="Fixed" rightStrength="0.25" duration="0.1" />
+		<ImpactCameraEffect>
+			<ColorTransformFactor>
+				<Value time="0">0.6</Value>
+				<Value time="0.3">0.3</Value>
+				<Value time="0.6">0</Value>
+			</ColorTransformFactor>
+			<BlurFactor>
+				<Value time="0">0.6</Value>
+				<Value time="0.3">0.6</Value>
+				<Value time="0.6">0</Value>
+			</BlurFactor>
+			<ColorTransformR>
+				<Value time="0">0.9,0,0</Value>
+			</ColorTransformR>
+			<ColorTransformG>
+				<Value time="0">0,0.9,0</Value>
+			</ColorTransformG>
+			<ColorTransformB>
+				<Value time="0">0,0,1</Value>
+			</ColorTransformB>
+			<BlurXY />
+			<RadialBlurFactor use3DPos="true">
+				<Value time="0">0.1,0.2</Value>
+				<Value time="0.1">0.2,0.2</Value>
+				<Value time="0.5">0,0</Value>
+			</RadialBlurFactor>
+			<FOV />
+		</ImpactCameraEffect>
+		<AOERadius>10</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>20</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>1000</PhysicsForceMin>
+		<PhysicsForceMax>1200</PhysicsForceMax>
+		<CameraRubleShakeScalarNotLocal>0.6</CameraRubleShakeScalarNotLocal>
+	</Weapon>
+	<Action>
+		<Default>true</Default>
+		<Name>RageAttackAction</Name>
+		<Weapon>Rage</Weapon>
+	</Action>
+	<Action>
+		<Name>RageShockwaveAction</Name>
+		<Weapon>RageShockwave</Weapon>
+		<Shockwave />
+	</Action>
+	<Tactic />
+</TacticData>

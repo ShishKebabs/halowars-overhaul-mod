@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>InCoverNeedler</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>18</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_needler_01</Projectile>
+		<ImpactEffect size="small">needler_01</ImpactEffect>
+		<MaxVelocityLead>12</MaxVelocityLead>
+		<MaxRange>60</MaxRange>
+		<EnableHeightBonusDamage />
+		<VisualAmmo>16</VisualAmmo>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<SmallArmsDeflectable />
+	</Weapon>
+	<Weapon>
+		<Name>Needler</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>18</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_needler_01</Projectile>
+		<ImpactEffect size="small">needler_01</ImpactEffect>
+		<MaxVelocityLead>12</MaxVelocityLead>
+		<MaxRange>25</MaxRange>
+		<EnableHeightBonusDamage />
+		<VisualAmmo>16</VisualAmmo>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<SmallArmsDeflectable />
+	</Weapon>
+	<Action>
+		<Name>InCoverNeedlerAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>NeedlerAttack</Anim>
+		<ReloadAnim>NeedlerReload</ReloadAnim>
+		<Weapon>InCoverNeedler</Weapon>
+		<MainAttack />
+		<FindBetterAction />
+	</Action>
+	<Action>
+		<Name>NeedlerAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>NeedlerAttack</Anim>
+		<ReloadAnim>NeedlerReload</ReloadAnim>
+		<Weapon>Needler</Weapon>
+		<MainAttack />
+		<FindBetterAction />
+	</Action>
+	<Action>
+		<Name>GatherSupplies</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Supplies</Resource>
+		<WorkRate>2</WorkRate>
+		<WorkRange>3</WorkRange>
+		<RestrictedAutoTarget>true</RestrictedAutoTarget>
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>5</WorkRange>
+	</Action>
+	<Action>
+		<Name>Capture</Name>
+		<ActionType>Capture</ActionType>
+		<Anim>Build</Anim>
+		<WorkRate>0.1</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonSpirit</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>HotDropUp</Anim>
+		<WorkRange>13</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonSpirit</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>HotDropDown</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Neutral</Relation>
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>NeedlerAttackAction</Action>
+			<SquadMode>Normal</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>InCoverNeedlerAttackAction</Action>
+			<SquadMode>Cover</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>Garrison</TargetType>
+			<Action>Garrison</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>GaiaGarrison</TargetType>
+			<Action>Garrison</Action>
+			<OptionalAbility>UnscSprint</OptionalAbility>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Resource_Supplies</TargetType>
+			<Action>GatherSupplies</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>GarrisonSpirit</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>UngarrisonSpirit</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

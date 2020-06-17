@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Lightning</Name>
+		<AllowFriendlyFire />
+		<DamagePerSecond>210</DamagePerSecond>
+		<UseDPSasDPA />
+		<WeaponType>leaderPower</WeaponType>
+		<Projectile>pow_proj_wave_lightning_01</Projectile>
+		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
+		<MaxVelocityLead>20</MaxVelocityLead>
+		<MaxRange>120</MaxRange>
+		<MinRange>6</MinRange>
+		<Accuracy>0.2</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<AOERadius>5</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.75</AOEDistanceFactor>
+		<AOEDamageFactor>0.75</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>10</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>100</PhysicsForceMin>
+		<PhysicsForceMax>200</PhysicsForceMax>
+		<TargetPriority type="GroundVehicle">10</TargetPriority>
+		<TargetPriority type="TurretBuilding">5</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+		<ImpactCameraShake duration="0.2" strength="0.15" />
+		<ImpactRumble leftRumbleType="Fixed" leftStrength="0.2" rightRumbleType="Fixed" rightStrength="0.2" duration="0.2" />
+	</Weapon>
+	<Action>
+		<Default>true</Default>
+		<Name>LightningAction</Name>
+		<Weapon>Lightning</Weapon>
+	</Action>
+	<Tactic />
+</TacticData>

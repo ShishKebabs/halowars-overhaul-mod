@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="UnscCpgn12Missile.power" Type="Power" NextTriggerVarID="960" NextTriggerID="95" NextConditionID="73" NextEffectID="199" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+		<TriggerVar ID="9" Type="UILocation" Name="UILoc" IsNull="false" />
+		<TriggerVar ID="14" Type="Vector" Name="BombLoc" IsNull="false" />
+		<TriggerVar ID="42" Type="Power" Name="Power" IsNull="false" />
+		<TriggerVar ID="107" Type="Vector" Name="MissileLoc" IsNull="false" />
+		<TriggerVar ID="905" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+		<TriggerVar ID="906" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="909" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+		<TriggerVar ID="910" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="913" Type="Float" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="914" Type="Float" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="915" Type="Float" Name="AdjustZVar1" IsNull="true" />
+		<TriggerVar ID="916" Type="Vector" Name="AdjustVectorVar1" IsNull="true" />
+		<TriggerVar ID="920" Type="ProtoObject" Name="" IsNull="false">cpgn_proj_scn12Nuke_01</TriggerVar>
+		<TriggerVar ID="923" Type="Unit" Name="TargetUnitVar2" IsNull="true" />
+		<TriggerVar ID="928" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="929" Type="SquadList" Name="ExternSquadListVar2" IsNull="true" />
+		<TriggerVar ID="930" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+		<TriggerVar ID="931" Type="UnitList" Name="ExternUnitListVar2" IsNull="true" />
+		<TriggerVar ID="932" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="936" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+		<TriggerVar ID="937" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="941" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="942" Type="Squad" Name="TargetVar1" IsNull="true" />
+		<TriggerVar ID="943" Type="Trigger" Name="TriggerVar1" IsNull="false">90</TriggerVar>
+		<TriggerVar ID="947" Type="ProtoObject" Name="ProtoObjectVar1" IsNull="true" />
+		<TriggerVar ID="948" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="949" Type="LOSType" Name="" IsNull="false">LOSDontCare</TriggerVar>
+		<TriggerVar ID="950" Type="PlacementRule" Name="" IsNull="false">cpgn_scn12_tacticalMissile.xml</TriggerVar>
+		<TriggerVar ID="951" Type="Bool" Name="LOSCenterOnlyVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="959" Type="Float" Name="CostMultiplierVar1" IsNull="true" />
+		<TriggerVar ID="961" Type="Trigger" Name="TriggerVar2" IsNull="false">97</TriggerVar>
+		<TriggerVar ID="962" Type="Trigger" Name="TriggerVar3" IsNull="false">98</TriggerVar>
+		<TriggerVar ID="963" Type="Trigger" Name="TriggerVar4" IsNull="false">99</TriggerVar>
+		<TriggerVar ID="964" Type="Trigger" Name="TriggerVar5" IsNull="false">96</TriggerVar>
+		<TriggerVar ID="965" Type="Trigger" Name="TriggerVar6" IsNull="false">28</TriggerVar>
+		<TriggerVar ID="966" Type="Trigger" Name="TriggerVar7" IsNull="false">90</TriggerVar>
+		<TriggerVar ID="967" Type="Trigger" Name="TriggerVar8" IsNull="false">90</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="1" Name="Verify Externals and Setup User" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="84" Y="113" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="68" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">42</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">928</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">929</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">930</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">931</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">932</Output>
+					</Condition>
+					<Condition ID="65" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Power" SigID="2" Optional="false">42</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="195" Type="InputUILocation" DBID="84" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+					<Input Name="ProtoObject" SigID="3" Optional="true">947</Input>
+					<Input Name="CheckObstruction" SigID="4" Optional="true">948</Input>
+					<Input Name="LOSType" SigID="5" Optional="true">949</Input>
+					<Input Name="PlacementRule" SigID="6" Optional="true">950</Input>
+					<Input Name="LOSCenterOnly" SigID="7" Optional="true">951</Input>
+					<Output Name="UILocation" SigID="2" Optional="false">9</Output>
+				</Effect>
+				<Effect ID="32" Type="SetUIPowerRadius" DBID="79" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+					<Input Name="Power" SigID="2" Optional="false">42</Input>
+				</Effect>
+				<Effect ID="179" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">905</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">906</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="205" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">964</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="50" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="28" Name="Can Still Use Power?  Fire!" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="950" Y="109" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="28" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Power" SigID="2" Optional="false">42</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="198" Type="PowerChargeUseOf" DBID="77" Version="5" CommentOut="false">
+					<Input Name="Owner" SigID="1" Optional="false">1</Input>
+					<Input Name="Power" SigID="2" Optional="false">42</Input>
+					<Input Name="Squad" SigID="4" Optional="true">941</Input>
+					<Input Name="Target" SigID="5" Optional="true">942</Input>
+					<Input Name="CostMultiplier" SigID="6" Optional="true">959</Input>
+				</Effect>
+				<Effect ID="181" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">909</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">910</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="183" Type="LocationAdjust" DBID="59" Version="2" CommentOut="false">
+					<Input Name="SourceLoc" SigID="1" Optional="false">14</Input>
+					<Input Name="AdjustX" SigID="2" Optional="true">913</Input>
+					<Input Name="AdjustY" SigID="4" Optional="true">914</Input>
+					<Input Name="AdjustZ" SigID="5" Optional="true">915</Input>
+					<Input Name="AdjustVector" SigID="6" Optional="true">916</Input>
+					<Output Name="ResultLoc" SigID="3" Optional="false">107</Output>
+				</Effect>
+				<Effect ID="185" Type="LaunchProjectile" DBID="57" Version="2" CommentOut="false">
+					<Input Name="ProjectileOwner" SigID="1" Optional="false">1</Input>
+					<Input Name="ProjectileProto" SigID="2" Optional="false">920</Input>
+					<Input Name="StartLoc" SigID="3" Optional="false">107</Input>
+					<Input Name="TargetLoc" SigID="4" Optional="true">14</Input>
+					<Input Name="TargetUnit" SigID="5" Optional="true">923</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="192" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">943</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="90" Name="Disable Power Overlay" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="963" Y="575" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="189" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">936</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">937</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="190" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="96" Name="Wait for our UILoc to have a result." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="115" Y="194" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="74" Type="UILocationWaiting" DBID="331" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">9</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="200" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">961</Input>
+				</Effect>
+				<Effect ID="201" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">962</Input>
+				</Effect>
+				<Effect ID="202" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">963</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="97" Name="Handle the OK result" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="521" Y="75" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="75" Type="UILocationOK" DBID="16" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">9</Input>
+						<Output Name="ResultLocation" SigID="2" Optional="false">14</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="203" Type="UIUnlock" DBID="330" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="206" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">965</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="98" Name="Handle the cancel result" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="523" Y="201" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="76" Type="UILocationCancel" DBID="17" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">9</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="204" Type="UIUnlock" DBID="330" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="207" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">966</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="99" Name="Handle the lock error result." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="525" Y="334" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="77" Type="UILocationUILockError" DBID="327" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">9</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="208" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">967</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings>
+			<TriggerTemplateMapping ID="48" Name="\handleuilocationandunlock.xml" Image="" X="567" Y="110" SizeX="200" SizeY="100" GroupID="-1" CommentOut="false" Obsolete="false" DoNotUse="false">
+				<InputMapping Name="UILoc" SigID="-1" Optional="false" Type="UILocation" BindID="1">9</InputMapping>
+				<InputMapping Name="UnlockPlr" SigID="-1" Optional="false" Type="Player" BindID="11">1</InputMapping>
+				<OutputMapping Name="ResultLoc" SigID="-1" Optional="false" Type="Location" BindID="6">14</OutputMapping>
+				<TriggerInput Name="go" BindID="1,Activate">2,Effect.True;1,Effect.True;</TriggerInput>
+				<TriggerOutput Name="ok" BindID="2,Effect.True">28,Activate;</TriggerOutput>
+				<TriggerOutput Name="cancel" BindID="3,Effect.True">90,Activate;</TriggerOutput>
+				<TriggerOutput Name="lockerror" BindID="4,Effect.True">90,Activate;</TriggerOutput>
+			</TriggerTemplateMapping>
+		</TriggerMappings>
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="960" NextTriggerID="95" NextConditionID="73" NextEffectID="199" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+				<TriggerVar ID="9" Type="UILocation" Name="UILoc" IsNull="false" />
+				<TriggerVar ID="14" Type="Vector" Name="BombLoc" IsNull="false" />
+				<TriggerVar ID="42" Type="Power" Name="Power" IsNull="false" />
+				<TriggerVar ID="107" Type="Vector" Name="MissileLoc" IsNull="false" />
+				<TriggerVar ID="905" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+				<TriggerVar ID="906" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="909" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+				<TriggerVar ID="910" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="913" Type="Float" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="914" Type="Float" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="915" Type="Float" Name="AdjustZVar1" IsNull="true" />
+				<TriggerVar ID="916" Type="Vector" Name="AdjustVectorVar1" IsNull="true" />
+				<TriggerVar ID="920" Type="ProtoObject" Name="" IsNull="false">cpgn_proj_scn12Nuke_01</TriggerVar>
+				<TriggerVar ID="923" Type="Unit" Name="TargetUnitVar2" IsNull="true" />
+				<TriggerVar ID="928" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="929" Type="SquadList" Name="ExternSquadListVar2" IsNull="true" />
+				<TriggerVar ID="930" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+				<TriggerVar ID="931" Type="UnitList" Name="ExternUnitListVar2" IsNull="true" />
+				<TriggerVar ID="932" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="936" Type="Power" Name="" IsNull="false">UnscCpgn12Missile</TriggerVar>
+				<TriggerVar ID="937" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="941" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="942" Type="Squad" Name="TargetVar1" IsNull="true" />
+				<TriggerVar ID="943" Type="Trigger" Name="TriggerVar1" IsNull="false">90</TriggerVar>
+				<TriggerVar ID="947" Type="ProtoObject" Name="ProtoObjectVar1" IsNull="true" />
+				<TriggerVar ID="948" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="949" Type="LOSType" Name="" IsNull="false">LOSDontCare</TriggerVar>
+				<TriggerVar ID="950" Type="PlacementRule" Name="" IsNull="false">cpgn_scn12_tacticalMissile.xml</TriggerVar>
+				<TriggerVar ID="951" Type="Bool" Name="LOSCenterOnlyVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="959" Type="Float" Name="CostMultiplierVar1" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="1" Name="Verify Externals and Setup User" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="84" Y="113" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="68" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">42</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">928</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">929</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">930</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">931</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">932</Output>
+							</Condition>
+							<Condition ID="65" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Power" SigID="2" Optional="false">42</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="195" Type="InputUILocation" DBID="84" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">1</Input>
+							<Input Name="ProtoObject" SigID="3" Optional="true">947</Input>
+							<Input Name="CheckObstruction" SigID="4" Optional="true">948</Input>
+							<Input Name="LOSType" SigID="5" Optional="true">949</Input>
+							<Input Name="PlacementRule" SigID="6" Optional="true">950</Input>
+							<Input Name="LOSCenterOnly" SigID="7" Optional="true">951</Input>
+							<Output Name="UILocation" SigID="2" Optional="false">9</Output>
+						</Effect>
+						<Effect ID="32" Type="SetUIPowerRadius" DBID="79" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">1</Input>
+							<Input Name="Power" SigID="2" Optional="false">42</Input>
+						</Effect>
+						<Effect ID="179" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+							<Input Name="ProtoPowerID" SigID="1" Optional="false">905</Input>
+							<Input Name="OnOff" SigID="2" Optional="false">906</Input>
+							<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="50" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="28" Name="Can Still Use Power?  Fire!" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="950" Y="109" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="28" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Power" SigID="2" Optional="false">42</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="198" Type="PowerChargeUseOf" DBID="77" Version="5" CommentOut="false">
+							<Input Name="Owner" SigID="1" Optional="false">1</Input>
+							<Input Name="Power" SigID="2" Optional="false">42</Input>
+							<Input Name="Squad" SigID="4" Optional="true">941</Input>
+							<Input Name="Target" SigID="5" Optional="true">942</Input>
+							<Input Name="CostMultiplier" SigID="6" Optional="true">959</Input>
+						</Effect>
+						<Effect ID="181" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+							<Input Name="ProtoPowerID" SigID="1" Optional="false">909</Input>
+							<Input Name="OnOff" SigID="2" Optional="false">910</Input>
+							<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+						</Effect>
+						<Effect ID="183" Type="LocationAdjust" DBID="59" Version="2" CommentOut="false">
+							<Input Name="SourceLoc" SigID="1" Optional="false">14</Input>
+							<Input Name="AdjustX" SigID="2" Optional="true">913</Input>
+							<Input Name="AdjustY" SigID="4" Optional="true">914</Input>
+							<Input Name="AdjustZ" SigID="5" Optional="true">915</Input>
+							<Input Name="AdjustVector" SigID="6" Optional="true">916</Input>
+							<Output Name="ResultLoc" SigID="3" Optional="false">107</Output>
+						</Effect>
+						<Effect ID="185" Type="LaunchProjectile" DBID="57" Version="2" CommentOut="false">
+							<Input Name="ProjectileOwner" SigID="1" Optional="false">1</Input>
+							<Input Name="ProjectileProto" SigID="2" Optional="false">920</Input>
+							<Input Name="StartLoc" SigID="3" Optional="false">107</Input>
+							<Input Name="TargetLoc" SigID="4" Optional="true">14</Input>
+							<Input Name="TargetUnit" SigID="5" Optional="true">923</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="192" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">943</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="90" Name="Disable Power Overlay" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="963" Y="575" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="189" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+							<Input Name="ProtoPowerID" SigID="1" Optional="false">936</Input>
+							<Input Name="OnOff" SigID="2" Optional="false">937</Input>
+							<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+						</Effect>
+						<Effect ID="190" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

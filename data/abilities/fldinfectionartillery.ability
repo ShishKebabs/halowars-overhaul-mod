@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FldInfectionArtillery.ability" Type="Ability" NextTriggerVarID="163" NextTriggerID="13" NextConditionID="72" NextEffectID="241" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+		<TriggerVar ID="142" Type="Player" Name="FloodPlayer" IsNull="false" />
+		<TriggerVar ID="143" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="144" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="145" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="146" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+		<TriggerVar ID="147" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="148" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="151" Type="Vector" Name="FacingVar1" IsNull="true" />
+		<TriggerVar ID="153" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+		<TriggerVar ID="154" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+		<TriggerVar ID="155" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+		<TriggerVar ID="156" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="157" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+		<TriggerVar ID="158" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+		<TriggerVar ID="159" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="161" Type="ProtoSquad" Name="" IsNull="false">fld_inf_infectionForm_02</TriggerVar>
+		<TriggerVar ID="162" Type="ProtoSquad" Name="InfectionProtoSquad" IsNull="false" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Init" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="83" Y="156" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Location" SigID="1" Optional="false">47</Output>
+					</Condition>
+					<Condition ID="70" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">142</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">143</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">144</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">145</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">146</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">147</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">148</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="240" Type="CopyProtoSquad" DBID="90" Version="1" CommentOut="false">
+					<Input Name="ProtoSquadSource" SigID="1" Optional="false">161</Input>
+					<Output Name="ProtoSquadCopy" SigID="2" Optional="false">162</Output>
+				</Effect>
+				<Effect ID="238" Type="CreateSquad" DBID="36" Version="7" CommentOut="false">
+					<Input Name="ProtoSquad" SigID="1" Optional="false">162</Input>
+					<Input Name="CreateLocation" SigID="2" Optional="false">47</Input>
+					<Input Name="Facing" SigID="12" Optional="true">151</Input>
+					<Input Name="SquadOwner" SigID="3" Optional="false">142</Input>
+					<Input Name="FlyInStart" SigID="8" Optional="true">153</Input>
+					<Input Name="FlyInEnd" SigID="9" Optional="true">154</Input>
+					<Input Name="RallyPoint" SigID="10" Optional="true">155</Input>
+					<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">156</Input>
+					<Output Name="CreatedSquad" SigID="4" Optional="true">157</Output>
+					<Output Name="AddToSquadList" SigID="5" Optional="true">158</Output>
+					<Output Name="SquadListClearExisting" SigID="6" Optional="true">159</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="163" NextTriggerID="13" NextConditionID="72" NextEffectID="241" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+				<TriggerVar ID="142" Type="Player" Name="FloodPlayer" IsNull="false" />
+				<TriggerVar ID="143" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="144" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="145" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="146" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+				<TriggerVar ID="147" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="148" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="151" Type="Vector" Name="FacingVar1" IsNull="true" />
+				<TriggerVar ID="153" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+				<TriggerVar ID="154" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+				<TriggerVar ID="155" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+				<TriggerVar ID="156" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="157" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+				<TriggerVar ID="158" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+				<TriggerVar ID="159" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="161" Type="ProtoSquad" Name="" IsNull="false">fld_inf_infectionForm_02</TriggerVar>
+				<TriggerVar ID="162" Type="ProtoSquad" Name="InfectionProtoSquad" IsNull="false" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Init" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="83" Y="156" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="Location" SigID="1" Optional="false">47</Output>
+							</Condition>
+							<Condition ID="70" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">142</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">143</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">144</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">145</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">146</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">147</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">148</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="240" Type="CopyProtoSquad" DBID="90" Version="1" CommentOut="false">
+							<Input Name="ProtoSquadSource" SigID="1" Optional="false">161</Input>
+							<Output Name="ProtoSquadCopy" SigID="2" Optional="false">162</Output>
+						</Effect>
+						<Effect ID="238" Type="CreateSquad" DBID="36" Version="7" CommentOut="false">
+							<Input Name="ProtoSquad" SigID="1" Optional="false">162</Input>
+							<Input Name="CreateLocation" SigID="2" Optional="false">47</Input>
+							<Input Name="Facing" SigID="12" Optional="true">151</Input>
+							<Input Name="SquadOwner" SigID="3" Optional="false">142</Input>
+							<Input Name="FlyInStart" SigID="8" Optional="true">153</Input>
+							<Input Name="FlyInEnd" SigID="9" Optional="true">154</Input>
+							<Input Name="RallyPoint" SigID="10" Optional="true">155</Input>
+							<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">156</Input>
+							<Output Name="CreatedSquad" SigID="4" Optional="true">157</Output>
+							<Output Name="AddToSquadList" SigID="5" Optional="true">158</Output>
+							<Output Name="SquadListClearExisting" SigID="6" Optional="true">159</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

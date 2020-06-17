@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="scoutlos.ability" Type="Ability" NextTriggerVarID="246" NextTriggerID="37" NextConditionID="30" NextEffectID="87" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="ScoutUnit" IsNull="false" />
+		<TriggerVar ID="111" Type="Squad" Name="SquadVar5" IsNull="true" />
+		<TriggerVar ID="112" Type="Time" Name="IdleTime" IsNull="false" />
+		<TriggerVar ID="137" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+		<TriggerVar ID="138" Type="Time" Name="StartAbilityTime" IsNull="false" />
+		<TriggerVar ID="139" Type="Time" Name="" IsNull="false">10000</TriggerVar>
+		<TriggerVar ID="140" Type="Time" Name="FinishAbilityTime" IsNull="false" />
+		<TriggerVar ID="141" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="142" Type="Float" Name="StartLOSPercent" IsNull="false" />
+		<TriggerVar ID="143" Type="Float" Name="" IsNull="false">1.5</TriggerVar>
+		<TriggerVar ID="144" Type="Float" Name="EndLOSPercent" IsNull="false" />
+		<TriggerVar ID="163" Type="Float" Name="LerpPercent" IsNull="false" />
+		<TriggerVar ID="167" Type="Float" Name="LOSScalar" IsNull="false" />
+		<TriggerVar ID="185" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="190" Type="Trigger" Name="TriggerVar10" IsNull="false">26</TriggerVar>
+		<TriggerVar ID="192" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+		<TriggerVar ID="193" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+		<TriggerVar ID="194" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+		<TriggerVar ID="198" Type="Time" Name="" IsNull="false">200</TriggerVar>
+		<TriggerVar ID="199" Type="Time" Name="RefreshTime" IsNull="false" />
+		<TriggerVar ID="201" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="203" Type="Trigger" Name="TriggerVar1" IsNull="false">28</TriggerVar>
+		<TriggerVar ID="205" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="207" Type="Trigger" Name="TriggerVar3" IsNull="false">26</TriggerVar>
+		<TriggerVar ID="210" Type="MathOperator" Name="" IsNull="false">Subtract</TriggerVar>
+		<TriggerVar ID="212" Type="Time" Name="TimeUntilRecheck" IsNull="false" />
+		<TriggerVar ID="214" Type="Trigger" Name="TriggerVar5" IsNull="false">25</TriggerVar>
+		<TriggerVar ID="215" Type="Trigger" Name="TriggerVar6" IsNull="false">26</TriggerVar>
+		<TriggerVar ID="217" Type="Trigger" Name="TriggerVar4" IsNull="false">29</TriggerVar>
+		<TriggerVar ID="225" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+		<TriggerVar ID="226" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+		<TriggerVar ID="227" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="228" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="230" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="231" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="233" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+		<TriggerVar ID="234" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="235" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+		<TriggerVar ID="236" Type="DataScalar" Name="" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="238" Type="Bool" Name="AdjustVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="240" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+		<TriggerVar ID="241" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="242" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+		<TriggerVar ID="243" Type="DataScalar" Name="" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="245" Type="Bool" Name="AdjustVar2" IsNull="true">False</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="37" Y="371" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="29" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">225</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">226</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">227</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">228</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">230</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">231</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="47" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+					<Input Name="TimeSource" SigID="1" Optional="false">137</Input>
+					<Output Name="TimeCopy" SigID="2" Optional="false">138</Output>
+				</Effect>
+				<Effect ID="48" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+					<Input Name="TimeSource" SigID="1" Optional="false">139</Input>
+					<Output Name="TimeCopy" SigID="2" Optional="false">140</Output>
+				</Effect>
+				<Effect ID="49" Type="CopyPercent" DBID="100" Version="1" CommentOut="false">
+					<Input Name="PercentSource" SigID="1" Optional="false">141</Input>
+					<Output Name="PercentCopy" SigID="2" Optional="false">142</Output>
+				</Effect>
+				<Effect ID="50" Type="CopyPercent" DBID="100" Version="1" CommentOut="false">
+					<Input Name="PercentSource" SigID="1" Optional="false">143</Input>
+					<Output Name="PercentCopy" SigID="2" Optional="false">144</Output>
+				</Effect>
+				<Effect ID="69" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+					<Input Name="TimeSource" SigID="1" Optional="false">198</Input>
+					<Output Name="TimeCopy" SigID="2" Optional="false">199</Output>
+				</Effect>
+				<Effect ID="77" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">215</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="25" Name="newTrigger25" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="588" Y="41" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="17" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">185</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">199</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="64" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">190</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="26" Name="newTrigger26" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="502" Y="285" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="19" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">192</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">193</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">194</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="37" Type="GetIdleDuration" DBID="243" Version="1" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">111</Input>
+					<Output Name="IdleTime" SigID="3" Optional="false">112</Output>
+				</Effect>
+				<Effect ID="70" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">203</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="65" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="28" Name="newTrigger28" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="884" Y="284" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="21" Type="CompareTime" DBID="170" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstTime" SigID="1" Optional="false">112</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">201</Input>
+						<Input Name="SecondTime" SigID="3" Optional="false">138</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="57" Type="CalculatePercentTime" DBID="186" Version="2" CommentOut="false">
+					<Input Name="TestTime" SigID="1" Optional="false">112</Input>
+					<Input Name="StartTime" SigID="4" Optional="true">138</Input>
+					<Input Name="ControlTime" SigID="2" Optional="false">140</Input>
+					<Output Name="ResultPercentage" SigID="3" Optional="false">163</Output>
+				</Effect>
+				<Effect ID="58" Type="LerpPercent" DBID="262" Version="1" CommentOut="false">
+					<Input Name="Percent1" SigID="1" Optional="false">142</Input>
+					<Input Name="Percent2" SigID="2" Optional="false">144</Input>
+					<Input Name="LerpPercent" SigID="3" Optional="false">163</Input>
+					<Output Name="Result" SigID="4" Optional="false">167</Output>
+				</Effect>
+				<Effect ID="76" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">214</Input>
+				</Effect>
+				<Effect ID="85" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">233</Input>
+					<Input Name="Squad" SigID="3" Optional="true">234</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">235</Input>
+					<Input Name="DataScalar" SigID="8" Optional="false">236</Input>
+					<Input Name="Percent" SigID="6" Optional="false">167</Input>
+					<Input Name="Adjust" SigID="7" Optional="true">238</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="86" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">240</Input>
+					<Input Name="Squad" SigID="3" Optional="true">241</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">242</Input>
+					<Input Name="DataScalar" SigID="8" Optional="false">243</Input>
+					<Input Name="Percent" SigID="6" Optional="false">142</Input>
+					<Input Name="Adjust" SigID="7" Optional="true">245</Input>
+				</Effect>
+				<Effect ID="74" Type="MathTime" DBID="263" Version="1" CommentOut="false">
+					<Input Name="FirstTime" SigID="1" Optional="false">138</Input>
+					<Input Name="MathOperator" SigID="2" Optional="false">210</Input>
+					<Input Name="SecondTime" SigID="3" Optional="false">112</Input>
+					<Output Name="ResultTime" SigID="4" Optional="false">212</Output>
+				</Effect>
+				<Effect ID="79" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">217</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="29" Name="newTrigger29" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1252" Y="950" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="22" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">205</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">212</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="72" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">207</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="246" NextTriggerID="37" NextConditionID="30" NextEffectID="87" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="3" Type="Unit" Name="ScoutUnit" IsNull="false" />
+				<TriggerVar ID="111" Type="Squad" Name="SquadVar5" IsNull="true" />
+				<TriggerVar ID="112" Type="Time" Name="IdleTime" IsNull="false" />
+				<TriggerVar ID="137" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+				<TriggerVar ID="138" Type="Time" Name="StartAbilityTime" IsNull="false" />
+				<TriggerVar ID="139" Type="Time" Name="" IsNull="false">10000</TriggerVar>
+				<TriggerVar ID="140" Type="Time" Name="FinishAbilityTime" IsNull="false" />
+				<TriggerVar ID="141" Type="Float" Name="" IsNull="false">_100%_,_1_</TriggerVar>
+				<TriggerVar ID="142" Type="Float" Name="StartLOSPercent" IsNull="false" />
+				<TriggerVar ID="143" Type="Float" Name="" IsNull="false">1.5</TriggerVar>
+				<TriggerVar ID="144" Type="Float" Name="EndLOSPercent" IsNull="false" />
+				<TriggerVar ID="163" Type="Float" Name="LerpPercent" IsNull="false" />
+				<TriggerVar ID="167" Type="Float" Name="LOSScalar" IsNull="false" />
+				<TriggerVar ID="169" Type="UnitList" Name="UnitListVar4" IsNull="true" />
+				<TriggerVar ID="185" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="190" Type="Trigger" Name="TriggerVar10" IsNull="false">26</TriggerVar>
+				<TriggerVar ID="192" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+				<TriggerVar ID="193" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+				<TriggerVar ID="194" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+				<TriggerVar ID="198" Type="Time" Name="" IsNull="false">200</TriggerVar>
+				<TriggerVar ID="199" Type="Time" Name="RefreshTime" IsNull="false" />
+				<TriggerVar ID="201" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="203" Type="Trigger" Name="TriggerVar1" IsNull="false">28</TriggerVar>
+				<TriggerVar ID="205" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="207" Type="Trigger" Name="TriggerVar3" IsNull="false">26</TriggerVar>
+				<TriggerVar ID="210" Type="MathOperator" Name="" IsNull="false">Subtract</TriggerVar>
+				<TriggerVar ID="212" Type="Time" Name="TimeUntilRecheck" IsNull="false" />
+				<TriggerVar ID="214" Type="Trigger" Name="TriggerVar5" IsNull="false">25</TriggerVar>
+				<TriggerVar ID="215" Type="Trigger" Name="TriggerVar6" IsNull="false">26</TriggerVar>
+				<TriggerVar ID="217" Type="Trigger" Name="TriggerVar4" IsNull="false">29</TriggerVar>
+				<TriggerVar ID="220" Type="UnitList" Name="UnitListVar1" IsNull="true" />
+				<TriggerVar ID="225" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+				<TriggerVar ID="226" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+				<TriggerVar ID="227" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="228" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="230" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="231" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="233" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+				<TriggerVar ID="234" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="235" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+				<TriggerVar ID="236" Type="DataScalar" Name="" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="238" Type="Bool" Name="AdjustVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="240" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+				<TriggerVar ID="241" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="242" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+				<TriggerVar ID="243" Type="DataScalar" Name="" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="245" Type="Bool" Name="AdjustVar2" IsNull="true">False</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="37" Y="371" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="29" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">225</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">226</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">227</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">228</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">230</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">231</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="47" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+							<Input Name="TimeSource" SigID="1" Optional="false">137</Input>
+							<Output Name="TimeCopy" SigID="2" Optional="false">138</Output>
+						</Effect>
+						<Effect ID="48" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+							<Input Name="TimeSource" SigID="1" Optional="false">139</Input>
+							<Output Name="TimeCopy" SigID="2" Optional="false">140</Output>
+						</Effect>
+						<Effect ID="49" Type="CopyPercent" DBID="100" Version="1" CommentOut="false">
+							<Input Name="PercentSource" SigID="1" Optional="false">141</Input>
+							<Output Name="PercentCopy" SigID="2" Optional="false">142</Output>
+						</Effect>
+						<Effect ID="50" Type="CopyPercent" DBID="100" Version="1" CommentOut="false">
+							<Input Name="PercentSource" SigID="1" Optional="false">143</Input>
+							<Output Name="PercentCopy" SigID="2" Optional="false">144</Output>
+						</Effect>
+						<Effect ID="69" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+							<Input Name="TimeSource" SigID="1" Optional="false">198</Input>
+							<Output Name="TimeCopy" SigID="2" Optional="false">199</Output>
+						</Effect>
+						<Effect ID="77" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">215</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="25" Name="newTrigger25" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="588" Y="41" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="17" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">185</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">199</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="64" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">190</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="26" Name="newTrigger26" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="502" Y="285" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="19" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">192</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">193</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">194</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="37" Type="GetIdleDuration" DBID="243" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">111</Input>
+							<Output Name="IdleTime" SigID="3" Optional="false">112</Output>
+						</Effect>
+						<Effect ID="70" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">203</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="65" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="28" Name="newTrigger28" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="884" Y="284" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="21" Type="CompareTime" DBID="170" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstTime" SigID="1" Optional="false">112</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">201</Input>
+								<Input Name="SecondTime" SigID="3" Optional="false">138</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="57" Type="CalculatePercentTime" DBID="186" Version="2" CommentOut="false">
+							<Input Name="TestTime" SigID="1" Optional="false">112</Input>
+							<Input Name="StartTime" SigID="4" Optional="true">138</Input>
+							<Input Name="ControlTime" SigID="2" Optional="false">140</Input>
+							<Output Name="ResultPercentage" SigID="3" Optional="false">163</Output>
+						</Effect>
+						<Effect ID="58" Type="LerpPercent" DBID="262" Version="1" CommentOut="false">
+							<Input Name="Percent1" SigID="1" Optional="false">142</Input>
+							<Input Name="Percent2" SigID="2" Optional="false">144</Input>
+							<Input Name="LerpPercent" SigID="3" Optional="false">163</Input>
+							<Output Name="Result" SigID="4" Optional="false">167</Output>
+						</Effect>
+						<Effect ID="76" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">214</Input>
+						</Effect>
+						<Effect ID="85" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">233</Input>
+							<Input Name="Squad" SigID="3" Optional="true">234</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">235</Input>
+							<Input Name="DataScalar" SigID="8" Optional="false">236</Input>
+							<Input Name="Percent" SigID="6" Optional="false">167</Input>
+							<Input Name="Adjust" SigID="7" Optional="true">238</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="86" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">240</Input>
+							<Input Name="Squad" SigID="3" Optional="true">241</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">242</Input>
+							<Input Name="DataScalar" SigID="8" Optional="false">243</Input>
+							<Input Name="Percent" SigID="6" Optional="false">142</Input>
+							<Input Name="Adjust" SigID="7" Optional="true">245</Input>
+						</Effect>
+						<Effect ID="74" Type="MathTime" DBID="263" Version="1" CommentOut="false">
+							<Input Name="FirstTime" SigID="1" Optional="false">138</Input>
+							<Input Name="MathOperator" SigID="2" Optional="false">210</Input>
+							<Input Name="SecondTime" SigID="3" Optional="false">112</Input>
+							<Output Name="ResultTime" SigID="4" Optional="false">212</Output>
+						</Effect>
+						<Effect ID="79" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">217</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="29" Name="newTrigger29" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1252" Y="950" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="22" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">205</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">212</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="72" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">207</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

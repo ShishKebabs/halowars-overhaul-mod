@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>DetonateTrigger</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>5760</DamagePerSecond>
+		<UseDPSasDPA />
+		<WeaponType>Explosive</WeaponType>
+		<Projectile>fx_proj_missile_01</Projectile>
+		<MaxRange>2</MaxRange>
+		<AOERadius>8</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<DamageRatingOverride type="Unarmored">0.017</DamageRatingOverride>
+		<DamageRatingOverride type="Vehicle">0.017</DamageRatingOverride>
+		<DamageRatingOverride type="Air">0</DamageRatingOverride>
+		<DamageRatingOverride type="Building">0.017</DamageRatingOverride>
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>300</PhysicsForceMin>
+		<PhysicsForceMax>600</PhysicsForceMax>
+		<MaxRange>20</MaxRange>
+	</Weapon>
+	<Action>
+		<Name>Detonate</Name>
+		<ActionType>Detonate</ActionType>
+		<Weapon>DetonateTrigger</Weapon>
+		<DetonateWhenInRange>true</DetonateWhenInRange>
+	</Action>
+	<Tactic>
+		<PersistentAction>Detonate</PersistentAction>
+	</Tactic>
+</TacticData>

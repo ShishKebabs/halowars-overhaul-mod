@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<RenderPasses>
+	<SetRenderTargets group="Distortion">
+		<Target name="DistortionTarget" />
+		<Target name="DepthTarget0" />
+	</SetRenderTargets>
+	<Clear group="Distortion">
+		<Flags flags="Color" />
+	</Clear>
+	<SetViewport group="Distortion">
+		<Coords x="0" y="0" relativeWidth="1" relativeHeight="1" />
+		<Depth minZ="0" maxZ="1" />
+	</SetViewport>
+	<Draw group="Distortion">
+		<Type type="Distortion" />
+	</Draw>
+</RenderPasses>

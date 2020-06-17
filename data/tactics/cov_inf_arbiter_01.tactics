@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>DualSword</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>240</DamagePerSecond>
+		<WeaponType>leaderPower</WeaponType>
+		<MaxRange>3</MaxRange>
+		<Hardpoint>Torso</Hardpoint>
+		<AOERadius>4</AOERadius>
+		<AOEPrimaryTargetFactor>0.25</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.75</AOEDistanceFactor>
+		<AOEDamageFactor>0.75</AOEDamageFactor>
+		<TargetPriority type="Infantry">25</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>RageDualSword</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>750</DamagePerSecond>
+		<WeaponType>leaderPower</WeaponType>
+		<MaxRange>3</MaxRange>
+		<Hardpoint>Torso</Hardpoint>
+		<AOERadius>6</AOERadius>
+		<AOEPrimaryTargetFactor>0.25</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.75</AOEDistanceFactor>
+		<AOEDamageFactor>0.75</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>400</PhysicsForceMin>
+		<PhysicsForceMax>800</PhysicsForceMax>
+		<TargetPriority type="Infantry">25</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+		<ImpactCameraShake duration="0.1" strength="0.25" />
+		<ImpactRumble leftRumbleType="Fixed" leftStrength="0.5" rightRumbleType="Fixed" rightStrength="0.5" duration="0.25" />
+		<CameraRubleShakeScalarNotLocal>0.6</CameraRubleShakeScalarNotLocal>
+	</Weapon>
+	<Action>
+		<Name>DualSwordAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>DualSwordAttack</Anim>
+		<Weapon>DualSword</Weapon>
+		<MainAttack />
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_marine_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_marine_02</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_flamemarine_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_odst_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_medic_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_odstmedic_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">creep_rebel_infantry_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterMarine_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">creep_rebel_Sniper_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterElite_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_eliteLeader_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterElite_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_eliteCommando_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterBrute_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_brute_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterBrute_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_bruteLeader_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterBruteChief_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_bruteChief_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterBruteChief_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_bruteChief_02</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterBruteChief_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_bruteChief_03</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterArbiter_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_arbiter_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterArbiter_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_arbiter_02</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterJackal_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_jackal_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterJackal_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cov_inf_jackalShield_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterJackal_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">creep_inf_jackal_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterJackal_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">creep_inf_needlerJackal_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterJackal_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">creep_inf_sniperJackal_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_spartan_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_spartan_02</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">unsc_inf_spartan_03</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cpgn_inf_spartanMG_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cpgn_inf_spartanRocket_01</Fatality>
+		<Fatality attacker="Fatality_ArbiterMarine_01" target="Fatality_ArbiterSpartan_01" cooldown="0" orientationOffset="180" lastUnitOnly="true">cpgn_inf_spartanSniper_01</Fatality>
+	</Action>
+	<Action>
+		<Name>RageBoardingAttacks</Name>
+		<ActionType>Rage</ActionType>
+		<WorkRange>25</WorkRange>
+		<Fatality attacker="RageBansheeAttack" offsetTolerance="100" orientationOffset="360" toBoneRelative="true">cov_air_banshee_01</Fatality>
+		<Fatality attacker="RageVampireAttack" offsetTolerance="100" orientationOffset="360" toBoneRelative="true">cov_air_vampire_01</Fatality>
+		<Fatality attacker="RageHawkAttack" offsetTolerance="100" orientationOffset="360" toBoneRelative="true">unsc_air_hawk_01</Fatality>
+		<Fatality attacker="RageHornetAttack" offsetTolerance="100" orientationOffset="360" toBoneRelative="true">unsc_air_hornet_01</Fatality>
+		<Fatality attacker="RageVultureAttack" offsetTolerance="100" orientationOffset="360" toBoneRelative="true">unsc_air_vulture_01</Fatality>
+	</Action>
+	<Action>
+		<Name>RageBoardingBansheeAttack</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageBansheeAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>RageBoardingVampireAttack</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageVampireAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>RageBoardingHawkAttack</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageHawkAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>RageBoardingHornetAttack</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageHornetAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>RageBoardingVultureAttack</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageVultureAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>RageDualSwordAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>RageAttack</Anim>
+		<Weapon>RageDualSword</Weapon>
+		<MainAttack />
+		<DoShakeOnAttackTag />
+		<SquadMode>Power</SquadMode>
+	</Action>
+	<Action>
+		<Name>FiendishReturn</Name>
+		<ActionType>ReflectDamage</ActionType>
+		<WorkRate>0.15</WorkRate>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>5</WorkRange>
+	</Action>
+	<Action>
+		<Name>GatherSupplies</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Supplies</Resource>
+		<WorkRate>15</WorkRate>
+		<WorkRange>3</WorkRange>
+		<RestrictedAutoTarget>true</RestrictedAutoTarget>
+	</Action>
+	<Action>
+		<Name>Capture</Name>
+		<ActionType>Capture</ActionType>
+		<Anim>Build</Anim>
+		<WorkRate>1</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonSpirit</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>HotDropUp</Anim>
+		<WorkRange>13</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonSpirit</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>HotDropDown</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonTeleport</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>TeleportOut</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonTeleport</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>TeleportIn</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonHotDrop</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>HotDropUp</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonHotDrop</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>HotDropDown</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>Cloak</Name>
+		<ActionType>Cloak</ActionType>
+		<NoAutoTarget />
+		<ProtoObject>fx_cloakElite</ProtoObject>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>GatherCollectables</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Collectable</Resource>
+		<WorkRate>1</WorkRate>
+		<WorkRange>3</WorkRange>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Collectable</TargetType>
+			<Action>GatherCollectables</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>RageDualSwordAttackAction</Action>
+			<SquadMode>Power</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>DualSwordAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>GarrisonSpirit</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>UngarrisonSpirit</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Resource_Supplies</TargetType>
+			<Action>GatherSupplies</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Self</Relation>
+			<TargetType>HotDropPickup</TargetType>
+			<Action>GarrisonHotDrop</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>HotDropPickup</TargetType>
+			<Action>UngarrisonHotDrop</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Relation>Self</Relation>
+			<TargetType>TeleportPickup</TargetType>
+			<Action>GarrisonTeleport</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>TeleportDropoff</TargetType>
+			<Action>UngarrisonTeleport</Action>
+		</TargetRule>
+		<PersistentSquadAction>Cloak</PersistentSquadAction>
+		<PersistentSquadAction>FiendishReturn</PersistentSquadAction>
+	</Tactic>
+</TacticData>

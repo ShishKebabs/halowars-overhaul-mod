@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CovProjBruteChief.ability" Type="Ability" NextTriggerVarID="117" NextTriggerID="10" NextConditionID="66" NextEffectID="235" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="17" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="18" Type="Time" Name="" IsNull="false">2000</TriggerVar>
+		<TriggerVar ID="19" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="20" Type="SquadList" Name="SquadsInArea" IsNull="false" />
+		<TriggerVar ID="21" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+		<TriggerVar ID="22" Type="Integer" Name="" IsNull="true">1</TriggerVar>
+		<TriggerVar ID="23" Type="EntityFilterSet" Name="EffectRemoveFilter" IsNull="false" />
+		<TriggerVar ID="24" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+		<TriggerVar ID="25" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="26" Type="Integer" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="27" Type="Bool" Name="invertFilterVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="28" Type="SquadList" Name="SquadsToRemoveDisruption" IsNull="false" />
+		<TriggerVar ID="29" Type="SquadList" Name="FailedSquadListVar1" IsNull="true" />
+		<TriggerVar ID="30" Type="Unit" Name="UnitVar1" IsNull="true" />
+		<TriggerVar ID="31" Type="UnitList" Name="UnitListVar1" IsNull="true" />
+		<TriggerVar ID="32" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="33" Type="ProtoObject" Name="" IsNull="false">fx_empEffect</TriggerVar>
+		<TriggerVar ID="34" Type="Unit" Name="UnitVar2" IsNull="true" />
+		<TriggerVar ID="35" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+		<TriggerVar ID="36" Type="Squad" Name="SquadVar3" IsNull="true" />
+		<TriggerVar ID="37" Type="DataScalar" Name="" IsNull="false">4</TriggerVar>
+		<TriggerVar ID="38" Type="Float" Name="" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="39" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="40" Type="Unit" Name="UnitVar3" IsNull="true" />
+		<TriggerVar ID="41" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+		<TriggerVar ID="42" Type="Squad" Name="SquadVar4" IsNull="true" />
+		<TriggerVar ID="43" Type="UnitFlag" Name="" IsNull="false">AttackBlocked</TriggerVar>
+		<TriggerVar ID="44" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="45" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+		<TriggerVar ID="46" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+		<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+		<TriggerVar ID="48" Type="Float" Name="" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="49" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+		<TriggerVar ID="50" Type="ObjectType" Name="" IsNull="false">Mechanical</TriggerVar>
+		<TriggerVar ID="51" Type="Integer" Name="" IsNull="true" />
+		<TriggerVar ID="52" Type="Squad" Name="SquadVar5" IsNull="true" />
+		<TriggerVar ID="53" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+		<TriggerVar ID="54" Type="Integer" Name="MaxCountVar1" IsNull="true" />
+		<TriggerVar ID="55" Type="EntityFilterSet" Name="EffectAddFilter" IsNull="false" />
+		<TriggerVar ID="56" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+		<TriggerVar ID="57" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="58" Type="Integer" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="59" Type="Bool" Name="invertFilterVar2" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="60" Type="SquadList" Name="SquadsToAddDisruption" IsNull="false" />
+		<TriggerVar ID="61" Type="SquadList" Name="FailedSquadListVar2" IsNull="true" />
+		<TriggerVar ID="62" Type="Unit" Name="ReceivingUnitVar1" IsNull="true" />
+		<TriggerVar ID="63" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+		<TriggerVar ID="64" Type="Squad" Name="ReceivingSquadVar1" IsNull="true" />
+		<TriggerVar ID="65" Type="ProtoObject" Name="" IsNull="false">fx_empEffect</TriggerVar>
+		<TriggerVar ID="66" Type="Trigger" Name="TriggerVar2" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="67" Type="Unit" Name="UnitVar4" IsNull="true" />
+		<TriggerVar ID="68" Type="UnitList" Name="UnitListVar4" IsNull="true" />
+		<TriggerVar ID="69" Type="Squad" Name="SquadVar6" IsNull="true" />
+		<TriggerVar ID="70" Type="DataScalar" Name="" IsNull="false">4</TriggerVar>
+		<TriggerVar ID="71" Type="Float" Name="" IsNull="false">0.333330005407333</TriggerVar>
+		<TriggerVar ID="72" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="73" Type="Unit" Name="UnitVar5" IsNull="true" />
+		<TriggerVar ID="74" Type="UnitList" Name="UnitListVar5" IsNull="true" />
+		<TriggerVar ID="75" Type="Squad" Name="SquadVar7" IsNull="true" />
+		<TriggerVar ID="76" Type="UnitFlag" Name="" IsNull="false">AttackBlocked</TriggerVar>
+		<TriggerVar ID="77" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="80" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+		<TriggerVar ID="81" Type="Trigger" Name="TriggerVar5" IsNull="false">4</TriggerVar>
+		<TriggerVar ID="82" Type="EntityFilterSet" Name="EnemyFilter" IsNull="false" />
+		<TriggerVar ID="91" Type="SquadList" Name="FailedSquadListVar3" IsNull="true" />
+		<TriggerVar ID="92" Type="Diplomacy" Name="" IsNull="false">Enemy</TriggerVar>
+		<TriggerVar ID="94" Type="Team" Name="CompareTeamVar1" IsNull="true" />
+		<TriggerVar ID="95" Type="Bool" Name="InvertFilterVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="97" Type="Player" Name="CurrentPlayer" IsNull="false" />
+		<TriggerVar ID="98" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="99" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="100" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="101" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+		<TriggerVar ID="102" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="103" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="109" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="56" Y="165" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Location" SigID="1" Optional="false">47</Output>
+					</Condition>
+					<Condition ID="61" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">97</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">98</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">99</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">100</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">101</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">102</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">103</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="225" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="3" Name="remove emp effect" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1373" Y="165" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="39" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">17</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">18</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="175" Type="RefCountSquadRemove" DBID="317" Version="1" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">19</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">20</Input>
+					<Input Name="RefCountType" SigID="3" Optional="false">21</Input>
+					<Output Name="MaxCount" SigID="4" Optional="true">22</Output>
+				</Effect>
+				<Effect ID="171" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">23</Output>
+				</Effect>
+				<Effect ID="172" Type="FilterAddRefCount" DBID="351" Version="1" CommentOut="false">
+					<Input Name="RefCountType" SigID="2" Optional="false">24</Input>
+					<Input Name="CompareType" SigID="3" Optional="false">25</Input>
+					<Input Name="CompareCount" SigID="4" Optional="false">26</Input>
+					<Input Name="invertFilter" SigID="5" Optional="true">27</Input>
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">23</Output>
+				</Effect>
+				<Effect ID="173" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+					<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+					<Input Name="EntityFilterSet" SigID="2" Optional="false">23</Input>
+					<Output Name="PassedSquadList" SigID="3" Optional="true">28</Output>
+					<Output Name="FailedSquadList" SigID="4" Optional="true">29</Output>
+				</Effect>
+				<Effect ID="176" Type="AttachmentRemoveType" DBID="83" Version="3" CommentOut="false">
+					<Input Name="Unit" SigID="5" Optional="true">30</Input>
+					<Input Name="UnitList" SigID="3" Optional="true">31</Input>
+					<Input Name="Squad" SigID="6" Optional="true">32</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+					<Input Name="AttachmentType" SigID="2" Optional="false">33</Input>
+				</Effect>
+				<Effect ID="217" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">34</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">35</Input>
+					<Input Name="Squad" SigID="3" Optional="true">36</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+					<Input Name="DataScalar" SigID="8" Optional="false">37</Input>
+					<Input Name="Percent" SigID="6" Optional="false">38</Input>
+					<Input Name="Adjust" SigID="7" Optional="true">39</Input>
+				</Effect>
+				<Effect ID="222" Type="UnitFlagSet" DBID="319" Version="1" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">40</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">41</Input>
+					<Input Name="Squad" SigID="3" Optional="true">42</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+					<Input Name="FlagType" SigID="5" Optional="false">43</Input>
+					<Input Name="FlagValue" SigID="6" Optional="false">44</Input>
+				</Effect>
+				<Effect ID="224" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="4" Name="Add emp effect" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="908" Y="167" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="178" Type="RefCountSquadAdd" DBID="316" Version="1" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">52</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">20</Input>
+					<Input Name="RefCountType" SigID="3" Optional="false">53</Input>
+					<Output Name="MaxCount" SigID="4" Optional="true">54</Output>
+				</Effect>
+				<Effect ID="171" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">55</Output>
+				</Effect>
+				<Effect ID="172" Type="FilterAddRefCount" DBID="351" Version="1" CommentOut="false">
+					<Input Name="RefCountType" SigID="2" Optional="false">56</Input>
+					<Input Name="CompareType" SigID="3" Optional="false">57</Input>
+					<Input Name="CompareCount" SigID="4" Optional="false">58</Input>
+					<Input Name="invertFilter" SigID="5" Optional="true">59</Input>
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">55</Output>
+				</Effect>
+				<Effect ID="173" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+					<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+					<Input Name="EntityFilterSet" SigID="2" Optional="false">55</Input>
+					<Output Name="PassedSquadList" SigID="3" Optional="true">60</Output>
+					<Output Name="FailedSquadList" SigID="4" Optional="true">61</Output>
+				</Effect>
+				<Effect ID="205" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+					<Input Name="ReceivingUnit" SigID="5" Optional="true">62</Input>
+					<Input Name="ReceivingUnitList" SigID="3" Optional="true">63</Input>
+					<Input Name="ReceivingSquad" SigID="6" Optional="true">64</Input>
+					<Input Name="ReceivingSquadList" SigID="4" Optional="true">60</Input>
+					<Input Name="AddProtoObject" SigID="2" Optional="false">65</Input>
+				</Effect>
+				<Effect ID="180" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">66</Input>
+				</Effect>
+				<Effect ID="215" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">67</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">68</Input>
+					<Input Name="Squad" SigID="3" Optional="true">69</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">60</Input>
+					<Input Name="DataScalar" SigID="8" Optional="false">70</Input>
+					<Input Name="Percent" SigID="6" Optional="false">71</Input>
+					<Input Name="Adjust" SigID="7" Optional="true">72</Input>
+				</Effect>
+				<Effect ID="221" Type="UnitFlagSet" DBID="319" Version="1" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">73</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">74</Input>
+					<Input Name="Squad" SigID="3" Optional="true">75</Input>
+					<Input Name="SquadList" SigID="4" Optional="true">60</Input>
+					<Input Name="FlagType" SigID="5" Optional="false">76</Input>
+					<Input Name="FlagValue" SigID="6" Optional="false">77</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="6" Name="newTrigger6" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="456" Y="165" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="65" Type="CanGetSquads" DBID="4" Version="6" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FilterPlayer" SigID="3" Optional="true">45</Input>
+						<Input Name="FilterPlayerList" SigID="12" Optional="true">109</Input>
+						<Input Name="FilterProtoSquad" SigID="6" Optional="true">46</Input>
+						<Input Name="FilterLocation" SigID="1" Optional="true">47</Input>
+						<Input Name="FilterDistance" SigID="2" Optional="true">48</Input>
+						<Input Name="FilterSquadList" SigID="10" Optional="true">49</Input>
+						<Input Name="FilterObjectType" SigID="11" Optional="true">50</Input>
+						<Output Name="FoundSquads" SigID="9" Optional="true">20</Output>
+						<Output Name="FoundSquadCount" SigID="7" Optional="true">51</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="227" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">82</Output>
+				</Effect>
+				<Effect ID="230" Type="FilterAddDiplomacy" DBID="379" Version="1" CommentOut="false">
+					<Input Name="Diplomacy" SigID="2" Optional="false">92</Input>
+					<Input Name="ComparePlayer" SigID="3" Optional="true">97</Input>
+					<Input Name="CompareTeam" SigID="4" Optional="true">94</Input>
+					<Input Name="InvertFilter" SigID="5" Optional="true">95</Input>
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">82</Output>
+				</Effect>
+				<Effect ID="229" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+					<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+					<Input Name="EntityFilterSet" SigID="2" Optional="false">82</Input>
+					<Output Name="PassedSquadList" SigID="3" Optional="true">20</Output>
+					<Output Name="FailedSquadList" SigID="4" Optional="true">91</Output>
+				</Effect>
+				<Effect ID="226" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">81</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="223" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="117" NextTriggerID="10" NextConditionID="66" NextEffectID="235" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="17" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="18" Type="Time" Name="" IsNull="false">2000</TriggerVar>
+				<TriggerVar ID="19" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="20" Type="SquadList" Name="SquadsInArea" IsNull="false" />
+				<TriggerVar ID="21" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+				<TriggerVar ID="22" Type="Integer" Name="" IsNull="true">1</TriggerVar>
+				<TriggerVar ID="23" Type="EntityFilterSet" Name="EffectRemoveFilter" IsNull="false" />
+				<TriggerVar ID="24" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+				<TriggerVar ID="25" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="26" Type="Integer" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="27" Type="Bool" Name="invertFilterVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="28" Type="SquadList" Name="SquadsToRemoveDisruption" IsNull="false" />
+				<TriggerVar ID="29" Type="SquadList" Name="FailedSquadListVar1" IsNull="true" />
+				<TriggerVar ID="30" Type="Unit" Name="UnitVar1" IsNull="true" />
+				<TriggerVar ID="31" Type="UnitList" Name="UnitListVar1" IsNull="true" />
+				<TriggerVar ID="32" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="33" Type="ProtoObject" Name="" IsNull="false">fx_empEffect</TriggerVar>
+				<TriggerVar ID="34" Type="Unit" Name="UnitVar2" IsNull="true" />
+				<TriggerVar ID="35" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+				<TriggerVar ID="36" Type="Squad" Name="SquadVar3" IsNull="true" />
+				<TriggerVar ID="37" Type="DataScalar" Name="" IsNull="false">4</TriggerVar>
+				<TriggerVar ID="38" Type="Float" Name="" IsNull="false">_300%_,_3_</TriggerVar>
+				<TriggerVar ID="39" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="40" Type="Unit" Name="UnitVar3" IsNull="true" />
+				<TriggerVar ID="41" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+				<TriggerVar ID="42" Type="Squad" Name="SquadVar4" IsNull="true" />
+				<TriggerVar ID="43" Type="UnitFlag" Name="" IsNull="false">AttackBlocked</TriggerVar>
+				<TriggerVar ID="44" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="45" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+				<TriggerVar ID="46" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+				<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+				<TriggerVar ID="48" Type="Float" Name="" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="49" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+				<TriggerVar ID="50" Type="ObjectType" Name="" IsNull="false">Mechanical</TriggerVar>
+				<TriggerVar ID="51" Type="Integer" Name="" IsNull="true" />
+				<TriggerVar ID="52" Type="Squad" Name="SquadVar5" IsNull="true" />
+				<TriggerVar ID="53" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+				<TriggerVar ID="54" Type="Integer" Name="MaxCountVar1" IsNull="true" />
+				<TriggerVar ID="55" Type="EntityFilterSet" Name="EffectAddFilter" IsNull="false" />
+				<TriggerVar ID="56" Type="RefCountType" Name="" IsNull="false">Disruption</TriggerVar>
+				<TriggerVar ID="57" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="58" Type="Integer" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="59" Type="Bool" Name="invertFilterVar2" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="60" Type="SquadList" Name="SquadsToAddDisruption" IsNull="false" />
+				<TriggerVar ID="61" Type="SquadList" Name="FailedSquadListVar2" IsNull="true" />
+				<TriggerVar ID="62" Type="Unit" Name="ReceivingUnitVar1" IsNull="true" />
+				<TriggerVar ID="63" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+				<TriggerVar ID="64" Type="Squad" Name="ReceivingSquadVar1" IsNull="true" />
+				<TriggerVar ID="65" Type="ProtoObject" Name="" IsNull="false">fx_empEffect</TriggerVar>
+				<TriggerVar ID="66" Type="Trigger" Name="TriggerVar2" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="67" Type="Unit" Name="UnitVar4" IsNull="true" />
+				<TriggerVar ID="68" Type="UnitList" Name="UnitListVar4" IsNull="true" />
+				<TriggerVar ID="69" Type="Squad" Name="SquadVar6" IsNull="true" />
+				<TriggerVar ID="70" Type="DataScalar" Name="" IsNull="false">4</TriggerVar>
+				<TriggerVar ID="71" Type="Float" Name="" IsNull="false">_33.3330001831055%_,_0.333330005407333_</TriggerVar>
+				<TriggerVar ID="72" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="73" Type="Unit" Name="UnitVar5" IsNull="true" />
+				<TriggerVar ID="74" Type="UnitList" Name="UnitListVar5" IsNull="true" />
+				<TriggerVar ID="75" Type="Squad" Name="SquadVar7" IsNull="true" />
+				<TriggerVar ID="76" Type="UnitFlag" Name="" IsNull="false">AttackBlocked</TriggerVar>
+				<TriggerVar ID="77" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="80" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+				<TriggerVar ID="81" Type="Trigger" Name="TriggerVar5" IsNull="false">4</TriggerVar>
+				<TriggerVar ID="82" Type="EntityFilterSet" Name="EnemyFilter" IsNull="false" />
+				<TriggerVar ID="91" Type="SquadList" Name="FailedSquadListVar3" IsNull="true" />
+				<TriggerVar ID="92" Type="Diplomacy" Name="" IsNull="false">Enemy</TriggerVar>
+				<TriggerVar ID="94" Type="Team" Name="CompareTeamVar1" IsNull="true" />
+				<TriggerVar ID="95" Type="Bool" Name="InvertFilterVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="97" Type="Player" Name="CurrentPlayer" IsNull="false" />
+				<TriggerVar ID="98" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="99" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="100" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="101" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+				<TriggerVar ID="102" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="103" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="108" Type="Player" Name="FilterPlayerVar2" IsNull="true" />
+				<TriggerVar ID="109" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="110" Type="ProtoSquad" Name="FilterProtoSquadVar2" IsNull="true" />
+				<TriggerVar ID="111" Type="Vector" Name="FilterLocationVar1" IsNull="true" />
+				<TriggerVar ID="112" Type="Float" Name="FilterDistanceVar1" IsNull="true" />
+				<TriggerVar ID="113" Type="SquadList" Name="FilterSquadListVar2" IsNull="true" />
+				<TriggerVar ID="114" Type="ObjectType" Name="FilterObjectTypeVar1" IsNull="true" />
+				<TriggerVar ID="115" Type="SquadList" Name="FoundSquadsVar1" IsNull="true" />
+				<TriggerVar ID="116" Type="Integer" Name="FoundSquadCountVar1" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="56" Y="165" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="Location" SigID="1" Optional="false">47</Output>
+							</Condition>
+							<Condition ID="61" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">97</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">98</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">99</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">100</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">101</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">102</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">103</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="225" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="3" Name="remove emp effect" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1373" Y="165" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="39" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">17</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">18</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="175" Type="RefCountSquadRemove" DBID="317" Version="1" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">19</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">20</Input>
+							<Input Name="RefCountType" SigID="3" Optional="false">21</Input>
+							<Output Name="MaxCount" SigID="4" Optional="true">22</Output>
+						</Effect>
+						<Effect ID="171" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">23</Output>
+						</Effect>
+						<Effect ID="172" Type="FilterAddRefCount" DBID="351" Version="1" CommentOut="false">
+							<Input Name="RefCountType" SigID="2" Optional="false">24</Input>
+							<Input Name="CompareType" SigID="3" Optional="false">25</Input>
+							<Input Name="CompareCount" SigID="4" Optional="false">26</Input>
+							<Input Name="invertFilter" SigID="5" Optional="true">27</Input>
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">23</Output>
+						</Effect>
+						<Effect ID="173" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+							<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+							<Input Name="EntityFilterSet" SigID="2" Optional="false">23</Input>
+							<Output Name="PassedSquadList" SigID="3" Optional="true">28</Output>
+							<Output Name="FailedSquadList" SigID="4" Optional="true">29</Output>
+						</Effect>
+						<Effect ID="176" Type="AttachmentRemoveType" DBID="83" Version="3" CommentOut="false">
+							<Input Name="Unit" SigID="5" Optional="true">30</Input>
+							<Input Name="UnitList" SigID="3" Optional="true">31</Input>
+							<Input Name="Squad" SigID="6" Optional="true">32</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+							<Input Name="AttachmentType" SigID="2" Optional="false">33</Input>
+						</Effect>
+						<Effect ID="217" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">34</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">35</Input>
+							<Input Name="Squad" SigID="3" Optional="true">36</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+							<Input Name="DataScalar" SigID="8" Optional="false">37</Input>
+							<Input Name="Percent" SigID="6" Optional="false">38</Input>
+							<Input Name="Adjust" SigID="7" Optional="true">39</Input>
+						</Effect>
+						<Effect ID="222" Type="UnitFlagSet" DBID="319" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">40</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">41</Input>
+							<Input Name="Squad" SigID="3" Optional="true">42</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">28</Input>
+							<Input Name="FlagType" SigID="5" Optional="false">43</Input>
+							<Input Name="FlagValue" SigID="6" Optional="false">44</Input>
+						</Effect>
+						<Effect ID="224" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="4" Name="Add emp effect" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="908" Y="167" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="178" Type="RefCountSquadAdd" DBID="316" Version="1" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">52</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">20</Input>
+							<Input Name="RefCountType" SigID="3" Optional="false">53</Input>
+							<Output Name="MaxCount" SigID="4" Optional="true">54</Output>
+						</Effect>
+						<Effect ID="171" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">55</Output>
+						</Effect>
+						<Effect ID="172" Type="FilterAddRefCount" DBID="351" Version="1" CommentOut="false">
+							<Input Name="RefCountType" SigID="2" Optional="false">56</Input>
+							<Input Name="CompareType" SigID="3" Optional="false">57</Input>
+							<Input Name="CompareCount" SigID="4" Optional="false">58</Input>
+							<Input Name="invertFilter" SigID="5" Optional="true">59</Input>
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">55</Output>
+						</Effect>
+						<Effect ID="173" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+							<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+							<Input Name="EntityFilterSet" SigID="2" Optional="false">55</Input>
+							<Output Name="PassedSquadList" SigID="3" Optional="true">60</Output>
+							<Output Name="FailedSquadList" SigID="4" Optional="true">61</Output>
+						</Effect>
+						<Effect ID="205" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+							<Input Name="ReceivingUnit" SigID="5" Optional="true">62</Input>
+							<Input Name="ReceivingUnitList" SigID="3" Optional="true">63</Input>
+							<Input Name="ReceivingSquad" SigID="6" Optional="true">64</Input>
+							<Input Name="ReceivingSquadList" SigID="4" Optional="true">60</Input>
+							<Input Name="AddProtoObject" SigID="2" Optional="false">65</Input>
+						</Effect>
+						<Effect ID="180" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">66</Input>
+						</Effect>
+						<Effect ID="215" Type="ModifyDataScalar" DBID="413" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">67</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">68</Input>
+							<Input Name="Squad" SigID="3" Optional="true">69</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">60</Input>
+							<Input Name="DataScalar" SigID="8" Optional="false">70</Input>
+							<Input Name="Percent" SigID="6" Optional="false">71</Input>
+							<Input Name="Adjust" SigID="7" Optional="true">72</Input>
+						</Effect>
+						<Effect ID="221" Type="UnitFlagSet" DBID="319" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">73</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">74</Input>
+							<Input Name="Squad" SigID="3" Optional="true">75</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">60</Input>
+							<Input Name="FlagType" SigID="5" Optional="false">76</Input>
+							<Input Name="FlagValue" SigID="6" Optional="false">77</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="6" Name="newTrigger6" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="456" Y="165" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="65" Type="CanGetSquads" DBID="4" Version="6" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FilterPlayer" SigID="3" Optional="true">45</Input>
+								<Input Name="FilterPlayerList" SigID="12" Optional="true">109</Input>
+								<Input Name="FilterProtoSquad" SigID="6" Optional="true">46</Input>
+								<Input Name="FilterLocation" SigID="1" Optional="true">47</Input>
+								<Input Name="FilterDistance" SigID="2" Optional="true">48</Input>
+								<Input Name="FilterSquadList" SigID="10" Optional="true">49</Input>
+								<Input Name="FilterObjectType" SigID="11" Optional="true">50</Input>
+								<Output Name="FoundSquads" SigID="9" Optional="true">20</Output>
+								<Output Name="FoundSquadCount" SigID="7" Optional="true">51</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="227" Type="FilterClear" DBID="341" Version="1" CommentOut="false">
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">82</Output>
+						</Effect>
+						<Effect ID="230" Type="FilterAddDiplomacy" DBID="379" Version="1" CommentOut="false">
+							<Input Name="Diplomacy" SigID="2" Optional="false">92</Input>
+							<Input Name="ComparePlayer" SigID="3" Optional="true">97</Input>
+							<Input Name="CompareTeam" SigID="4" Optional="true">94</Input>
+							<Input Name="InvertFilter" SigID="5" Optional="true">95</Input>
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">82</Output>
+						</Effect>
+						<Effect ID="229" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+							<Input Name="SourceSquadList" SigID="1" Optional="false">20</Input>
+							<Input Name="EntityFilterSet" SigID="2" Optional="false">82</Input>
+							<Output Name="PassedSquadList" SigID="3" Optional="true">20</Output>
+							<Output Name="FailedSquadList" SigID="4" Optional="true">91</Output>
+						</Effect>
+						<Effect ID="226" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">81</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="223" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

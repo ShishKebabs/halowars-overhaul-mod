@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Cannon</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>600</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_cannon_01</Projectile>
+		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>200</MaxRange>
+		<MinRange>40</MinRange>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">8</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="Aircraft">8</TargetPriority>
+		<TargetPriority type="Turretbuilding">3</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Action>
+		<Name>CannonAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>CannonAttack</Anim>
+		<Weapon>Cannon</Weapon>
+		<MainAttack />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>Flying</TargetType>
+			<Action>CannonAttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

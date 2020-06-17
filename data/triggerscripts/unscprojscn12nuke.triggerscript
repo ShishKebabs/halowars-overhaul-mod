@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="UnscProjScn12Nuke.triggerscript" Type="TriggerScript" NextTriggerVarID="156" NextTriggerID="13" NextConditionID="72" NextEffectID="239" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+		<TriggerVar ID="80" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+		<TriggerVar ID="122" Type="ObjectList" Name="" IsNull="true" />
+		<TriggerVar ID="124" Type="Unit" Name="KillUnitVar1" IsNull="true" />
+		<TriggerVar ID="125" Type="UnitList" Name="KillUnitListVar1" IsNull="true" />
+		<TriggerVar ID="126" Type="Squad" Name="KillSquadVar1" IsNull="true" />
+		<TriggerVar ID="128" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="131" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+		<TriggerVar ID="132" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+		<TriggerVar ID="133" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+		<TriggerVar ID="135" Type="Float" Name="" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="136" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+		<TriggerVar ID="137" Type="ObjectType" Name="" IsNull="false">CpgnScn12Armor</TriggerVar>
+		<TriggerVar ID="138" Type="SquadList" Name="FoundSquads" IsNull="false" />
+		<TriggerVar ID="139" Type="Integer" Name="FoundSquadCountVar1" IsNull="true" />
+		<TriggerVar ID="148" Type="Vector" Name="FilterBoxForwardVar1" IsNull="true" />
+		<TriggerVar ID="149" Type="Float" Name="FilterBoxHalfXVar1" IsNull="true" />
+		<TriggerVar ID="150" Type="Float" Name="FilterBoxHalfYVar1" IsNull="true" />
+		<TriggerVar ID="151" Type="Float" Name="FilterBoxHalfZVar1" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Init" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="56" Y="165" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Location" SigID="1" Optional="false">47</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="225" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="6" Name="If armor plate found, destroy it." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="444" Y="138" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="71" Type="CanGetSquads" DBID="4" Version="8" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FilterPlayer" SigID="3" Optional="true">131</Input>
+						<Input Name="FilterPlayerList" SigID="12" Optional="true">132</Input>
+						<Input Name="FilterProtoSquad" SigID="6" Optional="true">133</Input>
+						<Input Name="FilterLocation" SigID="1" Optional="true">47</Input>
+						<Input Name="FilterRadius" SigID="2" Optional="true">135</Input>
+						<Input Name="FilterBoxForward" SigID="15" Optional="true">148</Input>
+						<Input Name="FilterBoxHalfX" SigID="16" Optional="true">149</Input>
+						<Input Name="FilterBoxHalfY" SigID="17" Optional="true">150</Input>
+						<Input Name="FilterBoxHalfZ" SigID="18" Optional="true">151</Input>
+						<Input Name="FilterSquadList" SigID="10" Optional="true">136</Input>
+						<Input Name="FilterObjectType" SigID="11" Optional="true">137</Input>
+						<Output Name="FoundSquads" SigID="9" Optional="true">138</Output>
+						<Output Name="FoundSquadCount" SigID="7" Optional="true">139</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="234" Type="Kill" DBID="37" Version="4" CommentOut="false">
+					<Input Name="KillUnit" SigID="3" Optional="true">124</Input>
+					<Input Name="KillUnitList" SigID="4" Optional="true">125</Input>
+					<Input Name="KillSquad" SigID="5" Optional="true">126</Input>
+					<Input Name="KillSquadList" SigID="6" Optional="true">138</Input>
+					<Input Name="Object" SigID="7" Optional="true">128</Input>
+					<Input Name="ObjectList" SigID="8" Optional="true">122</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="223" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="156" NextTriggerID="13" NextConditionID="72" NextEffectID="239" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+				<TriggerVar ID="80" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+				<TriggerVar ID="122" Type="ObjectList" Name="" IsNull="true" />
+				<TriggerVar ID="124" Type="Unit" Name="KillUnitVar1" IsNull="true" />
+				<TriggerVar ID="125" Type="UnitList" Name="KillUnitListVar1" IsNull="true" />
+				<TriggerVar ID="126" Type="Squad" Name="KillSquadVar1" IsNull="true" />
+				<TriggerVar ID="128" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="131" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+				<TriggerVar ID="132" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="133" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+				<TriggerVar ID="135" Type="Float" Name="" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="136" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+				<TriggerVar ID="137" Type="ObjectType" Name="" IsNull="false">CpgnScn12Armor</TriggerVar>
+				<TriggerVar ID="138" Type="SquadList" Name="FoundSquads" IsNull="false" />
+				<TriggerVar ID="139" Type="Integer" Name="FoundSquadCountVar1" IsNull="true" />
+				<TriggerVar ID="148" Type="Vector" Name="FilterBoxForwardVar1" IsNull="true" />
+				<TriggerVar ID="149" Type="Float" Name="FilterBoxHalfXVar1" IsNull="true" />
+				<TriggerVar ID="150" Type="Float" Name="FilterBoxHalfYVar1" IsNull="true" />
+				<TriggerVar ID="151" Type="Float" Name="FilterBoxHalfZVar1" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Init" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="56" Y="165" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="Location" SigID="1" Optional="false">47</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="225" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="6" Name="If armor plate found, destroy it." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="444" Y="138" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="71" Type="CanGetSquads" DBID="4" Version="8" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FilterPlayer" SigID="3" Optional="true">131</Input>
+								<Input Name="FilterPlayerList" SigID="12" Optional="true">132</Input>
+								<Input Name="FilterProtoSquad" SigID="6" Optional="true">133</Input>
+								<Input Name="FilterLocation" SigID="1" Optional="true">47</Input>
+								<Input Name="FilterRadius" SigID="2" Optional="true">135</Input>
+								<Input Name="FilterBoxForward" SigID="15" Optional="true">148</Input>
+								<Input Name="FilterBoxHalfX" SigID="16" Optional="true">149</Input>
+								<Input Name="FilterBoxHalfY" SigID="17" Optional="true">150</Input>
+								<Input Name="FilterBoxHalfZ" SigID="18" Optional="true">151</Input>
+								<Input Name="FilterSquadList" SigID="10" Optional="true">136</Input>
+								<Input Name="FilterObjectType" SigID="11" Optional="true">137</Input>
+								<Output Name="FoundSquads" SigID="9" Optional="true">138</Output>
+								<Output Name="FoundSquadCount" SigID="7" Optional="true">139</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="234" Type="Kill" DBID="37" Version="4" CommentOut="false">
+							<Input Name="KillUnit" SigID="3" Optional="true">124</Input>
+							<Input Name="KillUnitList" SigID="4" Optional="true">125</Input>
+							<Input Name="KillSquad" SigID="5" Optional="true">126</Input>
+							<Input Name="KillSquadList" SigID="6" Optional="true">138</Input>
+							<Input Name="Object" SigID="7" Optional="true">128</Input>
+							<Input Name="ObjectList" SigID="8" Optional="true">122</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="223" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

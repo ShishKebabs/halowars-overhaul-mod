@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>FlameMortar</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>25.5</DamagePerSecond>
+		<DOTrate>8</DOTrate>
+		<DOTduration>10</DOTduration>
+		<DOTEffect small="fx_flameThrowerSm_01" medium="fx_flameThrowerMed_01" large="fx_flameThrowerLg_01">fx_flameThrower_01</DOTEffect>
+		<WeaponType>Fire</WeaponType>
+		<Projectile>fx_proj_flameMortar_01</Projectile>
+		<ImpactEffect size="Medium">unsc_flamemortar_01</ImpactEffect>
+		<MaxVelocityLead>15</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<AOERadius>8</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.75</AOEDistanceFactor>
+		<AOEDamageFactor>0.75</AOEDamageFactor>
+		<Hardpoint>AddOnTurret</Hardpoint>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<UseGroupRange />
+		<TargetsFootOfUnit />
+	</Weapon>
+	<Weapon>
+		<Name>LightCannon1</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_lightCannon_01</Projectile>
+		<ImpactEffect size="Small">unsc_rifle_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="Aircraft">5</TargetPriority>
+		<TargetPriority type="Turretbuilding">3</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Weapon>
+		<Name>LightCannon2</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_lightCannon_01</Projectile>
+		<ImpactEffect size="Small">unsc_rifle_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="Aircraft">5</TargetPriority>
+		<TargetPriority type="Turretbuilding">3</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Weapon>
+		<Name>LightCannon3</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>187</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_lightCannon_01</Projectile>
+		<ImpactEffect size="Small">unsc_rifle_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>75</MaxRange>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="Aircraft">5</TargetPriority>
+		<TargetPriority type="Turretbuilding">3</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Action>
+		<Name>FlameMortarAttackAction</Name>
+		<ActionType>SlaveTurretAttack</ActionType>
+		<Anim>AddOnAttack</Anim>
+		<Weapon>FlameMortar</Weapon>
+	</Action>
+	<Action>
+		<Name>LightCannon1AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MachinegunAttack</Anim>
+		<Weapon>LightCannon1</Weapon>
+		<SlaveAttackAction>FlameMortarAttackAction</SlaveAttackAction>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>LightCannon2AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MachinegunAttack2</Anim>
+		<Weapon>LightCannon2</Weapon>
+		<SlaveAttackAction>FlameMortarAttackAction</SlaveAttackAction>
+		<MainAttack />
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>LightCannon3AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MachinegunAttack3</Anim>
+		<Weapon>LightCannon3</Weapon>
+		<SlaveAttackAction>FlameMortarAttackAction</SlaveAttackAction>
+		<MainAttack />
+		<StartDisabled />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LightCannon1AttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LightCannon2AttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LightCannon3AttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

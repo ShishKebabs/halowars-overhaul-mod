@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>RocketLauncher</Name>
+		<AttackRate>6</AttackRate>
+		<DamagePerSecond>70.15</DamagePerSecond>
+		<WeaponType>Missile</WeaponType>
+		<Projectile>fx_proj_missile_01</Projectile>
+		<ImpactEffect size="Medium">unsc_rocket_01</ImpactEffect>
+		<MaxVelocityLead>5</MaxVelocityLead>
+		<MaxRange>35</MaxRange>
+		<Hardpoint>RocketTurret</Hardpoint>
+		<AOERadius>5</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.25</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>200</PhysicsForceMin>
+		<PhysicsForceMax>400</PhysicsForceMax>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">10</TargetPriority>
+		<TargetPriority type="TurretBuilding">5</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<Dodgeable />
+		<Deflectable />
+	</Weapon>
+	<Weapon>
+		<Name>Machinegun</Name>
+		<AttackRate>0.125</AttackRate>
+		<DamagePerSecond>70.15</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_rotaryMG_01</Projectile>
+		<ImpactEffect size="small">unsc_rotarymg_01</ImpactEffect>
+		<MaxVelocityLead>15</MaxVelocityLead>
+		<MaxRange>40</MaxRange>
+		<Hardpoint>MGTurret</Hardpoint>
+		<Accuracy>0.1</Accuracy>
+		<MaxDeviation>4</MaxDeviation>
+		<MovingAccuracy>0.05</MovingAccuracy>
+		<MovingMaxDeviation>6</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<TargetPriority type="Aircraft">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">10</TargetPriority>
+		<TargetPriority type="TurretBuilding">5</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>LeftWingman</Name>
+		<DamagePerSecond>17.5</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_rocket_01</Projectile>
+		<ImpactEffect size="Medium">unsc_rocket_01</ImpactEffect>
+		<MaxVelocityLead>4</MaxVelocityLead>
+		<MaxRange>40</MaxRange>
+		<Hardpoint>LeftWingmanTurret</Hardpoint>
+		<Accuracy>1</Accuracy>
+		<AOERadius>4</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.25</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>15</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>75</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>900</PhysicsForceMin>
+		<PhysicsForceMax>1100</PhysicsForceMax>
+	</Weapon>
+	<Weapon>
+		<Name>RightWingMan</Name>
+		<DamagePerSecond>17.5</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_rocket_01</Projectile>
+		<ImpactEffect size="Medium">unsc_rocket_01</ImpactEffect>
+		<MaxVelocityLead>4</MaxVelocityLead>
+		<MaxRange>40</MaxRange>
+		<Hardpoint>RightWingmanTurret</Hardpoint>
+		<Accuracy>1</Accuracy>
+		<AOERadius>4</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.25</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>15</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>75</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>900</PhysicsForceMin>
+		<PhysicsForceMax>1100</PhysicsForceMax>
+	</Weapon>
+	<Weapon>
+		<Name>ChaffWeapon</Name>
+		<AttackRate>6</AttackRate>
+		<DamagePerSecond>70.15</DamagePerSecond>
+		<WeaponType>Missile</WeaponType>
+		<Projectile>fx_proj_flare_01</Projectile>
+		<Hardpoint>ChaffTurret</Hardpoint>
+		<MaxVelocityLead>5</MaxVelocityLead>
+		<MaxRange>35</MaxRange>
+		<Accuracy>0.1</Accuracy>
+		<MaxDeviation>4</MaxDeviation>
+	</Weapon>
+	<Action>
+		<Name>RocketLauncherAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>RocketAttack</Anim>
+		<Weapon>RocketLauncher</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>MachinegunAttackAction</Name>
+		<ActionType>SecondaryTurretAttack</ActionType>
+		<PersistentActionType>SecondaryTurretAttack</PersistentActionType>
+		<Anim>MachinegunAttack</Anim>
+		<Weapon>Machinegun</Weapon>
+	</Action>
+	<Action>
+		<Name>LeftWingmanAttackAction</Name>
+		<ActionType>SecondaryTurretAttack</ActionType>
+		<Anim>RocketAttackLeft</Anim>
+		<Weapon>LeftWingman</Weapon>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>RightWingmanAttackAction</Name>
+		<ActionType>SecondaryTurretAttack</ActionType>
+		<Anim>RocketAttackRight</Anim>
+		<Weapon>RightWingMan</Weapon>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>AvoidCollisionAir</Name>
+		<ActionType>AvoidCollisionAir</ActionType>
+		<HoverAltitudeOffset>0</HoverAltitudeOffset>
+		<MaxTgtDepressionAngle>60</MaxTgtDepressionAngle>
+		<MaxPitch>20.0f</MaxPitch>
+		<MaxRoll>35.0f</MaxRoll>
+	</Action>
+	<Action>
+		<Name>Chaff</Name>
+		<ActionType>PointBlankAttack</ActionType>
+		<Anim>Evade</Anim>
+		<Weapon>ChaffWeapon</Weapon>
+		<MainAttack />
+		<DontCheckOrientTolerance />
+		<DontLoopAttackAnim />
+		<DodgeChanceMin>0.5</DodgeChanceMin>
+		<DodgeChanceMax>0.5</DodgeChanceMax>
+		<DodgeCooldown>4</DodgeCooldown>
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>GarrisonTeleport</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>TeleportOut</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonTeleport</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>TeleportIn</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GatherCollectables</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Collectable</Resource>
+		<WorkRate>1</WorkRate>
+		<WorkRange>3</WorkRange>
+	</Action>
+	<Tactic>
+		<PersistentAction>LeftWingmanAttackAction</PersistentAction>
+		<PersistentAction>RightWingmanAttackAction</PersistentAction>
+		<PersistentAction>AvoidCollisionAir</PersistentAction>
+		<PersistentAction>Chaff</PersistentAction>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Collectable</TargetType>
+			<Action>GatherCollectables</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>RocketLauncherAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>MachinegunAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LeftWingmanAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>RightWingmanAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Relation>Self</Relation>
+			<TargetType>TeleportPickup</TargetType>
+			<Action>GarrisonTeleport</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>TeleportDropoff</TargetType>
+			<Action>UngarrisonTeleport</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<RenderPasses>
+	<SetRenderTargets group="LowResAlpha">
+		<Target name="QuarterResColour" />
+		<Target name="QuarterResDepth" />
+	</SetRenderTargets>
+	<SetViewport group="LowResAlpha">
+		<Coords x="0" y="0" relativeWidth="0.5" relativeHeight="0.5" />
+		<Depth minZ="0" maxZ="1" />
+	</SetViewport>
+	<Draw group="LowResAlpha">
+		<Type type="LowResAlpha" />
+	</Draw>
+	<SetRenderTargets group="LowResAlpha">
+		<Target name="ColourTarget0" />
+	</SetRenderTargets>
+	<SetViewport group="LowResAlpha">
+		<Coords x="0" y="0" relativeWidth="1" relativeHeight="1" />
+		<Depth minZ="0" maxZ="1" />
+	</SetViewport>
+	<SetTexture group="LowResAlpha">
+		<Target name="QuarterResColour" />
+		<Shader type="Pixel" />
+		<Index index="0" />
+	</SetTexture>
+	<SamplerState group="LowResAlpha">
+		<Address u="Clamp" v="Clamp" w="Clamp" />
+		<Filter min="Linear" mag="Linear" mip="Linear" />
+	</SamplerState>
+	<BlendState group="LowResAlpha">
+		<Enable blend="True" />
+		<Color operation="Add" src="One" dst="InvSrcAlpha" />
+	</BlendState>
+	<DepthStencilState group="LowResAlpha">
+		<Depth test="false" write="false" />
+	</DepthStencilState>
+	<RasterizerState group="LowResAlpha">
+		<Mode cull="CullNone" />
+	</RasterizerState>
+	<DrawFullScreen group="LowResAlpha" />
+</RenderPasses>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>Bomb</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>1</DamagePerSecond>
+		<WeaponType>Explosive</WeaponType>
+		<Projectile>fx_proj_bomb_01</Projectile>
+		<ImpactEffect size="Medium">TankShell</ImpactEffect>
+		<AllowFriendlyFire />
+		<MaxVelocityLead>12</MaxVelocityLead>
+		<MaxRange>45</MaxRange>
+		<Accuracy>0</Accuracy>
+		<MaxDeviation>6</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>6</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.5</AccuracyDeviationFactor>
+		<AOERadius>6</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.25</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>15</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>75</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>700</PhysicsForceMin>
+		<PhysicsForceMax>900</PhysicsForceMax>
+		<DamageRatingOverride type="Unarmored">1</DamageRatingOverride>
+		<DamageRatingOverride type="Vehicle">1</DamageRatingOverride>
+		<DamageRatingOverride type="Building">1</DamageRatingOverride>
+	</Weapon>
+	<Action>
+		<Name>ArtilleryAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>StrikeAttack</Anim>
+		<Weapon>Bomb</Weapon>
+		<Default>true</Default>
+		<DontLoopAttackAnim />
+	</Action>
+	<Action>
+		<Name>MoveAir</Name>
+		<ActionType>MoveAir</ActionType>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<TargetType>NonFlying</TargetType>
+			<Action>ArtilleryAttackAction</Action>
+		</TargetRule>
+		<PersistentAction>MoveAir</PersistentAction>
+	</Tactic>
+</TacticData>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>InfantryMelee</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>700</DamagePerSecond>
+		<UseDPSasDPA />
+		<WeaponType>Basic</WeaponType>
+		<MaxRange>30</MaxRange>
+		<ThrowUnits />
+		<AOERadius>3</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.25</AOEDistanceFactor>
+		<AOEDamageFactor>0.25</AOEDamageFactor>
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>500</PhysicsForceMin>
+		<PhysicsForceMax>800</PhysicsForceMax>
+		<Dodgeable />
+		<Tentacle />
+	</Weapon>
+	<Weapon>
+		<Name>VehicleMelee</Name>
+		<DamagePerSecond>700</DamagePerSecond>
+		<UseDPSasDPA />
+		<WeaponType>Basic</WeaponType>
+		<MaxRange>30</MaxRange>
+		<ThrowUnits />
+		<FlailThrownUnits />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>10</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>10</PhysicsForceMin>
+		<PhysicsForceMax>14</PhysicsForceMax>
+		<ImpactCameraShake duration="0.4" strength="0.38" />
+		<ImpactRumble leftRumbleType="RandomNoise" leftStrength="0.3" rightRumbleType="RandomNoise" rightStrength="0.3" duration="0.25" />
+		<ApplyKnockback />
+		<Tentacle />
+	</Weapon>
+	<Action>
+		<Name>Dormant</Name>
+		<ActionType>TentacleDormant</ActionType>
+		<WorkRange>50</WorkRange>
+		<WorkRate>1</WorkRate>
+		<Anim>Look</Anim>
+	</Action>
+	<Action>
+		<Name>InfantryMeleeAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>InfantryAttack</Anim>
+		<Weapon>InfantryMelee</Weapon>
+		<MainAttack />
+		<Fatality attacker="Fatality_TenticleInfantry_01" target="Spin" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_inf_marine_01</Fatality>
+		<Fatality attacker="Fatality_TenticleInfantry_01" target="Spin" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_inf_flamemarine_01</Fatality>
+		<Fatality attacker="Fatality_TenticleInfantry_01" target="Spin" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_inf_snowmarine_01</Fatality>
+		<Fatality attacker="Fatality_TenticleInfantry_01" target="Spin" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_inf_odst_01</Fatality>
+		<Fatality attacker="Fatality_TenticleInfantry_01" target="Spin" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_inf_medic_01</Fatality>
+	</Action>
+	<Action>
+		<Name>VehicleMeleeAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>VehicleAttack</Anim>
+		<Weapon>VehicleMelee</Weapon>
+		<MainAttack />
+		<Fatality attacker="Fatality_TenticleVehicle_01" target="Idle" cooldown="0" offsetTolerance="30" orientationOffset="180" noMove="true">unsc_veh_warthog_01</Fatality>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>Infantry</TargetType>
+			<Action>InfantryMeleeAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>VehicleMeleeAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

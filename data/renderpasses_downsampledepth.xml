@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<RenderPasses>
+	<SetRenderTargets group="DownsampleDepth">
+		<Target name="QuarterResColour" />
+		<Target name="QuarterResDepth" />
+	</SetRenderTargets>
+	<SetViewport group="DownsampleDepth">
+		<Coords x="0" y="0" relativeWidth="0.5" relativeHeight="0.5" />
+		<Depth minZ="0" maxZ="1" />
+	</SetViewport>
+	<DepthStencilState group="DownsampleDepth">
+		<Depth test="True" write="True" function="Always" />
+	</DepthStencilState>
+	<SetTexture group="DownsampleDepth">
+		<Target name="DepthTarget0" />
+		<Shader type="Pixel" />
+		<Index index="0" />
+	</SetTexture>
+	<SamplerState group="DownsampleDepth">
+		<Address u="Clamp" v="Clamp" w="Clamp" />
+		<Filter min="Point" mag="Point" mip="Point" />
+	</SamplerState>
+	<BlendState group="DownsampleDepth">
+		<Enable blend="False" />
+	</BlendState>
+	<RasterizerState group="DownsampleDepth">
+		<Mode cull="CullNone" />
+	</RasterizerState>
+	<Draw group="DownsampleDepth">
+		<Type type="DownsampleDepth" />
+	</Draw>
+	<UnsetTexture group="DownsampleDepth">
+		<Shader type="Pixel" />
+		<Index index="0" />
+	</UnsetTexture>
+</RenderPasses>

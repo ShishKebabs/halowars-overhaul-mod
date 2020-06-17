@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<RenderTargets>
+	<FlushESRAM />
+	<RenderTarget name="ReflectionColour" group="Reflection">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</RenderTarget>
+	<DepthBuffer name="ReflectionDepth" group="Reflection">
+		<Format format="D32F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+		<Esram group="0" slot="0" full="true" />
+	</DepthBuffer>
+	<RenderTarget name="QuarterResColour" group="Particles">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</RenderTarget>
+	<DepthBuffer name="QuarterResDepth" group="Particles">
+		<Format format="D32FS8" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</DepthBuffer>
+	<RenderTarget name="FinalTarget" group="GBuffer">
+		<Format format="R8G8B8A8" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+	</RenderTarget>
+	<RenderTarget name="ColourTargetMS0" group="GBufferMS">
+		<Format format="R11G11B10F" />
+		<Multisample multisample="Multisample_32" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+	</RenderTarget>
+	<FlushESRAM />
+	<DepthBuffer name="DepthTargetMS0" group="GBufferMS">
+		<Format format="D32FS8" />
+		<Multisample multisample="Multisample_32" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="0" slot="0" full="true" />
+	</DepthBuffer>
+	<RenderTarget name="ObscurableTarget0" group="GBufferMS">
+		<Format format="R8" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="1" slot="0" full="true" />
+	</RenderTarget>
+	<Texture name="DirShadow" group="Shadows" platform="Xbox">
+		<Format format="D32F" />
+		<Dimensions width="1536" height="1536" arraySize="3" mips="1" />
+		<Esram group="1" slot="1" full="false" />
+	</Texture>
+	<RenderTarget name="ObscurableTargetMS0" group="GBufferMS">
+		<Format format="R8" />
+		<Multisample multisample="Multisample_32" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+	</RenderTarget>
+	<FlushESRAM />
+	<RenderTarget name="ColourTarget0" group="GBuffer">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="0" slot="0" full="true" />
+	</RenderTarget>
+	<DepthBuffer name="DepthTargetResolve" group="GBuffer">
+		<Format format="D32F" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="1" slot="0" full="true" />
+	</DepthBuffer>
+	<RenderTarget name="DistortionTarget" group="Particles">
+		<Format format="R16G16F" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="1" slot="1" full="true" />
+	</RenderTarget>
+	<DepthBuffer name="DepthTarget0" group="GBuffer">
+		<Format format="D32F" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+		<Esram group="2" slot="0" full="true" />
+	</DepthBuffer>
+	<DepthBuffer name="DepthTargetNearLayer" group="GBuffer">
+		<Format format="D32F" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+	</DepthBuffer>
+	<DepthBuffer name="DepthTargetNearLayerMS" group="GBuffer" platform="Pc">
+		<Format format="D32F" />
+		<Multisample multisample="Multisample_32" />
+		<Dimensions relativeWidth="1" relativeHeight="1" />
+	</DepthBuffer>
+	<RenderTarget name="RadTarget2" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+		<Esram group="3" slot="0" full="true" />
+	</RenderTarget>
+	<RenderTarget name="RadTarget4" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.25" relativeHeight="0.25" />
+		<Esram group="4" slot="0" full="true" />
+	</RenderTarget>
+	<RenderTarget name="AveLumTarget16" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.0625" relativeHeight="0.0625" />
+	</RenderTarget>
+	<RenderTarget name="AveLumTarget64" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.015625" relativeHeight="0.015625" />
+	</RenderTarget>
+	<RenderTarget name="AveLumTarget1" group="PostProcessing">
+		<Format format="R32G32F" />
+		<Dimensions width="1" height="1" />
+	</RenderTarget>
+	<RenderTarget name="AveLum1Target1" group="PostProcessing">
+		<Format format="R32G32F" />
+		<Dimensions width="1" height="1" />
+	</RenderTarget>
+	<RenderTarget name="AveLum2Target1" group="PostProcessing">
+		<Format format="R32G32F" />
+		<Dimensions width="1" height="1" />
+	</RenderTarget>
+	<RenderTarget name="BrightMaskTarget2" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</RenderTarget>
+	<RenderTarget name="BrightMaskTarget4" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.25" relativeHeight="0.25" />
+	</RenderTarget>
+	<RenderTarget name="BloomMaskIntTarget2" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</RenderTarget>
+	<RenderTarget name="BloomMaskIntTarget4" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.25" relativeHeight="0.25" />
+	</RenderTarget>
+	<RenderTarget name="BloomMaskTarget2" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.5" relativeHeight="0.5" />
+	</RenderTarget>
+	<RenderTarget name="BloomMaskTarget4" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.25" relativeHeight="0.25" />
+	</RenderTarget>
+	<RenderTarget name="DOFBlurTarget" group="PostProcessing">
+		<Format format="R11G11B10F" />
+		<Dimensions relativeWidth="0.25" relativeHeight="0.25" />
+	</RenderTarget>
+</RenderTargets>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="test1.triggerscript" Type="TriggerScript" NextTriggerVarID="2" NextTriggerID="1" NextConditionID="0" NextEffectID="1" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Integer" Name="OriginalIntVar0" IsNull="false" />
+		<TriggerVar ID="1" Type="Integer" Name="IncrementedIntVar1" IsNull="false" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="548" Y="311" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="0" Type="IntIncrement" DBID="52" Version="1" CommentOut="false">
+					<Input Name="OriginalInt" SigID="1" Optional="false">0</Input>
+					<Output Name="IncrementedInt" SigID="2" Optional="false">1</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="2" NextTriggerID="1" NextConditionID="0" NextEffectID="1" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Integer" Name="OriginalIntVar0" IsNull="false" />
+				<TriggerVar ID="1" Type="Integer" Name="IncrementedIntVar1" IsNull="false" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="548" Y="311" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="0" Type="IntIncrement" DBID="52" Version="1" CommentOut="false">
+							<Input Name="OriginalInt" SigID="1" Optional="false">0</Input>
+							<Output Name="IncrementedInt" SigID="2" Optional="false">1</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

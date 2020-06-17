@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>TowerBeam</Name>
+		<Projectile>fx_proj_shieldwall_01</Projectile>
+		<MaxRange>10000</MaxRange>
+	</Weapon>
+	<Action>
+		<Name>Lockdown</Name>
+	</Action>
+	<Action>
+		<Name>TowerWall</Name>
+		<ActionType>TowerWall</ActionType>
+		<Weapon>TowerBeam</Weapon>
+	</Action>
+	<Tactic>
+		<PersistentAction>TowerWall</PersistentAction>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Action>Lockdown</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>UnscLockdown</Ability>
+			<Action>Lockdown</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

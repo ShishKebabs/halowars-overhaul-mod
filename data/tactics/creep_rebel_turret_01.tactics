@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>LightCannon1</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>100</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_lightCannon_01</Projectile>
+		<ImpactEffect size="Small">unsc_rifle_01</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>70</MaxRange>
+		<Accuracy>0.5</Accuracy>
+		<MaxDeviation>5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">8</TargetPriority>
+		<TargetPriority type="GroundVehicle">8</TargetPriority>
+		<TargetPriority type="Aircraft">8</TargetPriority>
+		<TargetPriority type="Turretbuilding">3</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+	</Weapon>
+	<Action>
+		<Name>LightCannon1AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MachinegunAttack</Anim>
+		<Weapon>LightCannon1</Weapon>
+		<MainAttack />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LightCannon1AttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

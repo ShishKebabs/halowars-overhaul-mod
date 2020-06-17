@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ScorpionRumbleController.triggerscript" Type="TriggerScript" NextTriggerVarID="124" NextTriggerID="13" NextConditionID="17" NextEffectID="26" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+		<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="2" Type="Squad" Name="Scorpion" IsNull="false" />
+		<TriggerVar ID="3" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="4" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+		<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="7" Type="Trigger" Name="TriggerVar1" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="8" Type="Unit" Name="TestUnitVar1" IsNull="true" />
+		<TriggerVar ID="9" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+		<TriggerVar ID="10" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+		<TriggerVar ID="11" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+		<TriggerVar ID="12" Type="Trigger" Name="TriggerVar2" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="14" Type="Unit" Name="UnitVar1" IsNull="true" />
+		<TriggerVar ID="25" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+		<TriggerVar ID="26" Type="ObjectType" Name="" IsNull="false">fx_proj_cannon_01</TriggerVar>
+		<TriggerVar ID="28" Type="Float" Name="" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="29" Type="UnitList" Name="FilterUnitListVar1" IsNull="true" />
+		<TriggerVar ID="30" Type="UnitList" Name="FoundUnitsVar1" IsNull="true" />
+		<TriggerVar ID="31" Type="Integer" Name="FoundUnitCountVar1" IsNull="true" />
+		<TriggerVar ID="32" Type="Unit" Name="UnitVar2" IsNull="true" />
+		<TriggerVar ID="34" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="35" Type="Vector" Name="ScorpionArea" IsNull="false" />
+		<TriggerVar ID="36" Type="Trigger" Name="TriggerVar3" IsNull="false">6</TriggerVar>
+		<TriggerVar ID="37" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="38" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+		<TriggerVar ID="39" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="40" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+		<TriggerVar ID="41" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="42" Type="Float" Name="" IsNull="false">0.25</TriggerVar>
+		<TriggerVar ID="43" Type="Bool" Name="LoopVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="44" Type="Integer" Name="RumbleIDVar1" IsNull="true" />
+		<TriggerVar ID="45" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="46" Type="Time" Name="" IsNull="false">250</TriggerVar>
+		<TriggerVar ID="47" Type="Trigger" Name="TriggerVar4" IsNull="false">8</TriggerVar>
+		<TriggerVar ID="48" Type="Trigger" Name="TriggerVar5" IsNull="false">7</TriggerVar>
+		<TriggerVar ID="49" Type="Trigger" Name="TriggerVar6" IsNull="false">7</TriggerVar>
+		<TriggerVar ID="50" Type="Trigger" Name="TriggerVar7" IsNull="false">8</TriggerVar>
+		<TriggerVar ID="54" Type="Trigger" Name="TriggerVar11" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="55" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="56" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+		<TriggerVar ID="57" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="58" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+		<TriggerVar ID="59" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="60" Type="Float" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="61" Type="Bool" Name="LoopVar2" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="62" Type="Integer" Name="RumbleIDVar2" IsNull="true" />
+		<TriggerVar ID="63" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="64" Type="Time" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="65" Type="Trigger" Name="TriggerVar12" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="66" Type="Trigger" Name="TriggerVar13" IsNull="false">9</TriggerVar>
+		<TriggerVar ID="67" Type="Unit" Name="UnitVar3" IsNull="true" />
+		<TriggerVar ID="69" Type="Trigger" Name="TriggerVar14" IsNull="false">4</TriggerVar>
+		<TriggerVar ID="70" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="71" Type="RumbleType" Name="" IsNull="false">IntervalBurst</TriggerVar>
+		<TriggerVar ID="72" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="73" Type="RumbleType" Name="" IsNull="false">IntervalBurst</TriggerVar>
+		<TriggerVar ID="74" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="75" Type="Float" Name="" IsNull="false">0.25</TriggerVar>
+		<TriggerVar ID="76" Type="Bool" Name="LoopVar3" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="77" Type="Integer" Name="RumbleIDVar3" IsNull="true" />
+		<TriggerVar ID="78" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="79" Type="Time" Name="" IsNull="false">2000</TriggerVar>
+		<TriggerVar ID="80" Type="Trigger" Name="TriggerVar15" IsNull="false">11</TriggerVar>
+		<TriggerVar ID="81" Type="Trigger" Name="TriggerVar16" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="84" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="86" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="95" Type="String" Name="PatternVar1" IsNull="true" />
+		<TriggerVar ID="104" Type="String" Name="PatternVar2" IsNull="true" />
+		<TriggerVar ID="108" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+		<TriggerVar ID="121" Type="String" Name="PatternVar3" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Start" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="171" Y="287" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">3</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">4</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">5</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">6</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="0" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">7</Input>
+				</Effect>
+				<Effect ID="2" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">12</Input>
+				</Effect>
+				<Effect ID="9" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">49</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="1" Name="Scorpion dead" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="171" Y="487" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="1" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">8</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">9</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">10</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">11</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="2" Name="Moving" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="589" Y="287" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="IsMoving" DBID="416" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Unit" SigID="1" Optional="true">14</Input>
+						<Input Name="Squad" SigID="2" Optional="true">2</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue />
+			<TriggerEffectsOnFalse>
+				<Effect ID="14" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">54</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="4" Name="Scorpion moving after idle" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1393" Y="679" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="14" Type="ASYNCPlayerSelectingSquad" DBID="280" Version="1" CommentOut="false" Invert="false" Async="true" AsyncParameterKey="1">
+						<Input Name="Player" SigID="1" Optional="false">86</Input>
+						<Input Name="Squad" SigID="2" Optional="false">2</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="23" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="8" Optional="false">70</Input>
+					<Input Name="LeftRumbleType" SigID="2" Optional="true">71</Input>
+					<Input Name="LeftStrength" SigID="5" Optional="true">72</Input>
+					<Input Name="RightRumbleType" SigID="9" Optional="true">73</Input>
+					<Input Name="RightStrength" SigID="11" Optional="true">74</Input>
+					<Input Name="Duration" SigID="3" Optional="true">75</Input>
+					<Input Name="Pattern" SigID="12" Optional="true">95</Input>
+					<Input Name="Loop" SigID="6" Optional="true">76</Input>
+					<Output Name="RumbleID" SigID="7" Optional="true">77</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="5" Name="Scorpion Idle" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="986" Y="365" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="13" Type="ASYNCPlayerSelectingSquad" DBID="280" Version="1" CommentOut="false" Invert="false" Async="true" AsyncParameterKey="1">
+						<Input Name="Player" SigID="1" Optional="false">84</Input>
+						<Input Name="Squad" SigID="2" Optional="false">2</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="24" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="8" Optional="false">55</Input>
+					<Input Name="LeftRumbleType" SigID="2" Optional="true">56</Input>
+					<Input Name="LeftStrength" SigID="5" Optional="true">57</Input>
+					<Input Name="RightRumbleType" SigID="9" Optional="true">58</Input>
+					<Input Name="RightStrength" SigID="11" Optional="true">59</Input>
+					<Input Name="Duration" SigID="3" Optional="true">60</Input>
+					<Input Name="Pattern" SigID="12" Optional="true">104</Input>
+					<Input Name="Loop" SigID="6" Optional="true">61</Input>
+					<Output Name="RumbleID" SigID="7" Optional="true">62</Output>
+				</Effect>
+				<Effect ID="17" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">66</Input>
+				</Effect>
+				<Effect ID="20" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="6" Name="Scorpion firing" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="166" Y="860" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="16" Type="CanGetUnits" DBID="2" Version="5" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FilterPlayer" SigID="3" Optional="true">25</Input>
+						<Input Name="FilterPlayerList" SigID="10" Optional="true">108</Input>
+						<Input Name="FilterObjectType" SigID="4" Optional="true">26</Input>
+						<Input Name="FilterLocation" SigID="1" Optional="true">35</Input>
+						<Input Name="FilterDistance" SigID="2" Optional="true">28</Input>
+						<Input Name="FilterUnitList" SigID="9" Optional="true">29</Input>
+						<Output Name="FoundUnits" SigID="8" Optional="true">30</Output>
+						<Output Name="FoundUnitCount" SigID="6" Optional="true">31</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="25" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="8" Optional="false">37</Input>
+					<Input Name="LeftRumbleType" SigID="2" Optional="true">38</Input>
+					<Input Name="LeftStrength" SigID="5" Optional="true">39</Input>
+					<Input Name="RightRumbleType" SigID="9" Optional="true">40</Input>
+					<Input Name="RightStrength" SigID="11" Optional="true">41</Input>
+					<Input Name="Duration" SigID="3" Optional="true">42</Input>
+					<Input Name="Pattern" SigID="12" Optional="true">121</Input>
+					<Input Name="Loop" SigID="6" Optional="true">43</Input>
+					<Output Name="RumbleID" SigID="7" Optional="true">44</Output>
+				</Effect>
+				<Effect ID="7" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">47</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="10" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">50</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="7" Name="Get Location" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="165" Y="729" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="4" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">32</Input>
+					<Input Name="Squad" SigID="2" Optional="true">2</Input>
+					<Input Name="Object" SigID="4" Optional="true">34</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">35</Output>
+				</Effect>
+				<Effect ID="5" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">36</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="8" Name="Wait" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="167" Y="1059" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="8" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">45</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">46</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="8" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">48</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="9" Name="Wait a beat" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="987" Y="552" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="9" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">63</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">64</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="16" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">65</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="10" Name="Check again" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="990" Y="679" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="10" Type="IsMoving" DBID="416" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Unit" SigID="1" Optional="true">67</Input>
+						<Input Name="Squad" SigID="2" Optional="true">2</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="18" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">69</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="11" Name="Wait a beat" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="805" Y="926" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="11" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">78</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">79</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="21" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">81</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="124" NextTriggerID="13" NextConditionID="17" NextEffectID="26" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+				<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="2" Type="Squad" Name="Scorpion" IsNull="false" />
+				<TriggerVar ID="3" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="4" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+				<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="7" Type="Trigger" Name="TriggerVar1" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="8" Type="Unit" Name="TestUnitVar1" IsNull="true" />
+				<TriggerVar ID="9" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+				<TriggerVar ID="10" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+				<TriggerVar ID="11" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+				<TriggerVar ID="12" Type="Trigger" Name="TriggerVar2" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="14" Type="Unit" Name="UnitVar1" IsNull="true" />
+				<TriggerVar ID="25" Type="Player" Name="FilterPlayerVar1" IsNull="true" />
+				<TriggerVar ID="26" Type="ObjectType" Name="" IsNull="false">fx_proj_cannon_01</TriggerVar>
+				<TriggerVar ID="28" Type="Float" Name="" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="29" Type="UnitList" Name="FilterUnitListVar1" IsNull="true" />
+				<TriggerVar ID="30" Type="UnitList" Name="FoundUnitsVar1" IsNull="true" />
+				<TriggerVar ID="31" Type="Integer" Name="FoundUnitCountVar1" IsNull="true" />
+				<TriggerVar ID="32" Type="Unit" Name="UnitVar2" IsNull="true" />
+				<TriggerVar ID="34" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="35" Type="Vector" Name="ScorpionArea" IsNull="false" />
+				<TriggerVar ID="36" Type="Trigger" Name="TriggerVar3" IsNull="false">6</TriggerVar>
+				<TriggerVar ID="37" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="38" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+				<TriggerVar ID="39" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="40" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+				<TriggerVar ID="41" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="42" Type="Float" Name="" IsNull="false">0.25</TriggerVar>
+				<TriggerVar ID="43" Type="Bool" Name="LoopVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="44" Type="Integer" Name="RumbleIDVar1" IsNull="true" />
+				<TriggerVar ID="45" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="46" Type="Time" Name="" IsNull="false">250</TriggerVar>
+				<TriggerVar ID="47" Type="Trigger" Name="TriggerVar4" IsNull="false">8</TriggerVar>
+				<TriggerVar ID="48" Type="Trigger" Name="TriggerVar5" IsNull="false">7</TriggerVar>
+				<TriggerVar ID="49" Type="Trigger" Name="TriggerVar6" IsNull="false">7</TriggerVar>
+				<TriggerVar ID="50" Type="Trigger" Name="TriggerVar7" IsNull="false">8</TriggerVar>
+				<TriggerVar ID="54" Type="Trigger" Name="TriggerVar11" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="55" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="56" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+				<TriggerVar ID="57" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="58" Type="RumbleType" Name="" IsNull="false">RandomNoise</TriggerVar>
+				<TriggerVar ID="59" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="60" Type="Float" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="61" Type="Bool" Name="LoopVar2" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="62" Type="Integer" Name="RumbleIDVar2" IsNull="true" />
+				<TriggerVar ID="63" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="64" Type="Time" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="65" Type="Trigger" Name="TriggerVar12" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="66" Type="Trigger" Name="TriggerVar13" IsNull="false">9</TriggerVar>
+				<TriggerVar ID="67" Type="Unit" Name="UnitVar3" IsNull="true" />
+				<TriggerVar ID="69" Type="Trigger" Name="TriggerVar14" IsNull="false">4</TriggerVar>
+				<TriggerVar ID="70" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="71" Type="RumbleType" Name="" IsNull="false">IntervalBurst</TriggerVar>
+				<TriggerVar ID="72" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="73" Type="RumbleType" Name="" IsNull="false">IntervalBurst</TriggerVar>
+				<TriggerVar ID="74" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="75" Type="Float" Name="" IsNull="false">0.25</TriggerVar>
+				<TriggerVar ID="76" Type="Bool" Name="LoopVar3" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="77" Type="Integer" Name="RumbleIDVar3" IsNull="true" />
+				<TriggerVar ID="78" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="79" Type="Time" Name="" IsNull="false">2000</TriggerVar>
+				<TriggerVar ID="80" Type="Trigger" Name="TriggerVar15" IsNull="false">11</TriggerVar>
+				<TriggerVar ID="81" Type="Trigger" Name="TriggerVar16" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="84" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="86" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="95" Type="String" Name="PatternVar1" IsNull="true" />
+				<TriggerVar ID="104" Type="String" Name="PatternVar2" IsNull="true" />
+				<TriggerVar ID="108" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="121" Type="String" Name="PatternVar3" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Start" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="171" Y="287" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">3</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">4</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">5</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">6</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="0" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">7</Input>
+						</Effect>
+						<Effect ID="2" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">12</Input>
+						</Effect>
+						<Effect ID="9" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">49</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="1" Name="Scorpion dead" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="171" Y="487" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="1" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">8</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">9</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">10</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">11</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="2" Name="Moving" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="589" Y="287" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="IsMoving" DBID="416" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Unit" SigID="1" Optional="true">14</Input>
+								<Input Name="Squad" SigID="2" Optional="true">2</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue />
+					<TriggerEffectsOnFalse>
+						<Effect ID="14" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">54</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="4" Name="Scorpion moving after idle" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1393" Y="679" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="14" Type="ASYNCPlayerSelectingSquad" DBID="280" Version="1" CommentOut="false" Invert="false" Async="true" AsyncParameterKey="1">
+								<Input Name="Player" SigID="1" Optional="false">86</Input>
+								<Input Name="Squad" SigID="2" Optional="false">2</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="23" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="8" Optional="false">70</Input>
+							<Input Name="LeftRumbleType" SigID="2" Optional="true">71</Input>
+							<Input Name="LeftStrength" SigID="5" Optional="true">72</Input>
+							<Input Name="RightRumbleType" SigID="9" Optional="true">73</Input>
+							<Input Name="RightStrength" SigID="11" Optional="true">74</Input>
+							<Input Name="Duration" SigID="3" Optional="true">75</Input>
+							<Input Name="Pattern" SigID="12" Optional="true">95</Input>
+							<Input Name="Loop" SigID="6" Optional="true">76</Input>
+							<Output Name="RumbleID" SigID="7" Optional="true">77</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="5" Name="Scorpion Idle" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="986" Y="365" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="13" Type="ASYNCPlayerSelectingSquad" DBID="280" Version="1" CommentOut="false" Invert="false" Async="true" AsyncParameterKey="1">
+								<Input Name="Player" SigID="1" Optional="false">84</Input>
+								<Input Name="Squad" SigID="2" Optional="false">2</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="24" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="8" Optional="false">55</Input>
+							<Input Name="LeftRumbleType" SigID="2" Optional="true">56</Input>
+							<Input Name="LeftStrength" SigID="5" Optional="true">57</Input>
+							<Input Name="RightRumbleType" SigID="9" Optional="true">58</Input>
+							<Input Name="RightStrength" SigID="11" Optional="true">59</Input>
+							<Input Name="Duration" SigID="3" Optional="true">60</Input>
+							<Input Name="Pattern" SigID="12" Optional="true">104</Input>
+							<Input Name="Loop" SigID="6" Optional="true">61</Input>
+							<Output Name="RumbleID" SigID="7" Optional="true">62</Output>
+						</Effect>
+						<Effect ID="17" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">66</Input>
+						</Effect>
+						<Effect ID="20" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="6" Name="Scorpion firing" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="166" Y="860" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="16" Type="CanGetUnits" DBID="2" Version="5" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FilterPlayer" SigID="3" Optional="true">25</Input>
+								<Input Name="FilterPlayerList" SigID="10" Optional="true">108</Input>
+								<Input Name="FilterObjectType" SigID="4" Optional="true">26</Input>
+								<Input Name="FilterLocation" SigID="1" Optional="true">35</Input>
+								<Input Name="FilterDistance" SigID="2" Optional="true">28</Input>
+								<Input Name="FilterUnitList" SigID="9" Optional="true">29</Input>
+								<Output Name="FoundUnits" SigID="8" Optional="true">30</Output>
+								<Output Name="FoundUnitCount" SigID="6" Optional="true">31</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="25" Type="RumbleStart" DBID="773" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="8" Optional="false">37</Input>
+							<Input Name="LeftRumbleType" SigID="2" Optional="true">38</Input>
+							<Input Name="LeftStrength" SigID="5" Optional="true">39</Input>
+							<Input Name="RightRumbleType" SigID="9" Optional="true">40</Input>
+							<Input Name="RightStrength" SigID="11" Optional="true">41</Input>
+							<Input Name="Duration" SigID="3" Optional="true">42</Input>
+							<Input Name="Pattern" SigID="12" Optional="true">121</Input>
+							<Input Name="Loop" SigID="6" Optional="true">43</Input>
+							<Output Name="RumbleID" SigID="7" Optional="true">44</Output>
+						</Effect>
+						<Effect ID="7" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">47</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="10" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">50</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="7" Name="Get Location" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="165" Y="729" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="4" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">32</Input>
+							<Input Name="Squad" SigID="2" Optional="true">2</Input>
+							<Input Name="Object" SigID="4" Optional="true">34</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">35</Output>
+						</Effect>
+						<Effect ID="5" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">36</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="8" Name="Wait" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="167" Y="1059" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="8" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">45</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">46</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="8" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">48</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="9" Name="Wait a beat" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="987" Y="552" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="9" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">63</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">64</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="16" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">65</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="10" Name="Check again" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="990" Y="679" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="10" Type="IsMoving" DBID="416" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Unit" SigID="1" Optional="true">67</Input>
+								<Input Name="Squad" SigID="2" Optional="true">2</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="18" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">69</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="11" Name="Wait a beat" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="805" Y="926" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="11" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">78</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">79</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="21" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">81</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

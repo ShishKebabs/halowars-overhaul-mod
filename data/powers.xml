@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Powers>
+	<Power name="_Repair">
+		<Attributes>
+			<AutoRecharge>1</AutoRecharge>
+			<DisplayNameID>355</DisplayNameID>
+			<RolloverTextID>356</RolloverTextID>
+			<PrereqTextID>356</PrereqTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\repair</Icon>
+			<IconLocation>6</IconLocation>
+		</Attributes>
+	</Power>
+	<Power name="_RallyPoint">
+		<Attributes>
+			<AutoRecharge>1</AutoRecharge>
+			<DisplayNameID>350</DisplayNameID>
+			<RolloverTextID>351</RolloverTextID>
+			<PrereqTextID>351</PrereqTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\rallypnt</Icon>
+			<IconLocation>4</IconLocation>
+		</Attributes>
+	</Power>
+	<Power name="UnscCivTransport">
+		<Attributes>
+			<PowerType>Transport</PowerType>
+			<InfiniteUses />
+			<Cost Supplies="200" />
+			<UIRadius>30</UIRadius>
+			<ShowTransportArrows>true</ShowTransportArrows>
+			<DisplayNameID>5010</DisplayNameID>
+			<RolloverTextID>5011</RolloverTextID>
+			<PrereqTextID>5011</PrereqTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\pelicandrp</Icon>
+			<IconLocation>6</IconLocation>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>18</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>19</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<DataLevel level="0">
+				<Data type="sound" name="HudUpSound">play_unsc_transport_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_transport_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_transport_vo_pickup</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_transport_vo_dropoff</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+				<Data type="int" name="MaxGroundVehicles">3</Data>
+				<Data type="int" name="MaxInfantryUnits">6</Data>
+				<Data type="texture" name="Base">ui\flash\shared\textures\powers\TransportBase</Data>
+				<Data type="texture" name="Mover">ui\flash\shared\textures\powers\TransportMover</Data>
+				<Data type="float" name="MinTransportDistance">45</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="CovCivTransport">
+		<Attributes>
+			<InfiniteUses />
+			<Cost Supplies="100" />
+			<UIRadius>30</UIRadius>
+			<DisplayNameID>5016</DisplayNameID>
+			<RolloverTextID>5017</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\pelicandrp</Icon>
+			<IconLocation>6</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal />
+				<CircleMenuFrameIDHighlight />
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>CovCivTransport.triggerscript</TriggerScript>
+	</Power>
+	<Power name="CovLeaderGlassing">
+		<Attributes>
+			<Cost Supplies="10" Power="0" />
+			<PowerType>Cleansing</PowerType>
+			<UIRadius>5</UIRadius>
+			<UIRadius>5</UIRadius>
+			<InfiniteUses />
+			<DisplayNameID>5040</DisplayNameID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<MinDistanceToSquad>0</MinDistanceToSquad>
+			<MaxDistanceToSquad>70</MaxDistanceToSquad>
+			<BaseDataLevel>
+				<Data type="protoobject" name="Projectile">pow_proj_cleansing_01</Data>
+				<Data type="float" name="MinBeamDistance">0</Data>
+				<Data type="float" name="MaxBeamDistance">70</Data>
+				<Data type="float" name="TickLength">0.2</Data>
+				<Data type="float" name="SuppliesPerTick">10</Data>
+				<Data type="float" name="CommandInterval">0.2</Data>
+				<Data type="float" name="MaxBeamSpeed">8</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="protoobject" name="Beam">pow_gp_cleansing_01</Data>
+				<Data type="protoobject" name="AirImpactObject">fx_cleansing_air_impact_small_01</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="protoobject" name="Beam">pow_gp_cleansing_02</Data>
+				<Data type="protoobject" name="AirImpactObject">fx_cleansing_air_impact_medium_01</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="protoobject" name="Beam">pow_gp_cleansing_02</Data>
+				<Data type="protoobject" name="AirImpactObject">fx_cleansing_air_impact_medium_01</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="protoobject" name="Beam">pow_gp_cleansing_03</Data>
+				<Data type="protoobject" name="AirImpactObject">fx_cleansing_air_impact_large_01</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="CovLeaderRage">
+		<Attributes>
+			<Cost Supplies="10" Power="0" />
+			<PowerType>Rage</PowerType>
+			<UIRadius>5</UIRadius>
+			<UIRadius>5</UIRadius>
+			<InfiniteUses />
+			<DisplayNameID>5042</DisplayNameID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<CameraEffectIn>RagePower</CameraEffectIn>
+			<CameraEffectOut>RagePowerToNormal</CameraEffectOut>
+			<MinDistanceToSquad>0</MinDistanceToSquad>
+			<MaxDistanceToSquad>63</MaxDistanceToSquad>
+			<BaseDataLevel>
+				<Data type="float" name="TickLength">0.2</Data>
+				<Data type="float" name="SuppliesPerTick">1.25</Data>
+				<Data type="float" name="SuppliesPerTickAttacking">5</Data>
+				<Data type="float" name="SuppliesPerJump">40</Data>
+				<Data type="float" name="CommandInterval">0.1</Data>
+				<Data type="float" name="TeleportTime">0.3</Data>
+				<Data type="float" name="TeleportLateralDistance">5</Data>
+				<Data type="float" name="TeleportJumpDistance">10</Data>
+				<Data type="float" name="TimeBetweenRetarget">1</Data>
+				<Data type="float" name="MotionBlurAmount">0.25</Data>
+				<Data type="float" name="MotionBlurDistance">0.3</Data>
+				<Data type="float" name="MotionBlurTime">0.35</Data>
+				<Data type="float" name="CameraZoom">60</Data>
+				<Data type="float" name="CameraHeight">1</Data>
+				<Data type="float" name="HintTime">3</Data>
+				<Data type="float" name="DistanceVsAngleWeight">0.15</Data>
+				<Data type="float" name="MovementProjectionMultiplier">4</Data>
+				<Data type="protoobject" name="Projectile">pow_gp_rage_impact</Data>
+				<Data type="protoobject" name="HandAttachObject">fx_arbiterragehands_01</Data>
+				<Data type="protoobject" name="TeleportAttachObject">fx_rage_teleport_01</Data>
+				<Data type="float" name="ScanRadius">40</Data>
+				<Data type="float" name="DamageMultiplier">1</Data>
+				<Data type="float" name="DamageTakenMultiplier">1</Data>
+				<Data type="protoobject" name="HealAttachFx">fx_rage_heal_01</Data>
+				<Data type="protoobject" name="AuraAttachFxSmall">fx_rage_aura_small_01</Data>
+				<Data type="protoobject" name="AuraAttachFxMedium">fx_rage_aura_medium_01</Data>
+				<Data type="protoobject" name="AuraAttachFxLarge">fx_rage_aura_large_01</Data>
+				<Data type="objecttype" name="AuraFilterType">Military</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="float" name="SpeedMultiplier">2</Data>
+				<Data type="float" name="NudgeMultiplier">1</Data>
+				<Data type="float" name="DamageTakenMultiplier">1.25</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="float" name="SpeedMultiplier">2</Data>
+				<Data type="float" name="HealPerKillCombatValue">150</Data>
+				<Data type="float" name="NudgeMultiplier">1.25</Data>
+				<Data type="float" name="DamageTakenMultiplier">1.5</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="float" name="SpeedMultiplier">2</Data>
+				<Data type="float" name="HealPerKillCombatValue">150</Data>
+				<Data type="float" name="SuppliesPerTick">1</Data>
+				<Data type="float" name="SuppliesPerTickAttacking">4</Data>
+				<Data type="float" name="SuppliesPerJump">30</Data>
+				<Data type="float" name="NudgeMultiplier">1.5</Data>
+				<Data type="float" name="DamageTakenMultiplier">1.75</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="float" name="SpeedMultiplier">2</Data>
+				<Data type="float" name="HealPerKillCombatValue">150</Data>
+				<Data type="float" name="SuppliesPerTick">1</Data>
+				<Data type="float" name="SuppliesPerTickAttacking">4</Data>
+				<Data type="float" name="SuppliesPerJump">30</Data>
+				<Data type="float" name="AuraRadius">60</Data>
+				<Data type="float" name="AuraDamageBonus">1.25</Data>
+				<Data type="float" name="NudgeMultiplier">1.75</Data>
+				<Data type="float" name="DamageTakenMultiplier">2</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="CovLeaderWave">
+		<Attributes>
+			<Cost Supplies="10" Power="0" />
+			<PowerType>Wave</PowerType>
+			<UIRadius>5</UIRadius>
+			<UIRadius>5</UIRadius>
+			<InfiniteUses />
+			<DisplayNameID>5044</DisplayNameID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<MinDistanceToSquad>0</MinDistanceToSquad>
+			<MaxDistanceToSquad>55</MaxDistanceToSquad>
+			<CameraEffectIn>WavePower</CameraEffectIn>
+			<CameraEffectOut>WavePowerToNormal</CameraEffectOut>
+			<BaseDataLevel>
+				<Data type="float" name="TickLength">0.2</Data>
+				<Data type="float" name="SuppliesPerTick">10</Data>
+				<Data type="float" name="CommandInterval">0.2</Data>
+				<Data type="float" name="HintTime">1</Data>
+				<Data type="float" name="MinBallDistance">0</Data>
+				<Data type="float" name="MaxBallDistance">55</Data>
+				<Data type="float" name="MaxBallHeight">25</Data>
+				<Data type="float" name="MaxBallSpeedStagnant">30</Data>
+				<Data type="float" name="MaxBallSpeedPulling">15</Data>
+				<Data type="float" name="CameraDistance">50</Data>
+				<Data type="float" name="CameraHeight">55</Data>
+				<Data type="float" name="CameraHoverPointDistance">30</Data>
+				<Data type="float" name="CameraMaxBallAngle">30</Data>
+				<Data type="float" name="ExplodeTime">1.5</Data>
+				<Data type="float" name="ExplosionForceOnDebris">15</Data>
+				<Data type="float" name="NudgeStrength">1</Data>
+				<Data type="float" name="InitialLateralPullStrength">25</Data>
+				<Data type="float" name="CapturedSpringStrength">3500</Data>
+				<Data type="float" name="CapturedSpringDampening">0.25</Data>
+				<Data type="float" name="CapturedSpringRestLength">1</Data>
+				<Data type="float" name="CapturedMinLateralSpeed">10</Data>
+				<Data type="float" name="CapturedRadialSpacing">0.1</Data>
+				<Data type="float" name="PickupObjectRate">0.25</Data>
+				<Data type="float" name="PickupShakeDuration">0.1</Data>
+				<Data type="float" name="PickupRumbleShakeStrength">0.3</Data>
+				<Data type="float" name="PickupCameraShakeStrength">0.2</Data>
+				<Data type="float" name="DebrisAngularDamping">0.8</Data>
+				<Data type="int" name="LightningPerTick">1</Data>
+				<Data type="int" name="NudgeChancePulling">100</Data>
+				<Data type="int" name="ThrowPartChancePulling">0</Data>
+				<Data type="int" name="LightningChancePulling">35</Data>
+				<Data type="protoobject" name="LightningProjectile">pow_proj_wave_lightning_01</Data>
+				<Data type="protoobject" name="LightningBeamVisual">pow_proj_wave_lightning_beam_01</Data>
+				<Data type="protoobject" name="DebrisProjectile">pow_proj_wave_debris_01</Data>
+				<Data type="protoobject" name="ExplodeProjectile">pow_proj_wave_explode_01</Data>
+				<Data type="protoobject" name="PickupAttachment">fx_pow_wave_pickup_01</Data>
+				<Data type="sound" name="ExplodeSound">play_gravity_wave_explosion</Data>
+				<Data type="float" name="HealthToCapture">0</Data>
+				<Data type="float" name="RipAttachmentChancePulling">100</Data>
+				<Data type="bool" name="ThrowUnitsOnExplosion">true</Data>
+				<Data type="float" name="MinDamageBankPercentToThrow">0.15</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="protoobject" name="BallObject">pow_gp_wave_01</Data>
+				<Data type="float" name="MaxExplosionDamageBankPerCaptured">1500</Data>
+				<Data type="float" name="ExplosionDamageBankPerTick">150</Data>
+				<Data type="int" name="MaxCapturedObjects">20</Data>
+				<Data type="float" name="MinBallHeight">4</Data>
+				<Data type="float" name="PullingRange">17</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="protoobject" name="BallObject">pow_gp_wave_02</Data>
+				<Data type="float" name="MaxExplosionDamageBankPerCaptured">2100</Data>
+				<Data type="float" name="ExplosionDamageBankPerTick">210</Data>
+				<Data type="int" name="MaxCapturedObjects">30</Data>
+				<Data type="float" name="MinBallHeight">6</Data>
+				<Data type="float" name="PullingRange">18</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="protoobject" name="BallObject">pow_gp_wave_02</Data>
+				<Data type="float" name="MaxExplosionDamageBankPerCaptured">3000</Data>
+				<Data type="float" name="ExplosionDamageBankPerTick">300</Data>
+				<Data type="int" name="MaxCapturedObjects">40</Data>
+				<Data type="float" name="MinBallHeight">6</Data>
+				<Data type="float" name="PullingRange">19</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="protoobject" name="BallObject">pow_gp_wave_03</Data>
+				<Data type="float" name="MaxExplosionDamageBankPerCaptured">4000</Data>
+				<Data type="float" name="ExplosionDamageBankPerTick">400</Data>
+				<Data type="int" name="MaxCapturedObjects">50</Data>
+				<Data type="float" name="MinBallHeight">8</Data>
+				<Data type="float" name="PullingRange">20</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderCarpetBombing">
+		<Attributes>
+			<Cost Supplies="600" Power="1" />
+			<AutoRecharge>180000</AutoRecharge>
+			<PowerType>CarpetBombing</PowerType>
+			<UIRadius>35</UIRadius>
+			<DisplayNameID>5006</DisplayNameID>
+			<RolloverTextID>5007</RolloverTextID>
+			<PrereqTextID>5007</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<BaseDataLevel>
+				<Data type="bool" name="RequiresLOS">true</Data>
+				<Data type="protoobject" name="Arrow">pow_gp_arrow</Data>
+				<Data type="protoobject" name="Projectile">pow_proj_carpetbomb</Data>
+				<Data type="protoobject" name="Impact">pow_gp_carpetbomb_impact</Data>
+				<Data type="protoobject" name="Explosion">pow_gp_carpetbomb_explosion</Data>
+				<Data type="protoobject" name="Bomber">pow_gp_shortsword_01</Data>
+				<Data type="float" name="InitialDelay">1.2</Data>
+				<Data type="float" name="FuseTime">1.5</Data>
+				<Data type="float" name="BomberFlyinDistance">210</Data>
+				<Data type="float" name="BomberFlyinHeight">90</Data>
+				<Data type="float" name="BomberBombHeight">30</Data>
+				<Data type="float" name="BomberSpeed">155</Data>
+				<Data type="float" name="NudgeMultiplier">1.5</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_carpet_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_bomb_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_carpet_vo_target</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_carpet_vo_fire</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_carpetbomb_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_carpetbomb_confirmed</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="int" name="MaxBombs">4</Data>
+				<Data type="float" name="MaxBombOffset">8</Data>
+				<Data type="float" name="BombSpacing">6</Data>
+				<Data type="float" name="LengthMultiplier">50</Data>
+				<Data type="float" name="WedgeLengthMultiplier">2</Data>
+				<Data type="float" name="WedgeMinOffset">2</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="int" name="MaxBombs">8</Data>
+				<Data type="float" name="MaxBombOffset">8</Data>
+				<Data type="float" name="BombSpacing">6</Data>
+				<Data type="float" name="LengthMultiplier">80</Data>
+				<Data type="float" name="WedgeLengthMultiplier">4</Data>
+				<Data type="float" name="WedgeMinOffset">3</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="int" name="MaxBombs">12</Data>
+				<Data type="float" name="MaxBombOffset">16</Data>
+				<Data type="float" name="BombSpacing">14</Data>
+				<Data type="float" name="LengthMultiplier">80</Data>
+				<Data type="float" name="WedgeLengthMultiplier">4</Data>
+				<Data type="float" name="WedgeMinOffset">4</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="int" name="MaxBombs">16</Data>
+				<Data type="float" name="MaxBombOffset">16</Data>
+				<Data type="float" name="BombSpacing">14</Data>
+				<Data type="float" name="LengthMultiplier">120</Data>
+				<Data type="float" name="WedgeLengthMultiplier">6</Data>
+				<Data type="float" name="WedgeMinOffset">5</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderCarpetBombingNoReactor">
+		<Attributes>
+			<Cost Supplies="600" />
+			<AutoRecharge>180000</AutoRecharge>
+			<PowerType>CarpetBombing</PowerType>
+			<UIRadius>35</UIRadius>
+			<DisplayNameID>5006</DisplayNameID>
+			<RolloverTextID>5007</RolloverTextID>
+			<PrereqTextID>5007</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<BaseDataLevel>
+				<Data type="bool" name="RequiresLOS">true</Data>
+				<Data type="protoobject" name="Arrow">pow_gp_arrow</Data>
+				<Data type="protoobject" name="Projectile">pow_proj_carpetbomb</Data>
+				<Data type="protoobject" name="Impact">pow_gp_carpetbomb_impact</Data>
+				<Data type="protoobject" name="Explosion">pow_gp_carpetbomb_explosion</Data>
+				<Data type="protoobject" name="Bomber">pow_gp_shortsword_01</Data>
+				<Data type="float" name="InitialDelay">1.2</Data>
+				<Data type="float" name="FuseTime">1.5</Data>
+				<Data type="float" name="BomberFlyinDistance">210</Data>
+				<Data type="float" name="BomberFlyinHeight">90</Data>
+				<Data type="float" name="BomberBombHeight">30</Data>
+				<Data type="float" name="BomberSpeed">155</Data>
+				<Data type="float" name="NudgeMultiplier">1.5</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_carpet_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_bomb_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_carpet_vo_target</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_carpet_vo_fire</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_carpetbomb_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_carpetbomb_confirmed</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="int" name="MaxBombs">4</Data>
+				<Data type="float" name="MaxBombOffset">8</Data>
+				<Data type="float" name="BombSpacing">6</Data>
+				<Data type="float" name="LengthMultiplier">50</Data>
+				<Data type="float" name="WedgeLengthMultiplier">2</Data>
+				<Data type="float" name="WedgeMinOffset">2</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="int" name="MaxBombs">8</Data>
+				<Data type="float" name="MaxBombOffset">8</Data>
+				<Data type="float" name="BombSpacing">6</Data>
+				<Data type="float" name="LengthMultiplier">80</Data>
+				<Data type="float" name="WedgeLengthMultiplier">4</Data>
+				<Data type="float" name="WedgeMinOffset">3</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="int" name="MaxBombs">12</Data>
+				<Data type="float" name="MaxBombOffset">16</Data>
+				<Data type="float" name="BombSpacing">14</Data>
+				<Data type="float" name="LengthMultiplier">80</Data>
+				<Data type="float" name="WedgeLengthMultiplier">4</Data>
+				<Data type="float" name="WedgeMinOffset">4</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="int" name="MaxBombs">16</Data>
+				<Data type="float" name="MaxBombOffset">16</Data>
+				<Data type="float" name="BombSpacing">14</Data>
+				<Data type="float" name="LengthMultiplier">120</Data>
+				<Data type="float" name="WedgeLengthMultiplier">6</Data>
+				<Data type="float" name="WedgeMinOffset">5</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderCryo">
+		<Attributes>
+			<Cost Supplies="600" Power="1" />
+			<AutoRecharge>180000</AutoRecharge>
+			<PowerType>Cryo</PowerType>
+			<UIRadius>35</UIRadius>
+			<DisplayNameID>5002</DisplayNameID>
+			<RolloverTextID>5003</RolloverTextID>
+			<PrereqTextID>5003</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<BaseDataLevel>
+				<Data type="protoobject" name="CryoObject">fx_cryoBomb</Data>
+				<Data type="float" name="CryoRadius">45</Data>
+				<Data type="objecttype" name="FilterType">CanCryo</Data>
+				<Data type="float" name="TickDuration">0.055</Data>
+				<Data type="float" name="EffectStartTime">2.85</Data>
+				<Data type="float" name="FreezingThawTime">5</Data>
+				<Data type="protoobject" name="Bomber">pow_gp_shortsword_01</Data>
+				<Data type="float" name="BomberBombTime">1.2</Data>
+				<Data type="float" name="BomberFlyinDistance">210</Data>
+				<Data type="float" name="BomberFlyinHeight">90</Data>
+				<Data type="float" name="BomberBombHeight">30</Data>
+				<Data type="float" name="BomberSpeed">155</Data>
+				<Data type="float" name="BomberFlyOutTime">2.2</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_cryo_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_bomb_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_cryo_vo_fire</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+				<Data type="int" name="NumTicks">16</Data>
+				<Data type="float" name="CryoAmountPerTick">40</Data>
+				<Data type="float" name="MinCryoFalloff">0.25</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="float" name="MaxKillHp">12000</Data>
+				<Data type="float" name="FrozenThawTime">9</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="float" name="MaxKillHp">24000</Data>
+				<Data type="float" name="FrozenThawTime">12</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="float" name="MaxKillHp">36000</Data>
+				<Data type="float" name="FrozenThawTime">15</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="float" name="MaxKillHp">48000</Data>
+				<Data type="float" name="FrozenThawTime">18</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderRepair">
+		<Attributes>
+			<PowerType>Repair</PowerType>
+			<Cost Supplies="350" />
+			<AutoRecharge>60000</AutoRecharge>
+			<UIRadius>35</UIRadius>
+			<DisplayNameID>5000</DisplayNameID>
+			<RolloverTextID>5001</RolloverTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<ShowTargetHighlight ObjectType="Military" Relation="Ally" />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>2</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<DataLevel level="0">
+				<Data type="protoobject" name="RepairObject">fx_repairPower</Data>
+				<Data type="protoobject" name="RepairAttachment">fx_repairing</Data>
+				<Data type="float" name="RepairRadius">35</Data>
+				<Data type="objecttype" name="FilterType">Military</Data>
+				<Data type="float" name="TickDuration">0.125</Data>
+				<Data type="int" name="NumTicks">200</Data>
+				<Data type="float" name="RepairCombatValuePerTick">0.1</Data>
+				<Data type="bool" name="SpreadAmongSquads">true</Data>
+				<Data type="float" name="CooldownTimeIfDamaged">5</Data>
+				<Data type="bool" name="AllowReinforce">true</Data>
+				<Data type="bool" name="IgnorePlacement">false</Data>
+				<Data type="bool" name="HealAny">false</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_heal_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_heal_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_heal_vo_target</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderDisruption">
+		<Attributes>
+			<PowerType>Disruption</PowerType>
+			<Cost Supplies="450" />
+			<AutoRecharge>360000</AutoRecharge>
+			<UIRadius>70</UIRadius>
+			<DisplayNameID>5008</DisplayNameID>
+			<RolloverTextID>5009</RolloverTextID>
+			<PrereqTextID>5009</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<ShowTargetHighlight ObjectType="Military" Relation="Ally" />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>1</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>150</CameraZoomMin>
+			<CameraZoomMax>150</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<DataLevel level="0">
+				<Data type="protoobject" name="DisruptionObject">fx_disruptionPower</Data>
+				<Data type="protoobject" name="PulseObject">fx_disruptionRing</Data>
+				<Data type="protoobject" name="StrikeObject">fx_disruptionLightningBeam</Data>
+				<Data type="float" name="PulseSpacing">0.25</Data>
+				<Data type="float" name="DisruptionRadius">70</Data>
+				<Data type="float" name="DisruptionTimeSec">60</Data>
+				<Data type="float" name="DisruptionStartTime">2.6</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_disruption_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_bomb_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_disruption_vo_fire</Data>
+				<Data type="sound" name="PulseSound">play_sparks_one_shot</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+				<Data type="protoobject" name="Bomber">pow_gp_shortsword_01</Data>
+				<Data type="float" name="BomberBombTime">1.2</Data>
+				<Data type="float" name="BomberFlyinDistance">210</Data>
+				<Data type="float" name="BomberFlyinHeight">90</Data>
+				<Data type="float" name="BomberBombHeight">30</Data>
+				<Data type="float" name="BomberSpeed">155</Data>
+				<Data type="float" name="BomberFlyOutTime">2.2</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscOdstDrop">
+		<Attributes>
+			<PowerType>ODST</PowerType>
+			<Cost Supplies="100" Power="3" />
+			<Pop type="Unit">1</Pop>
+			<AutoRecharge>10000</AutoRecharge>
+			<SequentialRecharge />
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5012</DisplayNameID>
+			<RolloverTextID>5013</RolloverTextID>
+			<PrereqTextID>252</PrereqTextID>
+			<TechPrereq>unsc_odst_upgrade1</TechPrereq>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>7</IconLocation>
+			<CameraZoomMin>200</CameraZoomMin>
+			<CameraZoomMax>200</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<DataLevel level="0">
+				<Data type="float" name="SquadSpawnDelay">0.75</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_odstdrop_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_odstdrop_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_odstdrop_vo_fire</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_odstdrop_vo_out</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+				<Data type="protoobject" name="Projectile">unsc_air_odstPod_01</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="UnscLeaderOrbitalBombard">
+		<Attributes>
+			<PowerType>Orbital</PowerType>
+			<Cost Supplies="600" Power="1" />
+			<AutoRecharge>180000</AutoRecharge>
+			<UIRadius>18</UIRadius>
+			<DisplayNameID>5026</DisplayNameID>
+			<RolloverTextID>5027</RolloverTextID>
+			<PrereqTextID>5027</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>200</CameraZoomMin>
+			<CameraZoomMax>200</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEffectIn>OrbitalPower</CameraEffectIn>
+			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+			<BaseDataLevel>
+				<Data type="bool" name="RequiresLOS">true</Data>
+				<Data type="protoobject" name="TargetBeam">fx_proj_maccannontargetbeam_01</Data>
+				<Data type="protoobject" name="RockSmall">pow_gp_macblast_rocks_small</Data>
+				<Data type="protoobject" name="RockMedium">pow_gp_macblast_rocks_medium</Data>
+				<Data type="protoobject" name="RockLarge">pow_gp_macblast_rocks_large</Data>
+				<Data type="float" name="TargetingDelay">1.5</Data>
+				<Data type="float" name="AutoShotDelay">0.5</Data>
+				<Data type="float" name="AutoShotInnerRadius">5</Data>
+				<Data type="float" name="AutoShotOuterRadius">20</Data>
+				<Data type="float" name="XOffset">15</Data>
+				<Data type="float" name="YOffset">35</Data>
+				<Data type="float" name="ZOffset">15</Data>
+				<Data type="float" name="CommandInterval">0.2</Data>
+				<Data type="float" name="ShotInterval">0</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_mac_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_mac_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_mac_vo_fire</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_mac_vo_out</Data>
+				<Data type="sound" name="FiredSound">play_mac_cannon_fire_from_space</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualSmall</Data>
+				<Data type="int" name="NumShots">1</Data>
+			</DataLevel>
+			<DataLevel level="1">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualMedium</Data>
+				<Data type="int" name="NumShots">2</Data>
+			</DataLevel>
+			<DataLevel level="2">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualMedium</Data>
+				<Data type="int" name="NumShots">3</Data>
+			</DataLevel>
+			<DataLevel level="3">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualLarge</Data>
+				<Data type="int" name="NumShots">4</Data>
+			</DataLevel>
+			<DataLevel level="66">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualMedium</Data>
+				<Data type="int" name="NumShots">40</Data>
+				<Data type="float" name="XOffset">0</Data>
+				<Data type="float" name="YOffset">1</Data>
+				<Data type="float" name="ZOffset">0</Data>
+				<Data type="float" name="ShotInterval">1000</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="TutorialOrbitalBombard">
+		<Attributes>
+			<PowerType>Orbital</PowerType>
+			<Cost Supplies="200" Power="1" />
+			<AutoRecharge>1000</AutoRecharge>
+			<UIRadius>18</UIRadius>
+			<DisplayNameID>5026</DisplayNameID>
+			<RolloverTextID>5027</RolloverTextID>
+			<PrereqTextID>5027</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<CameraZoomMin>200</CameraZoomMin>
+			<CameraZoomMax>200</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEnableUserScroll>true</CameraEnableUserScroll>
+			<CameraEnableUserYaw>false</CameraEnableUserYaw>
+			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEffectIn>OrbitalPower</CameraEffectIn>
+			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+			<BaseDataLevel>
+				<Data type="bool" name="RequiresLOS">true</Data>
+				<Data type="protoobject" name="TargetBeam">fx_proj_maccannontargetbeam_01</Data>
+				<Data type="protoobject" name="RockSmall">pow_gp_macblast_rocks_small</Data>
+				<Data type="protoobject" name="RockMedium">pow_gp_macblast_rocks_medium</Data>
+				<Data type="protoobject" name="RockLarge">pow_gp_macblast_rocks_large</Data>
+				<Data type="float" name="TargetingDelay">1.5</Data>
+				<Data type="float" name="AutoShotDelay">0.5</Data>
+				<Data type="float" name="AutoShotInnerRadius">5</Data>
+				<Data type="float" name="AutoShotOuterRadius">20</Data>
+				<Data type="float" name="XOffset">15</Data>
+				<Data type="float" name="YOffset">35</Data>
+				<Data type="float" name="ZOffset">15</Data>
+				<Data type="float" name="CommandInterval">0.2</Data>
+				<Data type="float" name="ShotInterval">0</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_mac_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_mac_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_mac_vo_fire</Data>
+				<Data type="sound" name="HudLastFireSound">play_unsc_mac_vo_out</Data>
+				<Data type="sound" name="FiredSound">play_mac_cannon_fire_from_space</Data>
+				<Data type="sound" name="HudStartEnvSound">hud_mac_open</Data>
+				<Data type="sound" name="HudStopEnvSound">hud_mac_close</Data>
+			</BaseDataLevel>
+			<DataLevel level="0">
+				<Data type="protoobject" name="Projectile">pow_gp_macCannonSmall</Data>
+				<Data type="protoobject" name="Effect">pow_gp_macCannonVisualSmall</Data>
+				<Data type="int" name="NumShots">1</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="CpgnOdstDrop">
+		<Attributes>
+			<Cost Supplies="100" Power="0" />
+			<AutoRecharge>20000</AutoRecharge>
+			<SequentialRecharge />
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5012</DisplayNameID>
+			<RolloverTextID>5013</RolloverTextID>
+			<PrereqTextID>252</PrereqTextID>
+			<TechPrereq>cpgn_odst_upgrade</TechPrereq>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>3</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>UnscOdstDrop.triggerscript</TriggerScript>
+	</Power>
+	<Power name="CpgnGiveUnitsToCoPlayer">
+		<Attributes>
+			<Cost Supplies="0" Power="0" />
+			<AutoRecharge>1000</AutoRecharge>
+			<UIRadius>20</UIRadius>
+			<DisplayNameID>24685</DisplayNameID>
+			<RolloverTextID>24686</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>5</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<DataLevel level="0">
+				<Data type="texture" name="Base">ui\flash\shared\textures\powers\TransportBase</Data>
+			</DataLevel>
+		</Attributes>
+		<TriggerScript>CpgnGiveUnitsToCoPlayer.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn1OrbitalBombard">
+		<Attributes>
+			<Cost Supplies="0" Power="0" />
+			<AutoRecharge>1000</AutoRecharge>
+			<UIRadius>18</UIRadius>
+			<DisplayNameID>22300</DisplayNameID>
+			<RolloverTextID>5027</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<Minigame>TwoButtonPress</Minigame>
+			<CameraZoomMin>200</CameraZoomMin>
+			<CameraZoomMax>200</CameraZoomMax>
+			<CameraPitchMin>55</CameraPitchMin>
+			<CameraPitchMax>55</CameraPitchMax>
+			<CameraEffectIn>OrbitalPower</CameraEffectIn>
+			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+		</Attributes>
+		<TriggerScript>UnscCpgn1OrbitalBombard.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn06OdstDrop">
+		<Attributes>
+			<UIRadius>5</UIRadius>
+			<DisplayNameID>5012</DisplayNameID>
+			<RolloverTextID>5013</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>0</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>UnscCpgn06OdstDrop.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn8TacticalMissile">
+		<Attributes>
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5046</DisplayNameID>
+			<RolloverTextID>5047</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<AutoRecharge>5000</AutoRecharge>
+			<UnitPower />
+			<FlashUI>
+				<CircleMenuFrameIDNormal>8</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>9</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>cpgn8TacticalMissile.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn12Missile">
+		<Attributes>
+			<Cost Supplies="0" Power="0" />
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5046</DisplayNameID>
+			<RolloverTextID>5047</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<MultiRechargePower />
+			<ShowLimit />
+			<FlashUI>
+				<CircleMenuFrameIDNormal>8</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>9</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>UnscCpgn12Missile.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn11Transport">
+		<Attributes>
+			<Cost Supplies="0" Power="0" />
+			<AutoRecharge>5000</AutoRecharge>
+			<UIRadius>15</UIRadius>
+			<DisplayNameID>5010</DisplayNameID>
+			<RolloverTextID>5011</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\pelicandrp</Icon>
+			<IconLocation>5</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>18</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>19</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>UnscCpgn11Transport.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn13SlipStream">
+		<Attributes>
+			<Cost Supplies="0" Power="0" />
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5014</DisplayNameID>
+			<RolloverTextID>5015</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>0</IconLocation>
+			<MultiRechargePower />
+			<ShowLimit />
+			<LeaderPower />
+		</Attributes>
+		<TriggerScript>UnscCpgn13SlipStream.triggerscript</TriggerScript>
+	</Power>
+	<Power name="UnscCpgn13OrbitalBombard">
+		<Attributes>
+			<TechPrereq>unsc_age4</TechPrereq>
+			<UIRadius>18</UIRadius>
+			<DisplayNameID>5026</DisplayNameID>
+			<RolloverTextID>5027</RolloverTextID>
+			<PrereqTextID>232</PrereqTextID>
+			<ShowLimit />
+			<LeaderPower />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\orbital_b</Icon>
+			<IconLocation>1</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>UnscCpgn13OrbitalBombard.triggerscript</TriggerScript>
+	</Power>
+	<Power name="HookMegaTurret">
+		<Attributes>
+			<UIRadius>10</UIRadius>
+			<DisplayNameID>5050</DisplayNameID>
+			<RolloverTextID>5051</RolloverTextID>
+			<PrereqTextID>250</PrereqTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+			<IconLocation>3</IconLocation>
+			<AutoRecharge>90000</AutoRecharge>
+			<UnitPower />
+			<ShowInPowerMenu>false</ShowInPowerMenu>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>8</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>9</CircleMenuFrameIDHighlight>
+			</FlashUI>
+		</Attributes>
+		<TriggerScript>HookMegaTurret.triggerscript</TriggerScript>
+	</Power>
+	<Power name="HookRepair">
+		<Attributes>
+			<PowerType>Repair</PowerType>
+			<AutoRecharge>60000</AutoRecharge>
+			<UIRadius>35</UIRadius>
+			<DisplayNameID>5000</DisplayNameID>
+			<RolloverTextID>5001</RolloverTextID>
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>2</IconLocation>
+			<NotDisruptable />
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<DataLevel level="0">
+				<Data type="protoobject" name="RepairObject">fx_repairPower</Data>
+				<Data type="protoobject" name="RepairAttachment">fx_repairing</Data>
+				<Data type="float" name="RepairRadius">35</Data>
+				<Data type="objecttype" name="FilterType">Military</Data>
+				<Data type="float" name="TickDuration">0.125</Data>
+				<Data type="int" name="NumTicks">200</Data>
+				<Data type="float" name="RepairCombatValuePerTick">0.1</Data>
+				<Data type="bool" name="SpreadAmongSquads">true</Data>
+				<Data type="float" name="CooldownTimeIfDamaged">5</Data>
+				<Data type="bool" name="AllowReinforce">true</Data>
+				<Data type="bool" name="IgnorePlacement">true</Data>
+				<Data type="bool" name="HealAny">true</Data>
+				<Data type="bool" name="NeverStops">true</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+	<Power name="CreepDisruption">
+		<Attributes>
+			<PowerType>Disruption</PowerType>
+			<Cost Supplies="0" />
+			<AutoRecharge>0</AutoRecharge>
+			<UIRadius>70</UIRadius>
+			<DisplayNameID>5008</DisplayNameID>
+			<RolloverTextID>5009</RolloverTextID>
+			<PrereqTextID>5009</PrereqTextID>
+			<ShowLimit />
+			<ShowTargetHighlight ObjectType="Military" Relation="Ally" />
+			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
+			<IconLocation>1</IconLocation>
+			<FlashUI>
+				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
+				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
+			</FlashUI>
+			<DataLevel level="0">
+				<Data type="protoobject" name="DisruptionObject">fx_creepDisruptionPower</Data>
+				<Data type="protoobject" name="PulseObject">fx_creepDisruptionPowerNullRing</Data>
+				<Data type="protoobject" name="StrikeObject">fx_disruptionLightningBeam</Data>
+				<Data type="float" name="PulseSpacing">120</Data>
+				<Data type="float" name="DisruptionRadius">50</Data>
+				<Data type="float" name="DisruptionTimeSec">60</Data>
+				<Data type="float" name="DisruptionStartTime">0</Data>
+				<Data type="sound" name="HudUpSound">play_unsc_disruption_vo_ready</Data>
+				<Data type="sound" name="HudAbortSound">play_unsc_bomb_vo_exit</Data>
+				<Data type="sound" name="HudFireSound">play_unsc_disruption_vo_fire</Data>
+				<Data type="sound" name="PulseSound">play_sparks_one_shot</Data>
+				<Data type="protoobject" name="Bomber">fx_creepDisruptionPowerNullBomber</Data>
+				<Data type="float" name="BomberBombTime">1.2</Data>
+				<Data type="float" name="BomberFlyinDistance">210</Data>
+				<Data type="float" name="BomberFlyinHeight">90</Data>
+				<Data type="float" name="BomberBombHeight">30</Data>
+				<Data type="float" name="BomberSpeed">155</Data>
+				<Data type="float" name="BomberFlyOutTime">2.2</Data>
+			</DataLevel>
+		</Attributes>
+	</Power>
+</Powers>

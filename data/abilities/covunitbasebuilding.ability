@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CovUnitBaseBuilding.ability" Type="Ability" NextTriggerVarID="959" NextTriggerID="110" NextConditionID="85" NextEffectID="355" External="false">
+	<TriggerGroups>
+		<Group ID="0" Name="Get closest power node or base" />
+	</TriggerGroups>
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="BuildingUnit" IsNull="false" />
+		<TriggerVar ID="241" Type="Squad" Name="SquadVar3" IsNull="true" />
+		<TriggerVar ID="242" Type="Player" Name="Player" IsNull="false" />
+		<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+		<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+		<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="697" Type="Vector" Name="TuretLoc" IsNull="false" />
+		<TriggerVar ID="700" Type="ObjectType" Name="" IsNull="false">cov_bldg_builder_01</TriggerVar>
+		<TriggerVar ID="702" Type="Float" Name="" IsNull="false">110</TriggerVar>
+		<TriggerVar ID="703" Type="UnitList" Name="FilterUnitListVar2" IsNull="true" />
+		<TriggerVar ID="705" Type="Integer" Name="FoundUnitCountVar2" IsNull="true" />
+		<TriggerVar ID="727" Type="UnitList" Name="FoundUnits" IsNull="false" />
+		<TriggerVar ID="730" Type="Trigger" Name="TriggerVar7" IsNull="false">82</TriggerVar>
+		<TriggerVar ID="741" Type="ListPosition" Name="" IsNull="false">First</TriggerVar>
+		<TriggerVar ID="742" Type="Unit" Name="Master" IsNull="false" />
+		<TriggerVar ID="743" Type="Trigger" Name="TriggerVar16" IsNull="false">83</TriggerVar>
+		<TriggerVar ID="775" Type="Vector" Name="MasterLoc" IsNull="false" />
+		<TriggerVar ID="849" Type="Vector" Name="PowerOrientation" IsNull="false" />
+		<TriggerVar ID="890" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+		<TriggerVar ID="891" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="892" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+		<TriggerVar ID="893" Type="Object" Name="ObjectVar3" IsNull="true" />
+		<TriggerVar ID="894" Type="ObjectList" Name="ObjectListVar2" IsNull="true" />
+		<TriggerVar ID="930" Type="Trigger" Name="TriggerVar2" IsNull="false">83</TriggerVar>
+		<TriggerVar ID="931" Type="Trigger" Name="TriggerVar3" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="932" Type="Trigger" Name="TriggerVar9" IsNull="false">85</TriggerVar>
+		<TriggerVar ID="934" Type="Squad" Name="SquadVar4" IsNull="true" />
+		<TriggerVar ID="936" Type="Squad" Name="BuilderSquadVar1" IsNull="true" />
+		<TriggerVar ID="937" Type="Trigger" Name="TriggerVar13" IsNull="false">101</TriggerVar>
+		<TriggerVar ID="938" Type="Trigger" Name="TriggerVar14" IsNull="false">78</TriggerVar>
+		<TriggerVar ID="939" Type="Trigger" Name="TriggerVar15" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="943" Type="Squad" Name="SquadVar5" IsNull="true" />
+		<TriggerVar ID="944" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="947" Type="Squad" Name="SquadVar6" IsNull="true" />
+		<TriggerVar ID="948" Type="Object" Name="ObjectVar2" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="109" Name="newTrigger109" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="221" Y="638" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="354" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups>
+				<GroupUI X="515" Y="254" iX="-231" iY="109" oX="1575" oY="98" Width="258" Height="54" GroupID="-1" InternalGroupID="0">
+					<Title>Get closest power node or base</Title>
+				</GroupUI>
+			</Groups>
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="959" NextTriggerID="110" NextConditionID="85" NextEffectID="355" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="3" Type="Unit" Name="BuildingUnit" IsNull="false" />
+				<TriggerVar ID="241" Type="Squad" Name="SquadVar3" IsNull="true" />
+				<TriggerVar ID="242" Type="Player" Name="Player" IsNull="false" />
+				<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+				<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+				<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="697" Type="Vector" Name="TuretLoc" IsNull="false" />
+				<TriggerVar ID="700" Type="ObjectType" Name="" IsNull="false">cov_bldg_builder_01</TriggerVar>
+				<TriggerVar ID="702" Type="Float" Name="" IsNull="false">110</TriggerVar>
+				<TriggerVar ID="703" Type="UnitList" Name="FilterUnitListVar2" IsNull="true" />
+				<TriggerVar ID="705" Type="Integer" Name="FoundUnitCountVar2" IsNull="true" />
+				<TriggerVar ID="727" Type="UnitList" Name="FoundUnits" IsNull="false" />
+				<TriggerVar ID="730" Type="Trigger" Name="TriggerVar7" IsNull="false">82</TriggerVar>
+				<TriggerVar ID="741" Type="ListPosition" Name="" IsNull="false">First</TriggerVar>
+				<TriggerVar ID="742" Type="Unit" Name="Master" IsNull="false" />
+				<TriggerVar ID="743" Type="Trigger" Name="TriggerVar16" IsNull="false">83</TriggerVar>
+				<TriggerVar ID="775" Type="Vector" Name="MasterLoc" IsNull="false" />
+				<TriggerVar ID="849" Type="Vector" Name="PowerOrientation" IsNull="false" />
+				<TriggerVar ID="890" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+				<TriggerVar ID="891" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="892" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+				<TriggerVar ID="893" Type="Object" Name="ObjectVar3" IsNull="true" />
+				<TriggerVar ID="894" Type="ObjectList" Name="ObjectListVar2" IsNull="true" />
+				<TriggerVar ID="930" Type="Trigger" Name="TriggerVar2" IsNull="false">83</TriggerVar>
+				<TriggerVar ID="931" Type="Trigger" Name="TriggerVar3" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="932" Type="Trigger" Name="TriggerVar9" IsNull="false">85</TriggerVar>
+				<TriggerVar ID="934" Type="Squad" Name="SquadVar4" IsNull="true" />
+				<TriggerVar ID="936" Type="Squad" Name="BuilderSquadVar1" IsNull="true" />
+				<TriggerVar ID="937" Type="Trigger" Name="TriggerVar13" IsNull="false">101</TriggerVar>
+				<TriggerVar ID="938" Type="Trigger" Name="TriggerVar14" IsNull="false">78</TriggerVar>
+				<TriggerVar ID="939" Type="Trigger" Name="TriggerVar15" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="943" Type="Squad" Name="SquadVar5" IsNull="true" />
+				<TriggerVar ID="944" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="947" Type="Squad" Name="SquadVar6" IsNull="true" />
+				<TriggerVar ID="948" Type="Object" Name="ObjectVar2" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Set spartan unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="true" X="118" Y="254" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="57" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">638</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">639</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">640</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">641</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">643</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">644</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="87" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">241</Input>
+							<Output Name="Owner" SigID="3" Optional="false">242</Output>
+						</Effect>
+						<Effect ID="341" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">937</Input>
+						</Effect>
+						<Effect ID="346" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">943</Input>
+							<Input Name="Object" SigID="4" Optional="true">944</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">697</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="78" Name="Search for command center" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="true" X="621" Y="312" GroupID="0">
+					<TriggerConditions>
+						<And>
+							<Condition ID="61" Type="CanGetUnits" DBID="2" Version="4" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FilterPlayer" SigID="3" Optional="true">242</Input>
+								<Input Name="FilterObjectType" SigID="4" Optional="true">700</Input>
+								<Input Name="FilterLocation" SigID="1" Optional="true">697</Input>
+								<Input Name="FilterDistance" SigID="2" Optional="true">702</Input>
+								<Input Name="FilterUnitList" SigID="9" Optional="true">703</Input>
+								<Output Name="FoundUnits" SigID="8" Optional="true">727</Output>
+								<Output Name="FoundUnitCount" SigID="6" Optional="true">705</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="260" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">730</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="338" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">930</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="82" Name="newTrigger82" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="true" X="1081" Y="306" GroupID="0">
+					<TriggerConditions>
+						<And>
+							<Condition ID="62" Type="CanGetOneUnit" DBID="356" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="UnitList" SigID="1" Optional="false">727</Input>
+								<Input Name="ListPosition" SigID="2" Optional="false">741</Input>
+								<Output Name="FoundUnit" SigID="3" Optional="false">742</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="339" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">931</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="270" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">743</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="83" Name="newTrigger83" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="1613" Y="659" GroupID="0">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="266" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="85" Name="newTrigger85" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="952" Y="264" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="347" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">742</Input>
+							<Input Name="Squad" SigID="2" Optional="true">947</Input>
+							<Input Name="Object" SigID="4" Optional="true">948</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">775</Output>
+						</Effect>
+						<Effect ID="312" Type="GetDirectionFromLocations" DBID="500" Version="1" CommentOut="false">
+							<Input Name="Location1" SigID="1" Optional="false">697</Input>
+							<Input Name="Location2" SigID="2" Optional="false">775</Input>
+							<Output Name="Direction" SigID="4" Optional="false">849</Output>
+						</Effect>
+						<Effect ID="323" Type="SetDirection" DBID="489" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">890</Input>
+							<Input Name="Squad" SigID="3" Optional="true">891</Input>
+							<Input Name="SquadList" SigID="4" Optional="true">892</Input>
+							<Input Name="Object" SigID="5" Optional="true">893</Input>
+							<Input Name="ObjectList" SigID="6" Optional="true">894</Input>
+							<Input Name="Direction" SigID="7" Optional="false">849</Input>
+						</Effect>
+						<Effect ID="350" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="100" Name="newTrigger100" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="1596" Y="133" GroupID="0">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="340" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">932</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="101" Name="newTrigger101" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="true" X="221" Y="146" GroupID="0">
+					<TriggerConditions>
+						<And>
+							<Condition ID="77" Type="CanGetBuilder" DBID="524" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Unit" SigID="1" Optional="true">3</Input>
+								<Input Name="Squad" SigID="2" Optional="true">934</Input>
+								<Output Name="BuilderUnit" SigID="3" Optional="true">742</Output>
+								<Output Name="BuilderSquad" SigID="4" Optional="true">936</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="343" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">939</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="342" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">938</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="109" Name="newTrigger109" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="221" Y="638" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="354" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>
