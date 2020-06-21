@@ -4,7 +4,7 @@
 		<DefaultValue Name="SPCEasy" Value="9999" />
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="60" />
-			<DataPoint Input="0.34" Output="60" />
+			<DataPoint Input="0.34" Output="10" />
 			<DataPoint Input="0.67" Output="10" />
 			<DataPoint Input="1" Output="0.1" />
 		</PiecewiseFunc>
@@ -30,7 +30,7 @@
 	<AIDifficultySetting Name="ThinkCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to think about something.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="1" />
-			<DataPoint Input="1" Output="0.0" />
+			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ActCostMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time cost to do something.">
@@ -46,7 +46,7 @@
 			<DataPoint Input="0" Output="8" />
 			<DataPoint Input="0.33" Output="8" />
 			<DataPoint Input="0.67" Output="1" />
-			<DataPoint Input="1" Output="0.0" />
+			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="PowerEvalIntervalMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time interval between evaluating powers.">
@@ -62,7 +62,7 @@
 			<DataPoint Input="0" Output="12" />
 			<DataPoint Input="0.33" Output="11" />
 			<DataPoint Input="0.67" Output="8.5" />
-			<DataPoint Input="1" Output="0.0" />
+			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="EconMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="1.00 = no econ change, 0.0 means no supplies, 2.0 means double normal supplies">
@@ -117,7 +117,7 @@
 	<AIDifficultySetting Name="DiffUseBaseLives" InputLabel="Difficulty" OutputLabel="Bool" Comment="Flag for using BaseLives...this could be derived in script if we use an error return in BaseLives.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="1" Comment="True at easy" />
-			<DataPoint Input="0.52" Output="1" Comment="True at arbitrary crossover point" />
+			<DataPoint Input="0.52" Output="0" Comment="True at arbitrary crossover point" />
 			<DataPoint Input="0.52" Output="0" Comment="And false there as well" />
 			<DataPoint Input="1" Output="0" Comment="False at legendary" />
 		</PiecewiseFunc>
@@ -156,7 +156,7 @@
 			<DataPoint Input="0" Output="150" />
 			<DataPoint Input="0.33" Output="150" />
 			<DataPoint Input="0.67" Output="15" />
-			<DataPoint Input="1" Output="0.1" />
+			<DataPoint Input="1" Output="0.01" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="DiffBldMaxBids" InputLabel="Difficulty" OutputLabel="Int" Comment="Maximum number of building bids allowed">
