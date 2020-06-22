@@ -5,4 +5,4 @@
 * Increased zoom \
 * Corpses \
 * Minor tweaks to units \
-* Removed rebels (AI doesn't capture the map if they hold land) \
+* Removed rebels (AI doesn't capture the map if they hold land)
