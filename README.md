@@ -1,6 +1,6 @@
 # halowars overhaul mod
 
-Improvements to AI configurations - Legendary AI more difficult now
+Improvements to AI configurations - Legendary AI more difficult now\r\n
 Increased popcap
 Increased zoom
 Corpses
