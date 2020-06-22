@@ -1,2 +1,3 @@
-# halowars-overhaul-mod
-Improvements to AI and some other minor tweaks 
+# Original Files
+
+*This only contains the original modable files. No changes here
