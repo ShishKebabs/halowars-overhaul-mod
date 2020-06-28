@@ -1,4 +1,4 @@
-# Halo Wars Vanilla Overhaul Mod by ShishKebabs
+# Halo Wars Hardcore Mod by ShishKebabs
 
 * Improvements to AI configurations - Legendary AI more difficult now
 * Increased popcap
