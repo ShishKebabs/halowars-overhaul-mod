@@ -69,7 +69,7 @@
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="0.5" Comment="On easy, AI gets 50% normal supplies" />
 			<DataPoint Input="0.33" Output="1" Comment="At diff 0.33, non-cheating (normal) supplies" />
-			<DataPoint Input="0.67" Output="1" Comment="At diff 0.67, non-cheating (normal) supplies" />
+			<DataPoint Input="0.67" Output="1.5" Comment="At diff 0.67, non-cheating (normal) supplies" />
 			<DataPoint Input="1" Output="4" Comment="On legendary, AI gets 133% normal supplies" />
 			<DataPoint Input="2" Output="10" Comment="On hyper-legendary, AI gets	 233% normal supplies" />
 		</PiecewiseFunc>
@@ -103,7 +103,7 @@
 	<AIDifficultySetting Name="LogMaxBases" InputLabel="Difficulty" OutputLabel="Int" Comment="1 at easy and near it, 5 near and at legendary, linear interpolation in between.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="1" Comment="1 at easy" />
-			<DataPoint Input="0.1" Output="1" Comment="Still 1.0 a bit above easy." />
+			<DataPoint Input="0.1" Output="5" Comment="Still 1.0 a bit above easy." />
 			<DataPoint Input="0.9" Output="5" Comment="5.0 a bit before legendary." />
 			<DataPoint Input="1" Output="5" Comment="On legendary, 5" />
 		</PiecewiseFunc>
