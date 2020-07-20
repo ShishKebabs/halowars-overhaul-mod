@@ -1,1 +1,0 @@
-move this "startup" folder to "halo wars" directory for it to work properly
