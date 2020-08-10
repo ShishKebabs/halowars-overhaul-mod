@@ -2077,31 +2077,32 @@
 		<Prereqs>
 			<TechStatus status="Active">unsc_basic</TechStatus>
 		</Prereqs>
+		<Flag>Shadow</Flag>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
-				<Target type="ProtoSquad">unsc_veh_warthog_01</Target>
-			</Effect>
 			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_warthog_upgrade1">
 				<Target type="ProtoSquad">unsc_veh_warthog_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="machineGunAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="machineGunAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">unsc_veh_warthog_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
+			</Effect>
 			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
@@ -2113,7 +2114,7 @@
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
-			</Effect>
+			</Effect>-->
 		</Effects>
 	</Tech>
 	<Tech name="unsc_warthog_upgrade2" type="Normal">
@@ -2121,7 +2122,7 @@
 		<DisplayNameID>1024</DisplayNameID>
 		<RolloverTextID>1025</RolloverTextID>
 		<PrereqTextID>232</PrereqTextID>
-		<Cost resourcetype="Supplies">400</Cost>
+		<Cost resourcetype="Supplies">500</Cost>
 		<Cost resourcetype="Power">2</Cost>
 		<ResearchPoints>45</ResearchPoints>
 		<Status>OBTAINABLE</Status>
@@ -2140,25 +2141,31 @@
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="GrenadeLauncherAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="AmmoMax" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.5" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="GrenadeLauncherAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="AmmoMax" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.5" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
 		</Effects>
@@ -2168,7 +2175,7 @@
 		<DisplayNameID>1114</DisplayNameID>
 		<RolloverTextID>1115</RolloverTextID>
 		<PrereqTextID>233</PrereqTextID>
-		<Cost resourcetype="Supplies">500</Cost>
+		<Cost resourcetype="Supplies">800</Cost>
 		<Cost resourcetype="Power">3</Cost>
 		<ResearchPoints>60</ResearchPoints>
 		<Status>OBTAINABLE</Status>
@@ -2193,7 +2200,7 @@
 			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
@@ -3727,17 +3734,24 @@
 		<RolloverTextID>1077</RolloverTextID>
 		<PrereqTextID>241</PrereqTextID>
 		<Cost resourcetype="Supplies">200</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">0</Cost>
 		<ResearchPoints>20</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 		<ResearchCompleteSound>play_vog_tech_peons</ResearchCompleteSound>
+		<Flag>Shadow</Flag>
 		<Effects>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_grunt_01</Target>
+			</Effect>
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_grunt_02</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_grunt_03</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_eliteLeader_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.176" subtype="Damage" action="Grenade" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_grunt_01</Target>
@@ -3772,7 +3786,7 @@
 		<RolloverTextID>1079</RolloverTextID>
 		<PrereqTextID>242</PrereqTextID>
 		<Cost resourcetype="Supplies">400</Cost>
-		<Cost resourcetype="Power">2</Cost>
+		<Cost resourcetype="Power">1</Cost>
 		<ResearchPoints>40</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
@@ -3783,6 +3797,15 @@
 		<Effects>
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_grunt_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_grunt_02</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_grunt_03</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_eliteLeader_01</Target>
 			</Effect>
 			<Effect type="TransformProtoUnit" FromType="cov_inf_grunt_01" ToType="cov_inf_needlergrunt_01" />
 			<Effect type="TransformProtoUnit" FromType="cov_inf_grunt_02" ToType="cov_inf_needlergrunt_02" />
@@ -3818,7 +3841,7 @@
 		<RolloverTextID>1147</RolloverTextID>
 		<PrereqTextID>243</PrereqTextID>
 		<Cost resourcetype="Supplies">500</Cost>
-		<Cost resourcetype="Power">3</Cost>
+		<Cost resourcetype="Power">2</Cost>
 		<ResearchPoints>60</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
@@ -3827,8 +3850,17 @@
 			<TechStatus status="Active">cov_grunt_upgrade2</TechStatus>
 		</Prereqs>
 		<Effects>
-			<Effect type="Data" amount="3" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_grunt_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_grunt_02</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_grunt_03</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">cov_inf_eliteLeader_01</Target>
 			</Effect>
 			<Effect type="TransformProtoSquad" FromType="cov_inf_grunt_01" ToType="cov_inf_grunt_03" />
 			<Effect type="Data" amount="1.25" subtype="Damage" action="Grenade" relativity="Percent">
@@ -4562,10 +4594,11 @@
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 		<ResearchCompleteSound>play_vog_tech_boostedram</ResearchCompleteSound>
+		<Flag>Shadow</Flag>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_veh_ghost_01</Target>
-			</Effect>
+			</Effect> -->
 			<Effect type="Data" amount="0" subtype="AbilityDisabled" relativity="Absolute">
 				<Target type="ProtoUnit">cov_veh_ghost_01</Target>
 			</Effect>
@@ -4650,6 +4683,9 @@
 			</Effect>
 			<Effect type="Data" hpbar="Cov_HealthShield" subtype="HPBar" relativity="Absolute">
 				<Target type="ProtoSquad">cov_veh_ghost_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_veh_ghost_01</Target>
 			</Effect>
 		</Effects>
 	</Tech>
@@ -5241,9 +5277,9 @@
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 		<Flag>Shadow</Flag>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_brute_01</Target>
-			</Effect>
+			</Effect> -->
 			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_brute_01</Target>
 			</Effect>
@@ -5336,10 +5372,11 @@
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 		<ResearchCompleteSound>play_vog_tech_autocannons</ResearchCompleteSound>
+		<Flag>Shadow</Flag>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_veh_bruteChopper_01</Target>
-			</Effect>
+			</Effect> -->
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="plasmaCannonAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">cov_veh_bruteChopper_01</Target>
 			</Effect>
@@ -5413,7 +5450,7 @@
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_veh_bruteChopper_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">cov_veh_bruteChopper_01</Target>
 			</Effect>
 			<Effect type="Data" amount="2" subtype="AmmoMax" relativity="Percent">
