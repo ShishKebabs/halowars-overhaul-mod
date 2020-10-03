@@ -18,18 +18,20 @@
 	<AIDifficultySetting Name="RalliedDistanceSqr" InputLabel="Difficulty" OutputLabel="Radius" Comment="Radius squared that our groups need to be within to be considered rallied.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="2500" />
-			<DataPoint Input="1" Output="50" />
+			<DataPoint Input="1" Output="30" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ThinkCostMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time cost to think about something.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="0.75" />
+			<DataPoint Input="0.67" Output="0.0" />
 			<DataPoint Input="1" Output="0.0" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ThinkCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to think about something.">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="1" />
+			<DataPoint Input="0.67" Output="0.001" />
 			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
@@ -68,9 +70,9 @@
 	<AIDifficultySetting Name="EconMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="1.00 = no econ change, 0.0 means no supplies, 2.0 means double normal supplies">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="0.5" Comment="On easy, AI gets 50% normal supplies" />
-			<DataPoint Input="0.33" Output="1" Comment="At diff 0.33, non-cheating (normal) supplies" />
-			<DataPoint Input="0.67" Output="2" Comment="At diff 0.67, non-cheating (normal) supplies" />
-			<DataPoint Input="1" Output="3.5" Comment="On legendary, AI gets 133% normal supplies" />
+			<DataPoint Input="0.33" Output="1.5" Comment="At diff 0.33, non-cheating (normal) supplies" />
+			<DataPoint Input="0.67" Output="3.5" Comment="At diff 0.67, non-cheating (normal) supplies" />
+			<DataPoint Input="1" Output="6" Comment="On legendary, AI gets 133% normal supplies" />
 			<DataPoint Input="2" Output="10" Comment="On hyper-legendary, AI gets	 233% normal supplies" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
@@ -93,7 +95,7 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="DamageTakenMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="2.0 means the AI's units TAKE double damage.  High values are easy, low are hard.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="2" Comment="On easy, takes 2x damage" />
+			<DataPoint Input="0" Output="1" Comment="On easy, takes 2x damage" />
 			<DataPoint Input="0.33" Output="1" Comment="At normal, normal damage" />
 			<DataPoint Input="0.67" Output="1" Comment="At hard, normal damage" />
 			<DataPoint Input="1" Output="1" Comment="On legendary, AI takes 75%% normal damage" />
@@ -111,6 +113,7 @@
 	<AIDifficultySetting Name="DiffBaseRebuildDel" InputLabel="Difficulty" OutputLabel="Ms" Comment="60 seconds at easy, 10 seconds at legendary">
 		<PiecewiseFunc>
 			<DataPoint Input="0" Output="3000" Comment="" />
+			<DataPoint Input="0.67" Output="0.1" Comment="" />
 			<DataPoint Input="1" Output="0.1" Comment="Smaller number = quicker rebuild = harder" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
