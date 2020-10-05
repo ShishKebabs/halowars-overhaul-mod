@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<nodeTypes>
+	<category name="ALU">
+		<nodeType name="add1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="add2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="add3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="add4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="sub1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="sub2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="sub3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="sub4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="mul1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="mul2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="mul3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="mul4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="mul2_1" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="mul3_1" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="mul4_1" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="div1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="div2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="div3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="div4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="div2_1" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="div3_1" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="div4_1" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="rcp1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="rcp2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="rcp3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="rcp4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="pow1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="pow2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="pow3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="pow4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="dot2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="dot3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="dot4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="mod1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="mod2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="mod3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="mod4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="lerp1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="lerp2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="lerp3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="lerp4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="sqrt1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="sqrt2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="sqrt3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="sqrt4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="tan1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="tan2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="tan3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="tan4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="abs1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="abs2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="abs3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="abs4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="square1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="square2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="square3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="square4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="cos" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="sin" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="sincos" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="sinOut" type="scalar" />
+			<output name="cosOut" type="scalar" />
+		</nodeType>
+		<nodeType name="frac1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="frac2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="frac3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="frac4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="floor1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="floor2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="floor3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="floor4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="ceil1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="ceil2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="ceil3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="ceil4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="saturate1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="saturate2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="saturate3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="saturate4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="rsqrt1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="rsqrt2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="rsqrt3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="rsqrt4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="sign1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="sign2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="sign3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="sign4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="round1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="round2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="round3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="round4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="min1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="min2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="min3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="min4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="max1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="max2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="max3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="max4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="clamp1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="clamp2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<input name="cIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="clamp3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<input name="cIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="clamp4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<input name="cIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="step1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="step2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="step3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="step4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="smoothstep1" type="alu">
+			<input name="aIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="smoothstep2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<input name="cIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="smoothstep3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<input name="cIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="smoothstep4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<input name="cIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="normalize2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="normalize3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="normalize4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="log1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="log2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="log3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="log4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="log2_1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="log2_2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="log2_3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="log2_4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="log10_1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="log10_2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="log10_3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="log10_4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="length2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="length3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="length4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="distance2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="distance3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="distance4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="any1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="any2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="any3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="any4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="all1" type="alu">
+			<input name="aIn" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="all2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="all3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="all4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="refract2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="refract3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="refract4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<input name="cIn" type="scalar" />
+			<output name="out" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="reflect2" type="alu">
+			<input name="aIn" type="vector" dim="2" />
+			<input name="bIn" type="vector" dim="2" />
+			<output name="out" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="reflect3" type="alu">
+			<input name="aIn" type="vector" dim="3" />
+			<input name="bIn" type="vector" dim="3" />
+			<output name="out" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="reflect4" type="alu">
+			<input name="aIn" type="vector" dim="4" />
+			<input name="bIn" type="vector" dim="4" />
+			<output name="out" type="vector" dim="4" />
+		</nodeType>
+	</category>
+</nodeTypes>
