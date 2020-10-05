@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<nodeTypes>
+	<category name="Output">
+		<nodeType name="output" type="output">
+			<input name="outDiffuse" type="vector" dim="3" default="gDefDiffuse" />
+			<input name="outSpecular" type="vector" dim="3" default="gDefSpecular" />
+			<input name="outSpecularPower" type="scalar" default="gDefSpecularPower" />
+			<input name="outNormal" type="vector" dim="3" default="gDefNormal" />
+			<input name="outOpacity" type="scalar" default="gDefOpacity" />
+			<input name="outEmissive" type="vector" dim="3" default="gDefEmissive" />
+			<input name="outAO" type="scalar" default="gDefAO" />
+			<input name="outEnvironment" type="vector" dim="3" default="gDefEnvironment" />
+		</nodeType>
+	</category>
+	<category name="Constants">
+		<nodeType name="constScalar" type="constant">
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="constVec2" type="constant">
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="constVec3" type="constant">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="constVec4" type="constant">
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+	</category>
+	<category name="Globals">
+		<nodeType name="time" type="global">
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="cameraPos" type="global">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+	</category>
+	<category name="Iterated">
+		<nodeType name="vertexColor" type="iterated">
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="uv0" type="iterated">
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="uv1" type="iterated">
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="pos" type="iterated">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="normal" type="iterated">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="tangent" type="iterated">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="binormal" type="iterated">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="screenPos" type="iterated">
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="viewVec" type="iterated">
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+	</category>
+	<category name="Samplers">
+		<nodeType name="tex1D" type="texture">
+			<input name="texcoords" type="scalar" />
+			<input name="texture" type="string" />
+			<output name="rgbaOut" type="scalar" dim="4" />
+		</nodeType>
+		<nodeType name="tex2D" type="texture">
+			<input name="texcoords" type="vector" dim="2" />
+			<input name="texture" type="string" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="tex3D" type="texture">
+			<input name="texcoords" type="vector" dim="3" />
+			<input name="texture" type="string" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="texCube" type="texture">
+			<input name="texcoords" type="vector" dim="3" />
+			<input name="texture" type="string" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+	</category>
+</nodeTypes>

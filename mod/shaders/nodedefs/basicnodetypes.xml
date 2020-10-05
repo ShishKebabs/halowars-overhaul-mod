@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<nodeTypes>
+	<category name="Combiners">
+		<nodeType name="combine2" type="combiner">
+			<input name="rIn" type="scalar" />
+			<input name="gIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="combine3" type="combiner">
+			<input name="rIn" type="scalar" />
+			<input name="gIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="combine4" type="combiner">
+			<input name="rIn" type="scalar" />
+			<input name="gIn" type="scalar" />
+			<input name="bIn" type="scalar" />
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="3" />
+		</nodeType>
+	</category>
+	<category name="Expanders">
+		<nodeType name="expand2" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="expand2R" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="expand2G" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="expand3" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="expand3R" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="expand3G" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="expand3B" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="expand4" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand4R" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand4G" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand4B" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand4A" type="expander">
+			<input name="aIn" type="scalar" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand2_3" type="expander">
+			<input name="rgIn" type="vector" dim="2" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="expand2_4" type="expander">
+			<input name="rgIn" type="vector" dim="2" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="expand3_4" type="expander">
+			<input name="rgbIn" type="vector" dim="3" />
+			<output name="rgbaOut" type="vector" dim="4" />
+		</nodeType>
+	</category>
+	<category name="Contractors">
+		<nodeType name="contract4_3" type="contractor">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="rgbOut" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="contract4_2" type="contractor">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="contract3_2" type="contractor">
+			<input name="rgbIn" type="vector" dim="3" />
+			<output name="rgOut" type="vector" dim="2" />
+		</nodeType>
+	</category>
+	<category name="Selectors">
+		<nodeType name="selector4_r" type="selector">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector4_g" type="selector">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector4_b" type="selector">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector4_a" type="selector">
+			<input name="rgbaIn" type="vector" dim="4" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector3_r" type="selector">
+			<input name="rgbIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector3_g" type="selector">
+			<input name="rgbIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector3_b" type="selector">
+			<input name="rgbIn" type="vector" dim="3" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector2_r" type="selector">
+			<input name="rgIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="selector2_g" type="selector">
+			<input name="rgIn" type="vector" dim="2" />
+			<output name="out" type="scalar" />
+		</nodeType>
+	</category>
+	<category name="Distributors">
+		<nodeType name="distribute1_2">
+			<input name="in" type="scalar" />
+			<output name="out1" type="scalar" />
+			<output name="out2" type="scalar" />
+		</nodeType>
+		<nodeType name="distribute2_2">
+			<input name="in" type="vector" dim="2" />
+			<output name="out1" type="vector" dim="2" />
+			<output name="out2" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="distribute3_2">
+			<input name="in" type="vector" dim="3" />
+			<output name="out1" type="vector" dim="3" />
+			<output name="out2" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="distribute4_2">
+			<input name="in" type="vector" dim="4" />
+			<output name="out1" type="vector" dim="4" />
+			<output name="out2" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="distribute1_3">
+			<input name="in" type="scalar" />
+			<output name="out1" type="scalar" />
+			<output name="out2" type="scalar" />
+			<output name="out3" type="scalar" />
+		</nodeType>
+		<nodeType name="distribute2_3">
+			<input name="in" type="vector" dim="2" />
+			<output name="out1" type="vector" dim="2" />
+			<output name="out2" type="vector" dim="2" />
+			<output name="out3" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="distribute3_3">
+			<input name="in" type="vector" dim="3" />
+			<output name="out1" type="vector" dim="3" />
+			<output name="out2" type="vector" dim="3" />
+			<output name="out3" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="distribute4_3">
+			<input name="in" type="vector" dim="4" />
+			<output name="out1" type="vector" dim="4" />
+			<output name="out2" type="vector" dim="4" />
+			<output name="out3" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="distribute1_4">
+			<input name="in" type="scalar" />
+			<output name="out1" type="scalar" />
+			<output name="out2" type="scalar" />
+			<output name="out3" type="scalar" />
+			<output name="out4" type="scalar" />
+		</nodeType>
+		<nodeType name="distribute2_3">
+			<input name="in" type="vector" dim="2" />
+			<output name="out1" type="vector" dim="2" />
+			<output name="out2" type="vector" dim="2" />
+			<output name="out3" type="vector" dim="2" />
+			<output name="out4" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="distribute3_3">
+			<input name="in" type="vector" dim="3" />
+			<output name="out1" type="vector" dim="3" />
+			<output name="out2" type="vector" dim="3" />
+			<output name="out3" type="vector" dim="3" />
+			<output name="out4" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="distribute4_3">
+			<input name="in" type="vector" dim="4" />
+			<output name="out1" type="vector" dim="4" />
+			<output name="out2" type="vector" dim="4" />
+			<output name="out3" type="vector" dim="4" />
+			<output name="out4" type="vector" dim="4" />
+		</nodeType>
+	</category>
+	<category name="Threshold">
+		<nodeType name="threshold1">
+			<input name="a" type="scalar" />
+			<input name="b" type="scalar" />
+			<input name="c" type="scalar" />
+			<output name="out" type="scalar" />
+		</nodeType>
+		<nodeType name="threshold2">
+			<input name="a" type="vector" dim="2" />
+			<input name="b" type="vector" dim="2" />
+			<input name="c" type="vector" dim="2" />
+			<output name="out" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="threshold3">
+			<input name="a" type="vector" dim="3" />
+			<input name="b" type="vector" dim="3" />
+			<input name="c" type="vector" dim="3" />
+			<output name="out" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="threshold4">
+			<input name="a" type="vector" dim="4" />
+			<input name="b" type="vector" dim="4" />
+			<input name="c" type="vector" dim="4" />
+			<output name="out" type="vector" dim="4" />
+		</nodeType>
+		<nodeType name="threshold2_1">
+			<input name="a" type="vector" dim="2" />
+			<input name="b" type="vector" dim="2" />
+			<input name="c" type="scalar" />
+			<output name="out" type="vector" dim="2" />
+		</nodeType>
+		<nodeType name="threshold3_1">
+			<input name="a" type="vector" dim="3" />
+			<input name="b" type="vector" dim="3" />
+			<input name="c" type="scalar" />
+			<output name="out" type="vector" dim="3" />
+		</nodeType>
+		<nodeType name="threshold4_1">
+			<input name="a" type="vector" dim="4" />
+			<input name="b" type="vector" dim="4" />
+			<input name="c" type="scalar" />
+			<output name="out" type="vector" dim="4" />
+		</nodeType>
+	</category>
+</nodeTypes>
