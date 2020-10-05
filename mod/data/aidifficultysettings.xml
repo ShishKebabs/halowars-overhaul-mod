@@ -3,8 +3,8 @@
 	<AIDifficultySetting Name="MaxMissionFocusTime" InputLabel="Difficulty" OutputLabel="Seconds" Comment="How long a mission waits until it forcibly hands off the baton to a new topic.">
 		<DefaultValue Name="SPCEasy" Value="9999" />
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="10" />
-			<DataPoint Input="0.34" Output="5" />
+			<DataPoint Input="0" Output="0.1" />
+			<DataPoint Input="0.34" Output="0.1" />
 			<DataPoint Input="0.67" Output="0.1" />
 			<DataPoint Input="1" Output="0.1" />
 		</PiecewiseFunc>
@@ -17,20 +17,20 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="RalliedDistanceSqr" InputLabel="Difficulty" OutputLabel="Radius" Comment="Radius squared that our groups need to be within to be considered rallied.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="2500" />
+			<DataPoint Input="0" Output="300" />
 			<DataPoint Input="1" Output="30" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ThinkCostMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time cost to think about something.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="0.75" />
+			<DataPoint Input="0" Output="0.0" />
 			<DataPoint Input="0.67" Output="0.0" />
 			<DataPoint Input="1" Output="0.0" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ThinkCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to think about something.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="1" />
+			<DataPoint Input="0" Output="0.001" />
 			<DataPoint Input="0.67" Output="0.001" />
 			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
@@ -45,7 +45,7 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="ActCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to do something.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="1" />
+			<DataPoint Input="0" Output="0.001" />
 			<DataPoint Input="0.33" Output="0.001" />
 			<DataPoint Input="0.67" Output="0.001" />
 			<DataPoint Input="1" Output="0.001" />
@@ -61,8 +61,8 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="PowerEvalIntervalMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time interval between evaluating powers.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="5" />
-			<DataPoint Input="0.33" Output="3" />
+			<DataPoint Input="0" Output="0.001" />
+			<DataPoint Input="0.33" Output="0.001" />
 			<DataPoint Input="0.67" Output="0.001" />
 			<DataPoint Input="1" Output="0.001" />
 		</PiecewiseFunc>
@@ -180,7 +180,7 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="DiffDistractionTime" InputLabel="Difficulty" OutputLabel="Seconds" Comment="amount of time spent in distraction topic">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="20" />
+			<DataPoint Input="0" Output="0" />
 			<DataPoint Input="0.33" Output="0" />
 			<DataPoint Input="0.67" Output="0" />
 			<DataPoint Input="1" Output="0" />
@@ -188,7 +188,7 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="DiffBumpBuildTopicRate" InputLabel="Difficulty" OutputLabel="Seconds" Comment="time ai must wait before bumping the build topic as urgent when a building is ready">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="30" />
+			<DataPoint Input="0" Output="0" />
 			<DataPoint Input="0.33" Output="0" />
 			<DataPoint Input="0.67" Output="0" />
 			<DataPoint Input="1" Output="0" />
