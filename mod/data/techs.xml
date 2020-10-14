@@ -1905,13 +1905,13 @@
 			<TechStatus status="Active">unsc_basic</TechStatus>
 		</Prereqs>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			</Effect> -->
+			<Effect type="Data" amount="2" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="4" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>
 		</Effects>
@@ -1921,7 +1921,7 @@
 		<DisplayNameID>22365</DisplayNameID>
 		<RolloverTextID>22366</RolloverTextID>
 		<PrereqTextID>232</PrereqTextID>
-		<Cost resourcetype="Supplies">400</Cost>
+		<Cost resourcetype="Supplies">500</Cost>
 		<Cost resourcetype="Power">2</Cost>
 		<ResearchPoints>60</ResearchPoints>
 		<Status>OBTAINABLE</Status>
@@ -1931,21 +1931,21 @@
 			<TechStatus status="Active">unsc_cyclops_upgrade1</TechStatus>
 		</Prereqs>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+			</Effect> -->
+			<!-- <Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+			</Effect> -->
+			<!-- <Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
-			</Effect>
+			</Effect> -->
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="RepairOther" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>
-			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade2">
+			<!-- <Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade2">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
-			</Effect>
+			</Effect> -->
 		</Effects>
 	</Tech>
 	<Tech name="unsc_cyclops_upgrade3" type="Normal">
@@ -1958,12 +1958,13 @@
 		<ResearchPoints>60</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
+		<Flag>Shadow</Flag>
 		<ResearchCompleteSound>play_vog_tech_hightorquejoint</ResearchCompleteSound>
 		<Prereqs>
-			<TechStatus status="Active">unsc_cyclops_upgrade2</TechStatus>
+			<TechStatus status="Active">unsc_cyclops_upgrade1</TechStatus>
 		</Prereqs>
 		<Effects>
-			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.1" subtype="Hitpoints" relativity="Percent">
@@ -1971,8 +1972,8 @@
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.5" subtype="MaximumVelocity" relativity="Percent">
+			</Effect>-->
+			<Effect type="Data" amount="1.75" subtype="MaximumVelocity" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>
 			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade3">
@@ -4270,7 +4271,7 @@
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="StunHammerAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">cov_inf_bruteChief_03</Target>
 			</Effect>
-			<Effect type="Data" amount="1.95" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_bruteChief_03</Target>
 			</Effect>
 			<Effect type="Data" amount="1.425" subtype="Hitpoints" relativity="Percent">
@@ -4296,7 +4297,7 @@
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_bruteChief_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.73" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_bruteChief_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.425" subtype="Hitpoints" relativity="Percent">
@@ -4336,7 +4337,7 @@
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="AreaStunHammerAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">cov_inf_bruteChief_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.625" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_bruteChief_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.425" subtype="Hitpoints" relativity="Percent">
@@ -4429,7 +4430,7 @@
 		<DBID>1915</DBID>
 		<DisplayNameID>24424</DisplayNameID>
 		<RolloverTextID>24425</RolloverTextID>
-		<Cost resourcetype="Supplies">300</Cost>
+		<Cost resourcetype="Supplies">400</Cost>
 		<Cost resourcetype="Power">1</Cost>
 		<ResearchPoints>20</ResearchPoints>
 		<Status>OBTAINABLE</Status>
@@ -4439,7 +4440,7 @@
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_arbiter_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.95" subtype="Damage" action="DualSword" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" action="DualSword" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_arbiter_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.425" subtype="Hitpoints" relativity="Percent">
@@ -4464,7 +4465,7 @@
 		<DisplayNameID>24426</DisplayNameID>
 		<RolloverTextID>24427</RolloverTextID>
 		<Cost resourcetype="Supplies">500</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">2</Cost>
 		<ResearchPoints>40</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
@@ -4477,7 +4478,7 @@
 				<Target type="ProtoSquad">cov_inf_arbiter_01</Target>
 			</Effect>
 			<Effect type="TransformProtoUnit" FromType="cov_inf_arbiter_01" ToType="cov_inf_arbiter_02" />
-			<Effect type="Data" amount="1.73" subtype="Damage" action="DualSword" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" action="DualSword" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_arbiter_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.425" subtype="Hitpoints" relativity="Percent">
@@ -4489,8 +4490,8 @@
 		<DBID>1915</DBID>
 		<DisplayNameID>24428</DisplayNameID>
 		<RolloverTextID>24429</RolloverTextID>
-		<Cost resourcetype="Supplies">800</Cost>
-		<Cost resourcetype="Power">2</Cost>
+		<Cost resourcetype="Supplies">900</Cost>
+		<Cost resourcetype="Power">3</Cost>
 		<ResearchPoints>60</ResearchPoints>
 		<Status>OBTAINABLE</Status>
 		<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
@@ -4502,7 +4503,7 @@
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">cov_inf_arbiter_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.4" subtype="Damage" action="DualSword" relativity="Percent">
+			<Effect type="Data" amount="2" subtype="Damage" action="DualSword" relativity="Percent">
 				<Target type="ProtoUnit">cov_inf_arbiter_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="Cloak" relativity="Absolute">
@@ -5529,7 +5530,7 @@
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_odst_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_barracks_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade1" relativity="Absolute">
+			<!-- <Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade2" relativity="Absolute">
@@ -5555,7 +5556,7 @@
 			</Effect>
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
-			</Effect>
+			</Effect> -->
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_mac_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_fieldArmory_01</Target>
 			</Effect>
@@ -5565,13 +5566,13 @@
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_mac_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_fieldArmory_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_marine_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_marine_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_02</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_marine_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
 			</Effect>
 		</Effects>
@@ -5590,31 +5591,31 @@
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_grizzly_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_vehicleDepot_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade1" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade2" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade2" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade3" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade1" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_02</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade2" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade2" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_02</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade3" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_02</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade1" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade1" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade2" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade2" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_gremlin_upgrade3" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_cyclops_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_carpetBomb_upgrade1" relativity="Absolute">
@@ -5626,13 +5627,13 @@
 			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="Research" CommandData="unsc_carpetBomb_upgrade3" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_fieldArmory_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_cyclops_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_cyclops_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_02</Target>
 			</Effect>
-			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_veh_gremlin_01" relativity="Absolute">
+			<Effect type="Data" amount="1" subtype="CommandEnable" commandType="TrainSquad" CommandData="unsc_inf_cyclops_01" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_bldg_command_03</Target>
 			</Effect>
 		</Effects>
