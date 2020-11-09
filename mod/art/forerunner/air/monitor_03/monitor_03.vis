@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>forerunner\air\monitor_03\monitor_03</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_03</file>
+				<weight>10</weight>
+			</asset>
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_04</file>
+				<weight>10</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RangedAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_weapon_sentinel" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_body" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Heal" exitAction="Transition" tweenTime="5" tweenToAnimation="Heal">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_weapon_sentinel" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_body" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\medic\medicheal_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\medic\medicheal_02" tobone="Bip01 L Hand" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>forerunner\air\monitor_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

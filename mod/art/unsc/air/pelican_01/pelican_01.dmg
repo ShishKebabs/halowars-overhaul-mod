@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="0" />
+		</event>
+		<action type="attachparticle" effect="effects\environment\harvest\wreckageFX_02">impact_bone_04</action>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="1" />
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\deathdebris_01">impact_bone_03</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\unsc\damage\partimpact_01">mg,wing_fl,wing_fr,death05,death04,death01,death03</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\unsc\damage\partimpact_01">wing_rl,death02</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\unsc\damage\partimpact_01">wing_rr,death06</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Bone turret</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Bone Wing FL</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Bone Wing FR</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Bone Wing RL</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Bone Wing RR</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint name="impact_bone_01" bone="impact_bone_01">
+			<event>
+				<action type="swappart">CargoRamp,CargoRampDamaged</action>
+				<action type="attachparticle" effect="effects\fire\rollingfireball_01">CargoRampDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">CargoRampDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_02" bone="impact_bone_02">
+			<event>
+				<action type="swappart">FrontLeftChunk,FrontLeftChunkDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">FrontLeftChunkDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_03" bone="impact_bone_03">
+			<event>
+				<action type="swappart">LeftWing,LeftWingDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">LeftWingDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_04" bone="impact_bone_04">
+			<event>
+				<action type="swappart">RightRearWheel,RightRearWheelDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightRearWheelDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_05" bone="impact_bone_05">
+			<event>
+				<action type="swappart">RightSideChunk,RightSideChunkDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightSideChunkDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_06" bone="impact_bone_06">
+			<event>
+				<action type="swappart">RightTopPanel,RightTopPanelDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightTopPanelDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_07" bone="impact_bone_07">
+			<event>
+				<action type="swappart">TailEnd,TailEndDamaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">TailEndDamaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="impact_bone_08" bone="impact_bone_08">
+			<event />
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_large">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_large">GrannyRootBone</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">CargoRampDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">FrontLeftChunkDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">LeftWingDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightRearWheelDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightSideChunkDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">RightTopPanelDamaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_01" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">TailEndDamaged</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

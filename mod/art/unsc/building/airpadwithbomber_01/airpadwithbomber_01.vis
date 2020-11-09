@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Built">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\building\airpadwithbomber_01\airpadwithbomber_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="Bone_spotlight01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="Bone_spotlight02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="Bone_spotlight03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_01" tobone="BoneBeacon01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_02" tobone="BoneBeacon02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_02" tobone="BonerunwayLight01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_02" tobone="BonerunwayLight02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_01" tobone="BonerunwayLight03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\airpad\redblinkinglight_01" tobone="BonerunwayLight04" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\airpad_01\airpad_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\airpad_01\airpad_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\airpad_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Research" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\airpad_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn13\PHXscn13" soundfile="">
+	<head>
+		<model name="flood_01" type="proto" modelfile="fld_inf_tentacle_01" />
+		<model name="flood_02" type="proto" modelfile="fld_inf_tentacle_01" />
+		<model name="flood_03" type="proto" modelfile="fld_inf_tentacle_01" />
+		<model name="flood_04" type="proto" modelfile="fld_inf_tentacle_01" />
+		<model name="scarab_01" type="proto" player="3" modelfile="cov_veh_scarab_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Camera">
+			<animatedmodel model="flood_01" animationfile="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Flood_01" />
+			<tag type="Particle" time="2.1" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="flood_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.1" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="flood_01" tobone="GrannyRootBone" />
+			<animatedmodel model="flood_02" animationfile="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Flood_02" />
+			<tag type="Particle" time="0.5" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="flood_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.5" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="flood_02" tobone="GrannyRootBone" />
+			<animatedmodel model="flood_03" animationfile="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Flood_03" />
+			<tag type="Particle" time="5.98" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="flood_03" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.1" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="flood_03" tobone="GrannyRootBone" />
+			<animatedmodel model="flood_04" animationfile="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Flood_04" />
+			<tag type="Particle" time="7" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="flood_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="7.1" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="flood_04" tobone="GrannyRootBone" />
+			<animatedmodel model="scarab_01" animationfile="cinematic\cutscenes\Scenario_13\S13_Scene_02_Flood\Scene_02_Scarab_01" />
+			<tag type="Chat" time="1" queue="true" duration="0" stringid="22576" sound="play_scn_13_forge_10" talkinghead="scn_13_forge_10" />--Chats--</shot>
+	</body>
+</cinematic>

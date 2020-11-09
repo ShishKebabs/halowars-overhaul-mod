@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn06\onicontroltower_01\onicontroltower_01</file>
+			</asset>
+			<attach type="ModelRef" name="Anders" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="Research">
+			<asset type="Anim">
+				<file>campaign\npc\anders_01\scn_06_tower_idle</file>
+				<weight>30</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Anders">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\npc\anders_01\anders_02</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="Research">
+			<asset type="Anim">
+				<file>campaign\npc\anders_01\scn_06_tower_idle</file>
+				<weight>30</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

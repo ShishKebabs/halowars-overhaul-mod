@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn08\PHXscn08" soundfile="">
+	<head>
+		<model name="flood_01" type="proto" modelfile="fld_inf_tentacle_01" />
+		<model name="flood_marine_01" type="proto" modelfile="fld_inf_InfectedMarine_01" />
+		<model name="flood_marine_02" type="proto" modelfile="fld_inf_InfectedMarine_01" />
+		<model name="flood_marine_03" type="proto" modelfile="fld_inf_InfectedMarine_01" />
+		<model name="flood_marine_04" type="proto" modelfile="fld_inf_InfectedMarine_01" />
+		<model name="flood_marine_05" type="proto" modelfile="fld_inf_InfectedMarine_01" />depthoffield enabled="true"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Camera">
+			<animatedmodel model="flood_01" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_01" />
+			<tag type="Particle" time="11.3" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="flood_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="11.3" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="flood_01" tobone="GrannyRootBone" />
+			<animatedmodel model="flood_marine_01" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_Marine_01" />
+			<animatedmodel model="flood_marine_02" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_Marine_02" />
+			<animatedmodel model="flood_marine_03" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_Marine_03" />
+			<animatedmodel model="flood_marine_04" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_Marine_04" />
+			<animatedmodel model="flood_marine_05" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_02_Flood\Scene_02_Flood_Marine_05" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23123" sound="play_scn_08_forge_11" talkinghead="scn_08_forge_11" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="23135" sound="play_scn_08_cutter_11" talkinghead="scn_08_cutter_11" />
+			<tag type="Chat" time="8" queue="true" duration="0" stringid="23120" sound="play_scn_08_forge_15" talkinghead="scn_08_forge_15" />--Chats--</shot>
+	</body>
+</cinematic>

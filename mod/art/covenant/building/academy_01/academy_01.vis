@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="built">
+	<model name="con_start">
+		<component>
+			<asset type="Model">
+				<file>effects\FXdummy</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\FXdummy_20SecAnim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="cov_bldg_hit_01" checkvisible="true" />
+				<tag type="Sound" position="0" name="cov_bldg_bloom_02" checkvisible="true" />
+				<tag type="Sound" position="0.1" name="cov_bldg_bloom_01" checkvisible="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_start_ground_glow.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_start_ground_flash.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_start.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_start_beam_flare.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_bang.particle" tobone="ATTACHPOINT" syncanims="false" />
+		</anim>
+	</model>
+	<model name="con_flashBeam">
+		<component>
+			<asset type="Model">
+				<file>effects\FXdummy</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\FXdummy_20SecAnim</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_loop.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_flare.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_start_ground_energy.particle" tobone="ATTACHPOINT" syncanims="false" />
+		</anim>
+	</model>
+	<model name="con_BoxTrickle">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\Cov\spinner</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\Cov\spinner_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0.05" name="cov_bldg_jingles" checkvisible="true" />
+				<tag type="Sound" position="0" name="cov_bldg_hologlow_04" checkvisible="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_hexBoxTrickle.particle" tobone="bone_FX01" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_hexBoxTrickle_02.particle" tobone="bone_FX04" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\barracks_FadeHologram.particle" tobone="bone_FX04" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_hexBoxTrickle.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_hexBoxTrickle_02.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_flare.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_beam_loop.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_start_ground_energy.particle" tobone="ATTACHPOINT" syncanims="false" />
+		</anim>
+	</model>
+	<model name="con_Hologram">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\Cov\spinner</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\Cov\spinner_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="cov_bldg_hologlow_02" checkvisible="true" />
+				<tag type="Sound" position="0" name="cov_bldg_hologlow_03" checkvisible="true" />
+				<tag type="Sound" position="0" name="cov_bldg_hologlow_04" checkvisible="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\barracks_Hologram.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_holoDots.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_swirlWall.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_godray_circle.particle" tobone="ATTACHPOINT" syncanims="false" />
+		</anim>
+	</model>
+	<model name="con_Finish">
+		<component>
+			<asset type="Model">
+				<file>effects\FXdummy</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\FXdummy_20SecAnim</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_swirlWall.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\con_holoDots.particle" tobone="ATTACHPOINT" syncanims="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\barracks_Hologram_finish.particle" tobone="ATTACHPOINT" syncanims="false" />
+		</anim>
+	</model>
+	<model name="built">
+		<component>
+			<asset type="Model">
+				<file>covenant\building\barracks_01\barracks_01</file>
+			</asset>
+		</component>
+	</model>
+</visual>

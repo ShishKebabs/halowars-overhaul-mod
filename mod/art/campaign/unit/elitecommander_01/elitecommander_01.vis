@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>campaign\unit\elitecommander_01\elite_commander_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_01</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>80</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\run_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\juke_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jump_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\dive_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\juke_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jump_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\dive_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_01</file>
+				<weight>60</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_02</file>
+				<weight>40</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaGrenadeAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\grenade_attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.34" end="1" tobone="Bip01 L Hand" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaRifleAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_01</file>
+				<weight>25</weight>
+				<tag type="Attack" start="0" position="0.075" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.08" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.109" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.113" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.176" end="1" name="effects\Unit_FX\cov\elite\plasmarifleOverheat_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="3.72" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_02</file>
+				<weight>60</weight>
+				<tag type="Attack" start="0" position="0.189" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.19" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.289" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.29" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_03</file>
+				<weight>95</weight>
+				<tag type="Sound" start="0" position="0.167" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.17" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.17" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.239" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.24" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.244" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.308" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.31" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.314" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.397" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.4" end="1" name="effects\Unit_FX\cov\jackal\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.403" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_02</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_03</file>
+				<weight>20</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="FuelRodAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fuelrod_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.231" end="1" name="play_cov_hunter_fuel_rod_cannon" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.233" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\fuelrodcannon_01\fuelrodcannon_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkForward" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_forward_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkBack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_back_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkForwardPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_forward_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.031" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.032" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkBackPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_back_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.031" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.032" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkLeftPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_left_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.031" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.032" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CombatWalkRightPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_walk_right_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.031" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.032" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Ungarrison" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\ungarrison_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_MarineElite_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_MarineElite_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

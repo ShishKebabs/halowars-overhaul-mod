@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\Infantry\InfectedBrute_01\infectedbrute_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_01</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_02</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_03</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_04</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_05</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_06</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_07</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\idle_08</file>
+				<weight>40</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_01</file>
+				<weight>5</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_02</file>
+				<weight>2</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_03</file>
+				<weight>5</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_01</file>
+				<weight>5</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_02</file>
+				<weight>2</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\run_03</file>
+				<weight>5</weight>
+			</asset>
+		</anim>
+		<anim type="BruteGunAttack" exitAction="Transition" tweenTime="6" tweenToAnimation="BruteGunAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_01</file>
+				<weight>50</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_brute_shot" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\Unit_FX\cov\brute\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_02</file>
+				<weight>50</weight>
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_cov_brute_shot" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\cov\brute\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_07</file>
+				<weight>50</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_brute_shot" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\Unit_FX\cov\brute\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="BruteGunReload" exitAction="Transition" tweenTime="6" tweenToAnimation="BruteGunAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_03</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_04</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_05</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGunAttack_06</file>
+				<weight>20</weight>
+			</asset>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="3" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\evadeLeft_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="3" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\evadeRight_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Clamshell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\stunned_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PlasmaGrenadeAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\bruteGrenadeAttack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.371" end="1" tobone="Bip01 L Hand" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="JumpPack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\jump_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByFire" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_fire_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_fire_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_fire_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByHeadshot" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_headshot_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMachinegun" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_machinegun_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_machinegun_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_machinegun_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMelee" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_melee_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_melee_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_melee_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\death_melee_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

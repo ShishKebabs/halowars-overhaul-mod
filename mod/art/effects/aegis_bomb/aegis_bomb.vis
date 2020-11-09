@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>effects\Aegis_bomb\bomb_mesh_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\Aegis_bomb\bomb_impact" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="0" tweenToAnimation="research">
+			<asset type="Anim">
+				<file>effects\Aegis_bomb\bomb_impact_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0" end="1" name="effects\Aegis_bomb\disruption_pulse" tobone="bip01 main" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\Aegis_bomb\bomb_effects" tobone="bip01 main" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="1" end="1" name="effects\Aegis_bomb\bomb_light_01" tobone="bip01 light01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\Aegis_bomb\bomb_death_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0" end="1" name="effects\Aegis_bomb\death_explosion_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\npc\forge_01\forge_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_02</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid01_02</file>
+				<weight>70</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid02_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid03_02</file>
+				<weight>70</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid04_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_03</file>
+				<weight>90</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\walk_02</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_walk_forward_01</file>
+				<weight>60</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchwalk_forward_01</file>
+				<weight>60</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_02</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_run_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_run_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="RunningFlail" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\flood_death_jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Recover" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\sprint_stop_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByFire" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByHeadshot" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_04</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_05</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMachinegun" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMelee" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_01B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_03B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_04B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_05B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_06B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_07B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.974" end="1" tobone="Bip01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_08B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_09B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_10B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_11B</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="unsc\infantry\weapons_01\assault_rifle_01\assault_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_ArbiterMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShotgunAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="ShotgunAttack">
+			<asset type="Anim">
+				<file>campaign\npc\forge_01\shotgun_attack_01</file>
+				<weight>10</weight>
+				<tag type="Particle" start="0" position="0.095" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.1" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_weapon_odst_shotgun_ready" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.481" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>campaign\npc\forge_01\shotgun_attack_03</file>
+				<weight>60</weight>
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.06" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.06" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.063" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.494" end="1" name="play_weapon_odst_shotgun_ready" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.551" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>campaign\npc\forge_01\shotgun_attack_02</file>
+				<weight>30</weight>
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.35" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.35" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.352" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.455" end="1" name="play_weapon_odst_shotgun_ready" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.494" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="ShotgunBurstAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="ShotgunAttack">
+			<asset type="Anim">
+				<file>campaign\npc\forge_01\shotgun_attack_burst_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.038" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.05" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.05" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.051" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.095" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.135" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.199" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.21" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.21" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.214" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.321" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.378" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.39" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.39" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.494" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.558" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.57" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.57" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.572" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.673" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.75" end="1" name="play_weapon_odst_shotgun" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.755" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.76" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.76" end="1" name="effects\Unit_FX\unsc\marine\shotgunblast_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.846" end="1" name="effects\Unit_FX\unsc\marine\shotgunshell_01" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="ShotgunReload" exitAction="Loop" tweenTime="5" tweenToAnimation="ShotgunAttack">
+			<asset type="Anim">
+				<file>campaign\npc\forge_01\shotgun_reload_01</file>
+				<weight>50</weight>
+				<tag type="Sound" start="0" position="0.122" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.276" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.397" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.526" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.654" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.776" end="1" name="play_weapon_odst_shotgun_reload" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.827" end="1" name="play_weapon_odst_shotgun_ready" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_03</file>
+				<weight>25</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_05</file>
+				<weight>25</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison2" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison3" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_03</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison4" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_04</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison5" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_05</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="PelicanUngarrison6" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_06</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="30" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\marine_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalShotgun</meshEnable>
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

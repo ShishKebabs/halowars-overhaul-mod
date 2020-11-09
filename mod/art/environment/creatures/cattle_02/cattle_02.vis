@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>environment\creatures\cattle_02\cattle_02</file>
+				<damagefile>template\defaultCryo</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>environment\creatures\cattle_02\cattle_idle</file>
+				<weight>8</weight>
+			</asset>
+			<asset type="Anim">
+				<file>environment\creatures\cattle_02\cattle_bored</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\creatures\cattle_02\cattle_walk</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\creatures\cattle_02\cattle_death</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

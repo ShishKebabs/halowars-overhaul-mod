@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>resource\ForerunnerPower\capturepoint_02\capturepoint_02</file>
+			</asset>
+			<attach type="LightFile" name="resource\relics\node_01\node_02" tobone="bone_breeding_chamber" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="resource\ForerunnerPower\unsccapshield_01\unsccapshield_01" tobone="GrannyRootBone" frombone="bone_breeding_chamber" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="resource\ForerunnerPower\capBeam_01\capbeam_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>resource\ForerunnerPower\capturepoint_02\idle_03</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\for\capbeacon_02" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="BeamAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>resource\ForerunnerPower\capturepoint_02\idle_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_Top_Sail_04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_Top_Sail_03" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.2" end="1" tobone="bone_Top_Sail_02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.25" end="1" tobone="bone_Top_Sail_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.6" end="1" tobone="bone_Top_Sail_04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.65" end="1" tobone="bone_Top_Sail_03" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_Top_Sail_02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.75" end="1" tobone="bone_Top_Sail_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\for\capbeacon_02" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+</visual>

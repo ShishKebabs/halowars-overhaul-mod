@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\spawner\supply3hole_01\supply3hole_01</file>
+			</asset>
+			<attach type="LightFile" name="hook\spawner\supply3hole_01\supply3holeLight_01" tobone="BoneLight" syncanims="false" disregardorient="false" />
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\spawner\supply3hole_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\spawner\supply3hole_01\supply3hole_01</file>
+			</asset>
+			<attach type="ModelRef" name="Crate" tobone="BoneCrate" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="LightFile" name="hook\spawner\supply3hole_01\supply3holeLight_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\for\elevatorfloor_01" tobone="BoneCrate" syncanims="false" disregardorient="false" />
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\spawner\supply3hole_01\lockdown_idle_01</file>
+				<weight>1</weight>
+				<tag type="TerrainAlpha" start="0" position="0" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=1 sizeZ=1 value=on type=circle" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="MakeHole">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\spawner\supply3hole_01\supply3hole_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\spawner\supply3hole_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="TerrainAlpha" start="0" position="0.1" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=26 sizeZ=26 value=off type=circle" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Crate">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>resource\supplies\crate_01\crate_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\spawner\supply3hole_01\lockdown_idle_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.450699985027313</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.550000011920929</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+			</asset>
+			<attach type="ModelFile" name="resource\supplies\crate_01\crate_01" tobone="BoneCrate" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<logic type="BuildingCompletion">
+		<logicdata value="p0" modelref="MakeHole" weight="1" />
+		<logicdata value="p100" modelref="Default" weight="1">
+			<logic type="SquadMode">
+				<logicdata value="Lockdown" modelref="Lockdown" weight="1" />
+				<logicdata value="" modelref="Default" weight="1" />
+			</logic>
+		</logicdata>
+	</logic>
+</visual>

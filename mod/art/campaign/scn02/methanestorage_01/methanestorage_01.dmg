@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_01</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_03</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_01</action>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_04</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_large_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">left_stir,object09,object13,object14,object17,object18</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">right_stir,object05,object06,object07,object08,object10,object12,object16</action>
+			<action type="throwpart" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">lowpoly01</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object03,object04,object11,object15</action>
+			<action type="attachparticle" effect="effects\building_fx\cov\methanetanks\methaneexplosion_01">bone_impact_01</action>
+			<action type="attachparticle" effect="effects\building_fx\cov\methanetanks\methaneexplosion_01">bone_impact_07</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event>
+				<action type="swappart">rotator,rotator_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">rotator_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">rotator_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_02">
+			<event>
+				<action type="swappart">leftglass,leftglass_damaged</action>
+				<action type="swappart">lefttank,lefttank_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_02</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\cov\methanetanks\methaneexplosion_01" streamereffect="effects\building_FX\cov\damage\teenystreamer_01">leftglass_damaged</action>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">lefttank_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_03">
+			<event>
+				<action type="swappart">centerconsole,centerconsole_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_03</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">centerconsole_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_04">
+			<event>
+				<action type="swappart">leftsupport,leftsupport_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_04</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">leftsupport_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_05">
+			<event>
+				<action type="swappart">foot,foot_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">foot_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_06">
+			<event>
+				<action type="swappart">rightsupport,rightsupport_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">rightsupport_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_07">
+			<event>
+				<action type="swappart">rightglass,rightglass_damaged</action>
+				<action type="swappart">righttanktop,righttanktop_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\cov\methanetanks\methanestreamer_01">bone_impact_06</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_fx\cov\methanetanks\methanestreamer_01">rightglass_damaged,righttanktop_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_08">
+			<event>
+				<action type="swappart">backpanel,backpanel_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\cov\methanetanks\methaneexplosion_01" streamereffect="effects\building_FX\cov\damage\teenystreamer_01">backpanel_damaged</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+</damagetemplate>

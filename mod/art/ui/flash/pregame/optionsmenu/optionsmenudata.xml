@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<FlashMovieDefinition>
+	<Ticker mode="MainMenu" />
+	<ControlList>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonB" command="cancel" event="start" sound="" />
+				<Control name="KeyEscape" command="cancel" event="start" sound="" />
+				<Control name="ButtonX" command="defaults" event="start" sound="" />
+				<Control name="ButtonY" command="applyResolution" event="start" sound="" />
+			</Mode>
+		</Controls>
+	</ControlList>
+	<detailtext path="DetailText" />
+	<detailimage path="DetailImage" />
+	<tabs>
+		<tab label="$$24610$$Controls" image="img://art\ui\flash\shared\textures\options\options_controls.ddx">
+			<option label="Button Help" name="ShowButtonHelp" description="Show Button Help" config="Demo" ingame="true">
+				<checkbox />
+			</option>
+			<option label="$$24584$$Rumble" name="RumbleEnabled" description="$$24614$$Rumble description">
+				<checkbox />
+			</option>
+			<option label="$$24585$$Camera Rotation" name="CameraRotationEnabled" description="$$24615$$">
+				<checkbox />
+			</option>
+			<option label="$$24588$$Default Zoom" name="DefaultZoomLevel" description="$$24618$$">
+				<slider minValue="60" maxValue="115" step="5" defaultValue="85" minLabel="$$24589$$Min" maxLabel="$$24590$$Max" />
+			</option>
+			<option label="$$24591$$Crosshair Stickyness" name="StickyCrosshairSensitivity" description="$$24619$$">
+				<slider minValue="0" maxValue="166" step="33" defaultValue="10" minLabel="$$24592$$Off" maxLabel="$$24593$$Very Sticky" />
+			</option>
+			<option label="$$24594$$Scroll Speed" name="ScrollSpeed" description="$$24620$$">
+				<slider minValue="0" maxValue="15" step="1" defaultValue="10" minLabel="$$24595$$Slow" maxLabel="$$24596$$Fast" />
+			</option>
+			<option label="$$24597$$Camera Follow" name="CameraFollowEnabled" description="$$24621$$">
+				<checkbox />
+			</option>
+			<option label="$$26609$$Mouse Clipping" name="MouseClipMode" description="$$26610$$" pcsetting="true">
+				<slider minValue="0" maxValue="2" step="1" defaultValue="1" />
+			</option>
+			<option label="$$26290$$Input Scheme" name="InputScheme" description="$$26291$$" pcsetting="true" userinput="true" pregame="true">
+				<InputYorn />
+			</option>
+			<option label="$$26290$$Input Scheme" name="InputScheme" description="$$26637$$" pcsetting="true" ingame="true" keybind="true">
+				<list>
+					<item name="" />
+				</list>
+			</option>
+			<option label="$$26317$$Hotkeys" name="HotkeyTitle" description="" pcsetting="true" title="true" keyboardOnly="true">
+				<list>
+					<item name="" />
+				</list>
+			</option>
+			<option label="$$26089$$Keybind0" name="KeybindSettings" description="$$26108$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 0" value="0" keybindName="Start" />
+				</list>
+			</option>
+			<option label="$$26090$$Keybind1" name="KeybindSettings" description="$$26109$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 1" value="1" keybindName="Back" />
+				</list>
+			</option>
+			<option label="$$26091$$Keybind2" name="KeybindSettings" description="$$26110$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 2" value="2" keybindName="GlobalSelect" />
+				</list>
+			</option>
+			<option label="$$26092$$Keybind3" name="KeybindSettings" description="$$26111$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 3" value="3" keybindName="SubSelectNext" />
+				</list>
+			</option>
+			<option label="$$26093$$Keybind4" name="KeybindSettings" description="$$26112$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 4" value="4" keybindName="ScreenSelect" />
+				</list>
+			</option>
+			<option label="$$26094$$Keybind5" name="KeybindSettings" description="$$26113$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 5" value="5" keybindName="Clear" />
+				</list>
+			</option>
+			<option label="$$26095$$Keybind6" name="KeybindSettings" description="$$26114$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 6" value="6" keybindName="Ability" />
+				</list>
+			</option>
+			<option label="$$26096$$Keybind7" name="KeybindSettings" description="$$26115$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 7" value="7" keybindName="TranslationLeft" />
+				</list>
+			</option>
+			<option label="$$26097$$Keybind8" name="KeybindSettings" description="$$26116$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 8" value="8" keybindName="TranslationRight" />
+				</list>
+			</option>
+			<option label="$$26098$$Keybind9" name="KeybindSettings" description="$$26117$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 9" value="9" keybindName="TranslationUp" />
+				</list>
+			</option>
+			<option label="$$26099$$Keybind10" name="KeybindSettings" description="$$26118$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 10" value="10" keybindName="TranslationDown" />
+				</list>
+			</option>
+			<option label="$$26100$$Keybind11" name="KeybindSettings" description="$$26119$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 11" value="11" keybindName="ResetCamera" />
+				</list>
+			</option>
+			<option label="$$26101$$Keybind12" name="KeybindSettings" description="$$26120$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 12" value="12" keybindName="SetRally" />
+				</list>
+			</option>
+			<option label="$$26102$$Keybind13" name="KeybindSettings" description="$$26121$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 13" value="13" keybindName="GotoAlert" />
+				</list>
+			</option>
+			<option label="$$26103$$Keybind14" name="KeybindSettings" description="$$26122$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 14" value="14" keybindName="GoToBase" />
+				</list>
+			</option>
+			<option label="$$26104$$Keybind15" name="KeybindSettings" description="$$26123$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 15" value="15" keybindName="GoToArmy" />
+				</list>
+			</option>
+			<option label="$$26105$$Keybind16" name="KeybindSettings" description="$$26124$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 16" value="16" keybindName="Powers" />
+				</list>
+			</option>
+			<option label="$$26106$$Keybind17" name="KeybindSettings" description="$$26125$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 17" value="17" keybindName="Flare" />
+				</list>
+			</option>
+			<option label="$$26107$$Text Chat Title" name="KeybindSettings" description="$$26324$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26481$$Keybind 18" value="18" keybindName="TextChat" />
+				</list>
+			</option>
+			<option label="$$26315$$Keybind19" name="KeybindSettings" description="$$26318$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26666$$Keybind 19" value="19" keybindName="CameraRotation" />
+				</list>
+			</option>
+			<option label="$$26299$$Keybind20" name="KeybindSettings" description="$$26319$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26550$$Keybind 20" value="20" keybindName="CameraRotationLeftAlt" />
+				</list>
+			</option>
+			<option label="$$26301$$Keybind21" name="KeybindSettings" description="$$26320$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26551$$Keybind 21" value="21" keybindName="CameraRotationRightAlt" />
+				</list>
+			</option>
+			<option label="$$26303$$Keybind22" name="KeybindSettings" description="$$26321$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26667$$Keybind 22" value="22" keybindName="CameraZoom" />
+				</list>
+			</option>
+			<option label="$$26305$$Keybind23" name="KeybindSettings" description="$$26322$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26302$$" value="23" keybindName="CameraZoomInAlt" />
+				</list>
+			</option>
+			<option label="$$26306$$Keybind24" name="KeybindSettings" description="$$26323$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26300$$" value="24" keybindName="CameraZoomOutAlt" />
+				</list>
+			</option>
+			<option label="$$26307$$Keybind25" name="KeybindSettings" description="$$26324$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26308$$Keybind 25" value="25" keybindName="FasterCameraPanning" />
+				</list>
+			</option>
+			<option label="$$26309$$Keybind26" name="KeybindSettings" description="$$26325$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26310$$Keybind 26" value="26" keybindName="MultiUnitSelection" />
+				</list>
+			</option>
+			<option label="$$26330$$Control Group Title" name="ControlGroupTitle" description="" pcsetting="true" title="true" keyboardOnly="true">
+				<list>
+					<item name="" />
+				</list>
+			</option>
+			<option label="$$26312$$Keybind28" name="KeybindSettings" description="$$26327$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26640$$" value="28" keybindName="MakeControlGroup" />
+				</list>
+			</option>
+			<option label="$$26313$$Keybind29" name="KeybindSettings" description="$$26328$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26641$$" value="29" keybindName="AddToControlGroup" />
+				</list>
+			</option>
+			<option label="$$26311$$Keybind27" name="KeybindSettings" description="$$26326$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26642$$" value="27" keybindName="SelectControlGroup" />
+				</list>
+			</option>
+			<option label="$$26331$$Keybind31" name="KeybindSettings" description="$$26332$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26644$$" value="31" keybindName="AddAdditionalToControlGroup" />
+				</list>
+			</option>
+			<option label="$$26314$$Keybind30" name="KeybindSettings" description="$$26329$$Default description" pcsetting="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="$$26643$$" value="30" keybindName="AddAdditionalToControlGroup" />
+				</list>
+			</option>
+			<option label="$$26695$$Radial Menu Hotkeys title" name="RadialMenuHotkeyTitle" description="" pcsetting="true" title="true" keyboardOnly="true">
+				<list>
+					<item name="" />
+				</list>
+			</option>
+			<option label="$$26696$$Keybind36" name="KeybindSettings" description="$$26697$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 36" value="36" keybindName="RadialMenuUse1" />
+				</list>
+			</option>
+			<option label="$$26698$$Keybind37" name="KeybindSettings" description="$$26699$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 37" value="37" keybindName="RadialMenuCancel1" />
+				</list>
+			</option>
+			<option label="$$26700$$Keybind38" name="KeybindSettings" description="$$26701$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 38" value="38" keybindName="RadialMenuUse2" />
+				</list>
+			</option>
+			<option label="$$26702$$Keybind39" name="KeybindSettings" description="$$26703$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 39" value="39" keybindName="RadialMenuCancel2" />
+				</list>
+			</option>
+			<option label="$$26704$$Keybind40" name="KeybindSettings" description="$$26705$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 40" value="40" keybindName="RadialMenuUse3" />
+				</list>
+			</option>
+			<option label="$$26706$$Keybind41" name="KeybindSettings" description="$$26707$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 41" value="41" keybindName="RadialMenuCancel3" />
+				</list>
+			</option>
+			<option label="$$26708$$Keybind42" name="KeybindSettings" description="$$26709$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 42" value="42" keybindName="RadialMenuUse4" />
+				</list>
+			</option>
+			<option label="$$26710$$Keybind43" name="KeybindSettings" description="$$26711$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 43" value="43" keybindName="RadialMenuCancel4" />
+				</list>
+			</option>
+			<option label="$$26712$$Keybind44" name="KeybindSettings" description="$$26713$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 44" value="44" keybindName="RadialMenuUse5" />
+				</list>
+			</option>
+			<option label="$$26714$$Keybind45" name="KeybindSettings" description="$$26715$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 45" value="45" keybindName="RadialMenuCancel5" />
+				</list>
+			</option>
+			<option label="$$26716$$Keybind46" name="KeybindSettings" description="$$26717$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 46" value="46" keybindName="RadialMenuUse6" />
+				</list>
+			</option>
+			<option label="$$26718$$Keybind47" name="KeybindSettings" description="$$26719$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 47" value="47" keybindName="RadialMenuCancel6" />
+				</list>
+			</option>
+			<option label="$$26720$$Keybind48" name="KeybindSettings" description="$$26721$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 48" value="48" keybindName="RadialMenuUse7" />
+				</list>
+			</option>
+			<option label="$$26722$$Keybind49" name="KeybindSettings" description="$$26723$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 49" value="49" keybindName="RadialMenuCancel7" />
+				</list>
+			</option>
+			<option label="$$26724$$Keybind50" name="KeybindSettings" description="$$26725$$Default description" pcsetting="true" userinput="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 50" value="50" keybindName="RadialMenuUse8" />
+				</list>
+			</option>
+			<option label="$$26726$$Keybind51" name="KeybindSettings" description="$$26727$$Default description" pcsetting="true" userinput="true" keybind="true" keyboardOnly="true">
+				<list>
+					<item name="Keybind 51" value="51" keybindName="RadialMenuCancel8" />
+				</list>
+			</option>
+			<option label="$$26600$$Alternate hotkeys" name="ControlGroupTitle" description="" pcsetting="true" title="true" keyboardOnly="true">
+				<list>
+					<item name="" />
+				</list>
+			</option>
+			<option label="$$26601$$Keybind32" name="KeybindSettings" description="$$26602$$Default description" pcsetting="true" userinput="true" keyboardOnly="true" alternate="true">
+				<list>
+					<item name="Keybind 32" value="32" keybindName="TranslationLeftAlt" />
+				</list>
+			</option>
+			<option label="$$26603$$Keybind33" name="KeybindSettings" description="$$26604$$Default description" pcsetting="true" userinput="true" keyboardOnly="true" alternate="true">
+				<list>
+					<item name="Keybind 33" value="33" keybindName="TranslationRightAlt" />
+				</list>
+			</option>
+			<option label="$$26605$$Keybind34" name="KeybindSettings" description="$$26606$$Default description" pcsetting="true" userinput="true" keyboardOnly="true" alternate="true">
+				<list>
+					<item name="Keybind 34" value="34" keybindName="TranslationUpAlt" />
+				</list>
+			</option>
+			<option label="$$26607$$Keybind35" name="KeybindSettings" description="$$26608$$Default description" pcsetting="true" userinput="true" keyboardOnly="true" alternate="true">
+				<list>
+					<item name="Keybind 35" value="35" keybindName="TranslationDownAlt" />
+				</list>
+			</option>
+		</tab>
+		<tab label="$$24611$$Audio" image="img://art\ui\flash\shared\textures\options\options_audio.ddx">
+			<option label="$$24602$$Music Volume" name="MusicVolume" description="$$24624$$">
+				<slider step="1" />
+			</option>
+			<option label="$$24603$$Sound FX Volume" name="SFXVolume" description="$$24625$$">
+				<slider step="1" />
+			</option>
+			<option label="$$24604$$Voice Volume" name="VoiceVolume" description="$$24626$$">
+				<slider step="1" />
+			</option>
+			<option label="$$26739$$Cinematic Volume" name="CinematicVolume" description="$$26740$$">
+				<slider step="1" />
+			</option>
+			<option label="$$26741$$Voice Chat Volume" name="VoiceChatVolume" description="$$26742$$" win64setting="true">
+				<slider step="1" />
+			</option>
+			<option label="$$24605$$Subtitles" name="SubtitlesEnabled" description="$$24627$$">
+				<checkbox />
+			</option>
+			<option label="$$25866$$Chat Text" name="ChatTextEnabled" description="$$25867$$">
+				<checkbox />
+			</option>
+			<option label="$$26743$$Voice Chat" name="VoiceChatEnabled" description="$$26744$$" win64setting="true">
+				<checkbox />
+			</option>
+		</tab>
+		<tab label="$$24612$$Graphics" image="img://art\ui\flash\shared\textures\options\options_graphic.ddx">
+			<option label="$$26626$$Fullscreen" name="Fullscreen" description="$$26627$$" pcsetting="true">
+				<checkbox />
+			</option>
+			<option label="$$26734$$FullscreenExclusive" name="FullscreenExclusive" description="$$26735$$" win64setting="true">
+				<checkbox />
+			</option>
+			<option label="$$26670$$Fullscreen resolution" name="FullscreenResolution" description="$$26671$$" pcsetting="true">
+				<slider minValue="0" maxValue="1" step="1" defaultValue="0" />
+			</option>
+			<option label="$$24606$$Brightness/Gamma" name="Brightness" description="$$24628$$">
+				<slider step="5" defaultValue="100" />
+			</option>
+			<option label="$$26333$$Vertical Synchronization" name="WaitForVsync" description="$$26334$$" pcsetting="true">
+				<checkbox />
+			</option>
+			<option label="$$26162$$Anti-Aliasing" name="AntiAliasing" description="$$26163$$" pcsetting="true">
+				<slider minValue="0" maxValue="5" step="1" defaultValue="2" />
+			</option>
+			<option label="$$26164$$Texture Detail" name="TextureDetail" description="$$26165$$" pcsetting="true" pregame="true">
+				<slider minValue="0" maxValue="2" step="1" defaultValue="1" minLabel="$$26172$$Low" maxLabel="$$26173$$High" />
+			</option>
+			<option label="$$26166$$Texture Filtering" name="TextureFiltering" description="$$26167$$" pcsetting="true" pregame="true">
+				<slider minValue="0" maxValue="7" step="1" defaultValue="7" minLabel="$$26172$$Low" maxLabel="$$26173$$High" />
+			</option>
+			<option label="$$26168$$Shadow Quality" name="ShadowSetting" description="$$26169$$" pcsetting="true">
+				<slider minValue="0" maxValue="3" step="1" defaultValue="1" minLabel="$$26172$$Low" maxLabel="$$26173$$High" />
+			</option>
+			<option label="$$26170$$High quality Particles" name="HighQualityParticles" description="$$26171$$" pcsetting="true">
+				<checkbox />
+			</option>
+		</tab>
+		<tab label="$$24609$$Game" image="img://art\ui\flash\shared\textures\options\options_game.ddx">
+			<option label="[E3 Cheat] Resource Boost" name="ResourceBoost" description="Add 10k Supplies" config="Demo" ingame="true">
+				<button />
+			</option>
+			<option label="[E3 Cheat] Fog of War" name="FogOfWarEnabled" description="Enable/Disable the Fog of War" config="Demo" ingame="true">
+				<checkbox />
+			</option>
+			<option label="$$24608$$Zoom MiniMap" name="MiniMapZoomEnabled" description="$$24630$$">
+				<checkbox />
+			</option>
+			<option label="$$26072$$Always Show Hitpoint Bars" name="AlwaysShowHitpointBars" description="$$26073$$">
+				<checkbox />
+			</option>
+			<option label="$$26074$$Unique Paint Jobs" name="UniquePaintJobs" description="$$26075$$">
+				<checkbox />
+			</option>
+			<option label="$$24607$$Friend or Foe Colors" name="FriendOrFoeColorsEnabled" description="$$24629$$">
+				<checkbox />
+			</option>
+			<option label="$$24569$$AI Advisor" name="AIAdvisorEnabled" description="$$24570$$AI Advisor description" image="">
+				<checkbox />
+			</option>
+			<option label="$$24571$$Default AI" name="DefaultAISettings" description="$$24572$$Default AI description">
+				<list>
+					<item name="$$24577$$Adaptive" value="5" />
+					<item name="$$24573$$Easy" value="0" />
+					<item name="$$24574$$Normal" value="1" />
+					<item name="$$24575$$Heroic" value="2" />
+					<item name="$$24576$$Legendary" value="3" />
+				</list>
+			</option>
+		</tab>
+	</tabs>
+</FlashMovieDefinition>

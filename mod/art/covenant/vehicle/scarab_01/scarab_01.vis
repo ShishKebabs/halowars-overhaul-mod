@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\vehicle\scarab_01\scarab_damaged_01</file>
+				<damagefile>covenant\vehicle\scarab_01\scarab_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="Bone Head" frombone="Bone Head" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="FrontShadePitch" tobone="Bone Turret_Base" frombone="Bone Turret_Base" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="8" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="0.2" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.167" end="0.45" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.2" end="0.417" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.583" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.5" end="0.733" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.583" end="0.833" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.733" end="0.917" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.833" end="1" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\walk_04</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_scarab_footstep_up" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0" end="0.2" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.167" end="0.45" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.199" end="1" name="ani_scarab_footstep" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.2" end="0.417" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.353" end="1" name="ani_scarab_footstep" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.41" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.583" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.494" end="1" name="play_scarab_footstep_up" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.5" end="0.733" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.558" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.583" end="0.833" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.679" end="1" name="ani_scarab_footstep" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.733" end="0.917" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.833" end="1" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.859" end="1" name="ani_scarab_footstep" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.917" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.987" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="FrontShadeTurretAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="shadeTurretAttack">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="scarabBeamAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_large_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_scarab_struggle_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.006" end="1" name="effects\vehicle_fx\cov\scarab\megadethexplosion_01" tobone="Bone_Leg_RF_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="2.28" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.013" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.115" end="1" name="effects\vehicle_fx\cov\scarab\megadethexplosion_01" tobone="Bone_Leg_LF_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="2.28" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.12" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.237" end="1" name="effects\vehicle_fx\cov\scarab\megadethexplosion_01" tobone="bone_impact_05" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="2.28" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.24" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.288" end="1" name="effects\vehicle_fx\cov\scarab\megadethexplosion_01" tobone="Bone_Leg_LR_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="2.28" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.29" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.51" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.513" end="1" name="effects\vehicle_fx\cov\scarab\megadethexplosion_01" tobone="Bone Head" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="2.28" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\scarab\megadethfire_01" tobone="Bone Body" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/vehicle_fx/cov/scarab/megadethooze_01" tobone="Bone Head" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/building_FX/Cov/damage/teenystreamer_01" tobone="Bone_Leg_RF_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/building_FX/Cov/damage/teenystreamer_01" tobone="Bone_Leg_LF_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/building_FX/Cov/damage/teenystreamer_01" tobone="Bone Head" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/building_FX/Cov/damage/teenystreamer_01" tobone="Bone Turret_Base" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/building_FX/Cov/damage/teenystreamer_01" tobone="Bone_Leg_LR_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportHuge_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportHuge_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnHuge_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnLeft" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\turn_left_02</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="0.2" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.167" end="0.45" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.2" end="0.417" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.442" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.583" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.5" end="0.733" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.583" end="0.833" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.59" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.733" end="0.917" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.833" end="1" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.923" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="1" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnRight" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\turn_right_02</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="0.2" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.167" end="0.45" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.2" end="0.417" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.417" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_LF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.583" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.5" end="0.733" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.583" end="0.833" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.59" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_RR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.733" end="0.917" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.833" end="1" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.904" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_RF_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="1" end="1" name="effects\terraineffects\scarab_step" tobone="Bone_Leg_LR_Tip" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Transition" tweenTime="10" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_to_walk_01</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="0.125" tobone="Bone_LF_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.125" end="0.3" tobone="Bone_Leg_RR_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.125" end="0.25" tobone="Bone_LF_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.3" end="0.5" tobone="Bone_Leg_RR_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.65" tobone="Bone_RF_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.625" end="0.825" tobone="Bone_Leg_LR_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.65" end="0.825" tobone="Bone_RF_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.825" end="0.975" tobone="Bone_Leg_LR_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="0.2" tobone="Bone_LF_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.167" end="0.45" tobone="Bone_Leg_RR_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.2" end="0.417" tobone="Bone_LF_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.45" end="0.583" tobone="Bone_Leg_RR_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.5" end="0.733" tobone="Bone_RF_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.583" end="0.833" tobone="Bone_Leg_LR_Tip" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.733" end="0.917" tobone="Bone_RF_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="GroundIK" start="0" position="0.833" end="1" tobone="Bone_Leg_LR_Tip" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\vehicle\scarab_01\scarab_head_01</file>
+			</asset>
+			<point pointType="Pickup" bone="Bone Head" pointData="Metal" />
+		</component>
+		<anim type="scarabBeamAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="FrontShadePitch">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\vehicle\scarab_01\scarab_rearTurret</file>
+			</asset>
+			<attach type="ModelRef" name="FrontShadeTurret" tobone="Bone Turret" frombone="Bone Turret" syncanims="true" disregardorient="false" />
+			<point pointType="Pickup" bone="Bone Turret" pointData="Metal" />
+		</component>
+	</model>
+	<model name="FrontShadeTurret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\vehicle\scarab_01\plasmaGun_01</file>
+			</asset>
+			<point pointType="Pickup" bone="Bone Turret" pointData="Metal" />
+		</component>
+		<anim type="FrontShadeTurretAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="shadeTurretAttack">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\idle_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects/vehicle_fx/cov/scarab/turretMuzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects/vehicle_fx/cov/scarab/turretMuzzleblast_01" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects/vehicle_fx/cov/scarab/turretMuzzleblast_01" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.7" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.7" end="1" name="effects/vehicle_fx/cov/scarab/turretMuzzleblast_01" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.9" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.9" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.9" end="1" name="effects/vehicle_fx/cov/scarab/turretMuzzleblast_01" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

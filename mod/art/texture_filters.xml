@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<rules>
+	<rule name="Normal Map" filter="*_nm*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="false" />
+		<property name="filter" value="BOX" />
+		<property name="preprocess" value="true" />
+		<property name="output_format_solid" value="BC5" />
+		<property name="output_format_alpha" value="BC5" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+	<rule name="Specular Map" filter="*_sp*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="false" />
+		<property name="preprocess" value="true" />
+		<property name="output_format_solid" value="BC7" />
+		<property name="output_format_alpha" value="BC7" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+	<rule name="Difuse Map" filter="*_df*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="true" />
+		<property name="preprocess" value="true" />
+		<property name="output_format_solid" value="BC7" />
+		<property name="output_format_alpha" value="BC7" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+	<rule name="Emmissive" filter="*_em*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="true" />
+		<property name="preprocess" value="true" />
+		<property name="output_format_solid" value="BC7" />
+		<property name="output_format_alpha" value="BC7" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+	<rule name="Environment Map HDR" filter="*_en*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="false" />
+		<property name="preprocess" value="true" />
+		<property name="output_format_solid" value="4F16" />
+		<property name="output_format_alpha" value="4F16" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+	<rule name="DDS" filter="*.dds">
+		<property name="generate_mips" value="false" />
+		<property name="srgb" value="true" />
+		<property name="output_format_solid" value="AUTO" />
+		<property name="output_format_alpha" value="AUTO" />
+		<property name="output_format_only_alpha" value="BC7" />
+		<property name="preprocess" value="false" />
+	</rule>
+	<rule name="Generic" filter="*">
+		<property name="generate_mips" value="true" />
+		<property name="srgb" value="true" />
+		<property name="output_format_solid" value="BC7" />
+		<property name="output_format_alpha" value="BC7" />
+		<property name="output_format_only_alpha" value="BC7" />
+	</rule>
+</rules>

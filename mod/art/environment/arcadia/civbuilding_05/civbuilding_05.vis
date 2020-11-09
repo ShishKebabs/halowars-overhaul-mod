@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>environment\arcadia\civbuilding_05\civbuilding_05</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\arcadia\civbuilding_01\civbuilding_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\arcadia\civbuilding_01\civbuilding_death_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\civ\buildingdeath_01" tobone="bone_main" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+</visual>

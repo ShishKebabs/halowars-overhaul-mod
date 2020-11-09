@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="UnscSocket">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\bonus\socketUNSC_01\socketUNSC_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="CovSocket">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\bonus\socketCov_01\socketCov_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\building\sniperplatform_01\sniperplatform_01</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="Tech">
+		<logicdata value="unsc_basic" modelref="UnscSocket" weight="1" />
+		<logicdata value="cov_basic" modelref="CovSocket" weight="1" />
+		<logicdata modelref="Default" weight="1" />
+	</logic>
+</visual>

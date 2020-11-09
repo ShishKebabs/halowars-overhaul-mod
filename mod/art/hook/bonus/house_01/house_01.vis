@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Lockdown">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\bonus\house_01\house_01</file>
+			</asset>
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\unpack_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="hook\building\sniperplatform_01\sniperplatform_light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone FX01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\pack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_hook_bonus_house_end" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\bonus\house_01\house_01</file>
+			</asset>
+			<attach type="LightFile" name="hook\building\sniperplatform_01\sniperplatform_light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone FX01" syncanims="false" disregardorient="false" />
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\unpack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_hook_bonus_house_start" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="LightFile" name="hook\building\sniperplatform_01\sniperplatform_light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone FX01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\bonus\house_01\pack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_hook_bonus_house_end" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+			</asset>
+		</anim>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Lockdown" modelref="Lockdown" weight="1" />
+		<logicdata value="" modelref="Default" weight="1" />
+	</logic>
+</visual>

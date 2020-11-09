@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<attach type="ParticleFile" name="effects\environment\harvest\lava_flareup_02" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Launch" bone="Bip01 R Hand" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_idle_01</file>
+				<weight>10</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_idle_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_idle_03</file>
+				<weight>5</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_jog_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\run_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\stunned_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Attack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\kamikazegrunt_01\kamikazegrunt_attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByFire" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_fire_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_fire_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_fire_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByHeadshot" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_headshot_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMachinegun" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_machinegun_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_machinegun_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_machinegun_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMelee" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_melee_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_melee_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_melee_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\grunt_01\death_melee_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

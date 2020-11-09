@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_damaged_01</file>
+				<damagefile>unsc\building\command_01\command_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Hatch" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Cover" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\building\command_01\commandBase_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_02" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_03" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_04" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_05" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_06" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_07" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_08" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_09" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_10" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_11" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_12" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_00" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\unlock_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_large_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.006" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainAlpha" start="0" position="0.01" end="1" tobone="bone_terrainAlpha01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=24 sizeZ=20 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainAlpha" start="0" position="0.01" end="1" tobone="bone_terrainAlpha02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=11 sizeZ=9 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.051" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_11" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.0710001" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_06" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.0710001" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.135" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.212" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_09" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.212" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.436" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_07" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.436" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.474" end="1" name="effects\impacts\unsc\maccannon_01\maccannon_massive_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.98" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.558" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.564" end="1" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" tobone="bone_impact_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TrainInfantry" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_infantry_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="effects\building_FX\unsc\commandcenter\spawnFrontLights_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="TrainVehicles" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_vehicles_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="effects\building_FX\unsc\commandcenter\spawnFrontLights_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="TrainAir" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_air_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\yellowblinkingLight_01" tobone="bone_FX05" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\yellowblinkingLight_01" tobone="bone_FX06" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Research" exitAction="Loop" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_air_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\blueblinkingLight_01" tobone="bone_FX01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\blueblinkingLight_01" tobone="bone_FX02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\blueblinkingLight_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\commandcenter\blueblinkingLight_01" tobone="bone_FX04" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Cover">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_cover_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="deathObject" tobone="GrannyRootBone" frombone="bone_main" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\unlock_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="ani_unsc_command_door_drop" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_unsc_command_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.333" end="1" name="ani_unsc_command_clunk_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.718" end="1" name="ani_unsc_command_start_lockdown" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.724" end="1" name="ani_unsc_command_clunk_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TrainInfantry" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_infantry_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TrainVehicles" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_vehicles_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TrainAir" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_air_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Hatch">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_hatch_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="deathObject" tobone="GrannyRootBone" frombone="bone_main" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\unlock_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TrainInfantry" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_infantry_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TrainVehicles" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_vehicles_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TrainAir" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\train_air_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="ani_unsc_command_start_lockdown" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.801" end="1" name="ani_unsc_command_start_lockdown" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_damaged_01</file>
+				<damagefile>unsc\building\command_01\command_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Hatch" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="LockdownCover" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\building\command_01\commandBase_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_idle_01</file>
+				<weight>1</weight>
+				<tag type="TerrainAlpha" start="0" position="0.01" end="1" tobone="bone_terrainAlpha01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=24 sizeZ=20 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainAlpha" start="0" position="0.01" end="1" tobone="bone_terrainAlpha02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=11 sizeZ=9 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ModelRef" name="deathObject" tobone="GrannyRootBone" frombone="bone_main" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\unlock_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="LockdownCover">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_cover_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="deathObject" tobone="GrannyRootBone" frombone="bone_main" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\lockdown_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="ani_unsc_command_start_lockdown" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="ani_unsc_command_door_drop" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="ani_unsc_command_clunk_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.859" end="1" name="ani_unsc_command_clunk_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.968" end="1" name="ani_unsc_command_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\building\command_01\unlock_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Con1_Building">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_damaged_01</file>
+				<damagefile>unsc\building\command_01\command_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Con1_Cover" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con1_Hatch" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\building\command_01\command_base_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Con1_Helper" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con1_BuildPod" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Con1_Foundation" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.128" end="1" name="effects\building_FX\unsc\generic\podlandingpoof_01" tobone="bone_spawnPoint03" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.218" end="1" tobone="BoneRear" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.8" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.622" end="1" name="effects\building_FX\unsc\generic\podlandingpoof_01" tobone="bone_terrainAlpha01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.679" end="1" tobone="BoneFront" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.8" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainAlpha" start="0" position="0.72" end="1" tobone="bone_terrainAlpha01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=18 sizeZ=15 value=off type=rect" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+				<tag type="TerrainAlpha" start="0" position="0" end="1" tobone="bone_terrainAlpha01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=24 sizeZ=20 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ModelRef" name="deathObject" tobone="GrannyRootBone" frombone="bone_main" syncanims="true" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Con1_Cover">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_cover_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.891" end="1" name="ani_unsc_command_door_drop" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.891" end="1" name="ani_unsc_command_clunk_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.942" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Con1_Hatch">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_hatch_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Con1_BuildPod">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\constructor\buildpod_01\buildpod_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podFWDthrusters_01" tobone="BoneFX01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podFWDthrusters_01" tobone="BoneFX02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podFWDthrusters_01" tobone="BoneFX03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podFWDthrusters_01" tobone="BoneFX04" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podRetrothrusters_01" tobone="BoneFXFR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podRetrothrusters_01" tobone="BoneFXRL" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podRetrothrusters_01" tobone="BoneFXRR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\podRetrothrusters_01" tobone="BoneFXFL" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\PodIdle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.064" end="1" name="ani_buildpod_intro" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.135" end="1" name="ani_buildpod_hit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.157" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegRR_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.2" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegFR_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.2" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegFL_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.206" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegRL_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.231" end="1" name="ani_buildpod_screw" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.237" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.276" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.282" end="1" name="ani_buildpod_exit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.532" end="1" name="ani_buildpod_intro" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.596" end="1" name="ani_buildpod_hit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.63" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegRR_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.633" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegRL_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegFL_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="BoneLegFR_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.692" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.692" end="1" name="ani_buildpod_screw" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.744" end="1" name="ani_buildpod_exit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.744" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.75" end="1" name="play_ani_welding_pod" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.904" end="1" name="stop_ani_welding_pod" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Con1_Foundation">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\foundation_07</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.889999985694885</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.989999890327454</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+			</asset>
+		</anim>
+	</model>
+	<model name="Con_Socket">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\socket_01\socket_01</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\building\socket_01\socketTrim_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.889999985694885</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.989999949932098</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+			</asset>
+		</anim>
+	</model>
+	<model name="Con_TurretSocket">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\turretSocket_01\turretSocket_01</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\building\turretSocket_01\turretSocketTrim_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\constructionIdle_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.889999985694885</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.989999890327454</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+			</asset>
+		</anim>
+	</model>
+	<model name="Con1_Helper">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\command_01\command_conHelper_01</file>
+			</asset>
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket01" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket02" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket03" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket04" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket05" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_TurretSocket" tobone="BoneTurret02" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_TurretSocket" tobone="BoneTurret03" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_TurretSocket" tobone="BoneTurret00" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_TurretSocket" tobone="BoneTurret01" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket06" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Con_Socket" tobone="BoneSocket07" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\conHelper_idle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.72" end="1" name="effects\building_FX\unsc\commandcenter\weldingSeam_01" tobone="bone_weld_effect_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.72" end="1" name="effects\building_FX\unsc\commandcenter\weldingSeam_01" tobone="bone_weld_effect_02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.781" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.786" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_07" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.797" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.8" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_06" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.81" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.815" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_03" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.817" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_06" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.82" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.82" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.824" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_07" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.826" end="1" name="effects\building_FX\unsc\commandcenter\weldingspark_01" tobone="bone_spot_weld_01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<logic type="BuildingCompletion">
+		<logicdata value="p0" modelref="Con1_Building" weight="1" />
+		<logicdata value="p100" modelref="Default" weight="1">
+			<logic type="SquadMode">
+				<logicdata value="Lockdown" modelref="Lockdown" weight="1" />
+				<logicdata value="Normal" modelref="Default" weight="1" />
+			</logic>
+		</logicdata>
+	</logic>
+</visual>

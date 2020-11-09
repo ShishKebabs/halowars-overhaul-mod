@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\harvest\methanetank_01\methanetank_damaged_01</file>
+				<damagefile>environment\harvest\methanetank_01\methanetank_01</damagefile>
+			</asset>
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\environment\harvest\methanetankbubbles_01" tobone="bone_FX01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\environment\harvest\methanetankbubbles_01" tobone="bone_FX02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Detonated" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

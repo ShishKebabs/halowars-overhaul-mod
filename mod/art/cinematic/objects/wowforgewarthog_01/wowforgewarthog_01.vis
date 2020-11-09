@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\warthog_damage_01</file>
+				<damagefile>unsc\vehicle\warthog_01\warthog_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="bone_turret_01" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Driver" tobone="Bip02" frombone="Bip02" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="bone_wheel_01" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="bone_wheel_02" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="bone_wheel_03" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="bone_wheel_04" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="PassengerLegs" tobone="bone_body" frombone="bone_body" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="PassengerTop" tobone="Bone Sniper" frombone="bone_body" syncanims="true" disregardorient="false" />
+			<point pointType="Impact" bone="bone_impact_05" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_04" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_03" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_02" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="TerrainEffect" name="effects\terraineffects\warthog_tail" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="TerrainEffect" name="effects\terraineffects\warthog_tiredirt" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="TerrainEffect" name="effects\terraineffects\warthog_tail" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="TerrainEffect" name="effects\terraineffects\warthog_tail" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="TerrainEffect" name="effects\terraineffects\warthog_tiredirt" tobone="bone_fender" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\forgecannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_burning_husk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="stop_weapon_warthog_mg_loop" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_med_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.006" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_10" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.01" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.08" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.083" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.135" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.14" end="1" name="play_pfx_explosion_secondary_small" tobone="bone_impact_04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.245" end="1" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_01" tobone="bone_turret_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.25" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.28" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.284" end="1" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_02" tobone="bone_turret_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.295" end="1" name="play_warthog_land" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.39" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.391" end="1" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_04" tobone="bone_turret_01" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.455" end="1" name="play_damage_warthog" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\death_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_burning_husk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="stop_weapon_warthog_mg_loop" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_med_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.02" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_05" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.02" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.07" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.0710001" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_10" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.147" end="1" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_impact_04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_pfx_explosion_secondary_small" tobone="bone_impact_04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.186" end="1" name="play_warthog_land" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_damage_warthog" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_turret_01" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wench" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_fender" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.006" end="1" name="play_eng_warthog_birth_intro" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="bone_body" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="bone_body" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\mg_turret</file>
+			</asset>
+			<attach type="ModelRef" name="Turretgun" tobone="bone_turretgun" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Gunner" tobone="Bip01" frombone="Bip01" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\forgecannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turretgun">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\warthog_gauss_01</file>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.01" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.01" end="1" name="play_test_wh_3shot" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.13" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.13" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.24" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.24" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.29" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.35" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.41" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.48" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.48" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.52" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.59" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.65" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.65" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.69" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.69" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.74" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.01" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.01" end="1" name="play_test_wh_3shot_02" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.13" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.13" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.24" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.24" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.29" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.35" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.41" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.48" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.48" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.56" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.56" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.6" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.6" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.65" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.69" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.69" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.74" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.78" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.01" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.01" end="1" name="play_test_wh_3shot_03" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.13" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.13" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.24" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.24" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.35" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.35" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.41" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.48" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.48" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.52" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.59" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.65" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.65" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.69" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="LightFile" name="unsc\vehicle\warthog_01\warthog_gun_light_01" tobone="bone_turretgun" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.01" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.03" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.16" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.33" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.33" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.33" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.36" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.53" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.66" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.69" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.83" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.83" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.83" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.86" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="LightFile" name="unsc\vehicle\warthog_01\warthog_gun_light_01" tobone="bone_FX01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\forgecannonattack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_warthog_gauss_cannon" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.119" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="0" position="0.12" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-4" force2="0" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.12" end="1" name="effects\vehicle_fx\unsc\warthog\gaussmuzzle_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="2.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="1" position="0.12" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-3" force2="-2" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.25" end="1" name="play_weapon_warthog_pre_fire" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.25" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.25" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.25" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.63" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.63" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.63" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.82" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.82" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.82" end="1" name="effects\vehicle_fx\unsc\warthog\shellcasings" tobone="bone_turretgun" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="stop_weapon_warthog_mg_loop" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Driver">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\warthogmarine_02</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\forgecannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Gunner">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\npc\forge_01\forge_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\forgecannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Wheel">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\wheel_01</file>
+			</asset>
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+	</model>
+	<model name="PassengerLegs">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\warthogSniperLegs_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\CannonAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniperAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="PassengerTop">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\warthog_01\warthogsniperTop_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_walk_03</file>
+				<weight>90</weight>
+			</asset>
+		</anim>
+		<anim type="MachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RotaryMachinegunAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="RotaryMachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CannonAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\CannonAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Work" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Prefire" exitAction="Transition" tweenTime="5" tweenToAnimation="MachinegunAttack">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\prefire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Postfire" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\postfire_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIWarthog_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIWarthog_02B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrenadeLauncherAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\sniper_attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.08" end="1" name="unsc\infantry\marine_01\marineAttack" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.08" end="1" name="effects\vehicle_fx\unsc\cougar\muzzleblast" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_weap_unsc_grenade_launcher" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

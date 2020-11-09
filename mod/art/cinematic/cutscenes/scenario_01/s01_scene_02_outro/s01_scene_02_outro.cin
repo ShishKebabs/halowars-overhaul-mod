@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn01\PHXscn01" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="bomber_01" type="proto" player="1" modelfile="cine_objects_wowshortsword_01" />
+		<model name="bomber_02" type="proto" player="1" modelfile="cine_objects_wowshortsword_01" />
+		<model name="bomber_03" type="proto" player="1" modelfile="cine_objects_wowshortsword_01" />
+		<model name="wraith_01" type="gr2" modelfile="covenant\vehicle\wraith_01\wraith_01" />
+		<model name="wraith_02" type="gr2" modelfile="covenant\vehicle\wraith_01\wraith_01" />
+		<model name="warthog_01" type="proto" player="1" modelfile="cpgn_npc_forgeWarthog_01" />
+		<model name="Particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="Particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="Particles_03" type="proto" modelfile="cine_objects_particleobject_01" />depthoffield enabled="true"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Pelican_01" />
+			<animatedmodel model="bomber_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Bomber_01" />
+			<animatedmodel model="bomber_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Bomber_02" />
+			<animatedmodel model="bomber_03" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Bomber_03" />
+			<animatedmodel model="warthog_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_01_Warthog_01" />
+			<tag type="Particle" time="4" name="effects\wow_moments\s02_scene_01_warthog" lifespan="20.0f" tomodel="warthog_01" tobone="bone_body" />
+			<animatedmodel model="wraith_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Wraith_01" />
+			<animatedmodel model="Particles_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Particles_01" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_03" lifespan="20.0f" tomodel="Particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_04" lifespan="20.0f" tomodel="Particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_02" lifespan="20.0f" tomodel="Particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\wow_moments\s01_scene_02_plasma" lifespan="20.0f" tomodel="Particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="Particles_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Particles_02" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_03" lifespan="20.0f" tomodel="Particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_04" lifespan="20.0f" tomodel="Particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\environment\harvest\wreckageFX_02" lifespan="20.0f" tomodel="Particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\wow_moments\s01_scene_02_plasma" lifespan="20.0f" tomodel="Particles_02" tobone="GrannyRootBone" />
+			<animatedmodel model="Particles_03" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Particles_03" />
+			<tag type="Particle" time="7.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="10.0f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="wraith_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_02_Outro\Scene_02_Wraith_02" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="22966" sound="play_scn_01_forge_15" talkinghead="scn_01_forge_15" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="22982" sound="play_scn_01_cutter_02" talkinghead="scn_01_cutter_02" />--Chats--</shot>
+	</body>
+</cinematic>

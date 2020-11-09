@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="0" />
+		</event>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="1" />
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\LoopingSmokeFire_01">GrannyRootBone</action>
+		</event>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="1" toindex="2" />
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\LoopingSmokeFire_02">bone_impact_02</action>
+		</event>
+		<event>
+			<action type="playsound">play_unsc_cobra_death</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bone_turret</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel01</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel02</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel03</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel04</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel05</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel06</action>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\deathdebris_01">GrannyRootBone</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_axelLT</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_axelRT</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_skirt,cobra_tail</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_frontaxelLT01,cobra_frontaxelLT02</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_frontaxelRT01,cobra_frontaxelRT02</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_shinLT,cobra_thighLT</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_shinRT,cobra_thighRT</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object03,cobra_pipe01,cobra_pipe02,cobra_pipe03,cobra_pipe04,cobra_main</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">spartan_hatch,cobra_neck</action>--&gt;</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event>
+				<action type="swappart">object02,object02damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">object02damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object02damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_02">
+			<event>
+				<action type="swappart">object01,object01damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_02</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object01damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_03">
+			<event>
+				<action type="swappart">object08,object08damaged</action>
+				<action type="swappart">object09,object09damaged</action>
+				<action type="swappart">object10,object10damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_03</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object08damaged</action>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object09damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object10damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_04">
+			<event>
+				<action type="swappart">object05,object05damaged</action>
+				<action type="swappart">object06,object06damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_04</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object05damaged,object06damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+		</impactpoint>
+		<impactpoint bone="bone_impact_05">
+			<event>
+				<action type="swappart">object04,object04damaged</action>
+				<action type="swappart">object07,object07damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">bone_impact_05</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object04damaged,object07damaged</action>
+				<action type="playsound">play_damage_warthog</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_large">GrannyRootBone</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bone_turret</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel01</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel02</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel03</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel04</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel05</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">bonewheel06</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_axelLT</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_axelRT</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_skirt,cobra_tail</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_frontaxelLT01,cobra_frontaxelLT02</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_frontaxelRT01,cobra_frontaxelRT02</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_shinLT,cobra_thighLT</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">cobra_shinRT,cobra_thighRT</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object03,cobra_pipe01,cobra_pipe02,cobra_pipe03,cobra_main</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

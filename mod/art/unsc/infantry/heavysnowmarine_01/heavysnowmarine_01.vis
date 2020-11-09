@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\heavysnowmarine_01\heavysnowmarine_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_01</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_02</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>60</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_walk_forward_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.09000001" end="1" name="play_ani_marine_walk_01" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.564" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchwalk_forward_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.09000001" end="1" name="play_ani_marine_walk_01" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.564" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.526" end="1" name="play_ani_marine_walk_01" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.526" end="1" name="play_ani_marine_walk_01" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_run_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_ani_marine_walk_01" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.529" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Freeze" tweenTime="10" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\idle_2_combatwalk_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Freeze" tweenTime="10" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\idle_2_combatjog_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="IdleRun" exitAction="Freeze" tweenTime="10" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\idle_2_combatrun_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Freeze" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combatwalk_2_idle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="JogIdle" exitAction="Freeze" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\patrolwalk_2_combatcrouchidle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combatjog_2_idle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combatjog_2_idle_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="RunIdle" exitAction="Freeze" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combatrun_2_idle_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnAround" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_around_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_around_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnLeft45Forward" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_left_45_forward_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnLeft" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_left_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_left_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnLeft45Back" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_left_45_back_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnRight45Forward" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_right_45_forward_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnRight" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_right_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_right_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnRight45Back" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_right_45_back_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnWalk" exitAction="Freeze" tweenTime="5" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_2_walk_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnJog" exitAction="Freeze" tweenTime="5" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_2_jog_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TurnRun" exitAction="Freeze" tweenTime="5" tweenToAnimation="Run">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\turn_2_run_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.359" end="1" name="play_ani_marine_walk_01" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_left_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_right_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_rocketidle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathCrouch" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_crouch_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_crouch_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_crouch_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathProne" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_prone_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_prone_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RocketAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="RocketAttack">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\rocketattack_01</file>
+				<weight>50</weight>
+				<tag type="Attack" start="0" position="0.119" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Light" start="0" position="0.12" end="1" name="unsc\infantry\marine_01\marineAttack2" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.12" end="1" name="play_unsc_odst_rocket_launcher" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\rocketattack_02</file>
+				<weight>10</weight>
+				<tag type="Attack" start="0" position="0.07" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Light" start="0" position="0.07" end="1" name="unsc\infantry\marine_01\marineAttack2" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.07" end="1" name="play_unsc_odst_rocket_launcher" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\rocketattack_03</file>
+				<weight>95</weight>
+				<tag type="Light" start="0" position="0.16" end="1" name="unsc\infantry\marine_01\marineAttack2" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.16" end="1" name="play_unsc_odst_rocket_launcher" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.164" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\rocketattack_04</file>
+				<weight>95</weight>
+				<tag type="Light" start="0" position="0.11" end="1" name="unsc\infantry\marine_01\marineAttack2" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.11" end="1" name="play_unsc_odst_rocket_launcher" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.113" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="RocketReload" exitAction="Loop" tweenTime="5" tweenToAnimation="RocketAttack">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\rocketreload_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison2" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison3" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison4" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison5" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_05</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PelicanUngarrison6" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\pelicanDeploy_06</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="30" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\marine_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Built">
+	<model name="Built">
+		<component>
+			<asset type="Model">
+				<file>unsc\building\powerfacility_01\powerfacility_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\powerfacility\thruster_stack_01" tobone="bone_main" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Turret" tobone="bone_turret" frombone="bone_turret_01" syncanims="false" disregardorient="false" />
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_02" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_03" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_04" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_05" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_06" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_07" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_08" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_09" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_10" pointData="Metal" />
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>unsc\building\powerfacility_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death">
+			<asset type="Anim">
+				<file>unsc\building\building_death01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RangedAttack">
+			<asset type="Anim">
+				<file>unsc\building\powerfacility_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.44" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.44" name="play_unsc_warthog_mg" tobone="bone_turret" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Light" position="0.44" name="unsc\vehicle\warthog_01\warthog_gun_light_01" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.55" />
+				<tag type="Attack" position="0.444" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Particle" position="0.48" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Light" position="0.48" name="unsc\vehicle\warthog_01\warthog_gun_light_01" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.55" />
+				<tag type="Attack" position="0.484" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Particle" position="0.52" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.523" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.568" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Particle" position="0.57" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Particle" position="0.61" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.612" tobone="bone_turret" checkvisible="false" disregardorient="false" lifespan="0.25" />
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="bone_turret" frombone="bone_turret_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death">
+			<asset type="Anim">
+				<file>unsc\building\building_death01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<file>unsc\vehicle\warthog_01\mg_turret</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\vehicle\warthog_01\mg_gun" tobone="bone_turretgun" frombone="bone_turretgun" syncanims="false" disregardorient="false" />
+		</component>
+	</model>
+	<model name="con_spike">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_spike</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_spike_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_fireball_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.02" name="play_unsc_genbuild_impact_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.02" name="play_unsc_genbuild_impact_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.03" name="play_unsc_genbuild_unfold_mix_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.05" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.13" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.18" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.21" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.28" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.38" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_ring">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_ring</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_ring_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_fireball_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.08" name="play_unsc_genbuild_impact_03" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_crates">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_crateLand</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_crateLand_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_boxdrop_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.01" name="play_unsc_genbuild_ambience_04" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.01" name="play_unsc_genbuild_ambience_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.1" name="play_unsc_genbuild_boxdrop_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.22" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.26" name="play_unsc_genbuild_boxdrop_03" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.27" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.35" name="play_unsc_genbuild_boxdrop_04" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.4" name="play_unsc_genbuild_boxdrop_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.45" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.48" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.53" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_preBuilt">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_preBuilt</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="BuildingCompletion">
+		<logicdata value="p0" modelref="con_spike" />
+		<logicdata value="p35" modelref="con_ring" />
+		<logicdata value="p48" modelref="con_crates" />
+		<logicdata value="p70" modelref="con_preBuilt" />
+		<logicdata value="p100" modelref="Built" />
+	</logic>
+</visual>

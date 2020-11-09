@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Controls>
+	<Mode name="Main">
+		<Control name="ButtonStart" command="ready" event="start" sound="play_menu_back_button" />
+		<Control name="ButtonB" command="cancel" event="start" sound="play_menu_back_button" />
+		<Control name="KeyEscape" command="cancel" event="start" sound="play_menu_back_button" />
+		<Control name="ButtonY" command="inviteFriends" event="start" sound="play_menu_accept_button" />
+		<Control name="ButtonBack" command="searchVsCreateGameToggle" event="start" sound="" />
+		<Control name="TriggerLeft" command="decrementLeader" event="stop" repeat="" delay="0.5" rate="1" sound="play_partysystem_menu_up_down" />
+		<Control name="TriggerRight" command="incrementLeader" event="stop" repeat="" delay="0.5" rate="1" sound="play_partysystem_menu_up_down" />
+		<Control name="ButtonShoulderLeft" command="changeTeamLeft" event="start" sound="play_partysystem_menu_teamswitch" />
+		<Control name="ButtonShoulderRight" command="changeTeamRight" event="start" sound="play_partysystem_menu_teamswitch" />
+	</Mode>
+	<Mode name="LFGGameList">
+		<Control name="ButtonB" command="cancel" event="start" sound="play_menu_back_button" />
+		<Control name="KeyEscape" command="cancel" event="start" sound="play_menu_back_button" />
+		<Control name="ButtonY" command="lfgToSearchGames" event="start" sound="" />
+		<Control name="ButtonX" command="lfgToCreateGame" event="start" sound="" />
+	</Mode>
+</Controls>

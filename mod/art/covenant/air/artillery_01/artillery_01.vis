@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>covenant\air\artillery_01\artillery_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\banshee\contrail_01" tobone="bone_thruster_fx03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\banshee\contrail_01" tobone="bone_thruster_fx01" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Turret" tobone="Bone Middle Turret01" frombone="Bone Middle Turret01" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Turret02" tobone="Bone Left Turret01" frombone="Bone Left Turret01" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Turret03" tobone="Bone Right Turret01" frombone="Bone Right Turret01" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="plasmaMortarAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_mortar_power_up" tobone="Bone Middle Turret01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint_middle" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_wraith_plasma_mortar" tobone="bone_launchpoint_middle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint_middle" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_launchpoint_left" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_cov_wraith_plasma_mortar" tobone="bone_launchpoint_left" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint_left" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.2" end="1" tobone="bone_launchpoint_right" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.2" end="1" name="play_cov_wraith_plasma_mortar" tobone="bone_launchpoint_right" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Particle" start="0" position="0.2" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint_right" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<file>covenant\air\artillery_01\turretMiddle_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="plasmaMortarAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret02">
+		<component>
+			<asset type="Model">
+				<file>covenant\air\artillery_01\turretLeft_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="plasmaMortarAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret03">
+		<component>
+			<asset type="Model">
+				<file>covenant\air\artillery_01\turretRight_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="plasmaMortarAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\artillery_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn12\PHXscn12" soundfile="">
+	<head>
+		<model name="banshee_01" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_02" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_03" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_04" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="hawk_01" type="proto" player="1" modelfile="unsc_air_hawk_01" />
+		<model name="hawk_02" type="proto" player="1" modelfile="unsc_air_hawk_01" />
+		<model name="sky_01" type="proto" player="1" modelfile="cine_objects_scenario12Sky_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_07" type="proto" modelfile="cine_objects_particleobject_01" />--Units----Particles--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="banshee_01" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Banshee_01" />
+			<animatedmodel model="banshee_02" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Banshee_02" />
+			<animatedmodel model="banshee_03" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Banshee_03" />
+			<animatedmodel model="banshee_04" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Banshee_04" />
+			<animatedmodel model="hawk_01" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Hawk_01" />
+			<animatedmodel model="hawk_02" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Hawk_02" />
+			<animatedmodel model="sky_01" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Sky" />
+			<tag type="Particle" time="7.5f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="hawk_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="7.7f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="hawk_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.3f" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_02" lifespan="3.0f" tomodel="hawk_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.5f" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_03" lifespan="3.0f" tomodel="hawk_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.6f" name="effects\impacts\unsc\tankshell_01\tank_shell_impact_04" lifespan="3.0f" tomodel="hawk_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_01" />
+			<tag type="Particle" time="2.5" name="effects\impacts\plasma_large_green\plasma_large_green_02" lifespan="10.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.7f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_02" />
+			<tag type="Particle" time="3" name="effects\impacts\plasma_large_green\plasma_large_green_02" lifespan="10.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="3.1f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_02" tobone="bone_projectile" />
+			<animatedmodel model="particles_03" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_03" />
+			<tag type="Particle" time="5.0f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_04" />
+			<tag type="Particle" time="5.67f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="10.0f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_05" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_05" />
+			<tag type="Particle" time="6.1f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="10.0f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_06" />
+			<tag type="Particle" time="7.8f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="10.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_07" animationfile="cinematic\cutscenes\Scenario_12\S12_Scene_01_Intro\Scene_01_Particles_07" />
+			<tag type="Particle" time="8.1f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="10.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23315" sound="play_scn_12_serina_01" talkinghead="scn_12_serina_01" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="23324" sound="play_scn_12_cutter_01" talkinghead="scn_12_cutter_01" />--Particles----Chats--</shot>
+	</body>
+</cinematic>

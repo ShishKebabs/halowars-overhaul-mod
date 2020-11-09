@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\WOW\PHXscn11\PHXscn11" soundfile="">
+	<head>
+		<model name="sentinel_01" type="proto" modelfile="for_air_sentinel_01" />
+		<model name="sentinel_02" type="proto" modelfile="for_air_sentinel_01" />
+		<model name="monitor_01" type="proto" modelfile="for_air_monitor_01" />
+		<model name="monitor_02" type="proto" modelfile="for_air_monitor_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_11\S11_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="sentinel_01" animationfile="cinematic\cutscenes\Scenario_11\S11_Scene_01_Intro\Scene_01_Sentinel_01" />
+			<tag type="Particle" time="4.2f" name="effects\building_FX\Cov\damage\smallelectricity_01" lifespan="5.5f" tomodel="sentinel_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.2f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="sentinel_01" tobone="GrannyRootBone" />
+			<animatedmodel model="sentinel_02" animationfile="cinematic\cutscenes\Scenario_11\S11_Scene_01_Intro\Scene_01_Sentinel_02" />
+			<animatedmodel model="monitor_01" animationfile="cinematic\cutscenes\Scenario_11\S11_Scene_01_Intro\Scene_01_Monitor_01" />
+			<animatedmodel model="monitor_02" animationfile="cinematic\cutscenes\Scenario_11\S11_Scene_01_Intro\Scene_01_Monitor_02" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23388" sound="play_scn_11_cutter_03" talkinghead="scn_11_cutter_03" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23400" sound="play_scn_11_serina_01" talkinghead="scn_11_serina_01" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23401" sound="play_scn_11_serina_02" talkinghead="scn_11_serina_02" />--Animations----Particles--
+			
+
+
+	--Chats--</shot>
+	</body>
+</cinematic>

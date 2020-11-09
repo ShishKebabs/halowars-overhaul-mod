@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>creep\insurrectionists\sniper_01\sniper_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+			<point pointType="Pickup" bone="Bip01 Pelvis" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_01</file>
+				<weight>90</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_02</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid01_02</file>
+				<weight>70</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid02_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid03_02</file>
+				<weight>70</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid04_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_03</file>
+				<weight>90</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_01</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_02</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="Jog">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_01</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_02</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_jog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchjog_forward_02</file>
+				<weight>40</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_run_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_run_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\roll_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Stunned" exitAction="Transition" tweenTime="5" tweenToAnimation="Stunned">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\disruption_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\disruption_idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByFire" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_fire_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByHeadshot" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_04</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_headshot_05</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMachinegun" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_machinegun_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMelee" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\death_melee_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_MarkIMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_01B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_03B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_04B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_05B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_06B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_09B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_10B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIMarine_11B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_ArbiterMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_EliteMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_elitemarine_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_elitemarine_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_elitemarine_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_elitemarine_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_SpartanMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_01_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_02_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_03_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_04_victim</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.705" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_05_victim</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.86" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_06_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_07_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_08_victim</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_09_victim</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.86" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\fatality_spartanmarine_10_victim</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="SniperRifleAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="SniperRifleAttack">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\sniper_attack_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.095" end="1" name="effects\Unit_FX\unsc\marine\muzzleblast" tobone="bone_launchpoint_sniper" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint_sniper" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_weap_unsc_sniper" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\sniper_attack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.107" end="1" tobone="bone_launchpoint_sniper" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\Unit_FX\unsc\marine\muzzleblast" tobone="bone_launchpoint_sniper" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.11" end="1" name="play_weap_unsc_sniper" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\sniper_attack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.176" end="1" tobone="bone_launchpoint_sniper" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.18" end="1" name="effects\Unit_FX\unsc\marine\muzzleblast" tobone="bone_launchpoint_sniper" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.66" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.18" end="1" name="play_weap_unsc_sniper" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="SniperRifleReload" exitAction="Transition" tweenTime="5" tweenToAnimation="SniperRifleAttack">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\assaultrifle_reload_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\assaultrifle_reload_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\sniper_reload_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+		<anim type="Support" exitAction="Transition" tweenTime="10" tweenToAnimation="AssaultRifleAttack">
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_05</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_action_04</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_handsignals_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_handsignals_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_handsignals_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid05_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid06_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\marine_01\combat_crouchidle_fid07_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalSniperRifle</meshEnable>
+		</anim>
+	</model>
+</visual>

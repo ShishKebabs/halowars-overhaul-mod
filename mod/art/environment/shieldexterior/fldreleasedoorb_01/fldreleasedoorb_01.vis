@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\shieldexterior\FldReleaseDoorB_01\FldReleaseDoorB_01</file>
+			</asset>
+			<attach type="ModelRef" name="DoorBmouth" tobone="bone_attachpoint" frombone="bone_mastermouth" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\shieldexterior\FldReleaseDoorB_01\FldReleaseDoorB_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Transition" tweenTime="0" tweenToAnimation="OpenIdle">
+			<asset type="Anim">
+				<file>environment\shieldexterior\FldReleaseDoorB_01\FldReleaseDoorB_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="OpenIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\shieldexterior\FldReleaseDoorB_01\FldReleaseDoorB_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>environment\shieldexterior\FldReleaseDoorB_01\FldReleaseDoorB_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

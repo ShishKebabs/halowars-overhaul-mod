@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\air\spirit_01\spirit_damaged_01</file>
+				<damagefile>covenant\air\spirit_01\spirit</damagefile>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\spirit\energyfield_01" tobone="bone_FX01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\spirit\energyfield_01" tobone="bone_FX02" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="30" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\spirit_01\hoveridle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="30" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\spirit_01\hoveridle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Transition" tweenTime="30" tweenToAnimation="idle">
+			<asset type="Anim">
+				<file>covenant\air\spirit_01\incoming_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.391" end="1" name="start_exist_spirit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Freeze" tweenTime="30" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\spirit_01\outgoing_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="start_move_spirit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.788" end="1" name="stop_spirit_spc_fade" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\spirit_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

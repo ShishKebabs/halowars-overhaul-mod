@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn07\PHXscn07" soundfile="">
+	<head>
+		<model name="rhino_01" type="proto" player="1" modelfile="cpgn_veh_scn06Rhino_01" />
+		<model name="rhino_02" type="proto" player="1" modelfile="cpgn_veh_scn06Rhino_01" />
+		<model name="scarab_01" type="proto" player="3" modelfile="cpgn_scn07_scarabboss_02" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />--Particles--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Shot_01_Camera">
+			<transition mode="Start" fadeup="3">
+				<color>0,0,0</color>
+			</transition>
+			<transition mode="end" fadedown="0.2">
+				<color>0,0,0</color>
+			</transition>
+			<animatedmodel model="rhino_01" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_Rhino_01_A" />
+			<tag type="Particle" time="0.0f" name="effects\vehicle_fx\unsc\scorpion\traildust_dirt_01" lifespan="7.5f" tomodel="rhino_01" tobone="GrannyRootBone" />
+			<animatedmodel model="rhino_02" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_Rhino_02_A" />
+			<tag type="Particle" time="0.0f" name="effects\vehicle_fx\unsc\scorpion\traildust_dirt_01" lifespan="7.5" tomodel="rhino_02" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23347" sound="play_scn_07_cutter_01" talkinghead="scn_07_cutter_01" />--&gt;--Chat--</shot>
+		<shot name="Shot2" camera="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Shot_02_Camera">
+			<transition mode="start" fadeup="0.5">
+				<color>0,0,0</color>
+			</transition>
+			<animatedmodel model="scarab_01" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_scarab_01" />
+			<tag type="Particle" time="3.8" name="effects\projectiles\Beam\scarabboss_beam\killbeam_01_cinematic" lifespan="1.5f" tomodel="particles_01" tobone="bone_projectile" />
+			<tag type="Particle" time="6.35" name="effects\projectiles\Beam\scarabboss_beam\killbeam_01_cinematic" lifespan="1.5f" tomodel="particles_02" tobone="bone_projectile" />
+			<animatedmodel model="rhino_01" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_rhino_01_B" />
+			<tag type="Particle" time="5.5f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="5.0f" tomodel="rhino_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.5f" name="effects\fire\smoke_loop_large_02" lifespan="10.0f" tomodel="rhino_01" tobone="bone_turret" />
+			<tag type="Particle" time="0.0f" name="effects\vehicle_fx\unsc\scorpion\traildust_dirt_01" lifespan="4.2f" tomodel="rhino_01" tobone="GrannyRootBone" />
+			<animatedmodel model="rhino_02" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_rhino_02_B" />
+			<tag type="Particle" time="8.7f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="5.0f" tomodel="rhino_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.7f" name="effects\fire\smoke_loop_large_02" lifespan="10.0f" tomodel="rhino_02" tobone="bone_turret" />
+			<tag type="Particle" time="0.0f" name="effects\vehicle_fx\unsc\scorpion\traildust_dirt_01" lifespan="5.0f" tomodel="rhino_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_Particles_01_B" />
+			<tag type="Particle" time="5.7" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="10.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="3.8" name="effects\projectiles\Beam\scarabboss_beam\killbeamtail_01" lifespan="1.5f" tomodel="particles_01" tobone="bone_projectile" />
+			<tag type="Particle" time="5.7" name="effects\fire\smoke_loop_large" lifespan="10.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_07\S07_Scene_01_Scarab\Scene_01_Particles_02_B" />
+			<tag type="Particle" time="8.7" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="10.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.35" name="effects\projectiles\Beam\scarabboss_beam\killbeamtail_01" lifespan="1.5f" tomodel="particles_02" tobone="bone_projectile" />
+			<tag type="Particle" time="8.7" name="effects\fire\smoke_loop_large" lifespan="10.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Chat" time="6" queue="true" duration="0" stringid="23353" sound="play_scn_07_forge_01" talkinghead="scn_07_forge_01" />
+			<tag type="Chat" time="11.9" queue="true" duration="0" stringid="23356" sound="play_scn_07_serina_01" talkinghead="scn_07_serina_01" />--&gt;
+		--Animations----Particles----Chats--</shot>
+	</body>
+</cinematic>

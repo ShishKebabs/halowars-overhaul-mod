@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\building\turret_01\turret_01</file>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="bone_turret_attach" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretartillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretartillery_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" position="0.05" checkvisible="false" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.05" name="play_unsc_scorpion_cannon" checkvisible="true" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.1" checkvisible="false" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.1" name="play_unsc_scorpion_cannon" checkvisible="true" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.55" checkvisible="false" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.55" name="play_unsc_scorpion_cannon" checkvisible="true" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Attack" position="0.6" checkvisible="false" lockToGround="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.6" name="play_unsc_scorpion_cannon" checkvisible="true" lockToGround="false" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\building_death01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<file>unsc\vehicle\rhino_01\rhino_turret_01</file>
+			</asset>
+			<attach type="ModelRef" name="Cannon" tobone="bone_cannon" frombone="bone_cannon" syncanims="true" disregardorient="false" />
+		</component>
+	</model>
+	<model name="Cannon">
+		<component>
+			<asset type="Model">
+				<file>unsc\vehicle\rhino_01\rhino_cannon_01</file>
+			</asset>
+			<point pointType="Launch" bone="bone_fx01" pointData="Metal" />
+		</component>
+	</model>
+</visual>

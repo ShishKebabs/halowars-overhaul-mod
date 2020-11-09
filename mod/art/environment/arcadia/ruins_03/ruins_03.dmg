@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">dambase</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event>
+				<action type="swappart">part08,part08damaged</action>
+				<action type="swappart">part09,part09damaged</action>
+				<action type="swappart">part11,part11damaged</action>
+				<action type="swappart">part10,part10damaged</action>
+				<action type="swappart">part06,part06damaged</action>
+				<action type="swappart">part07,part07damaged</action>
+				<action type="swappart">part16,part16damaged</action>
+				<action type="swappart">part17,part17damaged</action>
+				<action type="swappart">part18,part18damaged</action>
+				<action type="swappart">part19,part19damaged</action>
+				<action type="swappart">part02,part02damaged</action>
+				<action type="swappart">part03,part03damaged</action>
+				<action type="swappart">part04,part04damaged</action>
+				<action type="swappart">part12,part12damaged</action>
+				<action type="swappart">part13,part13damaged</action>
+				<action type="swappart">part14,part14damaged</action>
+				<action type="swappart">part15,part15damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part01</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part01a</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part01b</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part02damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part08damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part09damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part10damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part11damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part03damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part12damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part04damaged</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part14damaged</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part18damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part15damaged</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part19damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part16damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part13damaged</action>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part17damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part06damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="heavypart" impactsound="impact_med_metal">part07damaged</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+	</shatterdeathevent>
+</damagetemplate>

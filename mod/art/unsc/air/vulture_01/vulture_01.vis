@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\vulture_damaged_01</file>
+						<damagefile>unsc\air\vulture_01\vulture_01</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\vulture_damaged_01</file>
+						<damagefile>unsc\air\vulture_01\vulture_01</damagefile>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\vulture_damaged_01</file>
+				<damagefile>unsc\air\vulture_01\vulture_01</damagefile>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\vulture\jets_01" tobone="bonethrust01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\vulture\jets_01" tobone="bonethrust02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\vulture\jets_01" tobone="bonethrust03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\vulture\jets_01" tobone="bonethrust04" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="CannonLeft" tobone="BoneTurretL" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="CannonRight" tobone="BoneTurretR" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="MissleLeft" tobone="BoneMissleL" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="MissleRight" tobone="BoneMissleR" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="BayDoors" tobone="BoneVulture" frombone="BoneVulture" syncanims="false" disregardorient="false" />
+			<point pointType="Impact" bone="bone_impact_09" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_08" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_07" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_06" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_05" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_04" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_03" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_02" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+			<point pointType="Board" bone="BoneVulture" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="CloseBay" exitAction="Freeze" tweenTime="5" tweenToAnimation="Recover">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_close_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="OpenBay" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_open_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="MissleAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="MissleAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Recover" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="BarrageAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="CloseBay">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.195" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.195" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.321" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.415" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.423" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="BarrageAttack2" exitAction="Transition" tweenTime="5" tweenToAnimation="CloseBay">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.195" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.195" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.39" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.447" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.447" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.65" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.65" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.736" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.736" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.805" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPL" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.805" end="1" tobone="BoneBarrageMissleLPL" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.849" end="1" name="play_unsc_vulture_cannon" tobone="BoneBarrageMissleLPR" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.849" end="1" tobone="BoneBarrageMissleLPR" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportHuge_01" tobone="BoneVulture" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportHuge_01" tobone="BoneVulture" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="CannonLeft">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\turret_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\turret_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\turret_01</file>
+			</asset>
+			<point pointType="Impact" bone="impactbone01" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone02" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone03" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone04" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone05" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone06" pointData="Metal" />
+		</component>
+		<anim type="CannonAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\cannonattack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.157" end="1" tobone="BoneLLLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.16" end="1" name="play_unsc_vulture_missile" tobone="BoneLLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\unsc\vulture\sidemuzzleblast_01" tobone="BoneLLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.55" end="1" name="play_unsc_vulture_missile" tobone="BoneLRLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.553" end="1" tobone="BoneLRLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.595" end="1" name="effects\vehicle_fx\unsc\vulture\sidemuzzleblast_01" tobone="BoneLRLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="CannonAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\cannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="CannonRight">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\turret_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\turret_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\turret_01</file>
+			</asset>
+			<point pointType="Impact" bone="impactbone01" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone02" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone03" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone04" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone05" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone06" pointData="Metal" />
+		</component>
+		<anim type="CannonAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\cannonattack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.409" end="1" tobone="BoneLLLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.41" end="1" name="play_unsc_vulture_missile" tobone="BoneLLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.41" end="1" name="effects\vehicle_fx\unsc\vulture\sidemuzzleblast_01" tobone="BoneLLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.808" end="1" name="play_unsc_vulture_missile" tobone="BoneLRLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.81" end="1" name="effects\vehicle_fx\unsc\vulture\sidemuzzleblast_01" tobone="BoneLRLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.81" end="1" tobone="BoneLRLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="CannonAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\cannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="MissleLeft">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\missle_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\missle_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\missle_01</file>
+			</asset>
+			<point pointType="Impact" bone="impactbone01" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone02" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone03" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone04" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone05" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone06" pointData="Metal" />
+		</component>
+		<anim type="MissleAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects/vehicle_fx/unsc/vulture/singleblast_fire_01" tobone="BoneMissleLLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_unsc_wolverine_missile" tobone="BoneMissleLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="BoneMissleLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="MissleRight">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\missle_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\missle_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\missle_01</file>
+			</asset>
+			<point pointType="Impact" bone="impactbone01" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone02" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone03" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone04" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone05" pointData="Metal" />
+			<point pointType="Impact" bone="impactbone06" pointData="Metal" />
+		</component>
+		<anim type="MissleAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects/vehicle_fx/unsc/vulture/singleblast_fire_01" tobone="BoneMissleLLP" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_unsc_wolverine_missile" tobone="BoneMissleLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="BoneMissleLLP" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="BayDoors">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_vulture_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\baydoors_up_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc\air\vulture_01\baydoors_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\vulture_01\baydoors_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CloseBay" exitAction="Freeze" tweenTime="5" tweenToAnimation="Recover">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_close_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="OpenBay" exitAction="Freeze" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_open_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Recover" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="BarrageAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="CloseBay">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="BarrageAttack2" exitAction="Transition" tweenTime="5" tweenToAnimation="CloseBay">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="MissleAttackLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="MissleAttackRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\vulture_01\barrage_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Medium">
+	<model name="Small">
+		<component>
+			<asset type="Particle">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>effects\impacts\snow\snow_small_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="Medium">
+		<component>
+			<asset type="Particle">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>effects\impacts\snow\snow_med_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="Large">
+		<component>
+			<asset type="Particle">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>effects\impacts\snow\snow_small_01</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="ImpactSize">
+		<logicdata value="Small" modelref="Small" weight="1" />
+		<logicdata value="Medium" modelref="Medium" weight="1" />
+		<logicdata value="Large" modelref="Large" weight="1" />
+	</logic>
+</visual>

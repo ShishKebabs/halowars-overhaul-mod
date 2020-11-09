@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+			</asset>
+			<point pointType="Cover" bone="bone_sniperpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint04" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint05" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint06" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Captured">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+			</asset>
+			<point pointType="Cover" bone="bone_sniperpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint04" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint05" pointData="Metal" />
+			<point pointType="Cover" bone="bone_sniperpoint06" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\powerfacility\single_thruster_stack_01" tobone="bone_fx02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn06\onireactor_01\onireactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Lockdown" modelref="Captured" weight="1" />
+		<logicdata value="" modelref="Default" weight="1" />
+	</logic>
+</visual>

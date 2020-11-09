@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>effects\projectiles\cov\needler_01\needler_01</file>
+			</asset>
+		</component>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\projectiles\cov\needler_01\needler_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\cov\heavyNeedler_01\heavyNeedler_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\projectiles\cov\needler_01\needler_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

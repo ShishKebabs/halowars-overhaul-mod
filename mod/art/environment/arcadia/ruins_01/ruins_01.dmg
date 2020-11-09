@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\environment\harvest\wreckageFX_01">bone_impact_01</action>
+			<action type="throwpart">part01</action>
+		</event>
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\environment\harvest\wreckageFX_01">GrannyRootBone</action>
+			<action type="throwpart">part02</action>
+		</event>
+		<event>
+			<action type="throwpart" blueprint="lightpart">part03</action>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\deathdebris_01">bone_impact_01</action>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\deathdebris_01">GrannyRootBone</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event>
+				<action type="swappart">part01,part01damaged</action>
+				<action type="swappart">part02,part02damaged</action>
+				<action type="swappart">part03,part03damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="lightpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">part01damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="lightpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">part02damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" blueprint="lightpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">part03damaged</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">boneturret</action>
+	</shatterdeathevent>
+</damagetemplate>
