@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\building\turretSocketFoundation_01\turretSocketFoundation_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\turretSocket_01\turretSocket_01</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\building\turretSocket_01\turretSocketTrim_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretSocket_01\idleClosed_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\command_01\death_01</file>
+				<weight>1</weight>
+				<tag type="TerrainAlpha" start="0" position="0" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=6 sizeZ=6 value=on type=rect" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

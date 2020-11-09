@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\creatures\SentinelArcMaze_01\SentinelArcMaze_01</file>
+				<damagefile>template\defaultCryo</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\creatures\SentinelArcMaze_01\Walk_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0.5</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.5</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+			</asset>
+		</anim>
+	</model>
+</visual>

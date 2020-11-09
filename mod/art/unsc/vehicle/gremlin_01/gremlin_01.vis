@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\gremlin_01\gremlin_damaged_01</file>
+				<damagefile>unsc\vehicle\gremlin_01\gremlin_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="empGun" tobone="BoneGremlinEMP" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel01" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel02" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel03" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel04" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel05" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="BoneWheel06" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Board" bone="BoneGremlin" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_01" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_02" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_03" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_04" pointData="Metal" />
+			<point pointType="Impact" bone="bone_impact_05" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="empAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\empAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="empBombAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\empBombAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="8" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\train_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_eng_gremlin_birth_intro" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.385" end="1" name="play_eng_gremlin_birth_intro" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="8" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_med_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_unsc_gremlin_death" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="GrannyRootBone" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="BoneGremlin" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_launchpoint01" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="SpartanGremlinJack" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\spartan_gremlin_jack_coolRIG01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="Marine" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_01</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\vehicle\warthog_01\walk_03</file>
+				<weight>90</weight>
+				<tag type="TerrainEffect" start="0" position="0.3" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainEffect" start="0" position="0.75" end="1" name="effects\terraineffects\warthog_ice" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="TerrainEffect" name="effects\terraineffects\cobra_trail" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportVeh_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportVeh_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="empGun">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\gremlin_01\gremlin_emp_01</file>
+			</asset>
+		</component>
+		<anim type="empAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\empAttack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.045" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.05" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="0" position="0.05" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-1.5" force2="0" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="1" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-1" force2="-0.75" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="empBombAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\vehicle\gremlin_01\empBombAttack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.05" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.05" end="1" name="play_weap_emp_blast" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="0" position="0.05" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-1.5" force2="0" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="PhysicsImpulse" start="1" position="0.08" end="1" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="-1" force2="-0.75" lifespan="0" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Wheel">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\vehicle\gremlin_01\gremlin_wheel_01</file>
+			</asset>
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+	</model>
+	<model name="Marine">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\infantry\marine_01\marine_01</file>
+			</asset>
+		</component>
+		<anim type="SpartanGremlinJack" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\spartan_gremlindriver_jack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_unsc_marine_vo_hit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.635" end="1" name="play_unsc_marine_vo_death" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.846" end="1" name="ani_spartan_jack_success" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

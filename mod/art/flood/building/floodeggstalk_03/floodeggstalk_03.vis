@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<logic type="Variation">
+				<logicdata value="EggRed" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>flood\building\FloodEggstalk_03\stalk_tree_03</file>
+						<damagefile>flood\building\FloodEggStalk_01\FloodEggStalk_01</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="EggGreen" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>flood\building\FloodEggstalk_03\stalk_tree_03</file>
+						<damagefile>flood\building\FloodEggStalk_01\FloodEggStalk_01</damagefile>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\building\FloodEggstalk_03\stalk_tree_03</file>
+				<damagefile>flood\building\FloodEggStalk_01\FloodEggStalk_01</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>flood\building\FloodEggstalk_03\idle_01</file>
+				<weight>35</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodEggstalk_03\death_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.19" end="1" name="effects\environment\shieldworldEXT\floodpod_01" tobone="BoneBody" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_flood_pod_open" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_death_flood_egg_stalk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.29" end="1" name="effects\environment\shieldworldEXT\floodpod_02" tobone="bone_egg01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.29" end="1" name="play_flood_pod_open" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.442" end="1" name="play_flood_pod_open" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.443" end="1" name="effects\environment\shieldworldEXT\floodpod_01" tobone="bone_egg02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.54" end="1" name="effects\environment\shieldworldEXT\floodpod_02" tobone="bone_egg03" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

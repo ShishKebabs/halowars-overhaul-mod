@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="swappart">Object02,Object02damaged</action>
+			<action type="swappart">Object01,Object01damaged</action>
+			<action type="throwpart">Object02damaged</action>
+			<action type="throwpart">Object01damaged</action>
+		</event>
+	</percentagebased>
+	<impactpointbased />
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+		<action type="throwattachment" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">boneturret</action>
+	</shatterdeathevent>
+</damagetemplate>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn11\unitspawn_01\unitspawn_damaged_01</file>
+				<damagefile>campaign\scn11\unitspawn_01\unitspawn_01</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="campaign\scn11\unitspawn_01\doorlight_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Unpack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\unpack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Pack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\pack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PackIdle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\packidle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Garrison" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\garrison_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Garrisoned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\garrisoned_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\yellowblinkingLight_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Ungarrison" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\ungarrison_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="campaign\scn11\unitspawn_01\doorlight_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\unitspawner\blueblinkingLight_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="campaign\scn11\unitspawn_01\researchlights_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Research" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="campaign\scn11\unitspawn_01\doorlight_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\unitspawner\blueblinkingLight_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="campaign\scn11\unitspawn_01\researchlights_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\unitspawn_01\pack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_med_lowpass" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_damage_warthog" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_unsc_hawk_death" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.301" end="1" name="play_damage_warthog" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.494" end="1" name="play_pfx_explosion_secondary_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="1" end="1" name="play_death_med_lowpass" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="1" end="1" name="play_sparks_one_shot" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

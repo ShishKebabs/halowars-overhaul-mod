@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>creep\flood\base_01\FloodBase_01</file>
+				<damagefile>creep\flood\base_01\FloodBase_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="FloodLiverMouth" tobone="bone_attachpoint" frombone="bone_mastermouth" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleA_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleA_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="BHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleB_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleC_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkAToB" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\shrinkAB</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkBToC" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\shrinkBC</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowBToA" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\growthBA</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowCToB" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\growthCB</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleD_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkCToD" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\shrinkCD</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowDToC" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\growthDC</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleA_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="OpenIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleA_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\idleA_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part01" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_death_egg_stalk_egg" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.15" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.25" force2="0" lifespan="0.1" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part03" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part08" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part10" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.21" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part16" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part05" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part06" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part07" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\Unit_FX\flood\infectedcarrier\deathpop_01" tobone="bone_body_part09" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="FloodLiverMouth">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\building\FloodLiver_01\FloodLiver_mouth01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="BHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkAToB" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkBToC" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowBToA" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowCToB" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DHealthIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ShrinkCToD" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GrowDToC" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\open</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="OpenIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\open_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodLiver_01\close</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>creep\flood\base_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\infantry\elite_01\elite_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_01</file>
+				<weight>30</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_03</file>
+				<weight>20</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\run_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\juke_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jump_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\dive_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\juke_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\jump_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\dive_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_01</file>
+				<weight>60</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_02</file>
+				<weight>40</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\stunned_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaGrenadeAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\grenade_attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.34" end="1" tobone="Bip01 L Hand" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaRifleAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_01</file>
+				<weight>25</weight>
+				<tag type="Attack" start="0" position="0.075" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.08" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.08900001" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.109" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.113" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.124" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.176" end="1" name="effects\Unit_FX\cov\elite\plasmarifleOverheat_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="3.72" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.25" end="1" name="ani_weap_cov_plasmarifle_overheat" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_02</file>
+				<weight>60</weight>
+				<tag type="Attack" start="0" position="0.189" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.19" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.213" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.289" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.289" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.29" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\attack_03</file>
+				<weight>95</weight>
+				<tag type="Sound" start="0" position="0.167" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.17" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.17" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.182" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.239" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.24" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.244" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.308" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.31" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.314" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Light" start="0" position="0.329" end="1" name="covenant\infantry\elite_01\plasmaAttackLight_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.397" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.4" end="1" name="effects\Unit_FX\cov\elite\plasmamuzzleblast_01" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.403" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaRifleReload" exitAction="Loop" tweenTime="10" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_02</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_03</file>
+				<weight>20</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Support" exitAction="Transition" tweenTime="10" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\combat_action_03</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalPlasmaRifle</meshEnable>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="DeathByFire" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_fire_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_fire_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_fire_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByHeadshot" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_headshot_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMachinegun" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_machinegun_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_machinegun_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_machinegun_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DeathByMelee" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_melee_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_melee_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_melee_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\death_melee_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_SpartanEliteLeader_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_04</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.78" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_05</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.82" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_06</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_07</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_08</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_09</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.82" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanElite_Victim_10</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_ArbiterElite_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="HotDropUp" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.399999976158142</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="HotDropDown" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.199999988079071</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport_end" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="FloodDeathJog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flood_death_jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="Tenticles1" tobone="Bip01 Head" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Tenticles2" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Tenticles1" tobone="Bip01 R Forearm" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="FloodDeath" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flood_death_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelRef" name="Tenticles1" tobone="Bip01 Head" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Tenticles2" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Tenticles1" tobone="Bip01 R Forearm" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_MarkIElite_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_01B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_03B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_04B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_05B</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.917" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_09B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_10B</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mark1Suit_01\Fatality_MarkIElite_11B</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Fatality_EliteElite_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_eliteelite_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_eliteelite_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\fatality_arbiterelite_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportOut" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train2" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train3" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train4" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train5" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train6" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train7" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train8" exitAction="Transition" tweenTime="16" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Tenticles1">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\Infantry\Attachments_01\tenticles_01\tenticles_01</file>
+			</asset>
+		</component>
+		<anim type="FloodDeathJog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\Infantry\Attachments_01\tenticles_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="FloodDeath" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\Infantry\Attachments_01\tenticles_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Tenticles2">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\Infantry\Attachments_01\tenticles_02\tenticles_02</file>
+			</asset>
+		</component>
+		<anim type="FloodDeathJog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\Infantry\Attachments_01\tenticles_02\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="FloodDeath" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\Infantry\Attachments_01\tenticles_02\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

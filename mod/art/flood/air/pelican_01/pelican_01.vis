@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\pelican_01</file>
+			</asset>
+			<attach type="LightFile" name="unsc\air\pelican_01\headlight_01" tobone="bone_body" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight04" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\exhaustheat_01" tobone="bone_fx01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\exhaustheat_01" tobone="bone_fx02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\exhaustheat_01" tobone="bone_fx03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\exhaustheat_01" tobone="bone_fx04" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\headlight_01" tobone="bone_headlight_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\headlight_02" tobone="bone_headlight_02" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HoverIdle" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\hoveridle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_flying_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Transition" tweenTime="20" tweenToAnimation="HoverIdle">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\incoming_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.006" end="1" name="play_ani_unsc_pelican_powerdown" tobone="bone_thruster2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Landing" exitAction="Freeze" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\landing_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Takeoff" exitAction="Transition" tweenTime="20" tweenToAnimation="Outgoing">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\takeoff_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.013" end="1" name="play_ani_unsc_pelican_take_off" tobone="bone_thruster2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Freeze" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\outgoing_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.013" end="1" name="play_ani_unsc_pelican_take_off" tobone="bone_thruster2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

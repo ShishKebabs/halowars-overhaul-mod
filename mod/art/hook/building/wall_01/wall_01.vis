@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Lockdown">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\building\wall_01\wall_01</file>
+			</asset>
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint05" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint06" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\building\wall_01\downidle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\building\wall_01\up_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="LightFile" name="effects\building_FX\Cov\shieldwall\light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone_FX01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\building\wall_01\down_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>hook\building\wall_01\wall_01</file>
+			</asset>
+			<point pointType="Cover" bone="bone_attachpoint01" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint02" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint03" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint04" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint05" pointData="Metal" />
+			<point pointType="Cover" bone="bone_attachpoint06" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>hook\building\wall_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone_FX01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\Cov\shieldwall\shieldwallTower_01" tobone="Bone_FX02" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="effects\building_FX\Cov\shieldwall\light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\building\wall_01\up_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\building_FX\Cov\sniperplatform\gravitylight_01" tobone="Bone_FX01" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="effects\building_FX\Cov\shieldwall\light_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>hook\building\wall_01\down_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Lockdown" modelref="Lockdown" weight="1" />
+		<logicdata value="" modelref="Default" weight="1" />
+	</logic>
+</visual>

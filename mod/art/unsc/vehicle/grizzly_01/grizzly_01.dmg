@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="0" />
+		</event>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="1" />
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\LoopingSmokeFire_01">bone_impact01</action>
+		</event>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="1" toindex="2" />
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\LoopingSmokeFire_01">bone_impact03</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\deathdebris_01">GrannyRootBone</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02">front_damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02">right_damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02">rear_damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02">fender_damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02">left_damaged</action>
+			<action type="throwattachment" streamereffect="effects\fire\flaming_debris_02">bone grizzly tread fl</action>
+			<action type="throwattachment" streamereffect="effects\fire\flaming_debris_02">bone grizzly tread fr</action>
+			<action type="throwattachment" streamereffect="effects\fire\flaming_debris_02">bone grizzly tread rl</action>
+			<action type="throwattachment" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02">bone grizzly tread rr</action>
+			<action type="playsound">play_unsc_scorpion_death</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint name="bone_impact01" bone="bone_impact01">
+			<event>
+				<action type="swappart">front,front_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">front_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">front_damaged</action>
+				<action type="playsound">play_common_metal_debris_med</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact02" bone="bone_impact02">
+			<event>
+				<action type="swappart">right,right_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">right_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">right_damaged</action>
+				<action type="playsound">play_common_metal_debris_med</action>
+			</event>
+			<event>
+				<action type="swappart">hindquarter,hindquarter_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">hindquarter_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">hindquarter_damaged</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact03" bone="bone_impact03">
+			<event>
+				<action type="swappart">rear,rear_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">rear_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">rear_damaged</action>
+				<action type="playsound">play_common_metal_debris_med</action>
+			</event>
+			<event>
+				<action type="swappart">fender,fender_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">fender_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">fender_damaged</action>
+				<action type="playsound">play_common_metal_debris_med</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact04" bone="bone_impact04">
+			<event>
+				<action type="swappart">left,left_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">left_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">left_damaged</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_large">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_large">GrannyRootBone</action>
+		<action type="throwpart" blueprint="icePart">front_damaged</action>
+		<action type="throwpart" blueprint="icePart">right_damaged</action>
+		<action type="throwpart" blueprint="icePart">rear_damaged</action>
+		<action type="throwpart" blueprint="icePart">fender_damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">left_damaged</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

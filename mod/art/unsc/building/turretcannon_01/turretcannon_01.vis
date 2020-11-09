@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\turret_01\turret_01</file>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="bone_turret_attach" frombone="bone_turret_attach" syncanims="true" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="bone_light01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="bone_light02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="bone_light03" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\building_FX\unsc\generic\floodlight_01" tobone="bone_light04" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretartillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretcannon_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\building_death01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\turretcannon_01\turretcannon_01</file>
+			</asset>
+			<attach type="ModelRef" name="Gun" tobone="bone_receiver" frombone="bone_receiver" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretcannon_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Gun">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\building\turretcannon_01\gun_01</file>
+			</asset>
+		</component>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\building\turretcannon_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.024" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.024" end="1" name="play_turret_cannon" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.024" end="1" name="effects\vehicle_fx\unsc\turret\cannonmuzzleblast_01" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.277" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.28" end="1" name="play_turret_cannon" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.28" end="1" name="effects\vehicle_fx\unsc\turret\cannonmuzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

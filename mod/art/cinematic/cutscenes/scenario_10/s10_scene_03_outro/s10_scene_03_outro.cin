@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn10\PHXscn10" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_10\S10_Scene_03_Outro\Scene_03_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_03_Outro\Scene_03_Pelican_01" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_03_Outro\Scene_03_Particles_01" />
+			<tag type="Particle" time="0.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="4.5f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0.2" queue="true" duration="0" stringid="22842" sound="play_scn_10_cutter_05" talkinghead="scn_10_cutter_05" />--Chats--</shot>
+	</body>
+</cinematic>

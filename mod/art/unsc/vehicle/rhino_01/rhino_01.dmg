@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="0" />
+		</event>
+		<event />
+		<event>
+			<action type="multiframeTextureIndex" fromindex="0" toindex="1" />
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\LoopingSmokeFire_02">GrannyRootBone</action>
+		</event>
+		<event>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Rhino</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Rhino</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint name="bone_impact_01" bone="bone_impact_01">
+			<event>
+				<action type="swappart">Object08,Object08_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object08_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact_02" bone="bone_impact_02">
+			<event>
+				<action type="swappart">Object09,Object09_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object09_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact_03" bone="bone_impact_03">
+			<event>
+				<action type="swappart">Object01,Object01_damaged</action>
+				<action type="swappart">Object02,Object02_damaged</action>
+				<action type="swappart">Object05,Object05_damaged</action>
+				<action type="swappart">Object11,Object11_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">Object05_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object01_damaged</action>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object02_damaged</action>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object05_damaged</action>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object11_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact_04" bone="bone_impact_04">
+			<event>
+				<action type="swappart">object10,object10_damaged</action>
+				<action type="swappart">object12,object12_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">object10_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">object10_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">object12_damaged</action>
+			</event>
+		</impactpoint>
+		<impactpoint name="bone_impact_05" bone="bone_impact_05">
+			<event>
+				<action type="swappart">object03,object03_damaged</action>
+				<action type="swappart">object06,object06_damaged</action>
+				<action type="swappart">object07,object07_damaged</action>
+				<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">object06_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" releaseeffect="effects\building_fx\unsc\damage\smalldebris_01">object03_damaged</action>
+			</event>
+			<event>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">object06_damaged</action>
+				<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">object07_damaged</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_large">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_large">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

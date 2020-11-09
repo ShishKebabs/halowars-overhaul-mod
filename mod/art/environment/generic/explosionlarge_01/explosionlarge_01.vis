@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>environment\generic\explosionLarge_01\explosionLarge_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\generic\explosionLarge_01\explosionLarge_anim_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\generic\explosionLarge_01\explosionLarge_anim_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" tobone="bone_FX01" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+</visual>

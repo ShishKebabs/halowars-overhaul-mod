@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn14\reactor_01\reactor_damaged_01</file>
+				<damagefile>campaign\scn14\reactor_01\reactor_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Tread Left" tobone="bone_tread_fl" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Tread Left" tobone="bone_tread_rl" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Tread_right" tobone="bone_tread_fr" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Tread_right" tobone="bone_tread_rr" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn14\reactor_01\reactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn14\reactor_01\reactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_eightseconds</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_command_center" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Rumble" start="0" position="0.032" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.585" force2="0.546" lifespan="1" userData="" leftRumbleType="IntervalBurst" rightRumbleType="IntervalBurst" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.0710001" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="5" force2="0" lifespan="1" loop="false" checkSelected="true" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="Wheel">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn14\reactor_01\reactor_wheel_01</file>
+			</asset>
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn14\reactor_01\reactor_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Tread Left">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn14\reactor_01\tread_left_01</file>
+			</asset>
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_l_wheel_A" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_l_wheel_B" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_l_wheel_C" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+	</model>
+	<model name="Tread_right">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn14\reactor_01\tread_right_01</file>
+			</asset>
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_r_wheel_A" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_r_wheel_B" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Wheel" tobone="Bone_f_r_wheel_C" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Pickup" bone="GrannyRootBone" pointData="Metal" />
+		</component>
+	</model>
+</visual>

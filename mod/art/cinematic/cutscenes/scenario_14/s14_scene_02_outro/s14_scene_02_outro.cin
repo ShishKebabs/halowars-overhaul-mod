@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn14\PHXscn14" soundfile="">
+	<head>
+		<model name="elephant_01" type="proto" player="1" modelfile="unsc_veh_elephant_01" />
+		<model name="reactor_01" type="proto" modelfile="cine_objects_wowreactor_02" />
+		<model name="apexring_01" type="proto" modelfile="cpgn_scn14_apexring_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />--Particles--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_14\S14_Scene_02_Outro\Scene_02_Camera">
+			<animatedmodel model="elephant_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_02_Outro\Scene_02_Elephant_01" />
+			<animatedmodel model="reactor_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_02_Outro\Scene_02_Reactor_01" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_02_Outro\Scene_02_Particles_01" />
+			<tag type="Particle" time="12.45f" name="effects\wow_moments\s14_scene_02_teleporter.pfx" lifespan="20.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="apexring_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_02_Outro\Scene_02_ApexRing_01" />
+			<tag type="Chat" time="0.5" queue="true" duration="0" stringid="23055" sound="play_scn_14_cutter_04" talkinghead="scn_14_cutter_04" />
+		</shot>
+	</body>
+</cinematic>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<FlashMovieDefinition>
+	<ControlList>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="playerOptions" event="start" sound="" />
+				<Control name="ButtonB" command="cancel" event="start" sound="" />
+				<Control name="KeyEscape" command="cancel" event="start" sound="" />
+				<Control name="ButtonStart" command="ready" event="start" sound="" />
+				<Control name="ButtonY" command="inviteFriends" event="start" sound="" />
+				<Control name="TriggerLeft" command="decrementLeader" event="stop" repeat="" delay="0.5" rate="1" sound="" />
+				<Control name="TriggerRight" command="incrementLeader" event="stop" repeat="" delay="0.5" rate="1" sound="" />
+				<Control name="ButtonShoulderLeft" command="changeTeamLeft" event="start" sound="" />
+				<Control name="ButtonShoulderRight" command="changeTeamRight" event="start" sound="" />
+			</Mode>
+			<Mode name="LFGGameList">
+				<Control name="ButtonA" command="lfgListSelect" event="start" sound="" />
+				<Control name="ButtonB" command="cancel" event="start" sound="" />
+				<Control name="KeyEscape" command="cancel" event="start" sound="" />
+				<Control name="ButtonBack" command="lfgListRefresh" event="start" sound="" />
+			</Mode>
+		</Controls>
+	</ControlList>
+	<UIListControlCustom>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonB" command="cancel" event="start" sound="" />
+				<Control name="StickLeftUp" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftDown" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadUp" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadDown" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+			<Mode name="LFGGameList">
+				<Control name="ButtonB" command="cancel" event="start" sound="" />
+				<Control name="StickLeftUp" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftDown" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadUp" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadDown" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+	</UIListControlCustom>
+</FlashMovieDefinition>

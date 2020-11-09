@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">BoneGyro</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_02">BoneChopper</action>
+		</event>
+		<event />
+		<event>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">BoneGun01</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">BoneChopper</action>
+			<action type="throwattachment" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">GrannyRootBone</action>
+			<action type="playsound">play_impact_building_damage_release_electric</action>
+			<action type="playsound">play_cov_chopper_death</action>
+		</event>
+	</percentagebased>
+	<impactpointbased />
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

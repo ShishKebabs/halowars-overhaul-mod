@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Type1">
+	<model name="Type1">
+		<component>
+			<asset type="Particle">
+				<file>effects\impacts\unsc\tankshell_01\tank_shell_impact_01</file>
+			</asset>
+			<attach type="LightFile" name="effects\impacts\unsc\impactlight_med_01" syncanims="false" disregardorient="false" />
+		</component>
+	</model>
+	<model name="Type2">
+		<component>
+			<asset type="Particle">
+				<file>effects\impacts\unsc\tankshell_01\tank_shell_impact_02</file>
+			</asset>
+			<attach type="LightFile" name="effects\impacts\unsc\impactlight_med_01" syncanims="false" disregardorient="false" />
+		</component>
+	</model>
+	<model name="Type3">
+		<component>
+			<asset type="Particle">
+				<file>effects\impacts\unsc\tankshell_01\tank_shell_impact_03</file>
+			</asset>
+			<attach type="LightFile" name="effects\impacts\unsc\impactlight_med_01" syncanims="false" disregardorient="false" />
+		</component>
+	</model>
+	<model name="Type4">
+		<component>
+			<asset type="Particle">
+				<file>effects\impacts\unsc\tankshell_01\tank_shell_impact_04</file>
+			</asset>
+			<attach type="LightFile" name="effects\impacts\unsc\impactlight_med_01" syncanims="false" disregardorient="false" />
+		</component>
+	</model>
+	<logic type="Variation">
+		<logicdata value="1" modelref="Type1" />
+		<logicdata value="2" modelref="Type2" />
+		<logicdata value="3" modelref="Type3" />
+		<logicdata value="4" modelref="Type4" />
+	</logic>
+</visual>

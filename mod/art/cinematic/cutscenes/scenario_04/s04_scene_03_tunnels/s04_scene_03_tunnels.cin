@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\WOW\PHXscn04\PHXscn04" soundfile="">
+	<head>
+		<model name="transport_01" type="proto" player="1" modelfile="env_arcadia_escapeshipcinematic_01" />
+		<model name="banshee_01" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="spirit_01" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="spirit_02" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="spirit_03" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="spirit_04" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_07" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="statue_01" type="gr2" modelfile="environment\arcadia\statue_cinematic_01\statue_cinematic_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Camera">
+			<animatedmodel model="transport_01" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Transport_01" />
+			<animatedmodel model="banshee_01" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Banshee_01" />
+			<animatedmodel model="spirit_01" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Spirit_01" />
+			<animatedmodel model="spirit_02" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Spirit_02" />
+			<animatedmodel model="spirit_03" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Spirit_03" />
+			<animatedmodel model="spirit_04" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Spirit_04" />
+			<animatedmodel model="statue_01" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Statue_01" />
+			<animatedmodel model="particles_05" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_05" />
+			<tag type="Particle" time="3.0f" name="effects\fire\smoke_loop_large" lifespan="20.0f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_01" />
+			<tag type="Particle" time="2.0f" name="effects\fire\smallgenFire_01" lifespan="20f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_02" />
+			<tag type="Particle" time="0.1f" name="effects\fire\fire_loop_large" lifespan="20f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_03" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_03" />
+			<tag type="Particle" time="7.8" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="2.0f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_04" />
+			<tag type="Particle" time="1.0f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_04" tobone="bone_projectile" />
+			<tag type="Particle" time="0.7f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="0.1f" name="effects\wow_moments\S04_Scene_03_statue_explode" lifespan="5.0f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.0f" name="effects\wow_moments\S04_Scene_03_statue_explode" lifespan="5.0f" tomodel="particles_04" tobone="bone_projectile" />
+			<tag type="Particle" time="4.35f" name="effects\wow_moments\S04_Scene_03_statue_land" lifespan="5.0f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_06" />
+			<tag type="Particle" time="4" name="effects\cleansing\cleansing_c" lifespan="3.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_07" animationfile="cinematic\cutscenes\Scenario_04\S04_Scene_03_Tunnels\Scene_03_Particles_07" />
+			<tag type="Particle" time="0.1f" name="effects\fire\fire_loop_large" lifespan="20f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23007" sound="play_scn_04_cutter_02" talkinghead="scn_04_cutter_02" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="25155" sound="play_scn_04_forge_14" talkinghead="scn_04_forge_14" />--Particles--
+
+	--explosions and fire----Chats--</shot>
+	</body>
+</cinematic>

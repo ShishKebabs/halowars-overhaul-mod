@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepbase_01\FRcreepbase_01</file>
+			</asset>
+			<attach type="ModelRef" name="TurretFL" tobone="bone_attachment02" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="TurretFR" tobone="bone_attachment03" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="TurretRR" tobone="bone_attachment04" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="TurretRL" tobone="bone_attachment01" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbase_01\FRcreepHole_01" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Attachment" tobone="GrannyRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.834699988365173</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_large_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_build_pod_hatch_open" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_buildpod_hit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.378" end="1" name="ani_buildpod_screw" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.897" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+	<model name="TurretFL">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepBaseTurret_01\FRcreepBaseTurret_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepBaseTurret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0" end="1" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="TurretFR">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepBaseTurret_01\FRcreepBaseTurret_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepBaseTurret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0" end="1" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="TurretRR">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepBaseTurret_01\FRcreepBaseTurret_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepBaseTurret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0" end="1" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="TurretRL">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepBaseTurret_01\FRcreepBaseTurret_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepBaseTurret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0" end="1" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.15" end="1" name="effects\vehicle_fx\for\sentinel\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.151" end="1" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.154" end="1" name="play_weap_unsc_gremlin_cannon" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Attachment">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\forerunner\FRcreepbase_01\FRcreepbaseAttach_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackFL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackFR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackRR" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="LaserAttackRL" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\forerunner\FRcreepbaseWall_01\FRcreepbaseWall_01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\forerunner\FRcreepbase_01\limber_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_death_large_lowpass" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_build_pod_hatch_open" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0" end="1" name="ani_buildpod_hit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.378" end="1" name="ani_buildpod_screw" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.897" end="1" name="ani_buildpod_clunk" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="TerrainAlpha" start="0" position="0.942" end="1" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" userData="sizeX=70 sizeZ=70 value=on type=circle" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

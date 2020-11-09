@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>covenant\infantry\flyingElite_01\flyingelite_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\flyingelite\thrust_01" tobone="bone_fx01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\flyingelite\thrust_01" tobone="bone_fx02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\plasmarifleEnd_01" tobone="bone_launchpoint2" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="covenant\infantry\weapons_01\plasma_rifle_01\plasma_rifle_02" tobone="Bip01 L Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\run_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="_Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamshellRocket" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="FlailRocket" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="SpinRocket" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\elite_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="PlasmaRifleAttack" exitAction="Transition" tweenTime="10" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\attack_01</file>
+				<weight>20</weight>
+				<tag type="Attack" start="0" position="0.063" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.064" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.109" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.113" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.167" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.17" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.22" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.224" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.25" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.252" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.289" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.327" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.333" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.377" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.378" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\attack_02</file>
+				<weight>40</weight>
+				<tag type="Sound" start="0" position="0.205" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.208" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.289" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.415" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.417" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.497" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\attack_03</file>
+				<weight>60</weight>
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.101" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.138" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.138" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.138" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.277" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.277" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.277" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.321" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.321" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.352" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.352" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.352" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.39" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.415" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.415" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.415" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.46" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.46" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.46" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\attack_04</file>
+				<weight>90</weight>
+				<tag type="Attack" start="0" position="0.26" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.263" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.37" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.371" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.519" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.52" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.64" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.642" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="PlasmaRifleReload" exitAction="Freeze" tweenTime="10" tweenToAnimation="PlasmaRifleAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_action_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_action_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatWalkForward" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_forward_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatWalkBack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_back_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatWalkLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_left_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatWalkRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_right_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatWalkForwardPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_forward_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.218" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.22" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.301" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.302" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="CombatWalkBackPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_back_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.22" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.22" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="CombatWalkLeftPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_left_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.19" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="CombatWalkRightPlasmaRifleAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\combat_walk_right_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.101" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.15" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.15" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.19" end="1" name="play_cov_elite_plasma_rifle" tobone="bone_launchpoint2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.19" end="1" tobone="bone_launchpoint2" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="GrenadeAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\flyingElite_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_01</action>
+		</event>
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">bone_impact_01</action>
+		</event>
+		<event />
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object02</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object03</action>
+			<action type="throwpart" impactsound="play_sparks_one_shot" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object04</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object05</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object08</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object09</action>
+			<action type="attachparticle" effect="effects\impacts\cov\plasmamortar_02\plasmamortar_02">bone_impact_01</action>
+			<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			<action type="playsound">play_sparks_one_shot</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object01</action>
+				<action type="playsound">play_sparks_one_shot</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object06</action>
+				<action type="playsound">play_sparks_one_shot</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object07</action>
+				<action type="playsound">play_sparks_one_shot</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">object10</action>
+				<action type="playsound">play_sparks_one_shot</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+			</event>
+		</impactpoint>
+	</impactpointbased>
+</damagetemplate>

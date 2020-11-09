@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>covenant\air\phantom_01\phantom_01</file>
+			</asset>
+			<point pointType="Launch" bone="phantom.2.01" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\phantom_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\phantom_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="PlasmaCannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\phantom_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.2" end="1" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.2" end="1" tobone="bone_FX02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.2" end="1" name="play_cov_spectre_plasma_mortar" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="HeavyNeedlerAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\phantom_01\idle_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.2" end="1" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.2" end="1" name="play_cov_ghost_plasma_cannon" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.25" end="1" tobone="bone_FX02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.35" end="1" tobone="bone_FX02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.4" end="1" tobone="bone_FX01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.4" end="1" name="play_cov_ghost_plasma_cannon" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.45" end="1" name="play_cov_ghost_plasma_cannon" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="_Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\air\phantom_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

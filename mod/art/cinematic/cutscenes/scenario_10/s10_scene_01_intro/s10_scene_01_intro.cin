@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn10\PHXscn10" soundfile="">
+	<head>
+		<model name="hornet_01" player="1" type="proto" modelfile="unsc_air_hornet_01" />
+		<model name="hornet_02" player="1" type="proto" modelfile="unsc_air_hornet_01" />
+		<model name="pelican_01" player="1" type="proto" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_02" player="1" type="proto" modelfile="unsc_air_pelican_01" />
+		<model name="scorpion_01" type="proto" player="1" modelfile="unsc_veh_scorpion_01" />
+		<model name="scorpion_02" type="proto" player="1" modelfile="unsc_veh_scorpion_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="hornet_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Hornet_01" />
+			<animatedmodel model="hornet_02" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Hornet_02" />
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Pelican_01" />
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Pelican_02" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Particles_01" />
+			<tag type="Particle" time="20.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="5.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_01_Intro\Scene_01_Particles_02" />
+			<tag type="Particle" time="18.3f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="4.5f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="22695" sound="play_scn_10_serina_01" talkinghead="scn_10_serina_01" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="22694" sound="play_scn_10_cutter_01" talkinghead="scn_10_cutter_01" />
+			<tag type="Chat" time="8" queue="true" duration="0" stringid="22696" sound="play_scn_10_serina_02" talkinghead="scn_10_serina_02" />
+			<tag type="Chat" time="12" queue="true" duration="0" stringid="22697" sound="play_scn_10_cutter_06" talkinghead="scn_10_cutter_06" />--Chats--</shot>
+	</body>
+</cinematic>

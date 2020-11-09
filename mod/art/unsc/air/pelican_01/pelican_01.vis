@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\pelican_damaged_01</file>
+				<damagefile>unsc\air\pelican_01\pelican_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Turbine FL" tobone="Bone Wing FL" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Turbine FR" tobone="Bone Wing FR" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Turbine RL" tobone="Bone Wing RL" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="Turbine RR" tobone="Bone Wing RR" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/vehicle_fx/unsc/pelican/headlight_01" tobone="bone_headlight_01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/vehicle_fx/unsc/pelican/headlight_02" tobone="bone_headlight_02" syncanims="false" disregardorient="false" />
+			<point pointType="Impact" bone="impact_bone_01" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_02" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_03" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_04" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_05" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_06" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_07" pointData="Metal" />
+			<point pointType="Impact" bone="impact_bone_08" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\hoveridle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="3.5" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\building_FX\unsc\generic\podthrusterpoof_01" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="3.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Freeze" tweenTime="0" tweenToAnimation="HoverIdle">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\incoming_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.391" end="1" name="ani_buildpod_intro" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\outgoing_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.051" end="1" name="ani_buildpod_exit" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\pelican_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turbine FL">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\wing_FL_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight FL" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\hoverjets_FL_01" tobone="Bone Flame FL 01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\idlejets_FL_01" tobone="Bone Flame FL 02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/wow_moments/s02_scene_01_pelican_line" tobone="bone_FXlight FL" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FL_01" tobone="Bone Flame FL 02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FL_01" tobone="Bone Flame FL 02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FL_01" tobone="Bone Flame FL 02" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Turbine FR">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\wing_FR_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight FR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\idlejets_FR_01" tobone="Bone Flame FR02" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\hoverjets_FR_01" tobone="Bone Flame FR01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects/wow_moments/s02_scene_01_pelican_line" tobone="bone_FXlight FR" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FR_01" tobone="Bone Flame FR02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FR_01" tobone="Bone Flame FR02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_FR_01" tobone="Bone Flame FR02" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Turbine RL">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\wing_RL_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight RL" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\hoverjets_RL_01" tobone="Bone Flame RL01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\idlejets_RL_01" tobone="Bone Flame RL02" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RL_01" tobone="Bone Flame RL02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RL_01" tobone="Bone Flame RL02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="20" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RL_01" tobone="Bone Flame RL02" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Turbine RR">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>unsc\air\pelican_01\wing_RR_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\redblinkinglight_01" tobone="bone_FXlight RR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\hoverjets_RR_01" tobone="Bone Flame RR01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\idlejets_RR_01" tobone="Bone Flame RR02" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Walk" exitAction="Loop" tweenTime="1" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RR_01" tobone="Bone Flame RR02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="1" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RR_01" tobone="Bone Flame RR02" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="1" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\pelican_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\pelican\jets_RR_01" tobone="Bone Flame RR02" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+</visual>

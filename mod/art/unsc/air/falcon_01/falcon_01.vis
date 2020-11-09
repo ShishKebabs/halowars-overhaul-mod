@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\air\falcon_01\falcon_01</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\wingtip_trail_01" tobone="bone_FX04" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\wingtip_trail_01" tobone="bone_FX05" syncanims="false" disregardorient="false" />
+			<point pointType="Launch" bone="bone_FX04" pointData="Metal" />
+			<point pointType="Launch" bone="bone_FX05" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\idle_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\afterburn_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="MachineGunAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\mgattack_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.25" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.25" end="1" name="play_unsc_falcon_mg" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.75" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.75" end="1" name="play_unsc_falcon_mg" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Particle" start="0" position="0.75" end="1" name="effects\vehicle_fx\unsc\warthog\muzzleblast" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\fly_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_thrustleg_R" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_body" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_thrustleg_L" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_02</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\afterburn_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="StrikeAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_falcon_missile_strike_attack" tobone="bone_body" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\fly_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="MissileAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_falcon_missile" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_unsc_falcon_missile" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" loop="false" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\unsc\falcon\fly_01" tobone="bone_FX03" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\air\falcon_01\fly_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

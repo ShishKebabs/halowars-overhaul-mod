@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\WOW\PHXscn05\PHXscn05" soundfile="">
+	<head>
+		<model name="banshee_01" type="proto" player="4" modelfile="cov_air_banshee_01" />
+		<model name="banshee_02" type="proto" player="4" modelfile="cov_air_banshee_01" />
+		<model name="scorpion_01" type="proto" player="1" modelfile="unsc_veh_scorpion_01" />
+		<model name="spartan_01" type="proto" player="1" modelfile="unsc_inf_spartan_01" />
+		<model name="spartan_02" type="proto" player="1" modelfile="unsc_inf_spartan_02" />
+		<model name="warthog_01" type="proto" player="1" modelfile="cpgn_npc_forgeWarthog_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />cameralerp mode="end" duration="5.0"/&gt;
+	depthoffield enabled="true"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_05\S05_SCene_01_Tunnels\Scene_01_Camera">
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_01" />
+			<tag type="Particle" time="1.0f" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" lifespan="20.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<tag type="Particle" time="3.0f" name="effects\impacts\unsc\rhinoshell_01\rhino_shell_impact_01" lifespan="20.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<animatedmodel model="scorpion_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Scorpion_01" />
+			<animatedmodel model="spartan_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Spartan_01" />
+			<animatedmodel model="spartan_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Spartan_02" />
+			<animatedmodel model="warthog_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Warthog_01" />
+			<tag type="Particle" time="2.9" name="effects\vehicle_fx\unsc\warthog\drivingFXcenter_rock_01" lifespan="0.2f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.4" name="effects\wow_moments\s02_scene_01_warthog" lifespan="1.5f" tomodel="warthog_01" tobone="bone_body" />
+			<tag type="Particle" time="6.5" name="effects\vehicle_fx\unsc\warthog\drivingFXcenter_rock_01" lifespan="0.7f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<animatedmodel model="banshee_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Banshee_01" />
+			<animatedmodel model="banshee_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Banshee_02" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_02" />
+			<tag type="Particle" time="5.23" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="0.4f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.67f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.67f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_03" />
+			<tag type="Particle" time="5.633" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="0.4f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.84f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.84f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_04" />
+			<tag type="Particle" time="5.77" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="0.4f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.24f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.24f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_05" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_05" />
+			<tag type="Particle" time="5.87" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="0.4f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.34f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<tag type="Particle" time="6.34f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_01_Tunnels\Scene_01_Particles_06" />
+			<tag type="Particle" time="5.39f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="5.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.39f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23200" sound="play_scn_05_forge_01" talkinghead="scn_05_forge_01" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="23224" sound="play_scn_05_cutter_01" talkinghead="scn_05_cutter_01" />--particles----Chats--</shot>
+	</body>
+</cinematic>
