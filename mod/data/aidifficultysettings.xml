@@ -11,13 +11,13 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="GroupProximityRadius" InputLabel="Difficulty" OutputLabel="Radius" Comment="How large is the radius we use to group squads by proximity.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="100" />
+			<DataPoint Input="0" Output="10" />
 			<DataPoint Input="1" Output="10" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="RalliedDistanceSqr" InputLabel="Difficulty" OutputLabel="Radius" Comment="Radius squared that our groups need to be within to be considered rallied.">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="300" />
+			<DataPoint Input="0" Output="30" />
 			<DataPoint Input="1" Output="30" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
@@ -69,10 +69,10 @@
 	</AIDifficultySetting>
 	<AIDifficultySetting Name="EconMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="1.00 = no econ change, 0.0 means no supplies, 2.0 means double normal supplies">
 		<PiecewiseFunc>
-			<DataPoint Input="0" Output="2" Comment="On easy, AI gets 50% normal supplies" />
-			<DataPoint Input="0.33" Output="3" Comment="At diff 0.33, non-cheating (normal) supplies" />
-			<DataPoint Input="0.67" Output="4" Comment="At diff 0.67, non-cheating (normal) supplies" />
-			<DataPoint Input="1" Output="5" Comment="On legendary, AI gets 133% normal supplies" />
+			<DataPoint Input="0" Output="3" Comment="On easy, AI gets 50% normal supplies" />
+			<DataPoint Input="0.33" Output="4" Comment="At diff 0.33, non-cheating (normal) supplies" />
+			<DataPoint Input="0.67" Output="5" Comment="At diff 0.67, non-cheating (normal) supplies" />
+			<DataPoint Input="1" Output="6" Comment="On legendary, AI gets 133% normal supplies" />
 			<DataPoint Input="2" Output="8" Comment="On hyper-legendary, AI gets	 233% normal supplies" />
 		</PiecewiseFunc>
 	</AIDifficultySetting>
