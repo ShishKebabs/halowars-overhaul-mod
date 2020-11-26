@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn11\blurturret_01\blurturret_base_01</file>
+				<damagefile>campaign\scn11\blurturret_01\blurturret_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="turret" tobone="bone_attachpoint" frombone="GrannyRootBone" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\base_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\cannonattack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\base_idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\scn11\blurturret_01\blurturret_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\cannonattack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_pow_gp_carpetbomb_explosion" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\environment\shieldworldINT\blurturretmuzzleblast_01" tobone="bone_launchpoint01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.96" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\environment\shieldworldINT\blurturretmuzzleblast_01" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.96" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\environment\shieldworldINT\blurturretmuzzleblast_01" tobone="bone_launchpoint03" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.96" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\environment\shieldworldINT\blurturretmuzzleblast_01" tobone="bone_launchpoint04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.96" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.138" end="1" tobone="bone_launchpoint03" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\scn11\blurturret_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

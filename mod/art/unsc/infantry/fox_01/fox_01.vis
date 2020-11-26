@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_front_wheel_01" tobone="bone_wheel_FL" frombone="bone_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_front_wheel_01" tobone="bone_wheel_FR" frombone="bone_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_rear_wheel_01" tobone="bone_wheel_RL" frombone="bone_rear_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_rear_wheel_01" tobone="bone_wheel_RR" frombone="bone_rear_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="Turret" tobone="bone_turret" frombone="bone_turret" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.026" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_shield_L" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.064" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_axel_R" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.128" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="GrannyRootBone" checkvisible="false" disregardorient="true" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.026" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_shield_L" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.077" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_axel_R" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.179" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="GrannyRootBone" checkvisible="false" disregardorient="true" lifespan="0.25" />
+			</asset>
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wheel_FL" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_body" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wheel_RR" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wheel_RL" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_turret_01</file>
+			</asset>
+			<attach type="ModelRef" name="Cannon" tobone="bone_cannon" frombone="bone_cannon" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Cannon">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_cannon_01</file>
+			</asset>
+			<point pointType="Launch" bone="bone_fx01" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\walk_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\train_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_01</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_front_wheel_01" tobone="bone_wheel_FL" frombone="bone_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_front_wheel_01" tobone="bone_wheel_FR" frombone="bone_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_rear_wheel_01" tobone="bone_wheel_RL" frombone="bone_rear_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="unsc\infantry\fox_01\fox_rear_wheel_01" tobone="bone_wheel_RR" frombone="bone_rear_wheel" syncanims="false" disregardorient="false" />
+			<attach type="ModelRef" name="LockdownTurret" tobone="bone_turret" frombone="bone_turret" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorIdle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\cannonAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.026" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_shield_L" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.064" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_axel_R" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.128" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="GrannyRootBone" checkvisible="false" disregardorient="true" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.026" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_shield_L" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.077" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="bone_axel_R" checkvisible="false" disregardorient="true" lifespan="0.25" />
+				<tag type="Particle" position="0.179" name="effects\impacts\tank_shell_impact\tank_shell_impact_01" tobone="GrannyRootBone" checkvisible="false" disregardorient="true" lifespan="0.25" />
+			</asset>
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wheel_FL" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_body" syncanims="false" disregardorient="true" />
+			<attach type="ParticleFile" name="effects\fire\flaming_debris_01" tobone="bone_wheel_RR" syncanims="false" disregardorient="true" />
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="LockdownTurret">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_turret_01</file>
+			</asset>
+			<attach type="ModelRef" name="LockdownCannon" tobone="bone_cannon" frombone="bone_cannon" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorIdle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\cannonAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="LockdownCannon">
+		<component>
+			<asset type="Model">
+				<file>unsc\infantry\fox_01\fox_cannon_01</file>
+			</asset>
+			<point pointType="Launch" bone="bone_fx01" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorIdle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorDown_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\anchorUp_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CannonAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\cannonAttack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" position="0.18" tobone="bone_launchpoint" checkvisible="false" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.18" name="play_unsc_fox_cannon" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\fox_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Lockdown" modelref="Lockdown" />
+		<logicdata value="" modelref="Default" />
+	</logic>
+</visual>

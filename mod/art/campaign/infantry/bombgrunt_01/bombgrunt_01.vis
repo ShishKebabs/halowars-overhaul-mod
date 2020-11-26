@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>campaign\infantry\bombGrunt_01\bombGrunt_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Forearm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Clamshell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\clamshell_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\clamshell_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamshellRocket" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\clamshell_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\clamshell_03</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="FlailRocket" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="SpinRocket" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\projectiles\missiles\missile_smoke_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\projectiles\bullets\artillery_shell\artillery_shell_01" tobone="Bip01 Spine1" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Transition" tweenTime="10" tweenToAnimation="Gather">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Build" exitAction="Transition" tweenTime="10" tweenToAnimation="Build">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Repair" exitAction="Transition" tweenTime="10" tweenToAnimation="Build">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+		<anim type="Plant" exitAction="Freeze" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\infantry\bombGrunt_01\plant_01</file>
+				<weight>1</weight>
+			</asset>
+			<meshEnable>optionalBomb</meshEnable>
+		</anim>
+	</model>
+</visual>

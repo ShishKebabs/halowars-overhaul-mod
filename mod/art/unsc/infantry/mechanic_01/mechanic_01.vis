@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<logic type="Variation">
+				<logicdata value="v1" modelref="">
+					<asset type="Model">
+						<file>unsc\infantry\mechanic_01\mechanic_01</file>
+						<damagefile>template\defaultInfantry</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="v2" modelref="">
+					<asset type="Model">
+						<file>unsc\infantry\mechanic_02\mechanic_02</file>
+						<damagefile>template\defaultInfantry</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="v3" modelref="">
+					<asset type="Model">
+						<file>unsc\infantry\mechanic_03\mechanic_03</file>
+						<damagefile>template\defaultInfantry</damagefile>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<file>unsc\infantry\mechanic_01\mechanic_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_01</file>
+				<weight>33</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_02</file>
+				<weight>33</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_03</file>
+				<weight>33</weight>
+			</asset>
+			<attach type="ModelFile" name="environment\unsc\unscclipboard_01\unscclipboard_01" tobone="Bip01 L Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\walk_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_ani_dirt_footstep" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.571" end="1" name="play_ani_dirt_footstep" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="environment\unsc\unscclipboard_01\unscclipboard_01" tobone="Bip01 L Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\Jog_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.038" end="1" name="play_ani_dirt_footstep" tobone="Bip01 R Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.513" end="1" name="play_ani_dirt_footstep" tobone="Bip01 L Foot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="environment\unsc\unscclipboard_01\unscclipboard_01" tobone="Bip01 L Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_headshot_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_headshot_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\death_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Limber" exitAction="Transition" tweenTime="10" tweenToAnimation="Limber">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_lightwand_01</file>
+				<weight>40</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_lightwand_02</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_lightwand_03</file>
+				<weight>20</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_lightwand_04</file>
+				<weight>20</weight>
+			</asset>
+			<attach type="LightFile" name="unsc\infantry\mechanic_01\lightwand_01" tobone="Bip01 R Finger1" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="unsc\infantry\mechanic_01\lightwand_01" tobone="Bip01 L Finger1" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="environment\unsc\unsclightwand_01\unsclightwand_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="environment\unsc\unsclightwand_01\unsclightwand_02" tobone="Bip01 L Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Unlimber" exitAction="Transition" tweenTime="10" tweenToAnimation="Unlimber">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_weld_01</file>
+				<weight>60</weight>
+				<tag type="Light" start="0" position="0.006" end="1" name="unsc\infantry\mechanic_01\weldinglight_01" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="5.3" />
+				<tag type="Particle" start="0" position="0.01" end="1" name="effects\Unit_FX\unsc\generic\weldingsparks_01" tobone="Bip01 R Finger0" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="4.15" />
+				<tag type="Sound" start="0" position="0.019" end="1" name="play_ani_welding" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.506" end="1" name="effects\Unit_FX\unsc\generic\weldingsparks_01" tobone="Bip01 R Finger0" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="5.68" />
+				<tag type="Light" start="0" position="0.564" end="1" name="unsc\infantry\mechanic_01\weldinglight_01" tobone="GrannyRootBone" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="5.3" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_weld_02</file>
+				<weight>40</weight>
+				<tag type="Sound" start="0" position="0.006" end="1" name="stop_ani_welding" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ModelFile" name="environment\unsc\unschandwelder_01\unschandwelder_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ModelFile" name="environment\unsc\unscwelder_01\unscwelder_01" tobone="" frombone="" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Bored" exitAction="Transition" tweenTime="10" tweenToAnimation="Bored">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_polish_01</file>
+				<weight>55</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_polish_02</file>
+				<weight>45</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Transition" tweenTime="10" tweenToAnimation="Incoming">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_binos_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_binos_02</file>
+				<weight>25</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_binos_03</file>
+				<weight>25</weight>
+			</asset>
+			<attach type="ModelFile" name="unsc\prop\binoculars\binoculars_01" tobone="Bip01 R Hand" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Landing" exitAction="Transition" tweenTime="10" tweenToAnimation="Landing">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_pushups_01</file>
+				<weight>85</weight>
+				<tag type="Sound" start="0" position="0.013" end="1" name="play_vox_drill_instructor" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_pushups_02</file>
+				<weight>10</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_pushups_03</file>
+				<weight>5</weight>
+			</asset>
+		</anim>
+		<anim type="Takeoff" exitAction="Transition" tweenTime="10" tweenToAnimation="Takeoff">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_relax_01</file>
+				<weight>50</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_relax_02</file>
+				<weight>35</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_relax_03</file>
+				<weight>15</weight>
+			</asset>
+		</anim>
+		<anim type="Outgoing" exitAction="Loop" tweenTime="10" tweenToAnimation="Outgoing">
+			<asset type="Anim">
+				<file>unsc\infantry\mechanic_01\idle_standrelax_01</file>
+				<weight>50</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

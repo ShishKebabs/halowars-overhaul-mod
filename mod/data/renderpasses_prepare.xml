@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<RenderPasses>
+	<SetRenderTargets group="Prepare">
+		<Target name="ColourTargetMS0" />
+		<Target name="DepthTargetMS0" />
+	</SetRenderTargets>
+	<SetViewport group="Prepare">
+		<Coords x="0" y="0" relativeWidth="1" relativeHeight="1" />
+		<Depth minZ="0" maxZ="1" />
+	</SetViewport>
+	<Draw group="Prepare">
+		<Type type="Prepare" />
+	</Draw>
+</RenderPasses>

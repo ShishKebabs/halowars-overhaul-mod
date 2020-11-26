@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>unsc\building\turretartillery_01\turretartillery_01</file>
+			</asset>
+			<attach type="ModelFile" name="unsc\building\turretartillery_01\gun" tobone="bone_turret" frombone="bone_turret" syncanims="false" />
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>unsc\building\turretartillery_01\attack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ArtilleryAttack">
+			<asset type="Anim">
+				<file>unsc\building\turretartillery_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" position="0.1" checkvisible="false" />
+				<tag type="Sound" position="0.1" name="play_unsc_turret_artillery_weapon" checkvisible="true" />
+			</asset>
+		</anim>
+		<anim type="Death">
+			<asset type="Anim">
+				<file>unsc\building\building_death01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

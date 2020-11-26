@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn10\PHXscn10" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="swarm_01" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="swarm_02" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="swarm_03" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="swarm_04" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="swarm_05" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="swarm_06" type="gr2" modelfile="flood\air\swarm_01\swarm_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />model name="pelican_01" type="gr2" player="1" modelfile="unsc\air\pelican_01\pelican_01"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Pelican_01" />
+			<animatedmodel model="swarm_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_01" />
+			<animatedmodel model="swarm_02" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_02" />
+			<animatedmodel model="swarm_03" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_03" />
+			<animatedmodel model="swarm_04" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_04" />
+			<animatedmodel model="swarm_05" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_05" />
+			<animatedmodel model="swarm_06" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Swarm_06" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_01" />
+			<tag type="Particle" time="6.1" name="effects\wow_moments\s10_scene_02_flood_impact_01" lifespan="0.5f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_02" />
+			<tag type="Particle" time="5.05" name="effects\wow_moments\s10_scene_02_flood_impact_01" lifespan="0.5f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_04" />
+			<tag type="Particle" time="2.8f" name="effects\projectiles\flood\spit_01\spit_01" lifespan="0.5f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_03" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_03" />
+			<tag type="Particle" time="3.4f" name="effects\impacts\flood\spit_01\spit_01" lifespan="0.8f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_05" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_05" />
+			<tag type="Particle" time="3.83" name="effects\projectiles\flood\spit_01\spit_01" lifespan="0.4f" tomodel="particles_05" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_01" />
+			<tag type="Particle" time="4.2" name="effects\projectiles\flood\spit_01\spit_01" lifespan="1.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_10\S10_Scene_02_Swarm\Scene_02_Particles_06" />
+			<tag type="Particle" time="9" name="effects\projectiles\flood\spit_01\spit_01" lifespan="1.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="22814" sound="play_scn_10_serina_04" talkinghead="scn_10_serina_04" />--Flood Swarm----Particles----Chats--</shot>
+	</body>
+</cinematic>

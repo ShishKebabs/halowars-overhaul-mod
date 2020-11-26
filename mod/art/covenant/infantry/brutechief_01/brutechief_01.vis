@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\infantry\bruteChief_01\bruteChief_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\idle_coolRIG01</file>
+				<weight>40</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\walk_coolRIG01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\jog_coolRIG01</file>
+				<weight>5</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\run_coolRIG01</file>
+				<weight>5</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="MeleeAttack" exitAction="Transition" tweenTime="10" tweenToAnimation="MeleeAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\melee_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.327" end="1" name="play_hammer_swing" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.372" end="1" name="effects\Unit_FX\cov\brute\hammerstreak_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="BoneFX" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.39" end="1" name="play_hammer_impact" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.391" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.4" force2="0" lifespan="0.15" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.391" end="1" name="effects\Unit_FX\cov\brute\impactNormalO_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.32" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\melee_attack_coolRIG02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_hammer_swing" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.391" end="1" name="effects\Unit_FX\cov\brute\hammerstreak_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.2" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.442" end="1" name="play_hammer_impact" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.442" end="1" name="effects\Unit_FX\cov\brute\impactNormal_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.32" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.478" end="1" tobone="BoneFX" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="AreaAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="AreaAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\melee_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.327" end="1" name="play_hammer_swing" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.372" end="1" name="effects\Unit_FX\cov\brute\hammerstreakInherit_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="BoneFX" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.39" end="1" name="play_hammer_impact" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="CameraShake" start="0" position="0.391" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0.4" force2="0" lifespan="0.15" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.391" end="1" name="effects\Unit_FX\cov\brute\impactDestiny_01" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="1.32" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcBirthright_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="3" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\evadeLeft_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="3" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\evadeRight_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\death_coolRIG01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Clamshell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\brute_01\clamshell_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\stunned_coolRIG01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Gather" exitAction="Transition" tweenTime="8" tweenToAnimation="Gather">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\idle_coolRIG01</file>
+				<weight>40</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Build" exitAction="Transition" tweenTime="8" tweenToAnimation="Build">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\idle_coolRIG01</file>
+				<weight>40</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Fatality_SpartanBruteChief_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_04</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.78" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_05</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.82" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_06</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_07</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_08</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_09</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.82" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanBrute_Victim_10</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HotDropUp" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.39999994635582</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="HotDropDown" exitAction="Freeze" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.358300000429153</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport_end" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="PowerIdle" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\power_coolRIG01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Pull" exitAction="Transition" tweenTime="0" tweenToAnimation="MeleeAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\pull_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.428" end="1" tobone="BoneFX" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Fatality_ArbiterBruteChief_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_EliteBruteChief_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_elitebrutechief_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_elitebrutechief_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\bruteChief_01\fatality_arbiterbrutechief_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\brutechief_01\idle_coolRIG01</file>
+				<weight>40</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\brute\hammerarcs_01" tobone="BoneFX" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="Bip01" syncanims="false" disregardorient="false" />
+			<meshEnable>optionalGravHammer</meshEnable>
+		</anim>
+	</model>
+</visual>

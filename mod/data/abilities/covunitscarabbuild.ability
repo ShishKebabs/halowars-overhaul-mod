@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CovUnitScarabBuild.ability" Type="Ability" NextTriggerVarID="318" NextTriggerID="44" NextConditionID="39" NextEffectID="106" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="ScarabFoundation" IsNull="false" />
+		<TriggerVar ID="224" Type="Trigger" Name="TriggerVar2" IsNull="false">36</TriggerVar>
+		<TriggerVar ID="228" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="229" Type="Vector" Name="BuildLocation" IsNull="false" />
+		<TriggerVar ID="231" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+		<TriggerVar ID="232" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+		<TriggerVar ID="233" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+		<TriggerVar ID="236" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+		<TriggerVar ID="237" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="238" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+		<TriggerVar ID="239" Type="Float" Name="HitpointsVar1" IsNull="true" />
+		<TriggerVar ID="240" Type="Float" Name="HealthLevel" IsNull="false" />
+		<TriggerVar ID="241" Type="Float" Name="ShieldpointsVar1" IsNull="true" />
+		<TriggerVar ID="242" Type="Float" Name="ShieldpointsPercentVar1" IsNull="true" />
+		<TriggerVar ID="244" Type="UnitList" Name="DestroyUnitListVar1" IsNull="true" />
+		<TriggerVar ID="245" Type="Squad" Name="DestroySquadVar1" IsNull="true" />
+		<TriggerVar ID="246" Type="SquadList" Name="DestroySquadListVar1" IsNull="true" />
+		<TriggerVar ID="247" Type="ProtoSquad" Name="" IsNull="false">cov_veh_scarab_01</TriggerVar>
+		<TriggerVar ID="250" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+		<TriggerVar ID="251" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+		<TriggerVar ID="252" Type="Squad" Name="Scarab" IsNull="false" />
+		<TriggerVar ID="253" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+		<TriggerVar ID="254" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="256" Type="Squad" Name="SquadVar3" IsNull="true" />
+		<TriggerVar ID="257" Type="Player" Name="OwningPlayer" IsNull="false" />
+		<TriggerVar ID="259" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+		<TriggerVar ID="260" Type="Unit" Name="UnitVar4" IsNull="true" />
+		<TriggerVar ID="261" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+		<TriggerVar ID="262" Type="Float" Name="HitpointsVar2" IsNull="true" />
+		<TriggerVar ID="264" Type="Float" Name="ShieldpointsVar2" IsNull="true" />
+		<TriggerVar ID="265" Type="Float" Name="SPPercentVar1" IsNull="true" />
+		<TriggerVar ID="266" Type="Bool" Name="SpreadAmongUnitsVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="268" Type="MathOperator" Name="" IsNull="false">Subtract</TriggerVar>
+		<TriggerVar ID="271" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="272" Type="Float" Name="HealthLost" IsNull="false" />
+		<TriggerVar ID="274" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+		<TriggerVar ID="275" Type="Squad" Name="ReceivingSquadVar1" IsNull="true" />
+		<TriggerVar ID="276" Type="SquadList" Name="ReceivingSquadListVar1" IsNull="true" />
+		<TriggerVar ID="277" Type="ProtoObject" Name="" IsNull="false">fx_lavaflareup_01</TriggerVar>
+		<TriggerVar ID="281" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+		<TriggerVar ID="282" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+		<TriggerVar ID="283" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="284" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="286" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="287" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="289" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+		<TriggerVar ID="290" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+		<TriggerVar ID="291" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+		<TriggerVar ID="292" Type="Trigger" Name="TriggerVar1" IsNull="false">37</TriggerVar>
+		<TriggerVar ID="294" Type="Squad" Name="SquadVar4" IsNull="true" />
+		<TriggerVar ID="300" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="306" Type="Object" Name="ObjectVar2" IsNull="true" />
+		<TriggerVar ID="307" Type="ObjectList" Name="ObjectListVar1" IsNull="true" />
+		<TriggerVar ID="313" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+		<TriggerVar ID="314" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="168" Y="307" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="33" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">281</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">282</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">283</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">284</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">286</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">287</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="84" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">224</Input>
+				</Effect>
+				<Effect ID="93" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+					<Input Name="ReceivingUnit" SigID="5" Optional="true">3</Input>
+					<Input Name="ReceivingUnitList" SigID="3" Optional="true">274</Input>
+					<Input Name="ReceivingSquad" SigID="6" Optional="true">275</Input>
+					<Input Name="ReceivingSquadList" SigID="4" Optional="true">276</Input>
+					<Input Name="AddProtoObject" SigID="2" Optional="false">277</Input>
+				</Effect>
+				<Effect ID="98" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">292</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="36" Name="newTrigger36" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="604" Y="515" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="34" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">289</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">290</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">291</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="97" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="37" Name="newTrigger37" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1022" Y="305" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="29" Type="IsAlive" DBID="80" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">231</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">232</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">233</Input>
+					</Condition>
+					<Condition ID="35" Type="IsBuilt" DBID="414" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Unit" SigID="1" Optional="true">3</Input>
+						<Input Name="Squad" SigID="2" Optional="true">294</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="103" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">228</Input>
+					<Input Name="Object" SigID="4" Optional="true">300</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">229</Output>
+				</Effect>
+				<Effect ID="90" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">256</Input>
+					<Output Name="Owner" SigID="3" Optional="false">257</Output>
+				</Effect>
+				<Effect ID="87" Type="GetHealth" DBID="174" Version="3" CommentOut="false">
+					<Input Name="Unit" SigID="7" Optional="true">3</Input>
+					<Input Name="UnitList" SigID="8" Optional="true">236</Input>
+					<Input Name="Squad" SigID="1" Optional="true">237</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">238</Input>
+					<Output Name="Hitpoints" SigID="3" Optional="true">239</Output>
+					<Output Name="HitpointsPercent" SigID="4" Optional="true">240</Output>
+					<Output Name="Shieldpoints" SigID="5" Optional="true">241</Output>
+					<Output Name="ShieldpointsPercent" SigID="6" Optional="true">242</Output>
+				</Effect>
+				<Effect ID="104" Type="Destroy" DBID="38" Version="4" CommentOut="false">
+					<Input Name="DestroyUnit" SigID="3" Optional="true">3</Input>
+					<Input Name="DestroyUnitList" SigID="4" Optional="true">244</Input>
+					<Input Name="DestroySquad" SigID="5" Optional="true">245</Input>
+					<Input Name="DestroySquadList" SigID="6" Optional="true">246</Input>
+					<Input Name="Object" SigID="7" Optional="true">306</Input>
+					<Input Name="ObjectList" SigID="8" Optional="true">307</Input>
+				</Effect>
+				<Effect ID="105" Type="CreateSquad" DBID="36" Version="6" CommentOut="false">
+					<Input Name="ProtoSquad" SigID="1" Optional="false">247</Input>
+					<Input Name="CreateLocation" SigID="2" Optional="false">229</Input>
+					<Input Name="SquadOwner" SigID="3" Optional="false">257</Input>
+					<Input Name="FlyInStart" SigID="8" Optional="true">250</Input>
+					<Input Name="FlyInEnd" SigID="9" Optional="true">251</Input>
+					<Input Name="RallyPoint" SigID="10" Optional="true">313</Input>
+					<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">314</Input>
+					<Output Name="CreatedSquad" SigID="4" Optional="true">252</Output>
+					<Output Name="AddToSquadList" SigID="5" Optional="true">253</Output>
+					<Output Name="SquadListClearExisting" SigID="6" Optional="true">254</Output>
+				</Effect>
+				<Effect ID="92" Type="MathPercent" DBID="190" Version="1" CommentOut="false">
+					<Input Name="FirstPercent" SigID="1" Optional="false">271</Input>
+					<Input Name="MathOperator" SigID="2" Optional="false">268</Input>
+					<Input Name="SecondPercent" SigID="3" Optional="false">240</Input>
+					<Output Name="ResultPercent" SigID="4" Optional="false">272</Output>
+				</Effect>
+				<Effect ID="91" Type="Damage" DBID="325" Version="1" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">252</Input>
+					<Input Name="SquadList" SigID="2" Optional="true">259</Input>
+					<Input Name="Unit" SigID="3" Optional="true">260</Input>
+					<Input Name="UnitList" SigID="4" Optional="true">261</Input>
+					<Input Name="Hitpoints" SigID="5" Optional="true">262</Input>
+					<Input Name="HPPercent" SigID="6" Optional="true">272</Input>
+					<Input Name="Shieldpoints" SigID="7" Optional="true">264</Input>
+					<Input Name="SPPercent" SigID="8" Optional="true">265</Input>
+					<Input Name="SpreadAmongUnits" SigID="9" Optional="true">266</Input>
+				</Effect>
+				<Effect ID="99" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="318" NextTriggerID="44" NextConditionID="39" NextEffectID="106" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="3" Type="Unit" Name="ScarabFoundation" IsNull="false" />
+				<TriggerVar ID="224" Type="Trigger" Name="TriggerVar2" IsNull="false">36</TriggerVar>
+				<TriggerVar ID="228" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="229" Type="Vector" Name="BuildLocation" IsNull="false" />
+				<TriggerVar ID="231" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+				<TriggerVar ID="232" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+				<TriggerVar ID="233" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+				<TriggerVar ID="236" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+				<TriggerVar ID="237" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="238" Type="SquadList" Name="SquadListVar1" IsNull="true" />
+				<TriggerVar ID="239" Type="Float" Name="HitpointsVar1" IsNull="true" />
+				<TriggerVar ID="240" Type="Float" Name="HealthLevel" IsNull="false" />
+				<TriggerVar ID="241" Type="Float" Name="ShieldpointsVar1" IsNull="true" />
+				<TriggerVar ID="242" Type="Float" Name="ShieldpointsPercentVar1" IsNull="true" />
+				<TriggerVar ID="244" Type="UnitList" Name="DestroyUnitListVar1" IsNull="true" />
+				<TriggerVar ID="245" Type="Squad" Name="DestroySquadVar1" IsNull="true" />
+				<TriggerVar ID="246" Type="SquadList" Name="DestroySquadListVar1" IsNull="true" />
+				<TriggerVar ID="247" Type="ProtoSquad" Name="" IsNull="false">cov_veh_scarab_01</TriggerVar>
+				<TriggerVar ID="250" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+				<TriggerVar ID="251" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+				<TriggerVar ID="252" Type="Squad" Name="Scarab" IsNull="false" />
+				<TriggerVar ID="253" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+				<TriggerVar ID="254" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="256" Type="Squad" Name="SquadVar3" IsNull="true" />
+				<TriggerVar ID="257" Type="Player" Name="OwningPlayer" IsNull="false" />
+				<TriggerVar ID="259" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+				<TriggerVar ID="260" Type="Unit" Name="UnitVar4" IsNull="true" />
+				<TriggerVar ID="261" Type="UnitList" Name="UnitListVar3" IsNull="true" />
+				<TriggerVar ID="262" Type="Float" Name="HitpointsVar2" IsNull="true" />
+				<TriggerVar ID="264" Type="Float" Name="ShieldpointsVar2" IsNull="true" />
+				<TriggerVar ID="265" Type="Float" Name="SPPercentVar1" IsNull="true" />
+				<TriggerVar ID="266" Type="Bool" Name="SpreadAmongUnitsVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="268" Type="MathOperator" Name="" IsNull="false">Subtract</TriggerVar>
+				<TriggerVar ID="271" Type="Float" Name="" IsNull="false">_100%_,_1_</TriggerVar>
+				<TriggerVar ID="272" Type="Float" Name="HealthLost" IsNull="false" />
+				<TriggerVar ID="274" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+				<TriggerVar ID="275" Type="Squad" Name="ReceivingSquadVar1" IsNull="true" />
+				<TriggerVar ID="276" Type="SquadList" Name="ReceivingSquadListVar1" IsNull="true" />
+				<TriggerVar ID="277" Type="ProtoObject" Name="" IsNull="false">fx_lavaflareup_01</TriggerVar>
+				<TriggerVar ID="281" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+				<TriggerVar ID="282" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+				<TriggerVar ID="283" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="284" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="286" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="287" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="289" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+				<TriggerVar ID="290" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+				<TriggerVar ID="291" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+				<TriggerVar ID="292" Type="Trigger" Name="TriggerVar1" IsNull="false">37</TriggerVar>
+				<TriggerVar ID="294" Type="Squad" Name="SquadVar4" IsNull="true" />
+				<TriggerVar ID="298" Type="Unit" Name="UnitVar1" IsNull="true" />
+				<TriggerVar ID="299" Type="Squad" Name="SquadVar5" IsNull="true" />
+				<TriggerVar ID="300" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="301" Type="Vector" Name="OutputLocationVar1" IsNull="false" />
+				<TriggerVar ID="302" Type="Unit" Name="DestroyUnitVar1" IsNull="true" />
+				<TriggerVar ID="303" Type="UnitList" Name="DestroyUnitListVar2" IsNull="true" />
+				<TriggerVar ID="304" Type="Squad" Name="DestroySquadVar2" IsNull="true" />
+				<TriggerVar ID="305" Type="SquadList" Name="DestroySquadListVar2" IsNull="true" />
+				<TriggerVar ID="306" Type="Object" Name="ObjectVar2" IsNull="true" />
+				<TriggerVar ID="307" Type="ObjectList" Name="ObjectListVar1" IsNull="true" />
+				<TriggerVar ID="308" Type="ProtoSquad" Name="ProtoSquadVar1" IsNull="false" />
+				<TriggerVar ID="309" Type="Vector" Name="CreateLocationVar1" IsNull="false" />
+				<TriggerVar ID="310" Type="Player" Name="SquadOwnerVar1" IsNull="false" />
+				<TriggerVar ID="311" Type="Vector" Name="FlyInStartVar2" IsNull="true" />
+				<TriggerVar ID="312" Type="Vector" Name="FlyInEndVar2" IsNull="true" />
+				<TriggerVar ID="313" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+				<TriggerVar ID="314" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="315" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+				<TriggerVar ID="316" Type="SquadList" Name="AddToSquadListVar2" IsNull="true" />
+				<TriggerVar ID="317" Type="Bool" Name="SquadListClearExistingVar2" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="168" Y="307" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="33" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">281</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">282</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">283</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">284</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">286</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">287</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="84" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">224</Input>
+						</Effect>
+						<Effect ID="93" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+							<Input Name="ReceivingUnit" SigID="5" Optional="true">3</Input>
+							<Input Name="ReceivingUnitList" SigID="3" Optional="true">274</Input>
+							<Input Name="ReceivingSquad" SigID="6" Optional="true">275</Input>
+							<Input Name="ReceivingSquadList" SigID="4" Optional="true">276</Input>
+							<Input Name="AddProtoObject" SigID="2" Optional="false">277</Input>
+						</Effect>
+						<Effect ID="98" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">292</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="1" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="36" Name="newTrigger36" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="604" Y="515" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="34" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">289</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">290</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">291</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="97" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="37" Name="newTrigger37" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1022" Y="305" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="29" Type="IsAlive" DBID="80" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">231</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">232</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">233</Input>
+							</Condition>
+							<Condition ID="35" Type="IsBuilt" DBID="414" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Unit" SigID="1" Optional="true">3</Input>
+								<Input Name="Squad" SigID="2" Optional="true">294</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="103" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">228</Input>
+							<Input Name="Object" SigID="4" Optional="true">300</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">229</Output>
+						</Effect>
+						<Effect ID="90" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">256</Input>
+							<Output Name="Owner" SigID="3" Optional="false">257</Output>
+						</Effect>
+						<Effect ID="87" Type="GetHealth" DBID="174" Version="3" CommentOut="false">
+							<Input Name="Unit" SigID="7" Optional="true">3</Input>
+							<Input Name="UnitList" SigID="8" Optional="true">236</Input>
+							<Input Name="Squad" SigID="1" Optional="true">237</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">238</Input>
+							<Output Name="Hitpoints" SigID="3" Optional="true">239</Output>
+							<Output Name="HitpointsPercent" SigID="4" Optional="true">240</Output>
+							<Output Name="Shieldpoints" SigID="5" Optional="true">241</Output>
+							<Output Name="ShieldpointsPercent" SigID="6" Optional="true">242</Output>
+						</Effect>
+						<Effect ID="104" Type="Destroy" DBID="38" Version="4" CommentOut="false">
+							<Input Name="DestroyUnit" SigID="3" Optional="true">3</Input>
+							<Input Name="DestroyUnitList" SigID="4" Optional="true">244</Input>
+							<Input Name="DestroySquad" SigID="5" Optional="true">245</Input>
+							<Input Name="DestroySquadList" SigID="6" Optional="true">246</Input>
+							<Input Name="Object" SigID="7" Optional="true">306</Input>
+							<Input Name="ObjectList" SigID="8" Optional="true">307</Input>
+						</Effect>
+						<Effect ID="105" Type="CreateSquad" DBID="36" Version="6" CommentOut="false">
+							<Input Name="ProtoSquad" SigID="1" Optional="false">247</Input>
+							<Input Name="CreateLocation" SigID="2" Optional="false">229</Input>
+							<Input Name="SquadOwner" SigID="3" Optional="false">257</Input>
+							<Input Name="FlyInStart" SigID="8" Optional="true">250</Input>
+							<Input Name="FlyInEnd" SigID="9" Optional="true">251</Input>
+							<Input Name="RallyPoint" SigID="10" Optional="true">313</Input>
+							<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">314</Input>
+							<Output Name="CreatedSquad" SigID="4" Optional="true">252</Output>
+							<Output Name="AddToSquadList" SigID="5" Optional="true">253</Output>
+							<Output Name="SquadListClearExisting" SigID="6" Optional="true">254</Output>
+						</Effect>
+						<Effect ID="92" Type="MathPercent" DBID="190" Version="1" CommentOut="false">
+							<Input Name="FirstPercent" SigID="1" Optional="false">271</Input>
+							<Input Name="MathOperator" SigID="2" Optional="false">268</Input>
+							<Input Name="SecondPercent" SigID="3" Optional="false">240</Input>
+							<Output Name="ResultPercent" SigID="4" Optional="false">272</Output>
+						</Effect>
+						<Effect ID="91" Type="Damage" DBID="325" Version="1" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">252</Input>
+							<Input Name="SquadList" SigID="2" Optional="true">259</Input>
+							<Input Name="Unit" SigID="3" Optional="true">260</Input>
+							<Input Name="UnitList" SigID="4" Optional="true">261</Input>
+							<Input Name="Hitpoints" SigID="5" Optional="true">262</Input>
+							<Input Name="HPPercent" SigID="6" Optional="true">272</Input>
+							<Input Name="Shieldpoints" SigID="7" Optional="true">264</Input>
+							<Input Name="SPPercent" SigID="8" Optional="true">265</Input>
+							<Input Name="SpreadAmongUnits" SigID="9" Optional="true">266</Input>
+						</Effect>
+						<Effect ID="99" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

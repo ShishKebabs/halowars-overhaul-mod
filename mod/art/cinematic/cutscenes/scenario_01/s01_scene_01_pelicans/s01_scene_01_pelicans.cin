@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\WOW\PHXscn01\PHXscn01" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_02" type="proto" modelfile="unsc_air_pelican_01" />
+		<model name="spirit_01" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="spirit_02" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="spirit_03" type="proto" player="3" modelfile="cov_air_spirit_01" />
+		<model name="banshee_01" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_02" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_03" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_04" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="wraith_01" type="proto" player="3" modelfile="cov_veh_wraith_01" />
+		<model name="marine_01" type="proto" modelfile="unsc_inf_marine_01" />
+		<model name="banshee_01" type="gr2" player="3" modelfile="covenant\air\banshee_01\banshee_01" />
+		<model name="banshee_02" type="gr2" player="3" modelfile="covenant\air\banshee_01\banshee_01" />
+		<model name="banshee_03" type="gr2" player="3" modelfile="covenant\air\banshee_01\banshee_01" />
+		<model name="explosion_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="explosion_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="smoke_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="smoke_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="gunfire_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="impacts_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="gunfire_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="spirit_troops" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="spirit_troops_B" type="proto" modelfile="cine_objects_particleobject_01" />
+		<depthoffield enabled="true" />model name="spirit_01" type="gr2" modelfile="covenant\air\spirit_01\spirit_01"/&gt;
+    model name="spirit_02" type="gr2" modelfile="covenant\air\spirit_01\spirit_01"/&gt;
+    model name="spirit_03" type="gr2" modelfile="covenant\air\spirit_01\spirit_01"/&gt;-----Paritcles--cameralerp mode="end" duration="2.0"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Camera">
+			<color>0,0,0</color>
+			<animatedmodel model="marine_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Marine_01" />
+			<animatedmodel model="spirit_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Spirit_01_A" />
+			<animatedmodel model="spirit_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Spirit_02_A" />
+			<animatedmodel model="spirit_03" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Spirit_03_A" />
+			<animatedmodel model="spirit_troops" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Spirit_Troops" />
+			<tag type="Particle" time="7.4f" name="effects\hotdrop\hot_drop_infantry" lifespan="20.0f" tomodel="spirit_troops" tobone="GrannyRootBone" />
+			<tag type="Particle" time="12.8f" name="effects\hotdrop\hot_drop_infantry" lifespan="20.0f" tomodel="spirit_troops" tobone="bone_projectile" />
+			<animatedmodel model="spirit_troops_B" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Spirit_Troops_B" />
+			<tag type="Particle" time="11.6f" name="effects\hotdrop\hot_drop_infantry" lifespan="20.0f" tomodel="spirit_troops_B" tobone="GrannyRootBone" />
+			<animatedmodel model="banshee_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Banshee_01_A" />
+			<animatedmodel model="banshee_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Banshee_02_A" />
+			<animatedmodel model="banshee_03" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Banshee_03_A" />
+			<animatedmodel model="banshee_04" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Banshee_04" />
+			<animatedmodel model="wraith_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Wraith_01" />
+			<tag type="Chat" time="1" queue="true" duration="0" stringid="22980" sound="play_scn_01_forge_01" talkinghead="scn_01_forge_01" />
+			<tag type="Chat" time="5" queue="true" duration="0" stringid="22983" sound="play_scn_01_cutter_01" talkinghead="scn_01_cutter_01" />
+			<tag type="Chat" time="8" queue="true" duration="0" stringid="22987" sound="play_scn_01_serina_01" talkinghead="scn_01_serina_01" />
+			<tag type="Chat" time="12" queue="true" duration="0" stringid="22979" sound="play_scn_01_forge_02" talkinghead="scn_01_forge_02" />
+			<animatedmodel model="explosion_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Explosion_01" />
+			<tag type="Particle" time="2.6f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_01" tobone="bone_projectile" />
+			<tag type="Particle" time="6.0f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_01" tobone="bone_projectile" />
+			<tag type="Particle" time="6.7f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_01" tobone="bone_projectile" />
+			<tag type="Particle" time="10.2f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_01" tobone="bone_projectile" />
+			<tag type="Particle" time="11.5f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_01" tobone="bone_projectile" />
+			<animatedmodel model="explosion_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Explosion_02" />
+			<tag type="Particle" time="5.2f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="5.4f" name="effects\impacts\snow\snow_large_03" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="13.0f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="13.0f" name="effects\impacts\snow\snow_large_03" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="16.2f" name="effects\impacts\snow\snow_large_03" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="18.0f" name="effects\impacts\artillery_impacts\rhino_shell_impact_01" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="18.9f" name="effects\impacts\snow\snow_large_03" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<tag type="Particle" time="19.5f" name="effects\impacts\snow\snow_large_03" lifespan="3.0f" tomodel="explosion_02" tobone="bone_projectile" />
+			<animatedmodel model="gunfire_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Particles_03" />
+			<tag type="Particle" time="2.0f" name="effects\projectiles\cov\plasmaRifle_02\plasmaRifle_02" lifespan="10.0f" tomodel="gunfire_02" tobone="GrannyRootBone" />
+			<animatedmodel model="impacts_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Particles_02" />
+			<tag type="Particle" time="2.36f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="impacts_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.56f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="impacts_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.76f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="impacts_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.96f" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="impacts_01" tobone="GrannyRootBone" />
+			<animatedmodel model="gunfire_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Particles_01" />
+			<tag type="Particle" time="1.07f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.17f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.27f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.37f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.47f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.57f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.67f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.77f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.87f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.13f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.23f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.33f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.43f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.53f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.63f" name="effects\Unit_FX\unsc\marine\muzzleblast" lifespan="0.5f" tomodel="gunfire_01" tobone="GrannyRootBone" />
+			<animatedmodel model="smoke_01" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Smoke_01" />
+			<tag type="Particle" time="1.0f" name="effects\environment\harvest\pelicansmoke_02" lifespan="30.0f" tomodel="smoke_01" tobone="bone_projectile" />
+			<animatedmodel model="smoke_02" animationfile="cinematic\cutscenes\Scenario_01\S01_Scene_01_Pelicans\Scene_01_Smoke_02" />
+			<tag type="Particle" time="1.0f" name="effects\environment\harvest\pelicansmoke_02" lifespan="30.0f" tomodel="smoke_02" tobone="bone_projectile" />transition mode="start" fadeup="4.0"&gt;/transition&gt;-- Vehicle Animation ----Chats----Particles - Animation --
+
+	-- Explosions --</shot>
+	</body>
+</cinematic>

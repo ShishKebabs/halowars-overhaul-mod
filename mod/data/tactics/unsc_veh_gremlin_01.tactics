@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>laserCannon</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>80</DamagePerSecond>
+		<WeaponType>ArmorPiercing</WeaponType>
+		<Projectile>fx_proj_spartanlaser_01</Projectile>
+		<ImpactEffect size="Medium">unsc_spartanlaser_01</ImpactEffect>
+		<MaxVelocityLead>45</MaxVelocityLead>
+		<MaxRange>50</MaxRange>
+		<Accuracy>0.1</Accuracy>
+		<MaxDeviation>6</MaxDeviation>
+		<MovingAccuracy>0.05</MovingAccuracy>
+		<MovingMaxDeviation>4.5</MovingMaxDeviation>
+		<AccuracyDistanceFactor>0.5</AccuracyDistanceFactor>
+		<AccuracyDeviationFactor>0.33</AccuracyDeviationFactor>
+		<AOELinearDamage />
+		<AOERadius>15</AOERadius>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="GroundVehicle">10</TargetPriority>
+		<TargetPriority type="Infantry">6</TargetPriority>
+		<TargetPriority type="TurretBuilding">3</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>EmpSpecial</Name>
+		<AllowFriendlyFire />
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>1</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_beam_01</Projectile>
+		<ImpactEffect size="Medium">foxEmp</ImpactEffect>
+		<MaxVelocityLead>45</MaxVelocityLead>
+		<MaxRange>100</MaxRange>
+		<Accuracy>1</Accuracy>
+		<Hardpoint>Turret</Hardpoint>
+		<Daze TargetType="EmpEffectNormal" MovementModifier="0" SmartTargeting="true">8.0f</Daze>
+	</Weapon>
+	<Weapon>
+		<Name>EmpSpecialUpgraded</Name>
+		<AllowFriendlyFire />
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>1</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_beam_01</Projectile>
+		<ImpactEffect size="Medium">foxEmp</ImpactEffect>
+		<MaxVelocityLead>45</MaxVelocityLead>
+		<MaxRange>100</MaxRange>
+		<Accuracy>1</Accuracy>
+		<Hardpoint>Turret</Hardpoint>
+		<Daze TargetType="EmpEffectNormal" MovementModifier="0" SmartTargeting="true">8.0f</Daze>
+		<Bounces>3</Bounces>
+		<BounceRange>25</BounceRange>
+	</Weapon>
+	<Weapon>
+		<Name>CampaignCannon</Name>
+		<AttackRate>4</AttackRate>
+		<DamagePerSecond>1</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_beam_01</Projectile>
+		<ImpactEffect size="Medium">foxEmp</ImpactEffect>
+		<MaxRange>60</MaxRange>
+		<Hardpoint>Turret</Hardpoint>
+	</Weapon>
+	<Action>
+		<Name>laserCannonAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>EmpAttack</Anim>
+		<Weapon>laserCannon</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>specialAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>empBombAttack</Anim>
+		<Weapon>EmpSpecial</Weapon>
+		<MainAttack />
+		<DontLoopAttackAnim />
+	</Action>
+	<Action>
+		<Name>specialAttackActionUpgraded</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>empBombAttack</Anim>
+		<Weapon>EmpSpecialUpgraded</Weapon>
+		<MainAttack />
+		<DontLoopAttackAnim />
+		<StartDisabled />
+	</Action>
+	<Action>
+		<Name>CampaignCannonAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>EmpAttack</Anim>
+		<Weapon>CampaignCannon</Weapon>
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>5</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonPelican</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>PelicanGarrison</Anim>
+		<WorkRange>14</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonPelican</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>PelicanUngarrison</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonTeleport</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>TeleportOut</Anim>
+		<WorkRange>15</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonTeleport</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>TeleportIn</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>GatherCollectables</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Collectable</Resource>
+		<WorkRate>1</WorkRate>
+		<WorkRange>3</WorkRange>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Collectable</TargetType>
+			<Action>GatherCollectables</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>env_shieldexterior_tractorB_01</TargetType>
+			<Action>CampaignCannonAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>nonFlying</TargetType>
+			<Action>laserCannonAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>EmpEffectNormal</TargetType>
+			<Ability>Command</Ability>
+			<Action>specialAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>EmpEffectNormal</TargetType>
+			<Ability>Command</Ability>
+			<Action>specialAttackActionUpgraded</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>Garrison</TargetType>
+			<Action>Garrison</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>GarrisonPelican</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>UngarrisonPelican</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Relation>Self</Relation>
+			<TargetType>TeleportPickup</TargetType>
+			<Action>GarrisonTeleport</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>TeleportDropoff</TargetType>
+			<Action>UngarrisonTeleport</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TutHintCamera.triggerscript" Type="TriggerScript" NextTriggerVarID="126" NextTriggerID="16" NextConditionID="19" NextEffectID="42" External="false">
+	<TriggerGroups>
+		<Group ID="0" Name="Event Watcher">1,2</Group>
+		<Group ID="1" Name="Hint Display">7,8</Group>
+		<Group ID="2" Name="Hint Timer">3,5,13,14,15</Group>
+	</TriggerGroups>
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Player" Name="Player" IsNull="false" />
+		<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="3" Type="SquadList" Name="" IsNull="true" />
+		<TriggerVar ID="4" Type="Unit" Name="ControlUnit" IsNull="false" />
+		<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="7" Type="EventType" Name="" IsNull="false">ControlPan</TriggerVar>
+		<TriggerVar ID="9" Type="Integer" Name="CameraPanEvent" IsNull="false" />
+		<TriggerVar ID="10" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="11" Type="Bool" Name="HasPannedCamera" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="13" Type="Trigger" Name="TriggerVar2" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="15" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="17" Type="Trigger" Name="TriggerVar3" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="18" Type="Trigger" Name="TriggerVar4" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="20" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+		<TriggerVar ID="21" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+		<TriggerVar ID="22" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+		<TriggerVar ID="23" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="36" Type="Integer" Name="IntegerVar1" IsNull="true" />
+		<TriggerVar ID="38" Type="Time" Name="InitialDelay" IsNull="false" />
+		<TriggerVar ID="39" Type="Float" Name="TimeAsFloat" IsNull="false" />
+		<TriggerVar ID="40" Type="Trigger" Name="TriggerVar5" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="43" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="44" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="45" Type="Trigger" Name="TriggerVar7" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="47" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="48" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="49" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="50" Type="Bool" Name="PopCameraHintNow" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="51" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="53" Type="Trigger" Name="TriggerVar8" IsNull="false">7</TriggerVar>
+		<TriggerVar ID="55" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="56" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="59" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="60" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="62" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+		<TriggerVar ID="65" Type="PlayerList" Name="AddPlayerListVar1" IsNull="true" />
+		<TriggerVar ID="66" Type="PlayerList" Name="PlayerList" IsNull="false" />
+		<TriggerVar ID="67" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="68" Type="Trigger" Name="TriggerVar10" IsNull="false">8</TriggerVar>
+		<TriggerVar ID="69" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="71" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+		<TriggerVar ID="72" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="78" Type="Trigger" Name="TriggerVar12" IsNull="false">4</TriggerVar>
+		<TriggerVar ID="80" Type="Trigger" Name="TriggerVar14" IsNull="false">7</TriggerVar>
+		<TriggerVar ID="95" Type="Time" Name="" IsNull="false">6000</TriggerVar>
+		<TriggerVar ID="96" Type="Time" Name="PopUpDisplayTime" IsNull="false" />
+		<TriggerVar ID="97" Type="Trigger" Name="TriggerVar18" IsNull="false">13</TriggerVar>
+		<TriggerVar ID="100" Type="Time" Name="" IsNull="false">15000</TriggerVar>
+		<TriggerVar ID="101" Type="Time" Name="RepeatTime" IsNull="false" />
+		<TriggerVar ID="102" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="108" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="111" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="114" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="115" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="116" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+		<TriggerVar ID="117" Type="Trigger" Name="TriggerVar22" IsNull="false">14</TriggerVar>
+		<TriggerVar ID="118" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="120" Type="Trigger" Name="TriggerVar23" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="122" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="123" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="124" Type="Trigger" Name="TriggerVar24" IsNull="false">15</TriggerVar>
+		<TriggerVar ID="125" Type="Trigger" Name="TriggerVar25" IsNull="false">5</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="HintComeraControl" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="771" Y="272" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">3</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">4</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">5</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">6</Output>
+					</Condition>
+					<Condition ID="4" Type="CanRetrieveExternalFloat" DBID="977" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Float" SigID="1" Optional="false">39</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="420" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">10</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+				</Effect>
+				<Effect ID="2" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">17</Input>
+				</Effect>
+				<Effect ID="3" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">18</Input>
+				</Effect>
+				<Effect ID="6" Type="AsTime" DBID="716" Version="1" CommentOut="false">
+					<Input Name="Integer" SigID="1" Optional="true">36</Input>
+					<Input Name="Float" SigID="2" Optional="true">39</Input>
+					<Output Name="Time" SigID="3" Optional="false">38</Output>
+				</Effect>
+				<Effect ID="10" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">49</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+				</Effect>
+				<Effect ID="12" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">53</Input>
+				</Effect>
+				<Effect ID="15" Type="PlayerListAdd" DBID="124" Version="2" CommentOut="false">
+					<Input Name="AddPlayer" SigID="2" Optional="true">0</Input>
+					<Input Name="AddPlayerList" SigID="3" Optional="true">65</Input>
+					<Output Name="OutputList" SigID="4" Optional="false">66</Output>
+					<Output Name="ClearExisting" SigID="5" Optional="false">67</Output>
+				</Effect>
+				<Effect ID="20" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">78</Input>
+				</Effect>
+				<Effect ID="28" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+					<Input Name="TimeSource" SigID="1" Optional="false">95</Input>
+					<Output Name="TimeCopy" SigID="2" Optional="false">96</Output>
+				</Effect>
+				<Effect ID="32" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+					<Input Name="TimeSource" SigID="1" Optional="false">100</Input>
+					<Output Name="TimeCopy" SigID="2" Optional="false">101</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="1" Name="Wait for event" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1333" Y="173" GroupID="0" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="1" Type="EventTriggered" DBID="813" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="EventID" SigID="1" Optional="false">9</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="1" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">15</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+				</Effect>
+				<Effect ID="9" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">45</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="2" Name="Pan event setup" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1329" Y="51" GroupID="0" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="5" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">43</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">44</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="416" Type="EventSubscribe" DBID="811" Version="2" CommentOut="false">
+					<Input Name="EventType" SigID="1" Optional="false">7</Input>
+					<Input Name="Player" SigID="3" Optional="true">0</Input>
+					<Output Name="EventID" SigID="2" Optional="false">9</Output>
+				</Effect>
+				<Effect ID="0" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">13</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="3" Name="newTrigger3" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1337" Y="345" GroupID="2" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">23</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">38</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="7" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">40</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="4" Name="newTrigger4" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1336" Y="508" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="2" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">4</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">20</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">21</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">22</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="17" Type="HintMessageDestroy" DBID="815" Version="2" CommentOut="false">
+					<Input Name="LocStringID" SigID="1" Optional="true">71</Input>
+				</Effect>
+				<Effect ID="4" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="5" Name="newTrigger5" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1974" Y="344" GroupID="2" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="6" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">47</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">48</Input>
+					</Condition>
+					<Condition ID="8" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">59</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">60</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="11" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">51</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+				</Effect>
+				<Effect ID="29" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">97</Input>
+				</Effect>
+				<Effect ID="36" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">111</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="34" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">108</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+				</Effect>
+				<Effect ID="38" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">117</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="7" Name="newTrigger7" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1334" Y="532" GroupID="1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="7" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">55</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">56</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="14" Type="HintMessageShow" DBID="805" Version="1" CommentOut="false">
+					<Input Name="PlayerList" SigID="1" Optional="false">66</Input>
+					<Input Name="LocStringID" SigID="2" Optional="false">62</Input>
+					<Input Name="Time" SigID="3" Optional="true">96</Input>
+				</Effect>
+				<Effect ID="16" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">68</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="8" Name="newTrigger8" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1334" Y="692" GroupID="1" TemplateID="-1">
+			<TriggerConditions>
+				<Or>
+					<Condition ID="9" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">69</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">96</Input>
+					</Condition>
+					<Condition ID="16" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">114</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">115</Input>
+					</Condition>
+				</Or>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="18" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+					<Input Name="BoolSource" SigID="1" Optional="false">72</Input>
+					<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+				</Effect>
+				<Effect ID="22" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+				</Effect>
+				<Effect ID="37" Type="HintMessageDestroy" DBID="815" Version="2" CommentOut="false">
+					<Input Name="LocStringID" SigID="1" Optional="true">116</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="13" Name="newTrigger13" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1804" Y="136" GroupID="2" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="18" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">122</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">123</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="40" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">124</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="14" Name="newTrigger14" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1977" Y="560" GroupID="2" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="17" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">118</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">101</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="39" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">120</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="15" Name="newTrigger15" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2176" Y="136" GroupID="2" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="14" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">102</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">101</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="41" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">125</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups>
+				<GroupUI X="1346" Y="213" iX="0" iY="200" oX="800" oY="200" Width="265" Height="53" GroupID="-1" InternalGroupID="0">
+					<Title>Event Watcher</Title>
+				</GroupUI>
+				<GroupUI X="1345" Y="411" iX="0" iY="200" oX="800" oY="200" Width="272" Height="53" GroupID="-1" InternalGroupID="1">
+					<Title>Hint Display</Title>
+				</GroupUI>
+				<GroupUI X="1352" Y="312" iX="0" iY="200" oX="800" oY="200" Width="260" Height="57" GroupID="-1" InternalGroupID="2">
+					<Title>Hint Timer</Title>
+				</GroupUI>
+			</Groups>
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="126" NextTriggerID="16" NextConditionID="19" NextEffectID="42" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Player" Name="Player" IsNull="false" />
+				<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="3" Type="SquadList" Name="" IsNull="true" />
+				<TriggerVar ID="4" Type="Unit" Name="ControlUnit" IsNull="false" />
+				<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="7" Type="EventType" Name="" IsNull="false">ControlPan</TriggerVar>
+				<TriggerVar ID="9" Type="Integer" Name="CameraPanEvent" IsNull="false" />
+				<TriggerVar ID="10" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="11" Type="Bool" Name="HasPannedCamera" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="13" Type="Trigger" Name="TriggerVar2" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="15" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="17" Type="Trigger" Name="TriggerVar3" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="18" Type="Trigger" Name="TriggerVar4" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="20" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+				<TriggerVar ID="21" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+				<TriggerVar ID="22" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+				<TriggerVar ID="23" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="36" Type="Integer" Name="IntegerVar1" IsNull="true" />
+				<TriggerVar ID="38" Type="Time" Name="InitialDelay" IsNull="false" />
+				<TriggerVar ID="39" Type="Float" Name="TimeAsFloat" IsNull="false" />
+				<TriggerVar ID="40" Type="Trigger" Name="TriggerVar5" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="43" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="44" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="45" Type="Trigger" Name="TriggerVar7" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="47" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="48" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="49" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="50" Type="Bool" Name="PopCameraHintNow" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="51" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="53" Type="Trigger" Name="TriggerVar8" IsNull="false">7</TriggerVar>
+				<TriggerVar ID="55" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="56" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="59" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="60" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="62" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+				<TriggerVar ID="65" Type="PlayerList" Name="AddPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="66" Type="PlayerList" Name="PlayerList" IsNull="false" />
+				<TriggerVar ID="67" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="68" Type="Trigger" Name="TriggerVar10" IsNull="false">8</TriggerVar>
+				<TriggerVar ID="69" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="71" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+				<TriggerVar ID="72" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="78" Type="Trigger" Name="TriggerVar12" IsNull="false">4</TriggerVar>
+				<TriggerVar ID="80" Type="Trigger" Name="TriggerVar14" IsNull="false">7</TriggerVar>
+				<TriggerVar ID="95" Type="Time" Name="" IsNull="false">6000</TriggerVar>
+				<TriggerVar ID="96" Type="Time" Name="PopUpDisplayTime" IsNull="false" />
+				<TriggerVar ID="97" Type="Trigger" Name="TriggerVar18" IsNull="false">13</TriggerVar>
+				<TriggerVar ID="98" Type="Trigger" Name="TriggerVar19" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="100" Type="Time" Name="" IsNull="false">15000</TriggerVar>
+				<TriggerVar ID="101" Type="Time" Name="RepeatTime" IsNull="false" />
+				<TriggerVar ID="102" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="108" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="111" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="114" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="115" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="116" Type="LocStringID" Name="" IsNull="false">23663</TriggerVar>
+				<TriggerVar ID="117" Type="Trigger" Name="TriggerVar22" IsNull="false">14</TriggerVar>
+				<TriggerVar ID="118" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="120" Type="Trigger" Name="TriggerVar23" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="122" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+				<TriggerVar ID="123" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="124" Type="Trigger" Name="TriggerVar24" IsNull="false">15</TriggerVar>
+				<TriggerVar ID="125" Type="Trigger" Name="TriggerVar25" IsNull="false">5</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="HintComeraControl" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="771" Y="272" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">3</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">4</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">5</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">6</Output>
+							</Condition>
+							<Condition ID="4" Type="CanRetrieveExternalFloat" DBID="977" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="Float" SigID="1" Optional="false">39</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="420" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">10</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+						</Effect>
+						<Effect ID="2" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">17</Input>
+						</Effect>
+						<Effect ID="3" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">18</Input>
+						</Effect>
+						<Effect ID="6" Type="AsTime" DBID="716" Version="1" CommentOut="false">
+							<Input Name="Integer" SigID="1" Optional="true">36</Input>
+							<Input Name="Float" SigID="2" Optional="true">39</Input>
+							<Output Name="Time" SigID="3" Optional="false">38</Output>
+						</Effect>
+						<Effect ID="10" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">49</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+						</Effect>
+						<Effect ID="12" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">53</Input>
+						</Effect>
+						<Effect ID="15" Type="PlayerListAdd" DBID="124" Version="2" CommentOut="false">
+							<Input Name="AddPlayer" SigID="2" Optional="true">0</Input>
+							<Input Name="AddPlayerList" SigID="3" Optional="true">65</Input>
+							<Output Name="OutputList" SigID="4" Optional="false">66</Output>
+							<Output Name="ClearExisting" SigID="5" Optional="false">67</Output>
+						</Effect>
+						<Effect ID="20" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">78</Input>
+						</Effect>
+						<Effect ID="28" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+							<Input Name="TimeSource" SigID="1" Optional="false">95</Input>
+							<Output Name="TimeCopy" SigID="2" Optional="false">96</Output>
+						</Effect>
+						<Effect ID="32" Type="CopyTime" DBID="96" Version="1" CommentOut="false">
+							<Input Name="TimeSource" SigID="1" Optional="false">100</Input>
+							<Output Name="TimeCopy" SigID="2" Optional="false">101</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="1" Name="Wait for event" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1333" Y="173" GroupID="0" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="1" Type="EventTriggered" DBID="813" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="EventID" SigID="1" Optional="false">9</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="1" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">15</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+						</Effect>
+						<Effect ID="9" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">45</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="2" Name="Pan event setup" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1329" Y="51" GroupID="0" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="5" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">43</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">44</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="416" Type="EventSubscribe" DBID="811" Version="2" CommentOut="false">
+							<Input Name="EventType" SigID="1" Optional="false">7</Input>
+							<Input Name="Player" SigID="3" Optional="true">0</Input>
+							<Output Name="EventID" SigID="2" Optional="false">9</Output>
+						</Effect>
+						<Effect ID="0" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">13</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="3" Name="newTrigger3" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1337" Y="345" GroupID="2" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">23</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">38</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="7" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">40</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="4" Name="newTrigger4" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1336" Y="508" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="2" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">4</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">20</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">21</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">22</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="17" Type="HintMessageDestroy" DBID="815" Version="2" CommentOut="false">
+							<Input Name="LocStringID" SigID="1" Optional="true">71</Input>
+						</Effect>
+						<Effect ID="4" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="5" Name="newTrigger5" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1974" Y="344" GroupID="2" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="6" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">47</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">48</Input>
+							</Condition>
+							<Condition ID="8" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">59</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">60</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="11" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">51</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+						</Effect>
+						<Effect ID="29" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">97</Input>
+						</Effect>
+						<Effect ID="36" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">111</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="34" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">108</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">11</Output>
+						</Effect>
+						<Effect ID="38" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">117</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="7" Name="newTrigger7" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1334" Y="532" GroupID="1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="7" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">55</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">56</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="14" Type="HintMessageShow" DBID="805" Version="1" CommentOut="false">
+							<Input Name="PlayerList" SigID="1" Optional="false">66</Input>
+							<Input Name="LocStringID" SigID="2" Optional="false">62</Input>
+							<Input Name="Time" SigID="3" Optional="true">96</Input>
+						</Effect>
+						<Effect ID="16" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">68</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="8" Name="newTrigger8" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1334" Y="692" GroupID="1" TemplateID="-1">
+					<TriggerConditions>
+						<Or>
+							<Condition ID="9" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">69</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">96</Input>
+							</Condition>
+							<Condition ID="16" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">11</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">114</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">115</Input>
+							</Condition>
+						</Or>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="18" Type="CopyBool" DBID="102" Version="1" CommentOut="false">
+							<Input Name="BoolSource" SigID="1" Optional="false">72</Input>
+							<Output Name="BoolCopy" SigID="2" Optional="false">50</Output>
+						</Effect>
+						<Effect ID="22" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">80</Input>
+						</Effect>
+						<Effect ID="37" Type="HintMessageDestroy" DBID="815" Version="2" CommentOut="false">
+							<Input Name="LocStringID" SigID="1" Optional="true">116</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="13" Name="newTrigger13" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1804" Y="136" GroupID="2" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="18" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FirstBool" SigID="1" Optional="false">50</Input>
+								<Input Name="CompareType" SigID="2" Optional="false">122</Input>
+								<Input Name="SecondBool" SigID="3" Optional="false">123</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="40" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">124</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="14" Name="newTrigger14" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1977" Y="560" GroupID="2" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="17" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">118</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">101</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="39" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">120</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="15" Name="newTrigger15" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2176" Y="136" GroupID="2" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="14" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">102</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">101</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="41" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">125</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

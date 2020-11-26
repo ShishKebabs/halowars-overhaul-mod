@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>campaign\unit\scarabBoss_01\destruction_scarab_02</file>
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\scarab\scarabboss_headspillage_01" tobone="Bone Head" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\explode_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.005" end="1" name="effects\vehicle_fx\cov\scarab\scarabBoss_firsthit_01" tobone="Bone Head" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.3" />
+				<tag type="Sound" start="0" position="0.077" end="1" name="play_damage_warthog" tobone="Bone Scarab_Head_jaw04" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_debris_metal_scarab_01" tobone="Bone Scarab_Head_jaw03" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\scarab\scarabBoss_deadbody_01" tobone="Bone Scarab" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="effects\vehicle_fx\cov\scarab\deathlightloop" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\scarab\scarabBoss_deadleg_01" tobone="Bone_Broken_Leg" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+</visual>

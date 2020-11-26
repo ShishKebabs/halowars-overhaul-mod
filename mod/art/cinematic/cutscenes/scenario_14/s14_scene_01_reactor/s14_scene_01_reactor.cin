@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn14\PHXscn14" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_02" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="reactor_01" type="gr2" modelfile="cinematic\objects\wowreactor_01\wowreactor_01" />
+		<model name="warthog_01" type="proto" player="1" modelfile="unsc_veh_warthog_01" />
+		<model name="banshee_01" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_02" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="banshee_03" type="proto" player="3" modelfile="cov_air_banshee_01" />
+		<model name="rope_01" type="gr2" modelfile="cinematic\objects\wowrope_01\wowrope_01" />
+		<model name="rope_02" type="gr2" modelfile="cinematic\objects\wowrope_01\wowrope_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_07" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_08" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_09" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_10" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_11" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_12" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_13" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_14" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_15" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_16" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_17" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_18" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_19" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_20" type="proto" modelfile="cine_objects_particleobject_01" />--Particles--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Pelican_01" />
+			<tag type="Particle" time="5.5f" name="effects\vehicle_fx\unsc\pelican\damageflames_01" lifespan="20.0f" tomodel="pelican_02" tobone="bone_fx FL" />
+			<tag type="Particle" time="15" name="effects\impacts\dirt\dirt_large_02" lifespan="20f" tomodel="pelican_01" tobone="GrannyRootBone" />
+			<animatedmodel model="rope_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Rope_01" />
+			<animatedmodel model="rope_02" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Rope_02" />
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Pelican_02" />
+			<animatedmodel model="reactor_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Reactor_01" />
+			<animatedmodel model="banshee_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Banshee_01" />
+			<animatedmodel model="banshee_02" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Banshee_02" />
+			<animatedmodel model="banshee_03" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Banshee_03" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_01" />
+			<tag type="Particle" time="0" name="effects\projectiles\cov\plasmaMortar_02\plasmaMortar_02" lifespan="20.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_02" />
+			<tag type="Particle" time="0" name="effects\projectiles\cov\plasmaMortar_02\plasmaMortar_02" lifespan="20f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_03" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_03" />
+			<tag type="Particle" time="0" name="effects\projectiles\cov\plasmaMortar_02\plasmaMortar_02" lifespan="20f" tomodel="particles_03" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_04" />
+			<tag type="Particle" time="12.55" name="effects\impacts\dirt\dirt_large_02" lifespan="20f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="12.55" name="effects\impacts\dirt\dirt_large_02" lifespan="20f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<tag type="Particle" time="12.3" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="particles_04" tobone="bone_projectile" />
+			<tag type="Particle" time="12.3" name="effects\impacts\dirt\dirt_loop_large_01" lifespan="20f" tomodel="particles_04" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_06" />
+			<tag type="Particle" time="14.94" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Particle" time="15f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Particle" time="15.3f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_06" tobone="bone_projectile" />
+			<animatedmodel model="particles_07" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_07" />
+			<tag type="Particle" time="13.8" name="effects\impacts\dirt\dirt_large_01" lifespan="20f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="14.0f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_08" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_08" />
+			<tag type="Particle" time="5.5f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_08" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.4f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="5.0f" tomodel="particles_08" tobone="GrannyRootBone" />
+			<tag type="Particle" time="5.834f" name="effects\fire\smoke_loop_large" lifespan="10.0f" tomodel="particles_08" tobone="GrannyRootBone" />
+			<tag type="Particle" time="13.0f" name="effects\fire\fire_loop_medium" lifespan="10.0f" tomodel="particles_08" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_09" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_09" />
+			<animatedmodel model="particles_10" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_10" />
+			<tag type="Particle" time="2.0f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_10" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_11" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_11" />
+			<tag type="Particle" time="2.0f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_11" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_12" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_12" />
+			<tag type="Particle" time="3.8f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_12" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_13" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_13" />
+			<tag type="Particle" time="3.8f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_13" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_14" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_14" />
+			<tag type="Particle" time="4.8f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_14" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_15" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_15" />
+			<tag type="Particle" time="4.8f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_15" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_16" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_16" />
+			<tag type="Particle" time="5.0f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_16" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_17" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_17" />
+			<tag type="Particle" time="5.0f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_17" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_18" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_18" />
+			<tag type="Particle" time="5.5f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_18" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_19" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_19" />
+			<tag type="Particle" time="5.5f" name="effects\projectiles\cov\plasmaCannon_01\plasmaCannon_01" lifespan="5.0f" tomodel="particles_19" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_20" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Particles_20" />
+			<tag type="Particle" time="13.5f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="5.0f" tomodel="particles_20" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="23059" sound="play_scn_14_pilot_01" talkinghead="scn_14_pilot_01" />--Units----Particles--tag type="Particle" time="5.5f" name="effects\fire\fire_loop_medium" lifespan="10.0f" tomodel="particles_09" tobone="GrannyRootBone"/&gt;--Chats--</shot>
+		<shot name="Shot_02" camera="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Shot_02_Camera">
+			<animatedmodel model="reactor_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Reactor_01_B" />
+			<animatedmodel model="warthog_01" animationfile="cinematic\cutscenes\Scenario_14\S14_Scene_01_Reactor\Scene_01_Warthog_01" />
+			<tag type="Particle" time="0.7" name="effects\wow_moments\s02_scene_01_warthog" lifespan="10.0f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1" name="effects\wow_moments\s02_scene_01_warthog" lifespan="10.0f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.5" name="effects\wow_moments\s02_scene_01_warthog" lifespan="10.0f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2" name="effects\wow_moments\s02_scene_01_warthog" lifespan="10.0f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0.5" queue="true" duration="0" stringid="23052" sound="play_scn_14_cutter_01" talkinghead="scn_14_cutter_01" />
+		</shot>
+	</body>
+</cinematic>

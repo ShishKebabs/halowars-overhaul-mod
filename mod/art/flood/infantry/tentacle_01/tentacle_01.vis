@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>flood\building\FloodTentacle_01\FloodTentacle_01</file>
+				<damagefile>flood\Infantry\tentacle_01\tentacle_01</damagefile>
+			</asset>
+			<point pointType="Impact" bone="BoneTentacle02" pointData="Metal" />
+			<point pointType="Impact" bone="BoneTentacle08" pointData="Metal" />
+			<point pointType="Impact" bone="BoneTentacle14" pointData="Metal" />
+			<point pointType="Impact" bone="BoneTentacle17" pointData="Metal" />
+			<point pointType="Impact" bone="BoneTentacle22" pointData="Metal" />
+			<point pointType="Impact" bone="BoneTentacle27" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_04</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_05</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\emerge_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cower" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\cower_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="InfantryAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="InfantryAttack">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\attack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.491" end="1" tobone="BoneTentacle27" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\infantryattack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.654" end="1" tobone="BoneTentacle24" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\infantryattack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.377" end="1" tobone="BoneTentacle26" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\infantryattack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.415" end="1" tobone="BoneTentacle27" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="VehicleAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="VehicleAttack">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\attack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.283" end="1" tobone="BoneTentacle22" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.314" end="1" tobone="BoneTentacle22" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.333" end="1" tobone="BoneTentacle22" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.39" end="1" tobone="BoneTentacle22" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\vehicleattack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.591" end="1" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\vehicleattack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.459" end="1" tobone="BoneTentacle21" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.748" end="1" tobone="BoneTentacle26" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\vehicleattack_04</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.409" end="1" tobone="BoneTentacle26" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.61" end="1" tobone="BoneTentacle26" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_TenticleInfantry_01" exitAction="Transition" tweenTime="5" tweenToAnimation="Fatality_TenticleInfantry_01">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\grabAttack_01</file>
+				<weight>1</weight>
+				<tag type="AttachTarget" start="0" position="0.41" end="1" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="true" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="SweetSpot" start="0.186" position="0.506" end="0.827" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.767" end="1" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="AttachTarget" start="0" position="0.949" end="1" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.95" end="1" name="flood\Air\sporecloud_01\sporecloud_small_01" tobone="BoneTentacle25" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="24.9" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_TenticleVehicle_01" exitAction="Transition" tweenTime="5" tweenToAnimation="Fatality_TenticleVehicle_01">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\vehicleAttack_01</file>
+				<weight>1</weight>
+				<tag type="AttachTarget" start="0" position="0.34" end="1" tobone="BoneTentacle18" checkvisible="true" lockToGround="false" attach="true" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="SweetSpot" start="0.186" position="0.506" end="0.827" tobone="BoneTentacle27" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.956" end="1" tobone="BoneTentacle18" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="AttachTarget" start="0" position="0.974" end="1" tobone="BoneTentacle18" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Look" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\lookAround_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>flood\building\FloodTentacle_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

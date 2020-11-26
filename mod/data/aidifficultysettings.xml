@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AIDifficultySettings>
+	<AIDifficultySetting Name="MaxMissionFocusTime" InputLabel="Difficulty" OutputLabel="Seconds" Comment="How long a mission waits until it forcibly hands off the baton to a new topic.">
+		<DefaultValue Name="SPCEasy" Value="9999" />
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="60" />
+			<DataPoint Input="0.34" Output="60" />
+			<DataPoint Input="0.67" Output="10" />
+			<DataPoint Input="1" Output="10" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="GroupProximityRadius" InputLabel="Difficulty" OutputLabel="Radius" Comment="How large is the radius we use to group squads by proximity.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="100" />
+			<DataPoint Input="1" Output="100" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="RalliedDistanceSqr" InputLabel="Difficulty" OutputLabel="Radius" Comment="Radius squared that our groups need to be within to be considered rallied.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="2500" />
+			<DataPoint Input="1" Output="2500" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="ThinkCostMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time cost to think about something.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="0.75" />
+			<DataPoint Input="1" Output="0.25" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="ThinkCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to think about something.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="1" />
+			<DataPoint Input="1" Output="0.4" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="ActCostMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time cost to do something.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="4" />
+			<DataPoint Input="0.33" Output="4" />
+			<DataPoint Input="0.67" Output="0.5" />
+			<DataPoint Input="1" Output="0.5" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="ActCostMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time cost to do something.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="8" />
+			<DataPoint Input="0.33" Output="8" />
+			<DataPoint Input="0.67" Output="1" />
+			<DataPoint Input="1" Output="1" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="PowerEvalIntervalMin" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Minimum time interval between evaluating powers.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="6" />
+			<DataPoint Input="0.33" Output="5" />
+			<DataPoint Input="0.67" Output="4.5" />
+			<DataPoint Input="1" Output="3.5" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="PowerEvalIntervalMax" InputLabel="Difficulty" OutputLabel="Seconds" Comment="Maximum time interval between evaluating powers.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="12" />
+			<DataPoint Input="0.33" Output="11" />
+			<DataPoint Input="0.67" Output="8.5" />
+			<DataPoint Input="1" Output="7.5" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="EconMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="1.00 = no econ change, 0.0 means no supplies, 2.0 means double normal supplies">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="0.5" Comment="On easy, AI gets 50% normal supplies" />
+			<DataPoint Input="0.33" Output="1" Comment="At diff 0.33, non-cheating (normal) supplies" />
+			<DataPoint Input="0.67" Output="1" Comment="At diff 0.67, non-cheating (normal) supplies" />
+			<DataPoint Input="1" Output="1.33" Comment="On legendary, AI gets 133% normal supplies" />
+			<DataPoint Input="2" Output="2.33" Comment="On hyper-legendary, AI gets 233% normal supplies" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DeathMatchMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="1.00 = normal speed, 0.0 (illegal!!) infinitely slow training/building, 2.0 means double speed">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="0.5" Comment="On easy, AI builds/trains at half speed" />
+			<DataPoint Input="0.33" Output="1" Comment="At diff 0.33, non-cheating (normal)" />
+			<DataPoint Input="0.67" Output="1.2" Comment="At diff 0.67, slight boost" />
+			<DataPoint Input="1" Output="1.5" Comment="On legendary, AI gets 50% boost" />
+			<DataPoint Input="2" Output="2.4" Comment="On hyper-legendary, AI gets 140% boost" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DamageGivenMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="2.0 means the AI's units inflict double damage">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="1" Comment="Damage given always normal...feature disabled" />
+			<DataPoint Input="0.67" Output="1" Comment="Damage given always normal...feature disabled" />
+			<DataPoint Input="1" Output="1.33" Comment="33% Boost for Legendary" />
+			<DataPoint Input="2" Output="2.33" Comment="133% Boost for Hyper-Legendary" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DamageTakenMultiplier" InputLabel="Difficulty" OutputLabel="Multiplier" Comment="2.0 means the AI's units TAKE double damage.  High values are easy, low are hard.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="3" Comment="On easy, takes 3x damage" />
+			<DataPoint Input="0.33" Output="1" Comment="At normal, normal damage" />
+			<DataPoint Input="0.67" Output="1" Comment="At hard, normal damage" />
+			<DataPoint Input="1" Output="0.75" Comment="On legendary, AI takes 75%% normal damage" />
+			<DataPoint Input="2" Output="0.4" Comment="On legendary, AI takes 40% normal damage" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="LogMaxBases" InputLabel="Difficulty" OutputLabel="Int" Comment="1 at easy and near it, 5 near and at legendary, linear interpolation in between.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="1" Comment="1 at easy" />
+			<DataPoint Input="0.1" Output="1" Comment="Still 1.0 a bit above easy." />
+			<DataPoint Input="0.9" Output="5" Comment="5.0 a bit before legendary." />
+			<DataPoint Input="1" Output="5" Comment="On legendary, 5" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffBaseRebuildDel" InputLabel="Difficulty" OutputLabel="Ms" Comment="60 seconds at easy, 10 seconds at legendary">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="60000" Comment="" />
+			<DataPoint Input="1" Output="10000" Comment="Smaller number = quicker rebuild = harder" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffUseBaseLives" InputLabel="Difficulty" OutputLabel="Bool" Comment="Flag for using BaseLives...this could be derived in script if we use an error return in BaseLives.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="1" Comment="True at easy" />
+			<DataPoint Input="0.52" Output="1" Comment="True at arbitrary crossover point" />
+			<DataPoint Input="0.52" Output="0" Comment="And false there as well" />
+			<DataPoint Input="1" Output="0" Comment="False at legendary" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffBaseLives" InputLabel="Difficulty" OutputLabel="Int" Comment="">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="2" Comment=" 2 Rebuilds on easy" />
+			<DataPoint Input="0.25" Output="3" Comment=" 3 Rebuilds a bit higher up" />
+			<DataPoint Input="0.5" Output="10000" Comment=" Quickly ramps to unlimited" />
+			<DataPoint Input="1" Output="10000" Comment=" Unlimited" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="ScoutQuality_1_10" InputLabel="Difficulty" OutputLabel="Int" Comment="Simple 1-10 scale for scout quality.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="1" Comment="" />
+			<DataPoint Input="1" Output="10" Comment="" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffForceRandom" InputLabel="Difficulty" OutputLabel="Bool" Comment="False on easy, true most everywhere else.">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="0" Comment="False at easy" />
+			<DataPoint Input="0.14" Output="0" Comment="Fasle at arbitrary crossover point" />
+			<DataPoint Input="0.14" Output="1" Comment="And true there as well" />
+			<DataPoint Input="1" Output="1" Comment="True at legendary" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="CntPercentCounter" InputLabel="Difficulty" OutputLabel="Pct" Comment="">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="0" Comment="0 at easy" />
+			<DataPoint Input="0.67" Output="1" Comment="1.0 at hard" />
+			<DataPoint Input="1" Output="1.1" Comment="1.1 at legendary" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="CntCounterCalculationRate" InputLabel="Difficulty" OutputLabel="Seconds" Comment="wait time between evaluating counter units">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="150" />
+			<DataPoint Input="0.33" Output="150" />
+			<DataPoint Input="0.67" Output="15" />
+			<DataPoint Input="1" Output="15" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffBldMaxBids" InputLabel="Difficulty" OutputLabel="Int" Comment="Maximum number of building bids allowed">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="2" Comment="" />
+			<DataPoint Input="0.33" Output="2" Comment="" />
+			<DataPoint Input="0.67" Output="2" Comment="" />
+			<DataPoint Input="1" Output="2" Comment="" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffBldMaxNotApproved" InputLabel="Difficulty" OutputLabel="Int" Comment="Maximum number of unapproved building bids allowed">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="2" Comment="" />
+			<DataPoint Input="0.33" Output="2" Comment="" />
+			<DataPoint Input="0.67" Output="2" Comment="" />
+			<DataPoint Input="1" Output="2" Comment="" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffDistractionTime" InputLabel="Difficulty" OutputLabel="Seconds" Comment="amount of time spent in distraction topic">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="20" />
+			<DataPoint Input="0.33" Output="20" />
+			<DataPoint Input="0.67" Output="0" />
+			<DataPoint Input="1" Output="0" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+	<AIDifficultySetting Name="DiffBumpBuildTopicRate" InputLabel="Difficulty" OutputLabel="Seconds" Comment="time ai must wait before bumping the build topic as urgent when a building is ready">
+		<PiecewiseFunc>
+			<DataPoint Input="0" Output="60" />
+			<DataPoint Input="0.33" Output="60" />
+			<DataPoint Input="0.67" Output="0" />
+			<DataPoint Input="1" Output="0" />
+		</PiecewiseFunc>
+	</AIDifficultySetting>
+</AIDifficultySettings>

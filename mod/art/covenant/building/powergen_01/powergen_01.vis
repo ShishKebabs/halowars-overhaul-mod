@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>resource\relics\node_01\node_03</file>
+			</asset>
+			<attach type="ModelRef" name="Extractor" tobone="bone_turret" frombone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>resource\relics\node_01\node_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>resource\relics\node_01\node_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Extractor">
+		<component>
+			<asset type="Model">
+				<file>covenant\civilian\collector_01\collector_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\civilian\collector_01\gather_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="cpgn_scn02_MethaneTank_01.triggerscript" Type="TriggerScript" NextTriggerVarID="813" NextTriggerID="96" NextConditionID="79" NextEffectID="292" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="3" Type="Unit" Name="ExplodeingUnit" IsNull="false" />
+		<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+		<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+		<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="774" Type="Trigger" Name="TriggerVar3" IsNull="false">92</TriggerVar>
+		<TriggerVar ID="776" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+		<TriggerVar ID="777" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+		<TriggerVar ID="778" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+		<TriggerVar ID="780" Type="Squad" Name="SquadVar2" IsNull="true" />
+		<TriggerVar ID="781" Type="Object" Name="ObjectVar2" IsNull="true" />
+		<TriggerVar ID="782" Type="Vector" Name="Loc" IsNull="false" />
+		<TriggerVar ID="784" Type="Float" Name="AdjustXVar1" IsNull="true" />
+		<TriggerVar ID="785" Type="Float" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="786" Type="Float" Name="AdjustZVar1" IsNull="true" />
+		<TriggerVar ID="787" Type="Vector" Name="AdjustVectorVar1" IsNull="true" />
+		<TriggerVar ID="788" Type="Vector" Name="LaunchLoc" IsNull="false" />
+		<TriggerVar ID="790" Type="ProtoObject" Name="" IsNull="false">pow_scn02_methaneExplode_01</TriggerVar>
+		<TriggerVar ID="793" Type="Unit" Name="TargetUnitVar1" IsNull="true" />
+		<TriggerVar ID="795" Type="Squad" Name="SquadVar10" IsNull="true" />
+		<TriggerVar ID="796" Type="Player" Name="Owner" IsNull="false" />
+		<TriggerVar ID="805" Type="Bool" Name="UseMultiplyVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="812" Type="Float" Name="DamageOverrideVar1" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Set spartan unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="57" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">638</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">639</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">640</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">641</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">643</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">644</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="281" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">774</Input>
+				</Effect>
+				<Effect ID="285" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">795</Input>
+					<Output Name="Owner" SigID="3" Optional="false">796</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="92" Name="newTrigger92" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="456" Y="100" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="75" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">776</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">777</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">778</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="282" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">780</Input>
+					<Input Name="Object" SigID="4" Optional="true">781</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">782</Output>
+				</Effect>
+				<Effect ID="290" Type="LocationAdjust" DBID="59" Version="3" CommentOut="false">
+					<Input Name="SourceLoc" SigID="1" Optional="false">782</Input>
+					<Input Name="AdjustX" SigID="2" Optional="true">784</Input>
+					<Input Name="AdjustY" SigID="4" Optional="true">785</Input>
+					<Input Name="AdjustZ" SigID="5" Optional="true">786</Input>
+					<Input Name="AdjustVector" SigID="6" Optional="true">787</Input>
+					<Input Name="UseMultiply" SigID="7" Optional="true">805</Input>
+					<Output Name="ResultLoc" SigID="3" Optional="false">788</Output>
+				</Effect>
+				<Effect ID="291" Type="LaunchProjectile" DBID="57" Version="3" CommentOut="false">
+					<Input Name="ProjectileOwner" SigID="1" Optional="false">796</Input>
+					<Input Name="ProjectileProto" SigID="2" Optional="false">790</Input>
+					<Input Name="StartLoc" SigID="3" Optional="false">788</Input>
+					<Input Name="TargetLoc" SigID="4" Optional="true">782</Input>
+					<Input Name="TargetUnit" SigID="5" Optional="true">793</Input>
+					<Input Name="DamageOverride" SigID="6" Optional="true">812</Input>
+				</Effect>
+				<Effect ID="286" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="813" NextTriggerID="96" NextConditionID="79" NextEffectID="292" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="3" Type="Unit" Name="ExplodeingUnit" IsNull="false" />
+				<TriggerVar ID="638" Type="Player" Name="ExternPlayerVar2" IsNull="true" />
+				<TriggerVar ID="639" Type="Power" Name="ExternPowerVar2" IsNull="true" />
+				<TriggerVar ID="640" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="641" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="643" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="644" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="774" Type="Trigger" Name="TriggerVar3" IsNull="false">92</TriggerVar>
+				<TriggerVar ID="776" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+				<TriggerVar ID="777" Type="Squad" Name="TestSquadVar2" IsNull="true" />
+				<TriggerVar ID="778" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+				<TriggerVar ID="780" Type="Squad" Name="SquadVar2" IsNull="true" />
+				<TriggerVar ID="781" Type="Object" Name="ObjectVar2" IsNull="true" />
+				<TriggerVar ID="782" Type="Vector" Name="Loc" IsNull="false" />
+				<TriggerVar ID="784" Type="Float" Name="AdjustXVar1" IsNull="true" />
+				<TriggerVar ID="785" Type="Float" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="786" Type="Float" Name="AdjustZVar1" IsNull="true" />
+				<TriggerVar ID="787" Type="Vector" Name="AdjustVectorVar1" IsNull="true" />
+				<TriggerVar ID="788" Type="Vector" Name="LaunchLoc" IsNull="false" />
+				<TriggerVar ID="790" Type="ProtoObject" Name="" IsNull="false">pow_scn02_methaneExplode_01</TriggerVar>
+				<TriggerVar ID="793" Type="Unit" Name="TargetUnitVar1" IsNull="true" />
+				<TriggerVar ID="795" Type="Squad" Name="SquadVar10" IsNull="true" />
+				<TriggerVar ID="796" Type="Player" Name="Owner" IsNull="false" />
+				<TriggerVar ID="805" Type="Bool" Name="UseMultiplyVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="812" Type="Float" Name="DamageOverrideVar1" IsNull="true" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Set spartan unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="57" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">638</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">639</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">640</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">641</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">643</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">644</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="281" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">774</Input>
+						</Effect>
+						<Effect ID="285" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">795</Input>
+							<Output Name="Owner" SigID="3" Optional="false">796</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="92" Name="newTrigger92" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="456" Y="100" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="75" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">776</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">777</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">778</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="282" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">780</Input>
+							<Input Name="Object" SigID="4" Optional="true">781</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">782</Output>
+						</Effect>
+						<Effect ID="290" Type="LocationAdjust" DBID="59" Version="3" CommentOut="false">
+							<Input Name="SourceLoc" SigID="1" Optional="false">782</Input>
+							<Input Name="AdjustX" SigID="2" Optional="true">784</Input>
+							<Input Name="AdjustY" SigID="4" Optional="true">785</Input>
+							<Input Name="AdjustZ" SigID="5" Optional="true">786</Input>
+							<Input Name="AdjustVector" SigID="6" Optional="true">787</Input>
+							<Input Name="UseMultiply" SigID="7" Optional="true">805</Input>
+							<Output Name="ResultLoc" SigID="3" Optional="false">788</Output>
+						</Effect>
+						<Effect ID="291" Type="LaunchProjectile" DBID="57" Version="3" CommentOut="false">
+							<Input Name="ProjectileOwner" SigID="1" Optional="false">796</Input>
+							<Input Name="ProjectileProto" SigID="2" Optional="false">790</Input>
+							<Input Name="StartLoc" SigID="3" Optional="false">788</Input>
+							<Input Name="TargetLoc" SigID="4" Optional="true">782</Input>
+							<Input Name="TargetUnit" SigID="5" Optional="true">793</Input>
+							<Input Name="DamageOverride" SigID="6" Optional="true">812</Input>
+						</Effect>
+						<Effect ID="286" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>None</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>0</DamagePerSecond>
+		<WeaponType>Explosive</WeaponType>
+		<MaxRange>1</MaxRange>
+	</Weapon>
+	<Weapon>
+		<Name>Bomb</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>50</DamagePerSecond>
+		<WeaponType>AntiInfantry</WeaponType>
+		<Projectile>fx_proj_missile_01</Projectile>
+		<MaxRange>2</MaxRange>
+		<AOERadius>8</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<DamageRatingOverride type="Unarmored">0.017</DamageRatingOverride>
+		<DamageRatingOverride type="Vehicle">0.017</DamageRatingOverride>
+		<DamageRatingOverride type="Air">0</DamageRatingOverride>
+		<DamageRatingOverride type="Building">0.017</DamageRatingOverride>
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>300</PhysicsForceMin>
+		<PhysicsForceMax>600</PhysicsForceMax>
+		<TargetPriority type="Infantry">10</TargetPriority>
+	</Weapon>
+	<Action>
+		<Name>Detonate</Name>
+		<ActionType>Detonate</ActionType>
+		<Weapon>Bomb</Weapon>
+		<DetonateFromPhysics PhysicsDetonationThreshold="4" />
+		<Duration DurationSpread="1">3</Duration>
+		<DetonateOnDeath />
+	</Action>
+	<Action>
+		<Name>Bomb</Name>
+		<ActionType>Bomb</ActionType>
+		<WorkRange>0.5</WorkRange>
+		<ProtoObject Squad="true">fld_inf_InfectionForm_02</ProtoObject>
+	</Action>
+	<Tactic>
+		<PersistentAction>Bomb</PersistentAction>
+		<PersistentAction>Detonate</PersistentAction>
+	</Tactic>
+</TacticData>

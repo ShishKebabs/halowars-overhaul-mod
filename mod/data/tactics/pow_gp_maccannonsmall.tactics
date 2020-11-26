@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>OrbitalBombardmentShockwave</Name>
+		<AllowFriendlyFire />
+		<DamagePerSecond>200</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<AOERadius>50</AOERadius>
+		<AOEDistanceFactor>0.33</AOEDistanceFactor>
+		<AOEDamageFactor>1</AOEDamageFactor>
+		<ThrowUnits />
+		<ThrowDamageParts />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>20</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>1000</PhysicsForceMin>
+		<PhysicsForceMax>1200</PhysicsForceMax>
+		<DamageRatingOverride type="Building" halfKillCutoffFactor="10">1</DamageRatingOverride>
+		<DamageRatingOverride type="TurretBuilding" halfKillCutoffFactor="10">1</DamageRatingOverride>
+	</Weapon>
+	<Weapon>
+		<Name>OrbitalBombardment</Name>
+		<AllowFriendlyFire />
+		<DamagePerSecond>30000</DamagePerSecond>
+		<WeaponType>LeaderPower</WeaponType>
+		<Projectile>pow_gp_macCannonSmall</Projectile>
+		<ImpactCameraShake duration="0.3" strength="1.2" />
+		<ImpactRumble leftRumbleType="Fixed" leftStrength="1" rightRumbleType="Fixed" rightStrength="1" duration="0.5" />
+		<ImpactCameraEffect>
+			<ColorTransformFactor>
+				<Value time="0">0.6</Value>
+				<Value time="0.3">0.3</Value>
+				<Value time="0.6">0</Value>
+			</ColorTransformFactor>
+			<BlurFactor>
+				<Value time="0">0.6</Value>
+				<Value time="0.3">0.6</Value>
+				<Value time="0.6">0</Value>
+			</BlurFactor>
+			<ColorTransformR>
+				<Value time="0">0.9,0,0</Value>
+			</ColorTransformR>
+			<ColorTransformG>
+				<Value time="0">0,0.9,0</Value>
+			</ColorTransformG>
+			<ColorTransformB>
+				<Value time="0">0,0,1</Value>
+			</ColorTransformB>
+			<BlurXY />
+			<RadialBlurFactor use3DPos="true">
+				<Value time="0">0.1,0.2</Value>
+				<Value time="0.3">0.2,0.2</Value>
+				<Value time="0.6">0,0</Value>
+			</RadialBlurFactor>
+			<FOV />
+		</ImpactCameraEffect>
+		<AOERadius>25</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.4</AOEDistanceFactor>
+		<AOEDamageFactor>0.1</AOEDamageFactor>
+		<AOEIgnoresYAxis />
+		<ThrowUnits />
+		<ThrowDamageParts />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>20</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>1600</PhysicsForceMin>
+		<PhysicsForceMax>2000</PhysicsForceMax>
+	</Weapon>
+	<Action>
+		<Default>true</Default>
+		<Name>OrbitalBombardmentAttackAction</Name>
+		<Weapon>OrbitalBombardment</Weapon>
+	</Action>
+	<Action>
+		<Name>OrbitalBombardmentShockwaveAction</Name>
+		<Weapon>OrbitalBombardmentShockwave</Weapon>
+		<Shockwave />
+	</Action>
+	<Tactic />
+</TacticData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn08\PHXscn08" soundfile="">
+	<head>
+		<model name="spirit_01" type="proto" player="2" modelfile="cov_air_spirit_01" />
+		<model name="spirit_02" type="proto" player="2" modelfile="cov_air_spirit_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<depthoffield enabled="true" />--PARTICLES--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_08\S08_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="spirit_01" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_01_Intro\Scene_01_Spirit_01" />
+			<animatedmodel model="spirit_02" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_01_Intro\Scene_01_Spirit_02" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_08\S08_Scene_01_Intro\Scene_01_Particles_01" />
+			<tag type="Particle" time="6.95f" name="effects\hotdrop\hot_drop_infantry" lifespan="20.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Chat" time="1" queue="true" duration="0" stringid="23094" sound="play_scn_08_kane_16" talkinghead="" />
+			<tag type="Chat" time="5" queue="true" duration="0" stringid="23139" sound="play_scn_08_cutter_07" talkinghead="scn_08_cutter_07" />--Particles----Chats--</shot>
+	</body>
+</cinematic>

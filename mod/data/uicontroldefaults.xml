@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ControlList>
+	<UIListControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickLeftUp" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftDown" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadUp" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadDown" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+			<Mode name="Horizontal">
+				<Control name="StickLeftLeft" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftRight" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadLeft" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadRight" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Next>play_ui_menu_vertical</Next>
+			<Prev>play_ui_menu_vertical</Prev>
+			<StopBegin>play_ui_menu_back_button</StopBegin>
+			<StopEnd>play_ui_menu_back_button</StopEnd>
+		</Sounds>
+	</UIListControl>
+	<UIButtonControl>
+		<Controls name="">
+			<Mode name="Main">
+				<Control name="ButtonA" command="click" event="start" sound="" />
+				<Control name="MouseLeft" command="click" event="start" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Press>play_ui_game_menu_select</Press>
+		</Sounds>
+	</UIButtonControl>
+	<UIMenuItemControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="accept" event="start" sound="" />
+				<Control name="MouseLeft" command="accept" event="start" sound="" />
+			</Mode>
+		</Controls>
+	</UIMenuItemControl>
+	<UICheckedMenuItemControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="accept" event="start" sound="" />
+				<Control name="MouseLeft" command="accept" event="start" sound="" />
+			</Mode>
+		</Controls>
+	</UICheckedMenuItemControl>
+	<UIScrollableTextFieldControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickRightUp" command="scrollUp" event="start stop" digital="" threshold="0.9" sound="" />
+				<Control name="MouseWheelUp" command="scrollUp" event="start" threshold="0.9" sound="" />
+				<Control name="StickRightDown" command="scrollDown" event="start stop" digital="" threshold="0.9" sound="" />
+				<Control name="MouseWheelDown" command="scrollDown" event="start" threshold="0.9" sound="" />
+			</Mode>
+		</Controls>
+	</UIScrollableTextFieldControl>
+	<UIScrollingListControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickLeftUp" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftDown" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadUp" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadDown" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Next>play_ui_menu_vertical</Next>
+			<Prev>play_ui_menu_vertical</Prev>
+			<StopBegin>play_ui_menu_back_button</StopBegin>
+			<StopEnd>play_ui_menu_back_button</StopEnd>
+			<ListTopEvent>play_ui_menu_back_button</ListTopEvent>
+			<ListBottomEvent>play_ui_menu_back_button</ListBottomEvent>
+		</Sounds>
+	</UIScrollingListControl>
+	<UITabControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="TriggerLeft" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="TriggerRight" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="ButtonShoulderLeft" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="ButtonShoulderRight" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+	</UITabControl>
+	<UICheckboxControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="toggle" event="start" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Check>play_menu_check_box_select</Check>
+			<Uncheck>play_menu_check_box_select</Uncheck>
+		</Sounds>
+	</UICheckboxControl>
+	<UISliderControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickLeftLeft" command="stepDown" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" />
+				<Control name="StickLeftRight" command="stepUp" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" />
+				<Control name="DpadLeft" command="stepDown" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" />
+				<Control name="DpadRight" command="stepUp" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<ValueChanged>play_menu_slider</ValueChanged>
+		</Sounds>
+	</UISliderControl>
+	<UIOptionsMenuItemControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonB" command="cancel" event="start" />
+				<Control name="Key1" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key2" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key3" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key4" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key5" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key6" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key7" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key8" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key9" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Key0" command="setHotkeyErr" event="start" sound="" />
+				<Control name="KeyPageUp" command="setHotkeyErr" event="start" sound="" />
+				<Control name="KeyPageDown" command="setHotkeyErr" event="start" sound="" />
+				<Control name="KeyInsert" command="setHotkeyErr" event="start" sound="" />
+				<Control name="KeyDelete" command="setHotkeyErr" event="start" sound="" />
+				<Control name="Grave" command="setHotkey" event="start" sound="" />
+				<Control name="KeyMinus" command="setHotkey" event="start" sound="" />
+				<Control name="KeyEquals" command="setHotkey" event="start" sound="" />
+				<Control name="KeyBackspace" command="setHotkey" event="start" sound="" />
+				<Control name="KeyTab" command="setHotkey" event="start" sound="" />
+				<Control name="KeyQ" command="setHotkey" event="start" sound="" />
+				<Control name="KeyW" command="setHotkey" event="start" sound="" />
+				<Control name="KeyE" command="setHotkey" event="start" sound="" />
+				<Control name="KeyR" command="setHotkey" event="start" sound="" />
+				<Control name="KeyT" command="setHotkey" event="start" sound="" />
+				<Control name="KeyY" command="setHotkey" event="start" sound="" />
+				<Control name="KeyU" command="setHotkey" event="start" sound="" />
+				<Control name="KeyI" command="setHotkey" event="start" sound="" />
+				<Control name="KeyO" command="setHotkey" event="start" sound="" />
+				<Control name="KeyP" command="setHotkey" event="start" sound="" />
+				<Control name="BracketLeft" command="setHotkey" event="start" sound="" />
+				<Control name="BracketRight" command="setHotkey" event="start" sound="" />
+				<Control name="BackSlash" command="setHotkey" event="start" sound="" />
+				<Control name="KeyCapsLock" command="setHotkey" event="start" sound="" />
+				<Control name="KeyA" command="setHotkey" event="start" sound="" />
+				<Control name="KeyS" command="setHotkey" event="start" sound="" />
+				<Control name="KeyD" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF" command="setHotkey" event="start" sound="" />
+				<Control name="KeyG" command="setHotkey" event="start" sound="" />
+				<Control name="KeyH" command="setHotkey" event="start" sound="" />
+				<Control name="KeyJ" command="setHotkey" event="start" sound="" />
+				<Control name="KeyK" command="setHotkey" event="start" sound="" />
+				<Control name="KeyL" command="setHotkey" event="start" sound="" />
+				<Control name="SemiColon" command="setHotkey" event="start" sound="" />
+				<Control name="Apostrophe" command="setHotkey" event="start" sound="" />
+				<Control name="KeyZ" command="setHotkey" event="start" sound="" />
+				<Control name="KeyX" command="setHotkey" event="start" sound="" />
+				<Control name="KeyC" command="setHotkey" event="start" sound="" />
+				<Control name="KeyV" command="setHotkey" event="start" sound="" />
+				<Control name="KeyB" command="setHotkey" event="start" sound="" />
+				<Control name="KeyN" command="setHotkey" event="start" sound="" />
+				<Control name="KeyM" command="setHotkey" event="start" sound="" />
+				<Control name="KeyComma" command="setHotkey" event="start" sound="" />
+				<Control name="KeyPeriod" command="setHotkey" event="start" sound="" />
+				<Control name="KeySlash" command="setHotkey" event="start" sound="" />
+				<Control name="Up" command="setHotkey" event="start" sound="" />
+				<Control name="Down" command="setHotkey" event="start" sound="" />
+				<Control name="Left" command="setHotkey" event="start" sound="" />
+				<Control name="Right" command="setHotkey" event="start" sound="" />
+				<Control name="KeyEscape" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF1" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF2" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF3" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF4" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF5" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF6" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF7" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF8" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF9" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF10" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF12" command="setHotkey" event="start" sound="" />
+				<Control name="KeyF12" command="setHotkey" event="start" sound="" />
+				<Control name="KeyPrintScreen" command="setHotkey" event="start" sound="" />
+				<Control name="KeyScrollLock" command="setHotkey" event="start" sound="" />
+				<Control name="KeyPause" command="setHotkey" event="start" sound="" />
+				<Control name="KeyHome" command="setHotkey" event="start" sound="" />
+				<Control name="KeyEnd" command="setHotkey" event="start" sound="" />
+				<Control name="KeyUp" command="setHotkey" event="start" sound="" />
+				<Control name="KeyDown" command="setHotkey" event="start" sound="" />
+				<Control name="KeyRight" command="setHotkey" event="start" sound="" />
+				<Control name="KeyLeft" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumLock" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadDivide" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadMultiply" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad0" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad1" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad2" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad3" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad4" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad5" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad6" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad7" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad8" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpad9" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadDecimal" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadPlus" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadMinus" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadEquals" command="setHotkey" event="start" sound="" />
+				<Control name="KeyNumpadEnter" command="setHotkey" event="start" sound="" />
+				<Control name="KeyEscape" command="setHotkey" event="start" sound="" />
+				<Control name="KeySpace" command="setHotkey" event="start" sound="" />
+				<Control name="MouseWheelDown" command="setHotkey" event="start" sound="" />
+				<Control name="MouseMiddle" command="setHotkey" event="start" sound="" />
+				<Control name="MouseButton4" command="setHotkey" event="start" sound="" />
+				<Control name="MouseButton5" command="setHotkey" event="start" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<FlyoutOpen>play_ui_game_menu_select</FlyoutOpen>
+			<FlyoutClose>play_ui_game_menu_select</FlyoutClose>
+		</Sounds>
+	</UIOptionsMenuItemControl>
+	<UIMoviePlayerControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickLeftLeft" command="prev" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftRight" command="next" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadLeft" command="prev" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadRight" command="next" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+	</UIMoviePlayerControl>
+	<UIGridControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickLeftUp" command="up" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftDown" command="down" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadUp" command="up" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadDown" command="down" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftLeft" command="left" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="StickLeftRight" command="right" event="start" digital="" threshold="0.9" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadLeft" command="left" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+				<Control name="DpadRight" command="right" event="start" repeat="" delay="0.5" rate="0.2" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<NextVertical>play_ui_menu_vertical</NextVertical>
+			<PrevVertical>play_ui_menu_vertical</PrevVertical>
+			<NextHorizontal>play_ui_menu_horizonal</NextHorizontal>
+			<PrevHorizontal>play_ui_menu_horizonal</PrevHorizontal>
+			<StopTop>play_ui_menu_back_button</StopTop>
+			<StopBottom>play_ui_menu_back_button</StopBottom>
+			<StopLeft>play_ui_menu_back_button</StopLeft>
+			<StopRight>play_ui_menu_back_button</StopRight>
+		</Sounds>
+	</UIGridControl>
+	<UIGridCellControl>
+		<Controls name="">
+			<Mode name="Main">
+				<Control name="ButtonA" command="click" event="start" sound="" />
+				<Control name="MouseLeft" command="click" event="start" sound="" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<ItemSelected>play_ui_game_menu_select</ItemSelected>
+		</Sounds>
+	</UIGridCellControl>
+	<UITwoColumnScrollTextFieldControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="StickRightUp" command="scrollDown" event="start stop" digital="" threshold="0.9" sound="" />
+				<Control name="StickRightDown" command="scrollUp" event="start stop" digital="" threshold="0.9" sound="" />
+			</Mode>
+		</Controls>
+	</UITwoColumnScrollTextFieldControl>
+	<UIFlyoutListControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="select" event="start" />
+				<Control name="ButtonB" command="cancel" event="start" />
+				<Control name="KeyEscape" command="cancel" event="start" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Open>play_ui_game_menu_select</Open>
+			<Close>play_ui_menu_back_button</Close>
+		</Sounds>
+	</UIFlyoutListControl>
+	<UITimelineEventControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="accept" event="start" sound="" />
+			</Mode>
+		</Controls>
+	</UITimelineEventControl>
+	<UIInfoDialog>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonX" command="close" event="start" />
+			</Mode>
+		</Controls>
+	</UIInfoDialog>
+	<UILeaderboardREcordControl>
+		<Controls>
+			<Mode name="Main">
+				<Control name="ButtonA" command="select" event="start" />
+			</Mode>
+		</Controls>
+		<Sounds>
+			<Selected>play_ui_game_menu_select</Selected>
+		</Sounds>
+	</UILeaderboardREcordControl>
+</ControlList>

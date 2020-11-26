@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual defaultmodel="built">
+	<model name="construction1">
+		<component>
+			<asset type="Model">
+				<file>template\construction1</file>
+			</asset>
+		</component>
+	</model>
+	<model name="construction2">
+		<component>
+			<asset type="Model">
+				<file>template\construction2</file>
+			</asset>
+		</component>
+	</model>
+	<model name="built">
+		<component>
+			<asset type="Model">
+				<file>template\building</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="BuildingCompletion">
+		<logicdata value="p0" modelref="Construction1" />
+		<logicdata value="p50" modelref="Construction2" />
+		<logicdata value="p100" modelref="Built" />
+	</logic>
+</visual>

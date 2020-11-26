@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>SwipMelee</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>50</DamagePerSecond>
+		<WeaponType>Explosive</WeaponType>
+		<MaxRange>2</MaxRange>
+		<ThrowUnits />
+		<ThrowAliveUnits />
+		<ThrowVelocity>20</ThrowVelocity>
+		<ThrowOffsetAngle>-90</ThrowOffsetAngle>
+		<PreAttackCooldownMin>1</PreAttackCooldownMin>
+		<PreAttackCooldownMax>5</PreAttackCooldownMax>
+		<PostAttackCooldownMin>5</PostAttackCooldownMin>
+		<PostAttackCooldownMax>9</PostAttackCooldownMax>
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>500</PhysicsForceMin>
+		<PhysicsForceMax>800</PhysicsForceMax>
+	</Weapon>
+	<Weapon>
+		<Name>BashMelee</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>180</DamagePerSecond>
+		<WeaponType>Explosive</WeaponType>
+		<MaxRange>2</MaxRange>
+		<AOERadius>12</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0.5</AOEDistanceFactor>
+		<AOEDamageFactor>0.5</AOEDamageFactor>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>10</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>65</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>800</PhysicsForceMin>
+		<PhysicsForceMax>1200</PhysicsForceMax>
+		<PhysicsForceMaxAngle>0.8</PhysicsForceMaxAngle>
+	</Weapon>
+	<Action>
+		<Name>SwipMeleeAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>MeleeAttack</Anim>
+		<Weapon>SwipMelee</Weapon>
+		<FindBetterAction />
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>BashMeleeAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>BashAttack</Anim>
+		<Weapon>BashMelee</Weapon>
+		<FindBetterAction />
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>5</WorkRange>
+	</Action>
+	<Action>
+		<Name>RoarAction</Name>
+		<ActionType>Roar</ActionType>
+		<Anim>Roar</Anim>
+	</Action>
+	<Action>
+		<Name>Capture</Name>
+		<ActionType>Capture</ActionType>
+		<Anim>Build</Anim>
+		<WorkRate>0.167</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Tactic>
+		<PersistentAction>RoarAction</PersistentAction>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>CapturePoint</TargetType>
+			<TargetState>Capturable</TargetState>
+			<Action>Capture</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Garrison</TargetType>
+			<Action>Garrison</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Self</Relation>
+			<TargetType>Garrison</TargetType>
+			<Action>Garrison</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>Infantry</TargetType>
+			<TargetType>unsc_veh_warthog_01</TargetType>
+			<TargetType>cov_veh_ghost_01</TargetType>
+			<Action>SwipMeleeAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>BashMeleeAttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

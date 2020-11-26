@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>ShadeTurret</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>250</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_shadePlasma_01</Projectile>
+		<ImpactEffect size="Medium">smallGreenPlasma</ImpactEffect>
+		<MaxVelocityLead>30</MaxVelocityLead>
+		<MaxRange>100</MaxRange>
+		<Hardpoint>ShadeTurret</Hardpoint>
+		<DamageRatingOverride type="Vehicle">0</DamageRatingOverride>
+		<DamageRatingOverride type="Building">0</DamageRatingOverride>
+		<DamageRatingOverride type="Unarmored">0</DamageRatingOverride>
+		<TargetPriority type="Aircraft">1</TargetPriority>
+	</Weapon>
+	<Weapon>
+		<Name>scarabScanBeam</Name>
+		<AttackRate>0.1</AttackRate>
+		<DamagePerSecond>6500</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_SCN07scanBeam_01</Projectile>
+		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
+		<MaxVelocityLead>4</MaxVelocityLead>
+		<MaxRange>750</MaxRange>
+		<Hardpoint>Turret</Hardpoint>
+		<EnableHeightBonusDamage />
+		<AOERadius>6</AOERadius>
+		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
+		<AOEDistanceFactor>0</AOEDistanceFactor>
+		<ThrowUnits />
+		<ThrowDamageParts />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>1200</PhysicsForceMin>
+		<PhysicsForceMax>1800</PhysicsForceMax>
+		<TargetPriority type="TurretBuilding">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">5</TargetPriority>
+		<TargetPriority type="Flying">2</TargetPriority>
+		<TargetPriority type="Infantry">1</TargetPriority>
+		<TargetPriority type="Building">-3</TargetPriority>
+	</Weapon>
+	<Action>
+		<Name>ShadeTurretAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<PersistentActionType>SecondaryTurretAttack</PersistentActionType>
+		<Anim>ShadeTurretAttack</Anim>
+		<Weapon>ShadeTurret</Weapon>
+		<Strafing maxDistance="35" turnRate="90" trackingSpeed="35" jitter="20" />
+		<MainAttack />
+	</Action>
+	<Action>
+		<Name>scarabBeamScanAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>scarabBeamAttack</Anim>
+		<Weapon>scarabScanBeam</Weapon>
+		<Strafing maxDistance="750" turnRate="-1" trackingSpeed="-1" jitter="-1" />
+		<Beam />
+		<MainAttack />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>scarabBeamScanAttackAction</Action>
+			<TargetsGround />
+			<SquadMode>ScarabScan</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>scarabBeamScanAttackAction</Action>
+			<SquadMode>ScarabScan</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>Flying</TargetType>
+			<Action>ShadeTurretAttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

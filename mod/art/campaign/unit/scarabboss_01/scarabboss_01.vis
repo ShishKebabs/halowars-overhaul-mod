@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>campaign\unit\scarabBoss_01\scarab_01</file>
+				<damagefile>campaign\unit\scarabBoss_01\scarabBoss_01</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="Bone Head" frombone="Bone Head" syncanims="true" disregardorient="false" />
+			<attach type="ModelRef" name="ShadeTurret" tobone="Bone Turret" frombone="Bone Turret" syncanims="true" disregardorient="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_02</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.156" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.168" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.171" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Particle" start="0" position="0.333" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.346" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.346" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Sound" start="0" position="0.449" end="1" name="play_ani_scarab_walk" tobone="Bone R FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.492" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.661" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.673" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.674" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Particle" start="0" position="0.821" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.844" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.844" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Sound" start="0" position="0.936" end="1" name="play_ani_scarab_walk" tobone="Bone L FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_03</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.156" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.168" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.17" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="CameraShake" start="0" position="0.326" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Particle" start="0" position="0.333" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.346" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.449" end="1" name="play_ani_scarab_walk" tobone="Bone R FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.492" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.661" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="CameraShake" start="0" position="0.67" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="GroundIK" start="0" position="0.673" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.821" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="CameraShake" start="0" position="0.824" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="GroundIK" start="0" position="0.844" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.936" end="1" name="play_ani_scarab_walk" tobone="Bone L FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="shadeTurretAttack" exitAction="Transition" tweenTime="2" tweenToAnimation="shadeTurretAttack">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="scarabBeamAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarabBeamAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\death_01</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0.112" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.173" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.427" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.489" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.489" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.489" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="leftSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="AttachTarget" start="0" position="0.223" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="true" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="SweetSpot" start="0.13" position="0.223" end="0.41" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="AttachTarget" start="0" position="0.737" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.737" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.937" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="rightSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="AttachTarget" start="0" position="0.223" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="true" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="SweetSpot" start="0.13" position="0.223" end="0.41" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="AttachTarget" start="0" position="0.737" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.737" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.937" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="1" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarab_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stop" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\stop_01</file>
+				<weight>1</weight>
+				<tag type="GroundIK" start="0" position="0" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.156" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.16" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.168" end="1" tobone="Bone R RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.17" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Particle" start="0" position="0.333" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.346" end="1" tobone="Bone L FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.346" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Sound" start="0" position="0.449" end="1" name="play_ani_scarab_walk" tobone="Bone R FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.492" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="GroundIK" start="0" position="0.661" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="CameraShake" start="0" position="0.67" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="GroundIK" start="0" position="0.673" end="1" tobone="Bone L RearLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.821" end="1" name="effects\vehicle_fx\cov\scarab\footdust_01" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="false" attach="false" disregardorient="true" force="0" lifespan="1" />
+				<tag type="GroundIK" start="0" position="0.844" end="1" tobone="Bone R FrontLeg04" checkvisible="false" lockToGround="true" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="CameraShake" start="0" position="0.844" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="1" lifespan="0.15" />
+				<tag type="Sound" start="0" position="0.936" end="1" name="play_ani_scarab_walk" tobone="Bone L FrontLeg05" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\train</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Turret">
+		<component>
+			<asset type="Model">
+				<file>campaign\unit\scarabBoss_01\scarab_head_01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="shadeTurretAttack" exitAction="Transition" tweenTime="2" tweenToAnimation="shadeTurretAttack">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_04</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="scarabBeamAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarabBeamAttack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<attach type="ParticleFile" name="effects\vehicle_fx\cov\scarab\scarabBoss_muzzle_01" tobone="bone_launchpoint01" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="campaign\unit\scarabBoss_01\muzzleLight_01" tobone="bone_launchpoint01" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="leftSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="rightSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarab_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stop" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\stop_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\train</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="ShadeTurret">
+		<component>
+			<asset type="Model">
+				<file>campaign\unit\scarabBoss_01\scarab_shadeTurret</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\idle_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\walk_03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="shadeTurretAttack" exitAction="Transition" tweenTime="2" tweenToAnimation="shadeTurretAttack">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.7" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.9" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.9" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_02</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.7" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.9" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.9" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_03</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.7" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.9" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.9" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\shadeTurretAttack_04</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position="0.1" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.1" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Particle" start="0" position="0.1" end="1" name="effects\vehicle_fx\cov\banshee\muzzleblast_01" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.3" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.3" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.5" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.7" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.7" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Attack" start="0" position="0.9" end="1" tobone="bone_launchpoint02" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+				<tag type="Sound" start="0" position="0.9" end="1" name="play_cov_ghost_plasma_cannon" tobone="bone_launchpoint02" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" lifespan="0.25" />
+			</asset>
+		</anim>
+		<anim type="scarabBeamAttack" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarabBeamAttack_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\death_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="leftSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="rightSpearAttack" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\melee_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cinematic" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>campaign\unit\scarabBoss_01\scarab_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stop" exitAction="Freeze" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\stop_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Transition" tweenTime="8" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\vehicle\scarab_01\train</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

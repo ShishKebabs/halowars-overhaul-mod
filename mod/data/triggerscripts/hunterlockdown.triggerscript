@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="hunterLockdown.triggerscript" Type="TriggerScript" NextTriggerVarID="325" NextTriggerID="10" NextConditionID="12" NextEffectID="42" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="2" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="3" Type="PlayerList" Name="PlayerListVar1" IsNull="true" />
+		<TriggerVar ID="4" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="5" Type="Float" Name="" IsNull="false">10000</TriggerVar>
+		<TriggerVar ID="6" Type="Float" Name="AmountAsPercentVar1" IsNull="true" />
+		<TriggerVar ID="7" Type="String" Name="ActionNameVar1" IsNull="true" />
+		<TriggerVar ID="8" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+		<TriggerVar ID="9" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+		<TriggerVar ID="10" Type="Bool" Name="InvertRelationVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="11" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="12" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="13" Type="PlayerList" Name="PlayerListVar2" IsNull="true" />
+		<TriggerVar ID="14" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="15" Type="Float" Name="AmountVar2" IsNull="true" />
+		<TriggerVar ID="16" Type="Float" Name="" IsNull="false">0.2</TriggerVar>
+		<TriggerVar ID="17" Type="String" Name="ActionNameVar2" IsNull="true" />
+		<TriggerVar ID="18" Type="ObjectDataType" Name="" IsNull="false">MaximumVelocity</TriggerVar>
+		<TriggerVar ID="19" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="20" Type="Bool" Name="InvertRelationVar2" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="21" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="22" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="23" Type="PlayerList" Name="PlayerListVar3" IsNull="true" />
+		<TriggerVar ID="24" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="25" Type="Float" Name="AmountVar3" IsNull="true" />
+		<TriggerVar ID="26" Type="Float" Name="" IsNull="false">0.02</TriggerVar>
+		<TriggerVar ID="27" Type="String" Name="ActionNameVar3" IsNull="true" />
+		<TriggerVar ID="28" Type="ObjectDataType" Name="" IsNull="false">MaximumRange</TriggerVar>
+		<TriggerVar ID="29" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="30" Type="Bool" Name="InvertRelationVar3" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="31" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="34" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="35" Type="PlayerList" Name="PlayerListVar4" IsNull="true" />
+		<TriggerVar ID="36" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="37" Type="Float" Name="AmountVar4" IsNull="true" />
+		<TriggerVar ID="38" Type="Float" Name="" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="39" Type="String" Name="ActionNameVar4" IsNull="true" />
+		<TriggerVar ID="40" Type="ObjectDataType" Name="" IsNull="false">MaximumVelocity</TriggerVar>
+		<TriggerVar ID="41" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="42" Type="Bool" Name="InvertRelationVar4" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="43" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="44" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="45" Type="PlayerList" Name="PlayerListVar5" IsNull="true" />
+		<TriggerVar ID="46" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="47" Type="Float" Name="AmountVar5" IsNull="true" />
+		<TriggerVar ID="48" Type="Float" Name="" IsNull="false">50</TriggerVar>
+		<TriggerVar ID="49" Type="String" Name="ActionNameVar5" IsNull="true" />
+		<TriggerVar ID="50" Type="ObjectDataType" Name="" IsNull="false">MaximumRange</TriggerVar>
+		<TriggerVar ID="51" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="52" Type="Bool" Name="InvertRelationVar5" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="53" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="54" Type="Trigger" Name="TriggerVar1" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="55" Type="Trigger" Name="TriggerVar2" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="64" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="71" Type="Unit" Name="ReceivingUnitVar2" IsNull="true" />
+		<TriggerVar ID="72" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+		<TriggerVar ID="74" Type="SquadList" Name="ReceivingSquadListVar1" IsNull="true" />
+		<TriggerVar ID="75" Type="ProtoObject" Name="" IsNull="false">fx_special_buffR_01</TriggerVar>
+		<TriggerVar ID="76" Type="Unit" Name="UnitVar2" IsNull="true" />
+		<TriggerVar ID="77" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+		<TriggerVar ID="79" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+		<TriggerVar ID="84" Type="Unit" Name="UnitVar3" IsNull="true" />
+		<TriggerVar ID="86" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="87" Type="Vector" Name="hunterloc" IsNull="false" />
+		<TriggerVar ID="89" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="90" Type="Float" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="91" Type="Bool" Name="TestObstructionsVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="92" Type="Bool" Name="TestPathingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="93" Type="ProtoObject" Name="TestProtoObjectVar1" IsNull="true" />
+		<TriggerVar ID="94" Type="Vector" Name="huntermove" IsNull="false" />
+		<TriggerVar ID="96" Type="SquadList" Name="SquadListVar3" IsNull="true" />
+		<TriggerVar ID="97" Type="Unit" Name="TargetUnitVar1" IsNull="true" />
+		<TriggerVar ID="98" Type="Squad" Name="TargetSquadVar1" IsNull="true" />
+		<TriggerVar ID="100" Type="Bool" Name="AttackMoveVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="101" Type="Bool" Name="QueueOrderVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="122" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="123" Type="PlayerList" Name="PlayerListVar8" IsNull="true" />
+		<TriggerVar ID="124" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="125" Type="Float" Name="AmountVar7" IsNull="true" />
+		<TriggerVar ID="126" Type="Float" Name="" IsNull="false">0.01</TriggerVar>
+		<TriggerVar ID="127" Type="String" Name="ActionNameVar8" IsNull="true" />
+		<TriggerVar ID="128" Type="ObjectDataType" Name="" IsNull="false">Damage</TriggerVar>
+		<TriggerVar ID="129" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="130" Type="Bool" Name="InvertRelationVar8" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="131" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="137" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="138" Type="PlayerList" Name="PlayerListVar9" IsNull="true" />
+		<TriggerVar ID="139" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="140" Type="Float" Name="AmountVar8" IsNull="true" />
+		<TriggerVar ID="141" Type="Float" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="142" Type="String" Name="ActionNameVar9" IsNull="true" />
+		<TriggerVar ID="143" Type="ObjectDataType" Name="" IsNull="false">Damage</TriggerVar>
+		<TriggerVar ID="144" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+		<TriggerVar ID="145" Type="Bool" Name="InvertRelationVar9" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="146" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="157" Type="Trigger" Name="TriggerVar3" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="159" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+		<TriggerVar ID="161" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+		<TriggerVar ID="163" Type="Time" Name="" IsNull="false">3000</TriggerVar>
+		<TriggerVar ID="165" Type="ProtoSquad" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="166" Type="Vector" Name="" IsNull="false">8.Position</TriggerVar>
+		<TriggerVar ID="167" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="168" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+		<TriggerVar ID="169" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+		<TriggerVar ID="170" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+		<TriggerVar ID="171" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="172" Type="Squad" Name="Hunter" IsNull="false" />
+		<TriggerVar ID="173" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+		<TriggerVar ID="174" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="175" Type="Trigger" Name="TriggerVar4" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="176" Type="Trigger" Name="TriggerVar5" IsNull="false">6</TriggerVar>
+		<TriggerVar ID="177" Type="Unit" Name="TestUnitVar1" IsNull="true" />
+		<TriggerVar ID="178" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+		<TriggerVar ID="180" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+		<TriggerVar ID="181" Type="Trigger" Name="TriggerVar6" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="182" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="183" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+		<TriggerVar ID="184" Type="Trigger" Name="TriggerVar7" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="185" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="186" Type="PlayerList" Name="PlayerListVar7" IsNull="true" />
+		<TriggerVar ID="187" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="188" Type="Float" Name="" IsNull="false">100000</TriggerVar>
+		<TriggerVar ID="189" Type="Float" Name="AmountAsPercentVar2" IsNull="true" />
+		<TriggerVar ID="190" Type="String" Name="ActionNameVar7" IsNull="true" />
+		<TriggerVar ID="191" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+		<TriggerVar ID="192" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+		<TriggerVar ID="193" Type="Bool" Name="InvertRelationVar7" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="194" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="195" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="196" Type="PlayerList" Name="PlayerListVar10" IsNull="true" />
+		<TriggerVar ID="197" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+		<TriggerVar ID="198" Type="Float" Name="" IsNull="false">2264</TriggerVar>
+		<TriggerVar ID="199" Type="Float" Name="AmountAsPercentVar3" IsNull="true" />
+		<TriggerVar ID="200" Type="String" Name="ActionNameVar10" IsNull="true" />
+		<TriggerVar ID="201" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+		<TriggerVar ID="202" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+		<TriggerVar ID="203" Type="Bool" Name="InvertRelationVar10" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="204" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="208" Type="Vector" Name="FacingVar1" IsNull="true" />
+		<TriggerVar ID="225" Type="CommandType" Name="CommandTypeVar1" IsNull="true" />
+		<TriggerVar ID="226" Type="Integer" Name="CommandDataVar1" IsNull="true" />
+		<TriggerVar ID="237" Type="CommandType" Name="CommandTypeVar2" IsNull="true" />
+		<TriggerVar ID="238" Type="Integer" Name="CommandDataVar2" IsNull="true" />
+		<TriggerVar ID="249" Type="CommandType" Name="CommandTypeVar3" IsNull="true" />
+		<TriggerVar ID="250" Type="Integer" Name="CommandDataVar3" IsNull="true" />
+		<TriggerVar ID="261" Type="CommandType" Name="CommandTypeVar4" IsNull="true" />
+		<TriggerVar ID="262" Type="Integer" Name="CommandDataVar4" IsNull="true" />
+		<TriggerVar ID="273" Type="CommandType" Name="CommandTypeVar5" IsNull="true" />
+		<TriggerVar ID="274" Type="Integer" Name="CommandDataVar5" IsNull="true" />
+		<TriggerVar ID="285" Type="CommandType" Name="CommandTypeVar6" IsNull="true" />
+		<TriggerVar ID="286" Type="Integer" Name="CommandDataVar6" IsNull="true" />
+		<TriggerVar ID="297" Type="CommandType" Name="CommandTypeVar7" IsNull="true" />
+		<TriggerVar ID="298" Type="Integer" Name="CommandDataVar7" IsNull="true" />
+		<TriggerVar ID="309" Type="CommandType" Name="CommandTypeVar8" IsNull="true" />
+		<TriggerVar ID="310" Type="Integer" Name="CommandDataVar8" IsNull="true" />
+		<TriggerVar ID="321" Type="CommandType" Name="CommandTypeVar9" IsNull="true" />
+		<TriggerVar ID="322" Type="Integer" Name="CommandDataVar9" IsNull="true" />
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="hunkered down hunter" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1171" Y="35" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="6" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Squad" SigID="1" Optional="false">172</Input>
+						<Input Name="Interval" SigID="2" Optional="false">161</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="34" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">12</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">13</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">14</Input>
+					<Input Name="Amount" SigID="4" Optional="true">15</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">16</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">17</Input>
+					<Input Name="DataType" SigID="5" Optional="false">18</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">19</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">237</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">238</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">20</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">21</Input>
+				</Effect>
+				<Effect ID="35" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">22</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">23</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">24</Input>
+					<Input Name="Amount" SigID="4" Optional="true">25</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">26</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">27</Input>
+					<Input Name="DataType" SigID="5" Optional="false">28</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">29</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">249</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">250</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">30</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">31</Input>
+				</Effect>
+				<Effect ID="36" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">137</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">138</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">139</Input>
+					<Input Name="Amount" SigID="4" Optional="true">140</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">141</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">142</Input>
+					<Input Name="DataType" SigID="5" Optional="false">143</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">144</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">261</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">262</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">145</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">146</Input>
+				</Effect>
+				<Effect ID="37" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">185</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">186</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">187</Input>
+					<Input Name="Amount" SigID="4" Optional="true">188</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">189</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">190</Input>
+					<Input Name="DataType" SigID="5" Optional="false">191</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">192</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">273</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">274</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">193</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">194</Input>
+				</Effect>
+				<Effect ID="11" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+					<Input Name="ReceivingUnit" SigID="5" Optional="true">71</Input>
+					<Input Name="ReceivingUnitList" SigID="3" Optional="true">72</Input>
+					<Input Name="ReceivingSquad" SigID="6" Optional="true">172</Input>
+					<Input Name="ReceivingSquadList" SigID="4" Optional="true">74</Input>
+					<Input Name="AddProtoObject" SigID="2" Optional="false">75</Input>
+				</Effect>
+				<Effect ID="13" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">84</Input>
+					<Input Name="Squad" SigID="2" Optional="true">172</Input>
+					<Input Name="Object" SigID="4" Optional="true">86</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">87</Output>
+				</Effect>
+				<Effect ID="14" Type="RandomLocation" DBID="55" Version="3" CommentOut="false">
+					<Input Name="OrigLocation" SigID="1" Optional="false">87</Input>
+					<Input Name="InnerRadius" SigID="2" Optional="true">89</Input>
+					<Input Name="OuterRadius" SigID="4" Optional="false">90</Input>
+					<Input Name="TestObstructions" SigID="5" Optional="true">91</Input>
+					<Input Name="TestPathing" SigID="6" Optional="true">92</Input>
+					<Input Name="TestProtoObject" SigID="7" Optional="true">93</Input>
+					<Output Name="RandLocation" SigID="3" Optional="false">94</Output>
+				</Effect>
+				<Effect ID="15" Type="Move" DBID="66" Version="6" CommentOut="false">
+					<Input Name="Squad" SigID="1" Optional="true">172</Input>
+					<Input Name="SquadList" SigID="5" Optional="true">96</Input>
+					<Input Name="TargetUnit" SigID="6" Optional="true">97</Input>
+					<Input Name="TargetSquad" SigID="7" Optional="true">98</Input>
+					<Input Name="TargetLocation" SigID="2" Optional="true">94</Input>
+					<Input Name="AttackMove" SigID="8" Optional="true">100</Input>
+					<Input Name="QueueOrder" SigID="9" Optional="true">101</Input>
+				</Effect>
+				<Effect ID="5" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">54</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="1" Name="newTrigger1" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="800" Y="178" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="9" Type="EnableFogOfWar" DBID="385" Version="1" CommentOut="false">
+					<Input Name="Enable" SigID="1" Optional="false">64</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="2" Name="normal hunter" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1522" Y="249" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="7" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="Squad" SigID="1" Optional="false">172</Input>
+						<Input Name="Interval" SigID="2" Optional="false">163</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="38" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">34</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">35</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">36</Input>
+					<Input Name="Amount" SigID="4" Optional="true">37</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">38</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">39</Input>
+					<Input Name="DataType" SigID="5" Optional="false">40</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">41</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">285</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">286</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">42</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">43</Input>
+				</Effect>
+				<Effect ID="39" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">44</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">45</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">46</Input>
+					<Input Name="Amount" SigID="4" Optional="true">47</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">48</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">49</Input>
+					<Input Name="DataType" SigID="5" Optional="false">50</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">51</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">297</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">298</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">52</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">53</Input>
+				</Effect>
+				<Effect ID="40" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">122</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">123</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">124</Input>
+					<Input Name="Amount" SigID="4" Optional="true">125</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">126</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">127</Input>
+					<Input Name="DataType" SigID="5" Optional="false">128</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">129</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">309</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">310</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">130</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">131</Input>
+				</Effect>
+				<Effect ID="41" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">195</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">196</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">197</Input>
+					<Input Name="Amount" SigID="4" Optional="true">198</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">199</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">200</Input>
+					<Input Name="DataType" SigID="5" Optional="false">201</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">202</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">321</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">322</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">203</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">204</Input>
+				</Effect>
+				<Effect ID="12" Type="AttachmentRemoveAll" DBID="75" Version="3" CommentOut="false">
+					<Input Name="Unit" SigID="4" Optional="true">76</Input>
+					<Input Name="UnitList" SigID="2" Optional="true">77</Input>
+					<Input Name="Squad" SigID="5" Optional="true">172</Input>
+					<Input Name="SquadList" SigID="3" Optional="true">79</Input>
+				</Effect>
+				<Effect ID="6" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">55</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="3" Name="newTrigger3" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="786" Y="42" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="5" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="Squad" SigID="1" Optional="false">172</Input>
+						<Input Name="Interval" SigID="2" Optional="false">159</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="22" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">157</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="5" Name="newTrigger5" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="422" Y="43" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="32" Type="CreateSquad" DBID="36" Version="7" CommentOut="false">
+					<Input Name="ProtoSquad" SigID="1" Optional="false">165</Input>
+					<Input Name="CreateLocation" SigID="2" Optional="false">166</Input>
+					<Input Name="Facing" SigID="12" Optional="true">208</Input>
+					<Input Name="SquadOwner" SigID="3" Optional="false">167</Input>
+					<Input Name="FlyInStart" SigID="8" Optional="true">168</Input>
+					<Input Name="FlyInEnd" SigID="9" Optional="true">169</Input>
+					<Input Name="RallyPoint" SigID="10" Optional="true">170</Input>
+					<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">171</Input>
+					<Output Name="CreatedSquad" SigID="4" Optional="true">172</Output>
+					<Output Name="AddToSquadList" SigID="5" Optional="true">173</Output>
+					<Output Name="SquadListClearExisting" SigID="6" Optional="true">174</Output>
+				</Effect>
+				<Effect ID="25" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">175</Input>
+				</Effect>
+				<Effect ID="26" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">176</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="6" Name="newTrigger6" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="430" Y="336" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="9" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">177</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">178</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">172</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">180</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="27" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">181</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="7" Name="kick" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="25" Y="110" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="10" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">182</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">183</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="28" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">184</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="8" Name="newTrigger8" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="776" Y="418" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="33" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="true">2</Input>
+					<Input Name="PlayerList" SigID="2" Optional="true">3</Input>
+					<Input Name="ObjectType" SigID="3" Optional="false">4</Input>
+					<Input Name="Amount" SigID="4" Optional="true">5</Input>
+					<Input Name="AmountAsPercent" SigID="8" Optional="true">6</Input>
+					<Input Name="ActionName" SigID="9" Optional="true">7</Input>
+					<Input Name="DataType" SigID="5" Optional="false">8</Input>
+					<Input Name="AmountRelation" SigID="6" Optional="false">9</Input>
+					<Input Name="CommandType" SigID="11" Optional="true">225</Input>
+					<Input Name="CommandData" SigID="12" Optional="true">226</Input>
+					<Input Name="InvertRelation" SigID="10" Optional="true">10</Input>
+					<Input Name="EffectAllActions" SigID="7" Optional="false">11</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="325" NextTriggerID="10" NextConditionID="12" NextEffectID="42" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="2" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="3" Type="PlayerList" Name="PlayerListVar1" IsNull="true" />
+				<TriggerVar ID="4" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="5" Type="Float" Name="" IsNull="false">10000</TriggerVar>
+				<TriggerVar ID="6" Type="Float" Name="AmountAsPercentVar1" IsNull="true" />
+				<TriggerVar ID="7" Type="String" Name="ActionNameVar1" IsNull="true" />
+				<TriggerVar ID="8" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+				<TriggerVar ID="9" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+				<TriggerVar ID="10" Type="Bool" Name="InvertRelationVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="11" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="12" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="13" Type="PlayerList" Name="PlayerListVar2" IsNull="true" />
+				<TriggerVar ID="14" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="15" Type="Float" Name="AmountVar2" IsNull="true" />
+				<TriggerVar ID="16" Type="Float" Name="" IsNull="false">0.2</TriggerVar>
+				<TriggerVar ID="17" Type="String" Name="ActionNameVar2" IsNull="true" />
+				<TriggerVar ID="18" Type="ObjectDataType" Name="" IsNull="false">MaximumVelocity</TriggerVar>
+				<TriggerVar ID="19" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="20" Type="Bool" Name="InvertRelationVar2" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="21" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="22" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="23" Type="PlayerList" Name="PlayerListVar3" IsNull="true" />
+				<TriggerVar ID="24" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="25" Type="Float" Name="AmountVar3" IsNull="true" />
+				<TriggerVar ID="26" Type="Float" Name="" IsNull="false">0.02</TriggerVar>
+				<TriggerVar ID="27" Type="String" Name="ActionNameVar3" IsNull="true" />
+				<TriggerVar ID="28" Type="ObjectDataType" Name="" IsNull="false">MaximumRange</TriggerVar>
+				<TriggerVar ID="29" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="30" Type="Bool" Name="InvertRelationVar3" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="31" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="34" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="35" Type="PlayerList" Name="PlayerListVar4" IsNull="true" />
+				<TriggerVar ID="36" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="37" Type="Float" Name="AmountVar4" IsNull="true" />
+				<TriggerVar ID="38" Type="Float" Name="" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="39" Type="String" Name="ActionNameVar4" IsNull="true" />
+				<TriggerVar ID="40" Type="ObjectDataType" Name="" IsNull="false">MaximumVelocity</TriggerVar>
+				<TriggerVar ID="41" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="42" Type="Bool" Name="InvertRelationVar4" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="43" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="44" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="45" Type="PlayerList" Name="PlayerListVar5" IsNull="true" />
+				<TriggerVar ID="46" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="47" Type="Float" Name="AmountVar5" IsNull="true" />
+				<TriggerVar ID="48" Type="Float" Name="" IsNull="false">50</TriggerVar>
+				<TriggerVar ID="49" Type="String" Name="ActionNameVar5" IsNull="true" />
+				<TriggerVar ID="50" Type="ObjectDataType" Name="" IsNull="false">MaximumRange</TriggerVar>
+				<TriggerVar ID="51" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="52" Type="Bool" Name="InvertRelationVar5" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="53" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="54" Type="Trigger" Name="TriggerVar1" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="55" Type="Trigger" Name="TriggerVar2" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="64" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="71" Type="Unit" Name="ReceivingUnitVar2" IsNull="true" />
+				<TriggerVar ID="72" Type="UnitList" Name="ReceivingUnitListVar1" IsNull="true" />
+				<TriggerVar ID="74" Type="SquadList" Name="ReceivingSquadListVar1" IsNull="true" />
+				<TriggerVar ID="75" Type="ProtoObject" Name="" IsNull="false">fx_special_buffR_01</TriggerVar>
+				<TriggerVar ID="76" Type="Unit" Name="UnitVar2" IsNull="true" />
+				<TriggerVar ID="77" Type="UnitList" Name="UnitListVar2" IsNull="true" />
+				<TriggerVar ID="79" Type="SquadList" Name="SquadListVar2" IsNull="true" />
+				<TriggerVar ID="84" Type="Unit" Name="UnitVar3" IsNull="true" />
+				<TriggerVar ID="86" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="87" Type="Vector" Name="hunterloc" IsNull="false" />
+				<TriggerVar ID="89" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="90" Type="Float" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="91" Type="Bool" Name="TestObstructionsVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="92" Type="Bool" Name="TestPathingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="93" Type="ProtoObject" Name="TestProtoObjectVar1" IsNull="true" />
+				<TriggerVar ID="94" Type="Vector" Name="huntermove" IsNull="false" />
+				<TriggerVar ID="96" Type="SquadList" Name="SquadListVar3" IsNull="true" />
+				<TriggerVar ID="97" Type="Unit" Name="TargetUnitVar1" IsNull="true" />
+				<TriggerVar ID="98" Type="Squad" Name="TargetSquadVar1" IsNull="true" />
+				<TriggerVar ID="100" Type="Bool" Name="AttackMoveVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="101" Type="Bool" Name="QueueOrderVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="122" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="123" Type="PlayerList" Name="PlayerListVar8" IsNull="true" />
+				<TriggerVar ID="124" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="125" Type="Float" Name="AmountVar7" IsNull="true" />
+				<TriggerVar ID="126" Type="Float" Name="" IsNull="false">0.01</TriggerVar>
+				<TriggerVar ID="127" Type="String" Name="ActionNameVar8" IsNull="true" />
+				<TriggerVar ID="128" Type="ObjectDataType" Name="" IsNull="false">Damage</TriggerVar>
+				<TriggerVar ID="129" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="130" Type="Bool" Name="InvertRelationVar8" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="131" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="137" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="138" Type="PlayerList" Name="PlayerListVar9" IsNull="true" />
+				<TriggerVar ID="139" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="140" Type="Float" Name="AmountVar8" IsNull="true" />
+				<TriggerVar ID="141" Type="Float" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="142" Type="String" Name="ActionNameVar9" IsNull="true" />
+				<TriggerVar ID="143" Type="ObjectDataType" Name="" IsNull="false">Damage</TriggerVar>
+				<TriggerVar ID="144" Type="ObjectDataRelative" Name="" IsNull="false">Percent</TriggerVar>
+				<TriggerVar ID="145" Type="Bool" Name="InvertRelationVar9" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="146" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="157" Type="Trigger" Name="TriggerVar3" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="159" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+				<TriggerVar ID="161" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+				<TriggerVar ID="163" Type="Time" Name="" IsNull="false">3000</TriggerVar>
+				<TriggerVar ID="165" Type="ProtoSquad" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="166" Type="Vector" Name="" IsNull="false">_Area8_,_8.Position_</TriggerVar>
+				<TriggerVar ID="167" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="168" Type="Vector" Name="FlyInStartVar1" IsNull="true" />
+				<TriggerVar ID="169" Type="Vector" Name="FlyInEndVar1" IsNull="true" />
+				<TriggerVar ID="170" Type="Vector" Name="RallyPointVar1" IsNull="true" />
+				<TriggerVar ID="171" Type="Bool" Name="AttackMoveRallyPointVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="172" Type="Squad" Name="Hunter" IsNull="false" />
+				<TriggerVar ID="173" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+				<TriggerVar ID="174" Type="Bool" Name="SquadListClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="175" Type="Trigger" Name="TriggerVar4" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="176" Type="Trigger" Name="TriggerVar5" IsNull="false">6</TriggerVar>
+				<TriggerVar ID="177" Type="Unit" Name="TestUnitVar1" IsNull="true" />
+				<TriggerVar ID="178" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+				<TriggerVar ID="180" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+				<TriggerVar ID="181" Type="Trigger" Name="TriggerVar6" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="182" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="183" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+				<TriggerVar ID="184" Type="Trigger" Name="TriggerVar7" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="185" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="186" Type="PlayerList" Name="PlayerListVar7" IsNull="true" />
+				<TriggerVar ID="187" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="188" Type="Float" Name="" IsNull="false">100000</TriggerVar>
+				<TriggerVar ID="189" Type="Float" Name="AmountAsPercentVar2" IsNull="true" />
+				<TriggerVar ID="190" Type="String" Name="ActionNameVar7" IsNull="true" />
+				<TriggerVar ID="191" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+				<TriggerVar ID="192" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+				<TriggerVar ID="193" Type="Bool" Name="InvertRelationVar7" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="194" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="195" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="196" Type="PlayerList" Name="PlayerListVar10" IsNull="true" />
+				<TriggerVar ID="197" Type="ObjectType" Name="" IsNull="false">cov_inf_hunter_01</TriggerVar>
+				<TriggerVar ID="198" Type="Float" Name="" IsNull="false">2264</TriggerVar>
+				<TriggerVar ID="199" Type="Float" Name="AmountAsPercentVar3" IsNull="true" />
+				<TriggerVar ID="200" Type="String" Name="ActionNameVar10" IsNull="true" />
+				<TriggerVar ID="201" Type="ObjectDataType" Name="" IsNull="false">Hitpoints</TriggerVar>
+				<TriggerVar ID="202" Type="ObjectDataRelative" Name="" IsNull="false">Assign</TriggerVar>
+				<TriggerVar ID="203" Type="Bool" Name="InvertRelationVar10" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="204" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="206" Type="ProtoSquad" Name="ProtoSquadVar1" IsNull="false" />
+				<TriggerVar ID="207" Type="Vector" Name="CreateLocationVar1" IsNull="false" />
+				<TriggerVar ID="208" Type="Vector" Name="FacingVar1" IsNull="true" />
+				<TriggerVar ID="209" Type="Player" Name="SquadOwnerVar1" IsNull="false" />
+				<TriggerVar ID="210" Type="Vector" Name="FlyInStartVar2" IsNull="true" />
+				<TriggerVar ID="211" Type="Vector" Name="FlyInEndVar2" IsNull="true" />
+				<TriggerVar ID="212" Type="Vector" Name="RallyPointVar2" IsNull="true" />
+				<TriggerVar ID="213" Type="Bool" Name="AttackMoveRallyPointVar2" IsNull="true" />
+				<TriggerVar ID="214" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+				<TriggerVar ID="215" Type="SquadList" Name="AddToSquadListVar2" IsNull="true" />
+				<TriggerVar ID="216" Type="Bool" Name="SquadListClearExistingVar2" IsNull="true" />
+				<TriggerVar ID="217" Type="Player" Name="PlayerVar1" IsNull="true" />
+				<TriggerVar ID="218" Type="PlayerList" Name="PlayerListVar6" IsNull="true" />
+				<TriggerVar ID="219" Type="ObjectType" Name="ObjectTypeVar1" IsNull="false" />
+				<TriggerVar ID="220" Type="Float" Name="AmountVar1" IsNull="true" />
+				<TriggerVar ID="221" Type="Float" Name="AmountAsPercentVar4" IsNull="true" />
+				<TriggerVar ID="222" Type="String" Name="ActionNameVar6" IsNull="true" />
+				<TriggerVar ID="223" Type="ObjectDataType" Name="DataTypeVar1" IsNull="false" />
+				<TriggerVar ID="224" Type="ObjectDataRelative" Name="AmountRelationVar1" IsNull="false" />
+				<TriggerVar ID="225" Type="CommandType" Name="CommandTypeVar1" IsNull="true" />
+				<TriggerVar ID="226" Type="Integer" Name="CommandDataVar1" IsNull="true" />
+				<TriggerVar ID="227" Type="Bool" Name="InvertRelationVar6" IsNull="true" />
+				<TriggerVar ID="228" Type="Bool" Name="EffectAllActionsVar1" IsNull="false" />
+				<TriggerVar ID="229" Type="Player" Name="PlayerVar2" IsNull="true" />
+				<TriggerVar ID="230" Type="PlayerList" Name="PlayerListVar11" IsNull="true" />
+				<TriggerVar ID="231" Type="ObjectType" Name="ObjectTypeVar2" IsNull="false" />
+				<TriggerVar ID="232" Type="Float" Name="AmountVar6" IsNull="true" />
+				<TriggerVar ID="233" Type="Float" Name="AmountAsPercentVar5" IsNull="true" />
+				<TriggerVar ID="234" Type="String" Name="ActionNameVar11" IsNull="true" />
+				<TriggerVar ID="235" Type="ObjectDataType" Name="DataTypeVar2" IsNull="false" />
+				<TriggerVar ID="236" Type="ObjectDataRelative" Name="AmountRelationVar2" IsNull="false" />
+				<TriggerVar ID="237" Type="CommandType" Name="CommandTypeVar2" IsNull="true" />
+				<TriggerVar ID="238" Type="Integer" Name="CommandDataVar2" IsNull="true" />
+				<TriggerVar ID="239" Type="Bool" Name="InvertRelationVar11" IsNull="true" />
+				<TriggerVar ID="240" Type="Bool" Name="EffectAllActionsVar2" IsNull="false" />
+				<TriggerVar ID="241" Type="Player" Name="PlayerVar3" IsNull="true" />
+				<TriggerVar ID="242" Type="PlayerList" Name="PlayerListVar12" IsNull="true" />
+				<TriggerVar ID="243" Type="ObjectType" Name="ObjectTypeVar3" IsNull="false" />
+				<TriggerVar ID="244" Type="Float" Name="AmountVar9" IsNull="true" />
+				<TriggerVar ID="245" Type="Float" Name="AmountAsPercentVar6" IsNull="true" />
+				<TriggerVar ID="246" Type="String" Name="ActionNameVar12" IsNull="true" />
+				<TriggerVar ID="247" Type="ObjectDataType" Name="DataTypeVar3" IsNull="false" />
+				<TriggerVar ID="248" Type="ObjectDataRelative" Name="AmountRelationVar3" IsNull="false" />
+				<TriggerVar ID="249" Type="CommandType" Name="CommandTypeVar3" IsNull="true" />
+				<TriggerVar ID="250" Type="Integer" Name="CommandDataVar3" IsNull="true" />
+				<TriggerVar ID="251" Type="Bool" Name="InvertRelationVar12" IsNull="true" />
+				<TriggerVar ID="252" Type="Bool" Name="EffectAllActionsVar3" IsNull="false" />
+				<TriggerVar ID="253" Type="Player" Name="PlayerVar4" IsNull="true" />
+				<TriggerVar ID="254" Type="PlayerList" Name="PlayerListVar13" IsNull="true" />
+				<TriggerVar ID="255" Type="ObjectType" Name="ObjectTypeVar4" IsNull="false" />
+				<TriggerVar ID="256" Type="Float" Name="AmountVar10" IsNull="true" />
+				<TriggerVar ID="257" Type="Float" Name="AmountAsPercentVar7" IsNull="true" />
+				<TriggerVar ID="258" Type="String" Name="ActionNameVar13" IsNull="true" />
+				<TriggerVar ID="259" Type="ObjectDataType" Name="DataTypeVar4" IsNull="false" />
+				<TriggerVar ID="260" Type="ObjectDataRelative" Name="AmountRelationVar4" IsNull="false" />
+				<TriggerVar ID="261" Type="CommandType" Name="CommandTypeVar4" IsNull="true" />
+				<TriggerVar ID="262" Type="Integer" Name="CommandDataVar4" IsNull="true" />
+				<TriggerVar ID="263" Type="Bool" Name="InvertRelationVar13" IsNull="true" />
+				<TriggerVar ID="264" Type="Bool" Name="EffectAllActionsVar4" IsNull="false" />
+				<TriggerVar ID="265" Type="Player" Name="PlayerVar5" IsNull="true" />
+				<TriggerVar ID="266" Type="PlayerList" Name="PlayerListVar14" IsNull="true" />
+				<TriggerVar ID="267" Type="ObjectType" Name="ObjectTypeVar5" IsNull="false" />
+				<TriggerVar ID="268" Type="Float" Name="AmountVar11" IsNull="true" />
+				<TriggerVar ID="269" Type="Float" Name="AmountAsPercentVar8" IsNull="true" />
+				<TriggerVar ID="270" Type="String" Name="ActionNameVar14" IsNull="true" />
+				<TriggerVar ID="271" Type="ObjectDataType" Name="DataTypeVar5" IsNull="false" />
+				<TriggerVar ID="272" Type="ObjectDataRelative" Name="AmountRelationVar5" IsNull="false" />
+				<TriggerVar ID="273" Type="CommandType" Name="CommandTypeVar5" IsNull="true" />
+				<TriggerVar ID="274" Type="Integer" Name="CommandDataVar5" IsNull="true" />
+				<TriggerVar ID="275" Type="Bool" Name="InvertRelationVar14" IsNull="true" />
+				<TriggerVar ID="276" Type="Bool" Name="EffectAllActionsVar5" IsNull="false" />
+				<TriggerVar ID="277" Type="Player" Name="PlayerVar6" IsNull="true" />
+				<TriggerVar ID="278" Type="PlayerList" Name="PlayerListVar15" IsNull="true" />
+				<TriggerVar ID="279" Type="ObjectType" Name="ObjectTypeVar6" IsNull="false" />
+				<TriggerVar ID="280" Type="Float" Name="AmountVar12" IsNull="true" />
+				<TriggerVar ID="281" Type="Float" Name="AmountAsPercentVar9" IsNull="true" />
+				<TriggerVar ID="282" Type="String" Name="ActionNameVar15" IsNull="true" />
+				<TriggerVar ID="283" Type="ObjectDataType" Name="DataTypeVar6" IsNull="false" />
+				<TriggerVar ID="284" Type="ObjectDataRelative" Name="AmountRelationVar6" IsNull="false" />
+				<TriggerVar ID="285" Type="CommandType" Name="CommandTypeVar6" IsNull="true" />
+				<TriggerVar ID="286" Type="Integer" Name="CommandDataVar6" IsNull="true" />
+				<TriggerVar ID="287" Type="Bool" Name="InvertRelationVar15" IsNull="true" />
+				<TriggerVar ID="288" Type="Bool" Name="EffectAllActionsVar6" IsNull="false" />
+				<TriggerVar ID="289" Type="Player" Name="PlayerVar7" IsNull="true" />
+				<TriggerVar ID="290" Type="PlayerList" Name="PlayerListVar16" IsNull="true" />
+				<TriggerVar ID="291" Type="ObjectType" Name="ObjectTypeVar7" IsNull="false" />
+				<TriggerVar ID="292" Type="Float" Name="AmountVar13" IsNull="true" />
+				<TriggerVar ID="293" Type="Float" Name="AmountAsPercentVar10" IsNull="true" />
+				<TriggerVar ID="294" Type="String" Name="ActionNameVar16" IsNull="true" />
+				<TriggerVar ID="295" Type="ObjectDataType" Name="DataTypeVar7" IsNull="false" />
+				<TriggerVar ID="296" Type="ObjectDataRelative" Name="AmountRelationVar7" IsNull="false" />
+				<TriggerVar ID="297" Type="CommandType" Name="CommandTypeVar7" IsNull="true" />
+				<TriggerVar ID="298" Type="Integer" Name="CommandDataVar7" IsNull="true" />
+				<TriggerVar ID="299" Type="Bool" Name="InvertRelationVar16" IsNull="true" />
+				<TriggerVar ID="300" Type="Bool" Name="EffectAllActionsVar7" IsNull="false" />
+				<TriggerVar ID="301" Type="Player" Name="PlayerVar8" IsNull="true" />
+				<TriggerVar ID="302" Type="PlayerList" Name="PlayerListVar17" IsNull="true" />
+				<TriggerVar ID="303" Type="ObjectType" Name="ObjectTypeVar8" IsNull="false" />
+				<TriggerVar ID="304" Type="Float" Name="AmountVar14" IsNull="true" />
+				<TriggerVar ID="305" Type="Float" Name="AmountAsPercentVar11" IsNull="true" />
+				<TriggerVar ID="306" Type="String" Name="ActionNameVar17" IsNull="true" />
+				<TriggerVar ID="307" Type="ObjectDataType" Name="DataTypeVar8" IsNull="false" />
+				<TriggerVar ID="308" Type="ObjectDataRelative" Name="AmountRelationVar8" IsNull="false" />
+				<TriggerVar ID="309" Type="CommandType" Name="CommandTypeVar8" IsNull="true" />
+				<TriggerVar ID="310" Type="Integer" Name="CommandDataVar8" IsNull="true" />
+				<TriggerVar ID="311" Type="Bool" Name="InvertRelationVar17" IsNull="true" />
+				<TriggerVar ID="312" Type="Bool" Name="EffectAllActionsVar8" IsNull="false" />
+				<TriggerVar ID="313" Type="Player" Name="PlayerVar9" IsNull="true" />
+				<TriggerVar ID="314" Type="PlayerList" Name="PlayerListVar18" IsNull="true" />
+				<TriggerVar ID="315" Type="ObjectType" Name="ObjectTypeVar9" IsNull="false" />
+				<TriggerVar ID="316" Type="Float" Name="AmountVar15" IsNull="true" />
+				<TriggerVar ID="317" Type="Float" Name="AmountAsPercentVar12" IsNull="true" />
+				<TriggerVar ID="318" Type="String" Name="ActionNameVar18" IsNull="true" />
+				<TriggerVar ID="319" Type="ObjectDataType" Name="DataTypeVar9" IsNull="false" />
+				<TriggerVar ID="320" Type="ObjectDataRelative" Name="AmountRelationVar9" IsNull="false" />
+				<TriggerVar ID="321" Type="CommandType" Name="CommandTypeVar9" IsNull="true" />
+				<TriggerVar ID="322" Type="Integer" Name="CommandDataVar9" IsNull="true" />
+				<TriggerVar ID="323" Type="Bool" Name="InvertRelationVar18" IsNull="true" />
+				<TriggerVar ID="324" Type="Bool" Name="EffectAllActionsVar9" IsNull="false" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="hunkered down hunter" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1171" Y="35" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="6" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Squad" SigID="1" Optional="false">172</Input>
+								<Input Name="Interval" SigID="2" Optional="false">161</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="34" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">12</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">13</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">14</Input>
+							<Input Name="Amount" SigID="4" Optional="true">15</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">16</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">17</Input>
+							<Input Name="DataType" SigID="5" Optional="false">18</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">19</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">237</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">238</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">20</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">21</Input>
+						</Effect>
+						<Effect ID="35" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">22</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">23</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">24</Input>
+							<Input Name="Amount" SigID="4" Optional="true">25</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">26</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">27</Input>
+							<Input Name="DataType" SigID="5" Optional="false">28</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">29</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">249</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">250</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">30</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">31</Input>
+						</Effect>
+						<Effect ID="36" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">137</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">138</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">139</Input>
+							<Input Name="Amount" SigID="4" Optional="true">140</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">141</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">142</Input>
+							<Input Name="DataType" SigID="5" Optional="false">143</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">144</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">261</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">262</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">145</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">146</Input>
+						</Effect>
+						<Effect ID="37" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">185</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">186</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">187</Input>
+							<Input Name="Amount" SigID="4" Optional="true">188</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">189</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">190</Input>
+							<Input Name="DataType" SigID="5" Optional="false">191</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">192</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">273</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">274</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">193</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">194</Input>
+						</Effect>
+						<Effect ID="11" Type="AttachmentAddType" DBID="74" Version="5" CommentOut="false">
+							<Input Name="ReceivingUnit" SigID="5" Optional="true">71</Input>
+							<Input Name="ReceivingUnitList" SigID="3" Optional="true">72</Input>
+							<Input Name="ReceivingSquad" SigID="6" Optional="true">172</Input>
+							<Input Name="ReceivingSquadList" SigID="4" Optional="true">74</Input>
+							<Input Name="AddProtoObject" SigID="2" Optional="false">75</Input>
+						</Effect>
+						<Effect ID="13" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">84</Input>
+							<Input Name="Squad" SigID="2" Optional="true">172</Input>
+							<Input Name="Object" SigID="4" Optional="true">86</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">87</Output>
+						</Effect>
+						<Effect ID="14" Type="RandomLocation" DBID="55" Version="3" CommentOut="false">
+							<Input Name="OrigLocation" SigID="1" Optional="false">87</Input>
+							<Input Name="InnerRadius" SigID="2" Optional="true">89</Input>
+							<Input Name="OuterRadius" SigID="4" Optional="false">90</Input>
+							<Input Name="TestObstructions" SigID="5" Optional="true">91</Input>
+							<Input Name="TestPathing" SigID="6" Optional="true">92</Input>
+							<Input Name="TestProtoObject" SigID="7" Optional="true">93</Input>
+							<Output Name="RandLocation" SigID="3" Optional="false">94</Output>
+						</Effect>
+						<Effect ID="15" Type="Move" DBID="66" Version="6" CommentOut="false">
+							<Input Name="Squad" SigID="1" Optional="true">172</Input>
+							<Input Name="SquadList" SigID="5" Optional="true">96</Input>
+							<Input Name="TargetUnit" SigID="6" Optional="true">97</Input>
+							<Input Name="TargetSquad" SigID="7" Optional="true">98</Input>
+							<Input Name="TargetLocation" SigID="2" Optional="true">94</Input>
+							<Input Name="AttackMove" SigID="8" Optional="true">100</Input>
+							<Input Name="QueueOrder" SigID="9" Optional="true">101</Input>
+						</Effect>
+						<Effect ID="5" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">54</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="1" Name="newTrigger1" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="800" Y="178" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="9" Type="EnableFogOfWar" DBID="385" Version="1" CommentOut="false">
+							<Input Name="Enable" SigID="1" Optional="false">64</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="2" Name="normal hunter" Active="false" EvaluateFrequency="0" EvalLimit="1" CommentOut="false" ConditionalTrigger="false" X="1522" Y="249" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="7" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+								<Input Name="Squad" SigID="1" Optional="false">172</Input>
+								<Input Name="Interval" SigID="2" Optional="false">163</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="38" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">34</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">35</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">36</Input>
+							<Input Name="Amount" SigID="4" Optional="true">37</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">38</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">39</Input>
+							<Input Name="DataType" SigID="5" Optional="false">40</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">41</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">285</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">286</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">42</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">43</Input>
+						</Effect>
+						<Effect ID="39" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">44</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">45</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">46</Input>
+							<Input Name="Amount" SigID="4" Optional="true">47</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">48</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">49</Input>
+							<Input Name="DataType" SigID="5" Optional="false">50</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">51</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">297</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">298</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">52</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">53</Input>
+						</Effect>
+						<Effect ID="40" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">122</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">123</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">124</Input>
+							<Input Name="Amount" SigID="4" Optional="true">125</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">126</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">127</Input>
+							<Input Name="DataType" SigID="5" Optional="false">128</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">129</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">309</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">310</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">130</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">131</Input>
+						</Effect>
+						<Effect ID="41" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">195</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">196</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">197</Input>
+							<Input Name="Amount" SigID="4" Optional="true">198</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">199</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">200</Input>
+							<Input Name="DataType" SigID="5" Optional="false">201</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">202</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">321</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">322</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">203</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">204</Input>
+						</Effect>
+						<Effect ID="12" Type="AttachmentRemoveAll" DBID="75" Version="3" CommentOut="false">
+							<Input Name="Unit" SigID="4" Optional="true">76</Input>
+							<Input Name="UnitList" SigID="2" Optional="true">77</Input>
+							<Input Name="Squad" SigID="5" Optional="true">172</Input>
+							<Input Name="SquadList" SigID="3" Optional="true">79</Input>
+						</Effect>
+						<Effect ID="6" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">55</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="3" Name="newTrigger3" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="786" Y="42" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="5" Type="IsUnderAttack" DBID="461" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+								<Input Name="Squad" SigID="1" Optional="false">172</Input>
+								<Input Name="Interval" SigID="2" Optional="false">159</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="22" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">157</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="5" Name="newTrigger5" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="422" Y="43" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="32" Type="CreateSquad" DBID="36" Version="7" CommentOut="false">
+							<Input Name="ProtoSquad" SigID="1" Optional="false">165</Input>
+							<Input Name="CreateLocation" SigID="2" Optional="false">166</Input>
+							<Input Name="Facing" SigID="12" Optional="true">208</Input>
+							<Input Name="SquadOwner" SigID="3" Optional="false">167</Input>
+							<Input Name="FlyInStart" SigID="8" Optional="true">168</Input>
+							<Input Name="FlyInEnd" SigID="9" Optional="true">169</Input>
+							<Input Name="RallyPoint" SigID="10" Optional="true">170</Input>
+							<Input Name="AttackMoveRallyPoint" SigID="11" Optional="true">171</Input>
+							<Output Name="CreatedSquad" SigID="4" Optional="true">172</Output>
+							<Output Name="AddToSquadList" SigID="5" Optional="true">173</Output>
+							<Output Name="SquadListClearExisting" SigID="6" Optional="true">174</Output>
+						</Effect>
+						<Effect ID="25" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">175</Input>
+						</Effect>
+						<Effect ID="26" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">176</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="6" Name="newTrigger6" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="430" Y="336" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="9" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">177</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">178</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">172</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">180</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="27" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">181</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="7" Name="kick" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="25" Y="110" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="10" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">182</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">183</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="28" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">184</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="8" Name="newTrigger8" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="776" Y="418" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="33" Type="ModifyProtoData" DBID="237" Version="4" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="true">2</Input>
+							<Input Name="PlayerList" SigID="2" Optional="true">3</Input>
+							<Input Name="ObjectType" SigID="3" Optional="false">4</Input>
+							<Input Name="Amount" SigID="4" Optional="true">5</Input>
+							<Input Name="AmountAsPercent" SigID="8" Optional="true">6</Input>
+							<Input Name="ActionName" SigID="9" Optional="true">7</Input>
+							<Input Name="DataType" SigID="5" Optional="false">8</Input>
+							<Input Name="AmountRelation" SigID="6" Optional="false">9</Input>
+							<Input Name="CommandType" SigID="11" Optional="true">225</Input>
+							<Input Name="CommandData" SigID="12" Optional="true">226</Input>
+							<Input Name="InvertRelation" SigID="10" Optional="true">10</Input>
+							<Input Name="EffectAllActions" SigID="7" Optional="false">11</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn05\PHXscn05" soundfile="">
+	<head>
+		<model name="spartan_01" type="proto" player="1" modelfile="cpgn_inf_spartanRocket_01" />
+		<model name="spartan_02" type="proto" player="1" modelfile="cpgn_inf_spartanMG_01" />
+		<model name="spartan_03" type="proto" player="1" modelfile="cpgn_inf_spartanRocket_01" />
+		<model name="spartan_04" type="proto" player="1" modelfile="cpgn_inf_spartanRocket_01" />
+		<model name="spartan_05" type="proto" player="1" modelfile="cpgn_inf_spartanMG_01" />
+		<model name="spartan_06" type="proto" player="1" modelfile="unsc_inf_spartan_03" />
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_02" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_03" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />model name="spartan_01" type="proto" modelfile="unsc_inf_spartan_01"/&gt;
+    model name="spartan_02" type="proto" modelfile="unsc_inf_spartan_01"/&gt;
+    model name="spartan_03" type="proto" modelfile="unsc_inf_spartan_01"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_01_Camera">
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_02_A" />
+			<animatedmodel model="pelican_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_03_A" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_01_A" />
+			<tag type="Particle" time="3.3f" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="3.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<tag type="Particle" time="3.4f" name="effects\impacts\unsc\tankshell_02\tankshell_02" lifespan="10.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_02_A" />
+			<tag type="Particle" time="0.0f" name="effects\fire\fire_loop_large" lifespan="20f" tomodel="particles_02" tobone="GrannyRootBone" />--Particles</shot>
+		<shot name="Shot2" camera="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_02_Camera">
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_02_B" />
+			<animatedmodel model="pelican_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_03_B" />
+			<animatedmodel model="spartan_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_01_A" />
+			<animatedmodel model="spartan_06" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_02_A" />
+			<animatedmodel model="spartan_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_03_A" />
+			<animatedmodel model="spartan_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_04_A" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_01_B" />
+			<tag type="Particle" time="1.0f" name="effects\wow_moments\s05_scene_03_pelican_dust" lifespan="20.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_02_B" />
+			<tag type="Particle" time="1.5f" name="effects\wow_moments\s05_scene_03_pelican_dust" lifespan="20.0f" tomodel="particles_02" tobone="GrannyRootBone" />--Particles</shot>
+		<shot name="Shot3" camera="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Camera">
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_01_C" />
+			<animatedmodel model="pelican_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Pelican_03_C" />
+			<animatedmodel model="spartan_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_01_C" />
+			<animatedmodel model="spartan_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_02_C" />
+			<animatedmodel model="spartan_03" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_03_C" />
+			<animatedmodel model="spartan_04" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_04_C" />
+			<animatedmodel model="spartan_05" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_05_C" />
+			<animatedmodel model="spartan_06" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Spartan_06_C" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_01_C" />
+			<tag type="Particle" time="0.1f" name="effects\wow_moments\s05_scene_03_pelican_dust" lifespan="2.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_05\S05_Scene_03_Spartans\Scene_03_Particles_02_C" />
+			<tag type="Particle" time="0.1f" name="effects\wow_moments\s05_scene_03_pelican_dust" lifespan="3.0f" tomodel="particles_02" tobone="GrannyRootBone" />--Particles</shot>
+	</body>
+</cinematic>

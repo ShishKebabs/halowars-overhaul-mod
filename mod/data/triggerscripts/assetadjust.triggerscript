@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="assetAdjust.triggerscript" Type="TriggerScript" NextTriggerVarID="188" NextTriggerID="19" NextConditionID="10" NextEffectID="8272" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Trigger" Name="TriggerVar1" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="1" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="2" Type="Integer" Name="MissionIDVar1" IsNull="true" />
+		<TriggerVar ID="3" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="4" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+		<TriggerVar ID="5" Type="Float" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="6" Type="ObjectType" Name="" IsNull="false">hook_bldg_megaTurret_01</TriggerVar>
+		<TriggerVar ID="7" Type="Float" Name="" IsNull="false">0.5</TriggerVar>
+		<TriggerVar ID="8" Type="ObjectType" Name="" IsNull="false">creep_rebel_infantry_01</TriggerVar>
+		<TriggerVar ID="9" Type="Float" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="10" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="11" Type="Integer" Name="MissionIDVar2" IsNull="true" />
+		<TriggerVar ID="12" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="13" Type="ObjectType" Name="" IsNull="true">creep_rebel_base_01</TriggerVar>
+		<TriggerVar ID="14" Type="Float" Name="" IsNull="true">4</TriggerVar>
+		<TriggerVar ID="15" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+		<TriggerVar ID="16" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+		<TriggerVar ID="17" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+		<TriggerVar ID="18" Type="Float" Name="" IsNull="true">0.2</TriggerVar>
+		<TriggerVar ID="20" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="21" Type="IntegerList" Name="" IsNull="false">46</TriggerVar>
+		<TriggerVar ID="23" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="24" Type="IntegerList" Name="" IsNull="false">46</TriggerVar>
+		<TriggerVar ID="25" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="26" Type="MissionTargetType" Name="MissionTargetTypeVar1" IsNull="true" />
+		<TriggerVar ID="27" Type="MissionType" Name="MissionTypeVar1" IsNull="true" />
+		<TriggerVar ID="28" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="29" Type="IntegerList" Name="MissionTargetIDsVar1" IsNull="false" />
+		<TriggerVar ID="30" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="32" Type="Trigger" Name="TriggerVar3" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="34" Type="Trigger" Name="TriggerVar2" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="35" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="36" Type="Integer" Name="MissionIDVar3" IsNull="true" />
+		<TriggerVar ID="37" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="38" Type="ObjectType" Name="" IsNull="false">_Building</TriggerVar>
+		<TriggerVar ID="39" Type="Float" Name="" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="40" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+		<TriggerVar ID="41" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+		<TriggerVar ID="42" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+		<TriggerVar ID="43" Type="Float" Name="" IsNull="true">0</TriggerVar>
+		<TriggerVar ID="44" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+		<TriggerVar ID="46" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="47" Type="Integer" Name="MissionIDVar4" IsNull="true" />
+		<TriggerVar ID="48" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="49" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+		<TriggerVar ID="50" Type="Float" Name="" IsNull="false">100</TriggerVar>
+		<TriggerVar ID="51" Type="ObjectType" Name="" IsNull="false">hook_bldg_megaTurret_01</TriggerVar>
+		<TriggerVar ID="52" Type="Float" Name="" IsNull="false">0.5</TriggerVar>
+		<TriggerVar ID="53" Type="ObjectType" Name="" IsNull="false">Creep</TriggerVar>
+		<TriggerVar ID="54" Type="Float" Name="" IsNull="false">0.1</TriggerVar>
+		<TriggerVar ID="55" Type="Trigger" Name="TriggerVar5" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="56" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="57" Type="Integer" Name="MissionIDVar5" IsNull="true" />
+		<TriggerVar ID="58" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="59" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+		<TriggerVar ID="60" Type="Float" Name="" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="61" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+		<TriggerVar ID="62" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+		<TriggerVar ID="63" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+		<TriggerVar ID="64" Type="Float" Name="" IsNull="true">0</TriggerVar>
+		<TriggerVar ID="65" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="66" Type="IntegerList" Name="" IsNull="false">53</TriggerVar>
+		<TriggerVar ID="71" Type="Player" Name="MyPlayerVar1" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="73" Type="PlayerList" Name="ModifyPlayerListVar1" IsNull="true" />
+		<TriggerVar ID="74" Type="Float" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="76" Type="PlayerList" Name="" IsNull="true" />
+		<TriggerVar ID="77" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="78" Type="Player" Name="" IsNull="true" />
+		<TriggerVar ID="80" Type="Float" Name="" IsNull="false">3</TriggerVar>
+		<TriggerVar ID="81" Type="String" Name="" IsNull="false">SPECIALATTACK, RushAttackPlayer</TriggerVar>
+		<TriggerVar ID="85" Type="Player" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="87" Type="Player" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="88" Type="Player" Name="ally" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="89" Type="Player" Name="" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="90" Type="Player" Name="creep" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="92" Type="Player" Name="AddPlayerVar1" IsNull="true" />
+		<TriggerVar ID="93" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+		<TriggerVar ID="94" Type="PlayerList" Name="OutputListVar1" IsNull="false" />
+		<TriggerVar ID="95" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="96" Type="Trigger" Name="TriggerVar8" IsNull="false">13</TriggerVar>
+		<TriggerVar ID="98" Type="MissionTargetType" Name="MissionTargetTypeVar2" IsNull="true" />
+		<TriggerVar ID="99" Type="MissionType" Name="MissionTypeVar2" IsNull="true" />
+		<TriggerVar ID="100" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="101" Type="IntegerList" Name="MissionTargetIDsVar2" IsNull="false" />
+		<TriggerVar ID="105" Type="IntegerList" Name="" IsNull="false">109</TriggerVar>
+		<TriggerVar ID="113" Type="PlayerList" Name="" IsNull="true" />
+		<TriggerVar ID="114" Type="Float" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="116" Type="Player" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="117" Type="PlayerList" Name="" IsNull="true" />
+		<TriggerVar ID="118" Type="Float" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="121" Type="Trigger" Name="TriggerVar6" IsNull="false">15</TriggerVar>
+		<TriggerVar ID="123" Type="Vector" Name="LocationVar1" IsNull="true" />
+		<TriggerVar ID="126" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+		<TriggerVar ID="127" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+		<TriggerVar ID="128" Type="Vector" Name="FilterLocationVar1" IsNull="true" />
+		<TriggerVar ID="129" Type="Float" Name="FilterRadiusVar1" IsNull="true" />
+		<TriggerVar ID="130" Type="Vector" Name="FilterBoxForwardVar1" IsNull="true" />
+		<TriggerVar ID="131" Type="Float" Name="FilterBoxHalfXVar1" IsNull="true" />
+		<TriggerVar ID="132" Type="Float" Name="FilterBoxHalfYVar1" IsNull="true" />
+		<TriggerVar ID="133" Type="Float" Name="FilterBoxHalfZVar1" IsNull="true" />
+		<TriggerVar ID="134" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+		<TriggerVar ID="135" Type="ObjectType" Name="" IsNull="true">_Infantry</TriggerVar>
+		<TriggerVar ID="136" Type="SquadList" Name="FoundSquadsVar1" IsNull="false" />
+		<TriggerVar ID="137" Type="Integer" Name="FoundSquadCountVar1" IsNull="true" />
+		<TriggerVar ID="138" Type="Trigger" Name="TriggerVar9" IsNull="false">12</TriggerVar>
+		<TriggerVar ID="139" Type="Trigger" Name="TriggerVar10" IsNull="false">16</TriggerVar>
+		<TriggerVar ID="141" Type="Player" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="142" Type="PlayerList" Name="" IsNull="false">1,2,3,4</TriggerVar>
+		<TriggerVar ID="143" Type="Float" Name="" IsNull="false">10</TriggerVar>
+		<TriggerVar ID="144" Type="Trigger" Name="TriggerVar11" IsNull="false">13</TriggerVar>
+		<TriggerVar ID="146" Type="Player" Name="" IsNull="true">0</TriggerVar>
+		<TriggerVar ID="147" Type="PlayerList" Name="" IsNull="false">5</TriggerVar>
+		<TriggerVar ID="148" Type="Float" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="166" Type="ObjectTypeList" Name="" IsNull="false">_Base</TriggerVar>
+		<TriggerVar ID="167" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="168" Type="EntityFilterSet" Name="EntityFilterSetVar2" IsNull="false" />
+		<TriggerVar ID="172" Type="SquadList" Name="FailedSquadListVar1" IsNull="true" />
+		<TriggerVar ID="185" Type="Bool" Name="IgnoreAirUnitsVar1" IsNull="true">False</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="109" Y="300" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="21" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+					<Input Name="PlayerSource" SigID="1" Optional="false">85</Input>
+					<Output Name="PlayerCopy" SigID="2" Optional="false">71</Output>
+				</Effect>
+				<Effect ID="22" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+					<Input Name="PlayerSource" SigID="1" Optional="false">87</Input>
+					<Output Name="PlayerCopy" SigID="2" Optional="false">88</Output>
+				</Effect>
+				<Effect ID="23" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+					<Input Name="PlayerSource" SigID="1" Optional="false">89</Input>
+					<Output Name="PlayerCopy" SigID="2" Optional="false">90</Output>
+				</Effect>
+				<Effect ID="24" Type="PlayerListAdd" DBID="124" Version="2" CommentOut="false">
+					<Input Name="AddPlayer" SigID="2" Optional="true">92</Input>
+					<Input Name="AddPlayerList" SigID="3" Optional="true">93</Input>
+					<Output Name="OutputList" SigID="4" Optional="false">94</Output>
+					<Output Name="ClearExisting" SigID="5" Optional="false">95</Output>
+				</Effect>
+				<Effect ID="8260" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">121</Input>
+				</Effect>
+				<Effect ID="8269" Type="FilterAddObjectTypes" DBID="348" Version="1" CommentOut="false">
+					<Input Name="ObjectTypeList" SigID="2" Optional="false">166</Input>
+					<Input Name="invertFilter" SigID="3" Optional="true">167</Input>
+					<Output Name="EntityFilterSet" SigID="1" Optional="false">168</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="9" Name="newTrigger9" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1284" Y="418" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="15" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="9" Optional="false">46</Input>
+					<Input Name="MissionID" SigID="1" Optional="true">47</Input>
+					<Input Name="Clear" SigID="10" Optional="true">48</Input>
+					<Input Name="ObjectType1" SigID="2" Optional="true">49</Input>
+					<Input Name="cValue1" SigID="3" Optional="true">50</Input>
+					<Input Name="ObjectType2" SigID="4" Optional="true">51</Input>
+					<Input Name="cValue2" SigID="5" Optional="true">52</Input>
+					<Input Name="ObjectType3" SigID="6" Optional="true">53</Input>
+					<Input Name="cValue3" SigID="7" Optional="true">54</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="13" Name="score stuff" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="582" Y="1033" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="26" Type="AIGetMissionTargets" DBID="551" Version="3" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">71</Input>
+					<Input Name="MissionTargetType" SigID="3" Optional="true">98</Input>
+					<Input Name="MissionType" SigID="4" Optional="true">99</Input>
+					<Input Name="IgnoreNonScoringTargets" SigID="5" Optional="true">100</Input>
+					<Output Name="MissionTargetIDs" SigID="2" Optional="false">101</Output>
+				</Effect>
+				<Effect ID="27" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">71</Input>
+					<Input Name="MissionTargetIDs" SigID="2" Optional="false">101</Input>
+				</Effect>
+				<Effect ID="29" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">71</Input>
+				</Effect>
+				<Effect ID="30" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">90</Input>
+				</Effect>
+				<Effect ID="32" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">88</Input>
+				</Effect>
+				<Effect ID="31" Type="DebugVar(PlayerList)" DBID="221" Version="1" CommentOut="false">
+					<Input Name="PlayerList" SigID="1" Optional="false">94</Input>
+				</Effect>
+				<Effect ID="8259" Type="AISortMissionTargets" DBID="545" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">71</Input>
+					<Input Name="SortTargetIDs" SigID="2" Optional="false">101</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="15" Name="get non buildings" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="149" Y="639" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="9" Type="CanGetSquads" DBID="4" Version="9" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FilterPlayer" SigID="3" Optional="true">71</Input>
+						<Input Name="FilterPlayerList" SigID="12" Optional="true">126</Input>
+						<Input Name="FilterProtoSquad" SigID="6" Optional="true">127</Input>
+						<Input Name="FilterLocation" SigID="1" Optional="true">128</Input>
+						<Input Name="FilterRadius" SigID="2" Optional="true">129</Input>
+						<Input Name="FilterBoxForward" SigID="15" Optional="true">130</Input>
+						<Input Name="FilterBoxHalfX" SigID="16" Optional="true">131</Input>
+						<Input Name="FilterBoxHalfY" SigID="17" Optional="true">132</Input>
+						<Input Name="FilterBoxHalfZ" SigID="18" Optional="true">133</Input>
+						<Input Name="FilterSquadList" SigID="10" Optional="true">134</Input>
+						<Input Name="FilterObjectType" SigID="11" Optional="true">135</Input>
+						<Input Name="IgnoreAirUnits" SigID="19" Optional="true">185</Input>
+						<Output Name="FoundSquads" SigID="9" Optional="true">136</Output>
+						<Output Name="FoundSquadCount" SigID="7" Optional="true">137</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="8270" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+					<Input Name="SourceSquadList" SigID="1" Optional="false">136</Input>
+					<Input Name="EntityFilterSet" SigID="2" Optional="false">168</Input>
+					<Output Name="PassedSquadList" SigID="3" Optional="true">136</Output>
+					<Output Name="FailedSquadList" SigID="4" Optional="true">172</Output>
+				</Effect>
+				<Effect ID="8261" Type="AISetScoringParms" DBID="564" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">71</Input>
+					<Input Name="Location" SigID="2" Optional="true">123</Input>
+					<Input Name="SquadList" SigID="3" Optional="true">136</Input>
+				</Effect>
+				<Effect ID="8263" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">139</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="16" Name="test 1" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="140" Y="917" GroupID="-1" TemplateID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="8264" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="4" Optional="false">71</Input>
+					<Input Name="ModifyPlayer" SigID="1" Optional="true">141</Input>
+					<Input Name="ModifyPlayerList" SigID="2" Optional="true">142</Input>
+					<Input Name="Modifier" SigID="3" Optional="false">143</Input>
+				</Effect>
+				<Effect ID="8265" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">144</Input>
+				</Effect>
+				<Effect ID="8266" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="4" Optional="false">71</Input>
+					<Input Name="ModifyPlayer" SigID="1" Optional="true">146</Input>
+					<Input Name="ModifyPlayerList" SigID="2" Optional="true">147</Input>
+					<Input Name="Modifier" SigID="3" Optional="false">148</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes>
+				<NoteNodeXml X="885" Y="158" Width="520" Height="30" GroupID="-1">
+					<Title>good for getting extra bases...   on tundra</Title>
+					<Description />
+				</NoteNodeXml>
+				<NoteNodeXml X="885" Y="645" Width="661" Height="30" GroupID="-1">
+					<Title />
+					<Description />
+				</NoteNodeXml>
+				<NoteNodeXml X="150" Y="225" Width="345" Height="30" GroupID="-1">
+					<Title>4 player game</Title>
+					<Description />
+				</NoteNodeXml>
+			</NoteNodes>
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="188" NextTriggerID="19" NextConditionID="10" NextEffectID="8272" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Trigger" Name="TriggerVar1" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="1" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="2" Type="Integer" Name="MissionIDVar1" IsNull="true" />
+				<TriggerVar ID="3" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="4" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+				<TriggerVar ID="5" Type="Float" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="6" Type="ObjectType" Name="" IsNull="false">hook_bldg_megaTurret_01</TriggerVar>
+				<TriggerVar ID="7" Type="Float" Name="" IsNull="false">0.5</TriggerVar>
+				<TriggerVar ID="8" Type="ObjectType" Name="" IsNull="false">creep_rebel_infantry_01</TriggerVar>
+				<TriggerVar ID="9" Type="Float" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="10" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="11" Type="Integer" Name="MissionIDVar2" IsNull="true" />
+				<TriggerVar ID="12" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="13" Type="ObjectType" Name="" IsNull="true">creep_rebel_base_01</TriggerVar>
+				<TriggerVar ID="14" Type="Float" Name="" IsNull="true">4</TriggerVar>
+				<TriggerVar ID="15" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+				<TriggerVar ID="16" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+				<TriggerVar ID="17" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+				<TriggerVar ID="18" Type="Float" Name="" IsNull="true">0.2</TriggerVar>
+				<TriggerVar ID="20" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="21" Type="IntegerList" Name="" IsNull="false">46</TriggerVar>
+				<TriggerVar ID="23" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="24" Type="IntegerList" Name="" IsNull="false">46</TriggerVar>
+				<TriggerVar ID="25" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="26" Type="MissionTargetType" Name="MissionTargetTypeVar1" IsNull="true" />
+				<TriggerVar ID="27" Type="MissionType" Name="MissionTypeVar1" IsNull="true" />
+				<TriggerVar ID="28" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="29" Type="IntegerList" Name="MissionTargetIDsVar1" IsNull="false" />
+				<TriggerVar ID="30" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="32" Type="Trigger" Name="TriggerVar3" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="34" Type="Trigger" Name="TriggerVar2" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="35" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="36" Type="Integer" Name="MissionIDVar3" IsNull="true" />
+				<TriggerVar ID="37" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="38" Type="ObjectType" Name="" IsNull="false">_Building</TriggerVar>
+				<TriggerVar ID="39" Type="Float" Name="" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="40" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+				<TriggerVar ID="41" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+				<TriggerVar ID="42" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+				<TriggerVar ID="43" Type="Float" Name="" IsNull="true">0</TriggerVar>
+				<TriggerVar ID="44" Type="Trigger" Name="TriggerVar4" IsNull="false">6</TriggerVar>
+				<TriggerVar ID="46" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="47" Type="Integer" Name="MissionIDVar4" IsNull="true" />
+				<TriggerVar ID="48" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="49" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+				<TriggerVar ID="50" Type="Float" Name="" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="51" Type="ObjectType" Name="" IsNull="false">hook_bldg_megaTurret_01</TriggerVar>
+				<TriggerVar ID="52" Type="Float" Name="" IsNull="false">0.5</TriggerVar>
+				<TriggerVar ID="53" Type="ObjectType" Name="" IsNull="false">Creep</TriggerVar>
+				<TriggerVar ID="54" Type="Float" Name="" IsNull="false">0.1</TriggerVar>
+				<TriggerVar ID="55" Type="Trigger" Name="TriggerVar5" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="56" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="57" Type="Integer" Name="MissionIDVar5" IsNull="true" />
+				<TriggerVar ID="58" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="59" Type="ObjectType" Name="" IsNull="false">creep_rebel_base_01</TriggerVar>
+				<TriggerVar ID="60" Type="Float" Name="" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="61" Type="ObjectType" Name="" IsNull="true">hook_bldg_megaTurret_01</TriggerVar>
+				<TriggerVar ID="62" Type="Float" Name="" IsNull="true">0.5</TriggerVar>
+				<TriggerVar ID="63" Type="ObjectType" Name="" IsNull="true">creep_rebel_infantry_01</TriggerVar>
+				<TriggerVar ID="64" Type="Float" Name="" IsNull="true">0</TriggerVar>
+				<TriggerVar ID="65" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="66" Type="IntegerList" Name="" IsNull="false">53</TriggerVar>
+				<TriggerVar ID="71" Type="Player" Name="MyPlayerVar1" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="73" Type="PlayerList" Name="ModifyPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="74" Type="Float" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="76" Type="PlayerList" Name="" IsNull="true" />
+				<TriggerVar ID="77" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="78" Type="Player" Name="" IsNull="true" />
+				<TriggerVar ID="80" Type="Float" Name="" IsNull="false">3</TriggerVar>
+				<TriggerVar ID="81" Type="String" Name="" IsNull="false">SPECIALATTACK, RushAttackPlayer</TriggerVar>
+				<TriggerVar ID="85" Type="Player" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="87" Type="Player" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="88" Type="Player" Name="ally" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="89" Type="Player" Name="" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="90" Type="Player" Name="creep" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="92" Type="Player" Name="AddPlayerVar1" IsNull="true" />
+				<TriggerVar ID="93" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+				<TriggerVar ID="94" Type="PlayerList" Name="OutputListVar1" IsNull="false" />
+				<TriggerVar ID="95" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="96" Type="Trigger" Name="TriggerVar8" IsNull="false">13</TriggerVar>
+				<TriggerVar ID="98" Type="MissionTargetType" Name="MissionTargetTypeVar2" IsNull="true" />
+				<TriggerVar ID="99" Type="MissionType" Name="MissionTypeVar2" IsNull="true" />
+				<TriggerVar ID="100" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="101" Type="IntegerList" Name="MissionTargetIDsVar2" IsNull="false" />
+				<TriggerVar ID="105" Type="IntegerList" Name="" IsNull="false">109</TriggerVar>
+				<TriggerVar ID="113" Type="PlayerList" Name="" IsNull="true" />
+				<TriggerVar ID="114" Type="Float" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="116" Type="Player" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="117" Type="PlayerList" Name="" IsNull="true" />
+				<TriggerVar ID="118" Type="Float" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="121" Type="Trigger" Name="TriggerVar6" IsNull="false">15</TriggerVar>
+				<TriggerVar ID="123" Type="Vector" Name="LocationVar1" IsNull="true" />
+				<TriggerVar ID="126" Type="PlayerList" Name="FilterPlayerListVar1" IsNull="true" />
+				<TriggerVar ID="127" Type="ProtoSquad" Name="FilterProtoSquadVar1" IsNull="true" />
+				<TriggerVar ID="128" Type="Vector" Name="FilterLocationVar1" IsNull="true" />
+				<TriggerVar ID="129" Type="Float" Name="FilterRadiusVar1" IsNull="true" />
+				<TriggerVar ID="130" Type="Vector" Name="FilterBoxForwardVar1" IsNull="true" />
+				<TriggerVar ID="131" Type="Float" Name="FilterBoxHalfXVar1" IsNull="true" />
+				<TriggerVar ID="132" Type="Float" Name="FilterBoxHalfYVar1" IsNull="true" />
+				<TriggerVar ID="133" Type="Float" Name="FilterBoxHalfZVar1" IsNull="true" />
+				<TriggerVar ID="134" Type="SquadList" Name="FilterSquadListVar1" IsNull="true" />
+				<TriggerVar ID="135" Type="ObjectType" Name="" IsNull="true">_Infantry</TriggerVar>
+				<TriggerVar ID="136" Type="SquadList" Name="FoundSquadsVar1" IsNull="false" />
+				<TriggerVar ID="137" Type="Integer" Name="FoundSquadCountVar1" IsNull="true" />
+				<TriggerVar ID="138" Type="Trigger" Name="TriggerVar9" IsNull="false">12</TriggerVar>
+				<TriggerVar ID="139" Type="Trigger" Name="TriggerVar10" IsNull="false">16</TriggerVar>
+				<TriggerVar ID="141" Type="Player" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="142" Type="PlayerList" Name="" IsNull="false">1,2,3,4</TriggerVar>
+				<TriggerVar ID="143" Type="Float" Name="" IsNull="false">10</TriggerVar>
+				<TriggerVar ID="144" Type="Trigger" Name="TriggerVar11" IsNull="false">13</TriggerVar>
+				<TriggerVar ID="146" Type="Player" Name="" IsNull="true">0</TriggerVar>
+				<TriggerVar ID="147" Type="PlayerList" Name="" IsNull="false">5</TriggerVar>
+				<TriggerVar ID="148" Type="Float" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="166" Type="ObjectTypeList" Name="" IsNull="false">_Base</TriggerVar>
+				<TriggerVar ID="167" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="168" Type="EntityFilterSet" Name="EntityFilterSetVar2" IsNull="false" />
+				<TriggerVar ID="172" Type="SquadList" Name="FailedSquadListVar1" IsNull="true" />
+				<TriggerVar ID="185" Type="Bool" Name="IgnoreAirUnitsVar1" IsNull="true">False</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="109" Y="300" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="0" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">0</Input>
+						</Effect>
+						<Effect ID="11" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">34</Input>
+						</Effect>
+						<Effect ID="16" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">55</Input>
+						</Effect>
+						<Effect ID="21" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+							<Input Name="PlayerSource" SigID="1" Optional="false">85</Input>
+							<Output Name="PlayerCopy" SigID="2" Optional="false">71</Output>
+						</Effect>
+						<Effect ID="22" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+							<Input Name="PlayerSource" SigID="1" Optional="false">87</Input>
+							<Output Name="PlayerCopy" SigID="2" Optional="false">88</Output>
+						</Effect>
+						<Effect ID="23" Type="CopyPlayer" DBID="97" Version="1" CommentOut="false">
+							<Input Name="PlayerSource" SigID="1" Optional="false">89</Input>
+							<Output Name="PlayerCopy" SigID="2" Optional="false">90</Output>
+						</Effect>
+						<Effect ID="24" Type="PlayerListAdd" DBID="124" Version="2" CommentOut="false">
+							<Input Name="AddPlayer" SigID="2" Optional="true">92</Input>
+							<Input Name="AddPlayerList" SigID="3" Optional="true">93</Input>
+							<Output Name="OutputList" SigID="4" Optional="false">94</Output>
+							<Output Name="ClearExisting" SigID="5" Optional="false">95</Output>
+						</Effect>
+						<Effect ID="8260" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">121</Input>
+						</Effect>
+						<Effect ID="8269" Type="FilterAddObjectTypes" DBID="348" Version="1" CommentOut="false">
+							<Input Name="ObjectTypeList" SigID="2" Optional="false">166</Input>
+							<Input Name="invertFilter" SigID="3" Optional="true">167</Input>
+							<Output Name="EntityFilterSet" SigID="1" Optional="false">168</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="1" Name="newTrigger1" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="878" Y="219" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="1" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="9" Optional="false">1</Input>
+							<Input Name="MissionID" SigID="1" Optional="true">2</Input>
+							<Input Name="Clear" SigID="10" Optional="true">3</Input>
+							<Input Name="ObjectType1" SigID="2" Optional="true">4</Input>
+							<Input Name="cValue1" SigID="3" Optional="true">5</Input>
+							<Input Name="ObjectType2" SigID="4" Optional="true">6</Input>
+							<Input Name="cValue2" SigID="5" Optional="true">7</Input>
+							<Input Name="ObjectType3" SigID="6" Optional="true">8</Input>
+							<Input Name="cValue3" SigID="7" Optional="true">9</Input>
+						</Effect>
+						<Effect ID="2" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="9" Optional="false">10</Input>
+							<Input Name="MissionID" SigID="1" Optional="true">11</Input>
+							<Input Name="Clear" SigID="10" Optional="true">12</Input>
+							<Input Name="ObjectType1" SigID="2" Optional="true">13</Input>
+							<Input Name="cValue1" SigID="3" Optional="true">14</Input>
+							<Input Name="ObjectType2" SigID="4" Optional="true">15</Input>
+							<Input Name="cValue2" SigID="5" Optional="true">16</Input>
+							<Input Name="ObjectType3" SigID="6" Optional="true">17</Input>
+							<Input Name="cValue3" SigID="7" Optional="true">18</Input>
+						</Effect>
+						<Effect ID="9" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">32</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="2" Name="newTrigger2" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="1292" Y="216" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="4" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="1" Optional="false">20</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">21</Input>
+						</Effect>
+						<Effect ID="6" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="1" Optional="false">23</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">24</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="5" Name="newTrigger5" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="943" Y="693" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="12" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="9" Optional="false">35</Input>
+							<Input Name="MissionID" SigID="1" Optional="true">36</Input>
+							<Input Name="Clear" SigID="10" Optional="true">37</Input>
+							<Input Name="ObjectType1" SigID="2" Optional="true">38</Input>
+							<Input Name="cValue1" SigID="3" Optional="true">39</Input>
+							<Input Name="ObjectType2" SigID="4" Optional="true">40</Input>
+							<Input Name="cValue2" SigID="5" Optional="true">41</Input>
+							<Input Name="ObjectType3" SigID="6" Optional="true">42</Input>
+							<Input Name="cValue3" SigID="7" Optional="true">43</Input>
+						</Effect>
+						<Effect ID="13" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">44</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="6" Name="newTrigger6" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="1290" Y="698" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="7" Type="AIGetMissionTargets" DBID="551" Version="3" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">25</Input>
+							<Input Name="MissionTargetType" SigID="3" Optional="true">26</Input>
+							<Input Name="MissionType" SigID="4" Optional="true">27</Input>
+							<Input Name="IgnoreNonScoringTargets" SigID="5" Optional="true">28</Input>
+							<Output Name="MissionTargetIDs" SigID="2" Optional="false">29</Output>
+						</Effect>
+						<Effect ID="8" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">30</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">29</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="9" Name="newTrigger9" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1284" Y="418" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="15" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="9" Optional="false">46</Input>
+							<Input Name="MissionID" SigID="1" Optional="true">47</Input>
+							<Input Name="Clear" SigID="10" Optional="true">48</Input>
+							<Input Name="ObjectType1" SigID="2" Optional="true">49</Input>
+							<Input Name="cValue1" SigID="3" Optional="true">50</Input>
+							<Input Name="ObjectType2" SigID="4" Optional="true">51</Input>
+							<Input Name="cValue2" SigID="5" Optional="true">52</Input>
+							<Input Name="ObjectType3" SigID="6" Optional="true">53</Input>
+							<Input Name="cValue3" SigID="7" Optional="true">54</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="10" Name="newTrigger10" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="954" Y="902" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="17" Type="AISetAssetMultipliers" DBID="878" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="9" Optional="false">56</Input>
+							<Input Name="MissionID" SigID="1" Optional="true">57</Input>
+							<Input Name="Clear" SigID="10" Optional="true">58</Input>
+							<Input Name="ObjectType1" SigID="2" Optional="true">59</Input>
+							<Input Name="cValue1" SigID="3" Optional="true">60</Input>
+							<Input Name="ObjectType2" SigID="4" Optional="true">61</Input>
+							<Input Name="cValue2" SigID="5" Optional="true">62</Input>
+							<Input Name="ObjectType3" SigID="6" Optional="true">63</Input>
+							<Input Name="cValue3" SigID="7" Optional="true">64</Input>
+						</Effect>
+						<Effect ID="18" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">65</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">66</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="12" Name="test 2" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="true" X="132" Y="1180" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="8248" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">90</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">73</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">74</Input>
+						</Effect>
+						<Effect ID="8249" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">88</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">76</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">77</Input>
+						</Effect>
+						<Effect ID="8256" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">78</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">94</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">80</Input>
+						</Effect>
+						<Effect ID="8257" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">71</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">113</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">114</Input>
+						</Effect>
+						<Effect ID="8258" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">116</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">117</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">118</Input>
+						</Effect>
+						<Effect ID="8252" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="false">
+							<Input Name="String" SigID="1" Optional="false">81</Input>
+						</Effect>
+						<Effect ID="25" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">96</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="13" Name="score stuff" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="582" Y="1033" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="26" Type="AIGetMissionTargets" DBID="551" Version="3" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+							<Input Name="MissionTargetType" SigID="3" Optional="true">98</Input>
+							<Input Name="MissionType" SigID="4" Optional="true">99</Input>
+							<Input Name="IgnoreNonScoringTargets" SigID="5" Optional="true">100</Input>
+							<Output Name="MissionTargetIDs" SigID="2" Optional="false">101</Output>
+						</Effect>
+						<Effect ID="27" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">101</Input>
+						</Effect>
+						<Effect ID="28" Type="AIScoreMissionTargets" DBID="544" Version="1" CommentOut="true">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+							<Input Name="MissionTargetIDs" SigID="2" Optional="false">105</Input>
+						</Effect>
+						<Effect ID="29" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+						</Effect>
+						<Effect ID="30" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">90</Input>
+						</Effect>
+						<Effect ID="32" Type="DebugVar(Player)" DBID="208" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">88</Input>
+						</Effect>
+						<Effect ID="31" Type="DebugVar(PlayerList)" DBID="221" Version="1" CommentOut="false">
+							<Input Name="PlayerList" SigID="1" Optional="false">94</Input>
+						</Effect>
+						<Effect ID="8259" Type="AISortMissionTargets" DBID="545" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+							<Input Name="SortTargetIDs" SigID="2" Optional="false">101</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="15" Name="get non buildings" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="149" Y="639" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="9" Type="CanGetSquads" DBID="4" Version="9" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="FilterPlayer" SigID="3" Optional="true">71</Input>
+								<Input Name="FilterPlayerList" SigID="12" Optional="true">126</Input>
+								<Input Name="FilterProtoSquad" SigID="6" Optional="true">127</Input>
+								<Input Name="FilterLocation" SigID="1" Optional="true">128</Input>
+								<Input Name="FilterRadius" SigID="2" Optional="true">129</Input>
+								<Input Name="FilterBoxForward" SigID="15" Optional="true">130</Input>
+								<Input Name="FilterBoxHalfX" SigID="16" Optional="true">131</Input>
+								<Input Name="FilterBoxHalfY" SigID="17" Optional="true">132</Input>
+								<Input Name="FilterBoxHalfZ" SigID="18" Optional="true">133</Input>
+								<Input Name="FilterSquadList" SigID="10" Optional="true">134</Input>
+								<Input Name="FilterObjectType" SigID="11" Optional="true">135</Input>
+								<Input Name="IgnoreAirUnits" SigID="19" Optional="true">185</Input>
+								<Output Name="FoundSquads" SigID="9" Optional="true">136</Output>
+								<Output Name="FoundSquadCount" SigID="7" Optional="true">137</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="8270" Type="SquadListFilter" DBID="350" Version="1" CommentOut="false">
+							<Input Name="SourceSquadList" SigID="1" Optional="false">136</Input>
+							<Input Name="EntityFilterSet" SigID="2" Optional="false">168</Input>
+							<Output Name="PassedSquadList" SigID="3" Optional="true">136</Output>
+							<Output Name="FailedSquadList" SigID="4" Optional="true">172</Output>
+						</Effect>
+						<Effect ID="8261" Type="AISetScoringParms" DBID="564" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="1" Optional="false">71</Input>
+							<Input Name="Location" SigID="2" Optional="true">123</Input>
+							<Input Name="SquadList" SigID="3" Optional="true">136</Input>
+						</Effect>
+						<Effect ID="8262" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">138</Input>
+						</Effect>
+						<Effect ID="8263" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">139</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="16" Name="test 1" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="140" Y="917" GroupID="-1" TemplateID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="8264" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">141</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">142</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">143</Input>
+						</Effect>
+						<Effect ID="8265" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">144</Input>
+						</Effect>
+						<Effect ID="8266" Type="AISetPlayerAssetModifier" DBID="1035" Version="1" CommentOut="false">
+							<Input Name="Player" SigID="4" Optional="false">71</Input>
+							<Input Name="ModifyPlayer" SigID="1" Optional="true">146</Input>
+							<Input Name="ModifyPlayerList" SigID="2" Optional="true">147</Input>
+							<Input Name="Modifier" SigID="3" Optional="false">148</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>environment\unsc\unscgate_02\unscgate_02</file>
+			</asset>
+			<attach type="LightFile" name="environment\unsc\unscarmoredwall_01\light_01" tobone="boneLight01" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="environment\unsc\unscarmoredwall_01\light_01" tobone="boneLight02" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="environment\unsc\unscarmoredwall_01\light_01" tobone="boneLight03" syncanims="false" disregardorient="false" />
+			<attach type="LightFile" name="environment\unsc\unscarmoredwall_01\light_01" tobone="boneLight04" syncanims="false" disregardorient="false" />
+		</component>
+		<anim type="Outgoing" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\unsc\unscgate_02\unscgateopen_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Incoming" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\unsc\unscgate_02\unscgateclose_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\unsc\unscgate_02\unscgateopened_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>environment\unsc\unscgate_02\unscgateclosed_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+</visual>

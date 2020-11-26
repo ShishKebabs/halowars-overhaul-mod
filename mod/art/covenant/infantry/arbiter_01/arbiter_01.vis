@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\infantry\arbiter_01\arbiter_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Launch" bone="bone_launchpoint2" pointData="Metal" />
+			<point pointType="Launch" bone="bone_launchpoint3" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_run_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_sprint_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Sprint" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_sprint_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\stunned_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="Bip01" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="DualSwordAttack" exitAction="Transition" tweenTime="10" tweenToAnimation="DualSwordAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.122" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.141" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.346" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.353" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.417" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.429" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.66" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.667" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.723" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_attack_05</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.109" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.11" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.4" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.404" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.609" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.61" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.71" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.71" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.748" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_attack_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.115" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.147" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.173" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.192" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.333" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.365" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.494" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.519" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.699" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.712" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.774" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_attack_03</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.128" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.385" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.391" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.583" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.596" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.65" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_attack_04</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.128" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.385" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.455" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.641" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.692" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_ArbiterMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_01a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.058" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.103" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.256" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.288" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.346" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.404" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.436" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.667" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.699" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_02a</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.064" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.22" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.282" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.322" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.462" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_03a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.077" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.109" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.218" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.244" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_04a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.058" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.077" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.154" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.564" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_05a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.404" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.41" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.436" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.532" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.538" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_06a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.019" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.147" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.179" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.256" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.288" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.295" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.327" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.442" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.474" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.514" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_07a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.051" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.083" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.224" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.244" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.378" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.577" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_SpartanArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_04</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.78" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_05</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.85" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_06</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_07</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_08</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_09</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.85" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_10</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_ArbiterArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_EliteArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_elitearbiter_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_elitearbiter_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="RageStart" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_start_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageEnd" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_end_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.359" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.353" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_03</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.346" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_04</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.359" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="HotDropUp" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.39999994635582</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.06" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="HotDropDown" exitAction="Freeze" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.358300000429153</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport_end" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.3" end="1" name="effects\hotdrop\hot_drop_infantrySpawner" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.5" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Cinematic" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\arbiter_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageBansheeAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_banshee_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageVampireAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_vampire_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageVultureAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_vulture_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageHawkAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_hawk_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageHornetAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_hornet_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="TeleportOut" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchOut</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.0421000011265278</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.317199975252151</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.013" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="TeleportIn" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\special\teleportInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Freeze" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_teleportstretchIn</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0.00680000009015203</Value>
+							<Alpha>0.169400006532669</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0.323399990797043</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Particle" start="0" position="0.224" end="1" name="effects\Unit_FX\cov\generic\spawnInf_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="1.62" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\juke_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\jump_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dive_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\juke_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\jump_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dive_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<model name="Rage">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>covenant\infantry\arbiter_01\arbiter_01</file>
+				<damagefile>template\defaultInfantry</damagefile>
+			</asset>
+			<point pointType="Launch" bone="bone_launchpoint" pointData="Metal" />
+			<point pointType="Launch" bone="bone_launchpoint2" pointData="Metal" />
+			<point pointType="Launch" bone="bone_launchpoint3" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Spine1" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 Head" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Upperarm" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Thigh" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 L Calf" pointData="Metal" />
+			<point pointType="Impact" bone="Bip01 R Calf" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="10" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_jog_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dualsword_run_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_sprint_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Sprint" exitAction="Loop" tweenTime="10" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_sprint_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\death_02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="ClamShell" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_01_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_01_2</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_02_1</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\clamshell_02_2</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\flail_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Spin" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\spin_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\stunned_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\special\unit_hourglass_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Repair" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_idle_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\unsc\repair_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageStart" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_start_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.218" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.5" end="1" name="play_rage_start" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageLeap" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_leap_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.429" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.8" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_leap_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.516" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_leap_03</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.436" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.472" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageEnd" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_end_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0" end="1" name="play_rage_stop" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.359" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.491" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.353" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.547" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_03</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.346" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.421" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_dual_attack_04</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.288" end="1" name="play_cov_energy_sword" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.359" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.465" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="HotDropUp" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.399999976158142</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\hotdrop\hot_drop_unit_glow_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\hotdrop\hot_drop_beam_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\hotdrop\hot_drop_beam_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="HotDropDown" exitAction="Loop" tweenTime="15" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\fx_dummy_onesecond</file>
+				<weight>1</weight>
+				<progression>
+					<Stages>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>0</Value>
+							<Alpha>0.199999988079071</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+						<FloatProgressionStage>
+							<Value>1</Value>
+							<Alpha>1</Alpha>
+							<ValueVariance>0</ValueVariance>
+						</FloatProgressionStage>
+					</Stages>
+					<Cycles>1</Cycles>
+					<Loop>false</Loop>
+				</progression>
+				<tag type="Sound" start="0" position="0" end="1" name="play_pfx_teleport_end" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\hotdrop\hot_drop_beam_01" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0" end="1" name="effects\hotdrop\hot_drop_beam_02" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\hotdrop\hot_drop_landing_small" tobone="GrannyRootBone" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_ArbiterMarine_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_01a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.058" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.103" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.256" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.288" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.321" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.346" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.404" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.436" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.667" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.699" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_02a</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.064" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.192" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.22" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.282" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.322" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.462" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.5" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.66" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_03a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.077" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.109" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.218" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.244" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_04a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.058" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.077" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.103" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.154" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.564" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_05a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.404" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.41" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.436" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.532" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.538" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_06a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.019" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.147" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.179" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.256" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.288" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.295" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.327" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.442" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.474" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.514" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbitermarine_07a</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.051" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.064" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.083" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.083" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.224" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.244" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.372" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.378" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.577" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.583" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="1" end="1" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_SpartanArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_02</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_03</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_04</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.78" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_05</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.85" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_06</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_07</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_08</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_09</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.85" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>unsc\infantry\spartan_01\Fatality_SpartanArbiter_Victim_10</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Fatality_ArbiterArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.718" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.75" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_03b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_04b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.731" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_06b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.74" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="Fatality_EliteArbiter_01" exitAction="Freeze" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_elitearbiter_01b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_elitearbiter_02b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.73" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_05b</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\fatality_arbiterarbiter_07b</file>
+				<weight>1</weight>
+				<tag type="KillAndThrow" start="0" position="0.66" end="1" tobone="Bip01 Pelvis" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+		</anim>
+		<anim type="RageBansheeAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_banshee_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.201" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageVampireAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_vampire_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.201" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageVultureAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_vulture_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.201" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageHawkAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_hawk_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.201" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="RageHornetAttack" exitAction="Loop" tweenTime="5" tweenToAnimation="RageAttack">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\rage_air_hornet_attack_coolRIG01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position="0.096" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.122" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.199" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.201" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Sound" start="0" position="0.622" end="1" name="play_cov_energy_sword" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.654" end="1" name="effects\Unit_FX\cov\elite\energyswordFlow_01" tobone="bone_swordfx01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Particle" start="0" position="0.724" end="1" name="effects\Unit_FX\unsc\spartan\hijackhit_01" tobone="bone_swordfx01" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+				<tag type="Attack" start="0" position="0.73" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" />
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeLeft" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\juke_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\jump_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dive_left_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="EvadeRight" exitAction="Loop" tweenTime="5" tweenToAnimation="">
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\juke_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\jump_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>covenant\infantry\arbiter_01\dive_right_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltR" syncanims="false" disregardorient="false" />
+			<attach type="ParticleFile" name="effects\Unit_FX\cov\elite\energysword_01" tobone="BoneHiltL" syncanims="false" disregardorient="false" />
+		</anim>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Power" modelref="Rage" weight="1" />
+		<logicdata value="" modelref="Default" weight="1" />
+	</logic>
+</visual>

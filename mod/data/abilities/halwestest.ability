@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="HalwesTest.ability" Type="Ability" NextTriggerVarID="641" NextTriggerID="76" NextConditionID="58" NextEffectID="246" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+		<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="3" Type="Unit" Name="TestUnit" IsNull="false" />
+		<TriggerVar ID="4" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="439" Type="Time" Name="" IsNull="false">500</TriggerVar>
+		<TriggerVar ID="535" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+		<TriggerVar ID="536" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+		<TriggerVar ID="537" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+		<TriggerVar ID="613" Type="Trigger" Name="TriggerVar1" IsNull="false">66</TriggerVar>
+		<TriggerVar ID="637" Type="Squad" Name="SquadVar7" IsNull="true" />
+		<TriggerVar ID="638" Type="Location" Name="Loc" IsNull="false" />
+		<TriggerVar ID="642" Type="Time" Name="NextActivateTimeVar1" IsNull="false" />
+		<TriggerVar ID="643" Type="Time" Name="TimeRemainingVar1" IsNull="true" />
+		<TriggerVar ID="644" Type="Trigger" Name="TriggerVar2" IsNull="false">78</TriggerVar>
+		<TriggerVar ID="645" Type="MathOperator" Name="" IsNull="false">Add</TriggerVar>
+		<TriggerVar ID="646" Type="Trigger" Name="TriggerVar3" IsNull="false">78</TriggerVar>
+		<TriggerVar ID="647" Type="Trigger" Name="TriggerVar4" IsNull="false">77</TriggerVar>
+		<TriggerVar ID="648" Type="Trigger" Name="TriggerVar5" IsNull="false">26</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="Set Test Unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">4</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="251" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">647</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="26" Name="Check for unit death" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="572" Y="86" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="48" Type="IsAlive" DBID="80" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+						<Input Name="TestUnitList" SigID="4" Optional="true">535</Input>
+						<Input Name="TestSquad" SigID="5" Optional="true">536</Input>
+						<Input Name="TestSquadList" SigID="6" Optional="true">537</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="243" Type="GetLocation" DBID="189" Version="1" CommentOut="false">
+					<Input Name="Unit" SigID="1" Optional="true">3</Input>
+					<Input Name="Squad" SigID="2" Optional="true">637</Input>
+					<Output Name="OutputLocation" SigID="3" Optional="false">638</Output>
+				</Effect>
+				<Effect ID="244" Type="DebugVar(Location)" DBID="210" Version="1" CommentOut="false">
+					<Input Name="Location" SigID="1" Optional="false">638</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="228" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">613</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="66" Name="Cleanup and shutdown." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="585" Y="268" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="222" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="77" Name="Initialize our next activate time." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="111" Y="190" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="247" Type="GetGameTime" DBID="265" Version="1" CommentOut="false">
+					<Input Name="DeltaTime" SigID="1" Optional="true">439</Input>
+					<Output Name="ResultTime" SigID="2" Optional="false">642</Output>
+				</Effect>
+				<Effect ID="248" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">644</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="78" Name="Wait, activate, and increment next time." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="539" Y="190" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="59" Type="GameTimeReached" DBID="268" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="TestTime" SigID="1" Optional="false">642</Input>
+						<Output Name="TimeRemaining" SigID="2" Optional="true">643</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="249" Type="MathTime" DBID="263" Version="1" CommentOut="false">
+					<Input Name="FirstTime" SigID="1" Optional="false">642</Input>
+					<Input Name="MathOperator" SigID="2" Optional="false">645</Input>
+					<Input Name="SecondTime" SigID="3" Optional="false">439</Input>
+					<Output Name="ResultTime" SigID="4" Optional="false">642</Output>
+				</Effect>
+				<Effect ID="250" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">646</Input>
+				</Effect>
+				<Effect ID="252" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">648</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings>
+			<TriggerTemplateMapping ID="52" Name="\repeatingactivate.xml" Image="" X="392" Y="86" SizeX="140" SizeY="75" GroupID="-1" CommentOut="false" Obsolete="false" DoNotUse="false">
+				<InputMapping Name="Interval" SigID="-1" Optional="false" Type="Time" BindID="0">439</InputMapping>
+				<TriggerInput Name="Start" BindID="0,Activate" Color="0,255,0">38,Effect.True;0,Effect.True;</TriggerInput>
+				<TriggerInput Name="Stop" BindID="1,Deactivate" Color="255,0,0" />
+				<TriggerOutput Name="Activate" BindID="1,Effect.True">26,Activate;</TriggerOutput>
+			</TriggerTemplateMapping>
+		</TriggerMappings>
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="641" NextTriggerID="76" NextConditionID="58" NextEffectID="246" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+				<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="3" Type="Unit" Name="TestUnit" IsNull="false" />
+				<TriggerVar ID="4" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="439" Type="Time" Name="" IsNull="false">500</TriggerVar>
+				<TriggerVar ID="535" Type="UnitList" Name="TestUnitListVar1" IsNull="true" />
+				<TriggerVar ID="536" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+				<TriggerVar ID="537" Type="SquadList" Name="TestSquadListVar1" IsNull="true" />
+				<TriggerVar ID="613" Type="Trigger" Name="TriggerVar1" IsNull="false">66</TriggerVar>
+				<TriggerVar ID="637" Type="Squad" Name="SquadVar7" IsNull="true" />
+				<TriggerVar ID="638" Type="Location" Name="Loc" IsNull="false" />
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="Set Test Unit" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="33" Y="99" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">3</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">4</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue />
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="26" Name="Check for unit death" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="572" Y="86" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="48" Type="IsAlive" DBID="80" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">3</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">535</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">536</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">537</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="243" Type="GetLocation" DBID="189" Version="1" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">3</Input>
+							<Input Name="Squad" SigID="2" Optional="true">637</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">638</Output>
+						</Effect>
+						<Effect ID="244" Type="DebugVar(Location)" DBID="210" Version="1" CommentOut="false">
+							<Input Name="Location" SigID="1" Optional="false">638</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="228" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">613</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="66" Name="Cleanup and shutdown." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="585" Y="268" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="222" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

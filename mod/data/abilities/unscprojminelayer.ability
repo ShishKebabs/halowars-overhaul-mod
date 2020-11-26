@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="unscProjMineLayer.ability" Type="Ability" NextTriggerVarID="127" NextTriggerID="10" NextConditionID="65" NextEffectID="237" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+		<TriggerVar ID="97" Type="Player" Name="CurrentPlayer" IsNull="false" />
+		<TriggerVar ID="98" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="99" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="100" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="101" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+		<TriggerVar ID="102" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="103" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="106" Type="Trigger" Name="TriggerVar1" IsNull="false">9</TriggerVar>
+		<TriggerVar ID="109" Type="ProtoObject" Name="" IsNull="false">unsc_veh_warthog_01</TriggerVar>
+		<TriggerVar ID="110" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="111" Type="LOSType" Name="" IsNull="false">LOSDontCare</TriggerVar>
+		<TriggerVar ID="112" Type="Integer" Name="SearchScaleVar1" IsNull="true" />
+		<TriggerVar ID="113" Type="Vector" Name="SuggestionVar1" IsNull="true" />
+		<TriggerVar ID="114" Type="ProtoObject" Name="" IsNull="false">unsc_obj_landmine_01</TriggerVar>
+		<TriggerVar ID="117" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="118" Type="Unit" Name="CreatedUnitVar1" IsNull="true" />
+		<TriggerVar ID="119" Type="UnitList" Name="AddToUnitListVar1" IsNull="true" />
+		<TriggerVar ID="120" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+		<TriggerVar ID="121" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+		<TriggerVar ID="122" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="126" Type="String" Name="" IsNull="false">Failed Placement</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="138" Y="182" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Location" SigID="1" Optional="false">47</Output>
+					</Condition>
+					<Condition ID="61" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">97</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">98</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">99</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">100</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">101</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">102</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">103</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="233" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">106</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="9" Name="newTrigger9" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="622" Y="181" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="64" Type="CheckPlacement" DBID="82" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">97</Input>
+						<Input Name="Location" SigID="2" Optional="false">47</Input>
+						<Input Name="PlacementProtoObject" SigID="3" Optional="true">109</Input>
+						<Input Name="CheckObstruction" SigID="4" Optional="true">110</Input>
+						<Input Name="LOSType" SigID="5" Optional="true">111</Input>
+						<Input Name="SearchScale" SigID="6" Optional="true">112</Input>
+						<Output Name="Suggestion" SigID="7" Optional="true">113</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="234" Type="CreateUnit" DBID="154" Version="1" CommentOut="false">
+					<Input Name="ProtoObject" SigID="1" Optional="false">114</Input>
+					<Input Name="UnitOwner" SigID="2" Optional="false">97</Input>
+					<Input Name="CreateLocation" SigID="3" Optional="false">47</Input>
+					<Input Name="StartBuilt" SigID="4" Optional="false">117</Input>
+					<Output Name="CreatedUnit" SigID="5" Optional="true">118</Output>
+					<Output Name="AddToUnitList" SigID="6" Optional="true">119</Output>
+					<Output Name="CreatedSquad" SigID="7" Optional="true">120</Output>
+					<Output Name="AddToSquadList" SigID="8" Optional="true">121</Output>
+					<Output Name="ClearExisting" SigID="9" Optional="true">122</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="127" NextTriggerID="10" NextConditionID="65" NextEffectID="237" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="47" Type="Vector" Name="GroundZero" IsNull="false" />
+				<TriggerVar ID="97" Type="Player" Name="CurrentPlayer" IsNull="false" />
+				<TriggerVar ID="98" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="99" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="100" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="101" Type="Unit" Name="ExternUnitVar1" IsNull="true" />
+				<TriggerVar ID="102" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="103" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="106" Type="Trigger" Name="TriggerVar1" IsNull="false">9</TriggerVar>
+				<TriggerVar ID="109" Type="ProtoObject" Name="" IsNull="false">unsc_veh_warthog_01</TriggerVar>
+				<TriggerVar ID="110" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="111" Type="LOSType" Name="" IsNull="false">LOSDontCare</TriggerVar>
+				<TriggerVar ID="112" Type="Integer" Name="SearchScaleVar1" IsNull="true" />
+				<TriggerVar ID="113" Type="Vector" Name="SuggestionVar1" IsNull="true" />
+				<TriggerVar ID="114" Type="ProtoObject" Name="" IsNull="false">unsc_obj_landmine_01</TriggerVar>
+				<TriggerVar ID="117" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="118" Type="Unit" Name="CreatedUnitVar1" IsNull="true" />
+				<TriggerVar ID="119" Type="UnitList" Name="AddToUnitListVar1" IsNull="true" />
+				<TriggerVar ID="120" Type="Squad" Name="CreatedSquadVar1" IsNull="true" />
+				<TriggerVar ID="121" Type="SquadList" Name="AddToSquadListVar1" IsNull="true" />
+				<TriggerVar ID="122" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="126" Type="String" Name="" IsNull="false">Failed Placement</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="138" Y="182" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="3" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="Location" SigID="1" Optional="false">47</Output>
+							</Condition>
+							<Condition ID="61" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">97</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">98</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">99</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">100</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">101</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">102</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">103</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="233" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">106</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="6" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="9" Name="newTrigger9" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="622" Y="181" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="64" Type="CheckPlacement" DBID="82" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">97</Input>
+								<Input Name="Location" SigID="2" Optional="false">47</Input>
+								<Input Name="PlacementProtoObject" SigID="3" Optional="true">109</Input>
+								<Input Name="CheckObstruction" SigID="4" Optional="true">110</Input>
+								<Input Name="LOSType" SigID="5" Optional="true">111</Input>
+								<Input Name="SearchScale" SigID="6" Optional="true">112</Input>
+								<Output Name="Suggestion" SigID="7" Optional="true">113</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="234" Type="CreateUnit" DBID="154" Version="1" CommentOut="false">
+							<Input Name="ProtoObject" SigID="1" Optional="false">114</Input>
+							<Input Name="UnitOwner" SigID="2" Optional="false">97</Input>
+							<Input Name="CreateLocation" SigID="3" Optional="false">47</Input>
+							<Input Name="StartBuilt" SigID="4" Optional="false">117</Input>
+							<Output Name="CreatedUnit" SigID="5" Optional="true">118</Output>
+							<Output Name="AddToUnitList" SigID="6" Optional="true">119</Output>
+							<Output Name="CreatedSquad" SigID="7" Optional="true">120</Output>
+							<Output Name="AddToSquadList" SigID="8" Optional="true">121</Output>
+							<Output Name="ClearExisting" SigID="9" Optional="true">122</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="236" Type="DebugVar(String)" DBID="230" Version="1" CommentOut="true">
+							<Input Name="String" SigID="1" Optional="false">126</Input>
+						</Effect>
+					</TriggerEffectsOnFalse>
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

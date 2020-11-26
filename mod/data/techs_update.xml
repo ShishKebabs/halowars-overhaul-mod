@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TechTree version="8">
+	<Tech name="ProtectorNoCollect" type="Normal">
+		<DBID>0</DBID>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" amount="0" subtype="ActionEnable" action="GatherCollectables" relativity="Absolute">
+				<Target type="ProtoUnit">cov_air_monitor_01</Target>
+			</Effect>
+			<Effect type="Data" amount="0" subtype="ActionEnable" action="GatherCollectables" relativity="Absolute">
+				<Target type="ProtoUnit">cov_air_monitor_02</Target>
+			</Effect>
+			<Effect type="Data" amount="0" subtype="ActionEnable" action="GatherCollectables" relativity="Absolute">
+				<Target type="ProtoUnit">for_air_monitor_01</Target>
+			</Effect>
+			<Effect type="Data" amount="0" subtype="ActionEnable" action="GatherCollectables" relativity="Absolute">
+				<Target type="ProtoUnit">for_air_monitor_02</Target>
+			</Effect>
+			<Effect type="Data" amount="0" subtype="ActionEnable" action="GatherCollectables" relativity="Absolute">
+				<Target type="ProtoUnit">for_air_monitor_04</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="unsc_LeaderAnders_balance" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Prereqs>
+			<TechStatus status="Active">unsc_LeaderAnders</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type="Data" subtype="Cost" Resource="Supplies" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="Cost" Resource="Supplies" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="Cost" Resource="Supplies" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="Cost" Resource="Supplies" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_hawk_upgrade1</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="covenant_LeaderProphet_balance" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Prereqs>
+			<TechStatus status="Active">covenant_LeaderProphet</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type="Data" amount="0.75" subtype="MaximumVelocity" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_inf_prophet_01</Target>
+			</Effect>
+			<Effect type="Data" amount="0.8" subtype="MaximumVelocity" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_inf_prophet_01</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="cov_vampire_upgrade2_balance" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Prereqs>
+			<TechStatus status="Active">cov_vampire_upgrade2</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type="Data" amount="1.15" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_air_vampire_01</Target>
+			</Effect>
+		</Effects>
+		<Flag>HiddenFromStats</Flag>
+	</Tech>
+	<Tech name="cov_vampire_upgrade3_balance" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Prereqs>
+			<TechStatus status="Active">cov_vampire_upgrade3</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type="Data" amount="1.15" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_air_vampire_01</Target>
+			</Effect>
+		</Effects>
+		<Flag>HiddenFromStats</Flag>
+	</Tech>
+	<Tech name="WarthogBuildRateNerf" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" amount="1.136" subtype="buildPoints" allactions="1" relativity="Percent">
+				<Target type="ProtoSquad">unsc_veh_warthog_01</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="TurretBuff" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turret_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turret_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAI_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAI_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAV_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAV_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAA_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_bldg_turretAA_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turret_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turret_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAI_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAI_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAV_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAV_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAA_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.05" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_bldg_turretAA_01</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="ElephantBuff" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" amount="1.2" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_elephant_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.2" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">unsc_veh_elephant_02</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="unsc_LeaderAnders_balance2" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Prereqs>
+			<TechStatus status="Active">unsc_LeaderAnders</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_marine_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_marine_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_marine_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_flamemarine_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_flamemarine_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_flamemarine_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_spartan_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_spartan_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_spartan_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_warthog_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_warthog_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_warthog_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_gremlin_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_gremlin_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_gremlin_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_scorpion_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_scorpion_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_scorpion_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_wolverine_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_wolverine_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_wolverine_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cobra_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cobra_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cobra_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_hornet_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_hornet_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_hornet_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_vulture_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_turret_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_turret_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_turret_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_tech_adrenaline</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_tech_recruitTraining</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_tech_reinforcements</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_MAC_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_MAC_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_MAC_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade1</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_cryo_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="ResearchPoints" amount="1.5" relativity="Percent">
+				<Target type="Tech">unsc_hawk_upgrade1</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="GremlinTechNerf" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" subtype="Cost" Resource="Power" amount="1" relativity="Absolute">
+				<Target type="Tech">unsc_gremlin_upgrade2</Target>
+			</Effect>
+			<Effect type="Data" subtype="Cost" Resource="Power" amount="1" relativity="Absolute">
+				<Target type="Tech">unsc_gremlin_upgrade3</Target>
+			</Effect>
+			<Effect type="Data" subtype="Cost" Resource="Power" amount="1" relativity="Absolute">
+				<Target type="ProtoSquad">unsc_veh_gremlin_01</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+	<Tech name="ScarabBuff" type="Normal">
+		<DBID>1917</DBID>
+		<ResearchPoints>0</ResearchPoints>
+		<Status>OBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+				<Target type="ProtoUnit">cov_veh_scarab_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
+				<Target type="ProtoUnit">cov_veh_scarab_01</Target>
+			</Effect>
+		</Effects>
+	</Tech>
+</TechTree>

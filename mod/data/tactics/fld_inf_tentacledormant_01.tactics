@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>FloodMelee</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>0</DamagePerSecond>
+		<WeaponType>AntiInfantry</WeaponType>
+		<MaxRange>50</MaxRange>
+	</Weapon>
+	<Action>
+		<Name>FloodMeleeAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>MeleeAttack</Anim>
+		<Weapon>FloodMelee</Weapon>
+		<MainAttack />
+		<KillSelfOnAttack />
+		<InstantAttack />
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>FloodMeleeAttackAction</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>

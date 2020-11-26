@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn06\PHXscn06" soundfile="">
+	<head>
+		<model name="rhino_01" type="proto" player="3" modelfile="cpgn_veh_scn06Rhino_01" />
+		<model name="rhino_02" type="proto" player="3" modelfile="cpgn_veh_scn06Rhino_01" />
+		<model name="rhino_03" type="proto" player="3" modelfile="cpgn_veh_scn06Rhino_01" />
+		<model name="locust_01" type="proto" player="2" modelfile="cov_veh_locust_01" />
+		<model name="locust_02" type="proto" player="2" modelfile="cov_veh_locust_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_01A" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02A" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_03A" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_04A" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_05A" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_06" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_07" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_08" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_09" type="proto" modelfile="cine_objects_particleobject_01" />
+	</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_01_Camera">
+			<animatedmodel model="rhino_01" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Rhino_01_A" />
+			<animatedmodel model="rhino_02" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Rhino_02_A" />
+			<animatedmodel model="rhino_03" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Rhino_03_A" />
+			<animatedmodel model="locust_01" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Locust_01_A" />
+			<animatedmodel model="locust_02" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Locust_02_A" />
+			<animatedmodel model="particles_01A" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_01_A" />
+			<tag type="Particle" time="1.2f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="3.0f" tomodel="particles_01A" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02A" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_02_A" />
+			<tag type="Particle" time="1.17" name="effects/projectiles/unsc/plasmaartillery_01/plasmaartillery_01" lifespan="3.0f" tomodel="particles_02A" tobone="GrannyRootBone" />
+			<tag type="Particle" time="1.17" name="effects\vehicle_fx\unsc\rhino\groundshock" lifespan="3.0f" tomodel="rhino_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_03A" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_03_A" />
+			<tag type="Particle" time="2.2f" name="effects\vehicle_fx\unsc\rhino\muzzleblast" lifespan="3.0f" tomodel="particles_03A" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_04A" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_04_A" />
+			<tag type="Particle" time="2.2" name="effects/projectiles/unsc/plasmaartillery_01/plasmaartillery_01" lifespan="3.0f" tomodel="particles_04A" tobone="GrannyRootBone" />
+			<tag type="Particle" time="2.2" name="effects\vehicle_fx\unsc\rhino\groundshock" lifespan="3.0f" tomodel="rhino_02" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_06" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_06_A" />
+			<tag type="Particle" time="3" name="effects/projectiles/unsc/plasmaartillery_01/plasmaartillery_01" lifespan="2.5f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<tag type="Particle" time="3" name="effects/projectiles/unsc/plasmaartillery_01/plasmaartillery_01" lifespan="3.0f" tomodel="particles_06" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_07" animationfile="cinematic\cutscenes\Scenario_06\S06_Scene_02_Chimeras\Scene_02_Particle_07_A" />
+			<tag type="Particle" time="3.27" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="3.27" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.35" name="effects\wow_moments\S06_Scene_02_explosion" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.27" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.27" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.77" name="effects\impacts\plasma_large_green\plasma_large_green_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Particle" time="4.77" name="effects\impacts\cov\plasmaburn_01\plasmaburnexplosion_01" lifespan="3.0f" tomodel="particles_07" tobone="GrannyRootBone" />
+			<tag type="Chat" time="11.83" queue="true" duration="0" stringid="23261" sound="play_scn_06_forge_14" talkinghead="scn_06_forge_14" />--Effects----Chats--</shot>
+	</body>
+</cinematic>

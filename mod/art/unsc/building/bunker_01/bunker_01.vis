@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Built">
+	<model name="Built">
+		<component>
+			<asset type="Model">
+				<file>unsc\building\bunker_01\bunker_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="con_spike">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_spike</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_spike_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_fireball_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.02" name="play_unsc_genbuild_impact_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.02" name="play_unsc_genbuild_impact_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.03" name="play_unsc_genbuild_unfold_mix_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.05" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.13" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.18" name="play_unsc_genbuild_unfold_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.21" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.28" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.38" name="play_unsc_genbuild_radar_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_ring">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_ring</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_ring_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_fireball_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.08" name="play_unsc_genbuild_impact_03" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_crates">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_crateLand</file>
+			</asset>
+		</component>
+		<anim type="Idle">
+			<asset type="Anim">
+				<file>effects\building_FX\build_crateLand_anim</file>
+				<weight>1</weight>
+				<tag type="Sound" position="0" name="play_unsc_genbuild_boxdrop_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.01" name="play_unsc_genbuild_ambience_04" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.01" name="play_unsc_genbuild_ambience_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.1" name="play_unsc_genbuild_boxdrop_02" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.22" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.26" name="play_unsc_genbuild_boxdrop_03" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.27" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.35" name="play_unsc_genbuild_boxdrop_04" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.4" name="play_unsc_genbuild_boxdrop_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.45" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.48" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+				<tag type="Sound" position="0.53" name="play_unsc_genbuild_boxwreck_01" checkvisible="true" disregardorient="false" lifespan="0.25" />
+			</asset>
+		</anim>
+	</model>
+	<model name="con_preBuilt">
+		<component>
+			<asset type="Model">
+				<file>effects\building_FX\build_preBuilt</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="BuildingCompletion">
+		<logicdata value="p0" modelref="con_spike" />
+		<logicdata value="p35" modelref="con_ring" />
+		<logicdata value="p48" modelref="con_crates" />
+		<logicdata value="p70" modelref="con_preBuilt" />
+		<logicdata value="p100" modelref="Built" />
+	</logic>
+</visual>

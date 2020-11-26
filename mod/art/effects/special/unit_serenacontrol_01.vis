@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" defaultmodel="Default">
+	<model name="Default">
+		<component>
+			<asset type="Model">
+				<file>effects\special\unit_serenaControl_01</file>
+			</asset>
+		</component>
+		<anim type="Jimmy" exitAction="Loop" tweenTime="0" tweenToAnimation="">
+			<asset type="Anim">
+				<file>effects\special\unit_serenaControl_staticanim_01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="effects\special\unit_serenaControl_01" tobone="GrannyRootBone" syncanims="false" disregardorient="false" />
+		</anim>
+		<anim type="Idle" exitAction="Transition" tweenTime="0" tweenToAnimation="jimmy">
+			<asset type="Anim">
+				<file>effects\special\unit_serenaControl_idle_01</file>
+				<weight>1</weight>
+				<tag type="Particle" position="0.006" name="effects\special\unit_serenaWisp_01" tobone="bone_FX01" checkvisible="false" disregardorient="false" lifespan="1" />
+			</asset>
+		</anim>
+	</model>
+</visual>

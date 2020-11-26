@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CovUnitBuilder.ability" Type="Ability" NextTriggerVarID="933" NextTriggerID="111" NextConditionID="74" NextEffectID="175" External="false">
+	<TriggerGroups>
+		<Group ID="7" Name="Handle death" />
+	</TriggerGroups>
+	<TriggerVars>
+		<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+		<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+		<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+		<TriggerVar ID="3" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="4" Type="Unit" Name="Builder" IsNull="false" />
+		<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+		<TriggerVar ID="28" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="29" Type="Player" Name="ActivePlayer" IsNull="false" />
+		<TriggerVar ID="32" Type="Vector" Name="BuilderLoc" IsNull="false" />
+		<TriggerVar ID="290" Type="Squad" Name="SquadVar3" IsNull="true" />
+		<TriggerVar ID="292" Type="Trigger" Name="TriggerVar10" IsNull="false">34</TriggerVar>
+		<TriggerVar ID="300" Type="Squad" Name="SquadVar4" IsNull="true" />
+		<TriggerVar ID="301" Type="Object" Name="ObjectVar1" IsNull="true" />
+		<TriggerVar ID="402" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+		<TriggerVar ID="403" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+		<TriggerVar ID="404" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+		<TriggerVar ID="892" Type="Trigger" Name="TriggerVar6" IsNull="false">58</TriggerVar>
+		<TriggerVar ID="932" Type="Trigger" Name="TriggerVar2" IsNull="false">101</TriggerVar>
+	</TriggerVars>
+	<Triggers />
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes />
+			<Groups>
+				<GroupUI X="520" Y="431" iX="0" iY="200" oX="1447" oY="229" Width="250" Height="48" GroupID="-1" InternalGroupID="7">
+					<Title>Handle death</Title>
+				</GroupUI>
+			</Groups>
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="933" NextTriggerID="111" NextConditionID="74" NextEffectID="175" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="0" Type="Player" Name="ExternPlayerVar1" IsNull="true" />
+				<TriggerVar ID="1" Type="Power" Name="ExternPowerVar1" IsNull="true" />
+				<TriggerVar ID="2" Type="Squad" Name="ExternSquadVar1" IsNull="true" />
+				<TriggerVar ID="3" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="4" Type="Unit" Name="Builder" IsNull="false" />
+				<TriggerVar ID="5" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="6" Type="Cost" Name="ExternCostVar1" IsNull="true" />
+				<TriggerVar ID="28" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="29" Type="Player" Name="ActivePlayer" IsNull="false" />
+				<TriggerVar ID="32" Type="Vector" Name="BuilderLoc" IsNull="false" />
+				<TriggerVar ID="290" Type="Squad" Name="SquadVar3" IsNull="true" />
+				<TriggerVar ID="292" Type="Trigger" Name="TriggerVar10" IsNull="false">34</TriggerVar>
+				<TriggerVar ID="300" Type="Squad" Name="SquadVar4" IsNull="true" />
+				<TriggerVar ID="301" Type="Object" Name="ObjectVar1" IsNull="true" />
+				<TriggerVar ID="402" Type="UnitList" Name="TestUnitListVar2" IsNull="true" />
+				<TriggerVar ID="403" Type="Squad" Name="TestSquadVar1" IsNull="true" />
+				<TriggerVar ID="404" Type="SquadList" Name="TestSquadListVar2" IsNull="true" />
+				<TriggerVar ID="892" Type="Trigger" Name="TriggerVar6" IsNull="false">58</TriggerVar>
+				<TriggerVar ID="900" Type="Trigger" Name="TriggerVar1" IsNull="false">100</TriggerVar>
+				<TriggerVar ID="932" Type="Trigger" Name="TriggerVar2" IsNull="false">101</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="0" Name="newTrigger0" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="104" Y="267" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="0" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">0</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">1</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">2</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">3</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">4</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">5</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">6</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="6" Type="GetOwner" DBID="193" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">4</Input>
+							<Input Name="Squad" SigID="2" Optional="true">28</Input>
+							<Output Name="Owner" SigID="3" Optional="false">29</Output>
+						</Effect>
+						<Effect ID="70" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">292</Input>
+						</Effect>
+						<Effect ID="77" Type="GetLocation" DBID="189" Version="2" CommentOut="false">
+							<Input Name="Unit" SigID="1" Optional="true">4</Input>
+							<Input Name="Squad" SigID="2" Optional="true">300</Input>
+							<Input Name="Object" SigID="4" Optional="true">301</Input>
+							<Output Name="OutputLocation" SigID="3" Optional="false">32</Output>
+						</Effect>
+						<Effect ID="154" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">892</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="34" Name="Wait for command center to be built" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="510" Y="266" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="26" Type="IsBuilt" DBID="414" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Unit" SigID="1" Optional="true">4</Input>
+								<Input Name="Squad" SigID="2" Optional="true">290</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue />
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="58" Name="newTrigger58" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="230" Y="251" GroupID="7">
+					<TriggerConditions>
+						<And>
+							<Condition ID="42" Type="IsDead" DBID="81" Version="3" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="TestUnit" SigID="3" Optional="true">4</Input>
+								<Input Name="TestUnitList" SigID="4" Optional="true">402</Input>
+								<Input Name="TestSquad" SigID="5" Optional="true">403</Input>
+								<Input Name="TestSquadList" SigID="6" Optional="true">404</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="174" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">932</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="101" Name="newTrigger101" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="true" ConditionalTrigger="false" X="812" Y="253" GroupID="7">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="100" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

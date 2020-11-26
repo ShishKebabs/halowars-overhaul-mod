@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>FloodInfection</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>800</DamagePerSecond>
+		<UseDPSasDPA />
+		<MaxRange>2</MaxRange>
+		<WeaponType>Basic</WeaponType>
+		<MaxRange>0.35</MaxRange>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<PreAttackCooldownMin>1</PreAttackCooldownMin>
+		<PreAttackCooldownMax>4</PreAttackCooldownMax>
+	</Weapon>
+	<Weapon>
+		<Name>LesserFloodInfection</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>240</DamagePerSecond>
+		<UseDPSasDPA />
+		<MaxRange>2</MaxRange>
+		<WeaponType>Basic</WeaponType>
+		<MaxRange>0.35</MaxRange>
+		<TargetPriority type="Infantry">10</TargetPriority>
+		<PreAttackCooldownMin>1</PreAttackCooldownMin>
+		<PreAttackCooldownMax>9</PreAttackCooldownMax>
+	</Weapon>
+	<Weapon>
+		<Name>FloodMelee</Name>
+		<AttackRate>1</AttackRate>
+		<DamagePerSecond>26</DamagePerSecond>
+		<MaxRange>2</MaxRange>
+		<WeaponType>Basic</WeaponType>
+		<MaxRange>0.35</MaxRange>
+		<TargetPriority type="Infantry">10</TargetPriority>
+	</Weapon>
+	<Action>
+		<Name>FloodInfectionAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>MeleeAttack</Anim>
+		<Weapon>FloodInfection</Weapon>
+		<MainAttack />
+		<KillSelfOnAttack />
+		<MeleeRange />
+		<Infection />
+		<FindBetterAction />
+	</Action>
+	<Action>
+		<Name>LesserFloodInfectionAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>MeleeAttack</Anim>
+		<Weapon>LesserFloodInfection</Weapon>
+		<MainAttack />
+		<KillSelfOnAttack />
+		<MeleeRange />
+		<Infection />
+		<FindBetterAction />
+	</Action>
+	<Action>
+		<Name>FloodMeleeAttackAction</Name>
+		<ActionType>HandAttack</ActionType>
+		<Anim>MeleeAttack</Anim>
+		<Weapon>FloodMelee</Weapon>
+		<MainAttack />
+		<Infection />
+		<FindBetterAction />
+	</Action>
+	<Action>
+		<Name>GaggleMove</Name>
+		<ActionType>GaggleMove</ActionType>
+	</Action>
+	<Tactic>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>HardInfection</TargetType>
+			<Action>LesserFloodInfectionAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>EasyInfection</TargetType>
+			<Action>FloodInfectionAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<TargetType>NonFlying</TargetType>
+			<Action>FloodMeleeAttackAction</Action>
+		</TargetRule>
+		<PersistentAction>GaggleMove</PersistentAction>
+	</Tactic>
+</TacticData>

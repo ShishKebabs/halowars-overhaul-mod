@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Chat and VO Setup.triggerscript" Type="TriggerScript" NextTriggerVarID="126" NextTriggerID="9" NextConditionID="11" NextEffectID="190" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="95" Type="Player" Name="PlayerVar7" IsNull="true" />
+		<TriggerVar ID="96" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+		<TriggerVar ID="97" Type="String" Name="" IsNull="false">Speaker: Blah de blah, we have to hurry, blah deh blah. Now!</TriggerVar>
+		<TriggerVar ID="98" Type="MessageIndex" Name="" IsNull="false">19</TriggerVar>
+		<TriggerVar ID="99" Type="Float" Name="XPosVar3" IsNull="true" />
+		<TriggerVar ID="100" Type="Float" Name="" IsNull="false">618</TriggerVar>
+		<TriggerVar ID="101" Type="MessageJustify" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="102" Type="MessagePoint" Name="" IsNull="false">18</TriggerVar>
+		<TriggerVar ID="103" Type="Percent" Name="AlphaVar7" IsNull="true" />
+		<TriggerVar ID="104" Type="Color" Name="" IsNull="false">10,171,240</TriggerVar>
+		<TriggerVar ID="105" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="106" Type="Trigger" Name="TriggerVar8" IsNull="false">7</TriggerVar>
+		<TriggerVar ID="109" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+		<TriggerVar ID="110" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+		<TriggerVar ID="111" Type="Player" Name="PlayerVar8" IsNull="true" />
+		<TriggerVar ID="112" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+		<TriggerVar ID="113" Type="String" Name="" IsNull="false">Speaker: Blah de blah, we have to hurry, blah deh blah. Now!</TriggerVar>
+		<TriggerVar ID="114" Type="MessageIndex" Name="" IsNull="false">19</TriggerVar>
+		<TriggerVar ID="115" Type="Float" Name="XPosVar4" IsNull="true" />
+		<TriggerVar ID="116" Type="Float" Name="" IsNull="false">618</TriggerVar>
+		<TriggerVar ID="117" Type="MessageJustify" Name="" IsNull="false">1</TriggerVar>
+		<TriggerVar ID="118" Type="MessagePoint" Name="" IsNull="false">18</TriggerVar>
+		<TriggerVar ID="119" Type="Percent" Name="AlphaVar8" IsNull="true" />
+		<TriggerVar ID="120" Type="Color" Name="" IsNull="false">10,171,240</TriggerVar>
+		<TriggerVar ID="121" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="123" Type="Sound" Name="SoundVar1" IsNull="false" />
+		<TriggerVar ID="124" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="6" Name="Chat On" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="294" Y="792" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="10" Type="UserMessage" DBID="164" Version="3" CommentOut="false">
+					<Input Name="Player" SigID="11" Optional="true">95</Input>
+					<Input Name="PlayerList" SigID="1" Optional="true">96</Input>
+					<Input Name="String" SigID="2" Optional="true">97</Input>
+					<Input Name="MessageIndex" SigID="3" Optional="false">98</Input>
+					<Input Name="XPos" SigID="4" Optional="true">99</Input>
+					<Input Name="YPos" SigID="5" Optional="true">100</Input>
+					<Input Name="MessageJustify" SigID="6" Optional="true">101</Input>
+					<Input Name="MessagePoint" SigID="7" Optional="true">102</Input>
+					<Input Name="Alpha" SigID="8" Optional="true">103</Input>
+					<Input Name="Color" SigID="9" Optional="true">104</Input>
+					<Input Name="Enabled" SigID="10" Optional="false">105</Input>
+				</Effect>
+				<Effect ID="189" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">106</Input>
+				</Effect>
+				<Effect ID="7" Type="PlaySound" DBID="33" Version="2" CommentOut="false">
+					<Input Name="Sound" SigID="1" Optional="false">123</Input>
+					<Input Name="Queue" SigID="3" Optional="true">124</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="7" Name="Chat Off" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="669" Y="792" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="10" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="CompareType" SigID="1" Optional="false">109</Input>
+						<Input Name="CompareTime" SigID="2" Optional="false">110</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="34" Type="UserMessage" DBID="164" Version="3" CommentOut="false">
+					<Input Name="Player" SigID="11" Optional="true">111</Input>
+					<Input Name="PlayerList" SigID="1" Optional="true">112</Input>
+					<Input Name="String" SigID="2" Optional="true">113</Input>
+					<Input Name="MessageIndex" SigID="3" Optional="false">114</Input>
+					<Input Name="XPos" SigID="4" Optional="true">115</Input>
+					<Input Name="YPos" SigID="5" Optional="true">116</Input>
+					<Input Name="MessageJustify" SigID="6" Optional="true">117</Input>
+					<Input Name="MessagePoint" SigID="7" Optional="true">118</Input>
+					<Input Name="Alpha" SigID="8" Optional="true">119</Input>
+					<Input Name="Color" SigID="9" Optional="true">120</Input>
+					<Input Name="Enabled" SigID="10" Optional="false">121</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings />
+		<UIData>
+			<NoteNodes>
+				<NoteNodeXml X="1034" Y="889" Width="341" Height="273" GroupID="-1">
+					<Title>Chats and VO</Title>
+					<Description>On/Off, placement and color for Chats and VO lines.
+
+Stubbed in a standard 5 second pause.</Description>
+				</NoteNodeXml>
+			</NoteNodes>
+			<Groups />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="126" NextTriggerID="9" NextConditionID="11" NextEffectID="190" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="95" Type="Player" Name="PlayerVar7" IsNull="true" />
+				<TriggerVar ID="96" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+				<TriggerVar ID="97" Type="String" Name="" IsNull="false">Speaker: Blah de blah, we have to hurry, blah deh blah. Now!</TriggerVar>
+				<TriggerVar ID="98" Type="MessageIndex" Name="" IsNull="false">19</TriggerVar>
+				<TriggerVar ID="99" Type="Float" Name="XPosVar3" IsNull="true" />
+				<TriggerVar ID="100" Type="Float" Name="" IsNull="false">618</TriggerVar>
+				<TriggerVar ID="101" Type="MessageJustify" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="102" Type="MessagePoint" Name="" IsNull="false">18</TriggerVar>
+				<TriggerVar ID="103" Type="Percent" Name="AlphaVar7" IsNull="true" />
+				<TriggerVar ID="104" Type="Color" Name="" IsNull="false">10,171,240</TriggerVar>
+				<TriggerVar ID="105" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="106" Type="Trigger" Name="TriggerVar8" IsNull="false">7</TriggerVar>
+				<TriggerVar ID="109" Type="Operator" Name="" IsNull="false">GreaterThanOrEqualTo</TriggerVar>
+				<TriggerVar ID="110" Type="Time" Name="" IsNull="false">5000</TriggerVar>
+				<TriggerVar ID="111" Type="Player" Name="PlayerVar8" IsNull="true" />
+				<TriggerVar ID="112" Type="PlayerList" Name="" IsNull="false">1,2</TriggerVar>
+				<TriggerVar ID="113" Type="String" Name="" IsNull="false">Speaker: Blah de blah, we have to hurry, blah deh blah. Now!</TriggerVar>
+				<TriggerVar ID="114" Type="MessageIndex" Name="" IsNull="false">19</TriggerVar>
+				<TriggerVar ID="115" Type="Float" Name="XPosVar4" IsNull="true" />
+				<TriggerVar ID="116" Type="Float" Name="" IsNull="false">618</TriggerVar>
+				<TriggerVar ID="117" Type="MessageJustify" Name="" IsNull="false">1</TriggerVar>
+				<TriggerVar ID="118" Type="MessagePoint" Name="" IsNull="false">18</TriggerVar>
+				<TriggerVar ID="119" Type="Percent" Name="AlphaVar8" IsNull="true" />
+				<TriggerVar ID="120" Type="Color" Name="" IsNull="false">10,171,240</TriggerVar>
+				<TriggerVar ID="121" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="123" Type="Sound" Name="SoundVar1" IsNull="false" />
+				<TriggerVar ID="124" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="6" Name="Chat On" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="294" Y="792" GroupID="-1">
+					<TriggerConditions>
+						<And />
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="10" Type="UserMessage" DBID="164" Version="3" CommentOut="false">
+							<Input Name="Player" SigID="11" Optional="true">95</Input>
+							<Input Name="PlayerList" SigID="1" Optional="true">96</Input>
+							<Input Name="String" SigID="2" Optional="true">97</Input>
+							<Input Name="MessageIndex" SigID="3" Optional="false">98</Input>
+							<Input Name="XPos" SigID="4" Optional="true">99</Input>
+							<Input Name="YPos" SigID="5" Optional="true">100</Input>
+							<Input Name="MessageJustify" SigID="6" Optional="true">101</Input>
+							<Input Name="MessagePoint" SigID="7" Optional="true">102</Input>
+							<Input Name="Alpha" SigID="8" Optional="true">103</Input>
+							<Input Name="Color" SigID="9" Optional="true">104</Input>
+							<Input Name="Enabled" SigID="10" Optional="false">105</Input>
+						</Effect>
+						<Effect ID="189" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">106</Input>
+						</Effect>
+						<Effect ID="7" Type="PlaySound" DBID="33" Version="2" CommentOut="false">
+							<Input Name="Sound" SigID="1" Optional="false">123</Input>
+							<Input Name="Queue" SigID="3" Optional="true">124</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+				<Trigger ID="7" Name="Chat Off" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="669" Y="792" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="10" Type="TriggerActiveTime" DBID="7" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="CompareType" SigID="1" Optional="false">109</Input>
+								<Input Name="CompareTime" SigID="2" Optional="false">110</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="34" Type="UserMessage" DBID="164" Version="3" CommentOut="false">
+							<Input Name="Player" SigID="11" Optional="true">111</Input>
+							<Input Name="PlayerList" SigID="1" Optional="true">112</Input>
+							<Input Name="String" SigID="2" Optional="true">113</Input>
+							<Input Name="MessageIndex" SigID="3" Optional="false">114</Input>
+							<Input Name="XPos" SigID="4" Optional="true">115</Input>
+							<Input Name="YPos" SigID="5" Optional="true">116</Input>
+							<Input Name="MessageJustify" SigID="6" Optional="true">117</Input>
+							<Input Name="MessagePoint" SigID="7" Optional="true">118</Input>
+							<Input Name="Alpha" SigID="8" Optional="true">119</Input>
+							<Input Name="Color" SigID="9" Optional="true">120</Input>
+							<Input Name="Enabled" SigID="10" Optional="false">121</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse />
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

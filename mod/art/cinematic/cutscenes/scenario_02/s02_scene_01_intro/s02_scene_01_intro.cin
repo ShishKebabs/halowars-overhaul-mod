@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn02\PHXscn02" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="forge_01" type="gr2" player="1" modelfile="campaign\npc\forge_01\forge_01" />
+		<model name="warthog_01" type="proto" player="1" modelfile="cpgn_npc_forgeWarthogCinematic_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />cameralerp mode="end" duration="3.0"/&gt;
+	depthoffield enabled="true"/&gt;</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_02\S02_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_02\S02_Scene_01_Intro\Scene_01_Pelican_01" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_contrail" lifespan="20.0f" tomodel="pelican_01" tobone="bone_FXlight FR" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_contrail" lifespan="20.0f" tomodel="pelican_01" tobone="bone_FXlight FL" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_jets" lifespan="20.0f" tomodel="pelican_01" tobone="Bone Flame FR02" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_jets" lifespan="20.0f" tomodel="pelican_01" tobone="Bone Flame FL 02" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_jets" lifespan="20.0f" tomodel="pelican_01" tobone="Bone Flame RR02" />
+			<tag type="Particle" time="0.1" name="effects\wow_moments\s02_scene_01_pelican_jets" lifespan="20.0f" tomodel="pelican_01" tobone="Bone Flame RL02" />
+			<tag type="Particle" time="7" name="effects\wow_moments\s02_scene_01_pelican_idledust" lifespan="20.0f" tomodel="pelican_01" tobone="GrannyRootBone" />
+			<animatedmodel model="warthog_01" animationfile="cinematic\cutscenes\Scenario_02\S02_Scene_01_Intro\Scene_01_Warthog_01" />
+			<tag type="Particle" time="14.3" name="effects\wow_moments\s02_scene_01_warthog" lifespan="20.0f" tomodel="warthog_01" tobone="GrannyRootBone" />
+			<animatedmodel model="forge_01" animationfile="cinematic\cutscenes\Scenario_02\S02_Scene_01_Intro\Scene_01_Forge_01" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_02\S02_Scene_01_Intro\Scene_01_Particles_01" />
+			<tag type="Particle" time="8.5f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="20.0f" tomodel="particles_01" tobone="bone_projectile" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="24223" sound="play_scn_02_cutter_09" talkinghead="scn_02_cutter_09" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="24793" sound="play_scn_02_serina_04" talkinghead="scn_02_serina_04" />
+		</shot>
+	</body>
+</cinematic>

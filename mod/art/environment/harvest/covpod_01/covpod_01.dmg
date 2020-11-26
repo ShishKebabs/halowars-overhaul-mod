@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="swappart">Object08,Object08damaged</action>
+			<action type="swappart">Object02,Object02damaged</action>
+			<action type="swappart">Object01,Object01damaged</action>
+			<action type="swappart">Object09,Object09damaged</action>
+			<action type="swappart">Object06,Object06damaged</action>
+			<action type="swappart">Object11,Object11damaged</action>
+		</event>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object08damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object02damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object01damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object09damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object06damaged</action>
+			<action type="throwpart" streamereffect="effects\fire\flaming_debris_02" impactsound="impact_med_metal">Object11damaged</action>
+		</event>
+	</percentagebased>
+	<impactpointbased />
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_small">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_small">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object08damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object02damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object01damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object09damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object06damaged</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal">Object11damaged</action>
+	</shatterdeathevent>
+</damagetemplate>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CovCivTurretConstructor.power" Type="Power" NextTriggerVarID="209" NextTriggerID="41" NextConditionID="43" NextEffectID="66" External="false">
+	<TriggerGroups />
+	<TriggerVars>
+		<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+		<TriggerVar ID="6" Type="Trigger" Name="" IsNull="false">2</TriggerVar>
+		<TriggerVar ID="22" Type="Vector" Name="BuildingLoc" IsNull="false" />
+		<TriggerVar ID="38" Type="Power" Name="Power" IsNull="false" />
+		<TriggerVar ID="79" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+		<TriggerVar ID="82" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="83" Type="Unit" Name="UnitVar2" IsNull="true" />
+		<TriggerVar ID="84" Type="UnitList" Name="AddUnitListVar1" IsNull="true" />
+		<TriggerVar ID="85" Type="Squad" Name="SquadVar1" IsNull="true" />
+		<TriggerVar ID="86" Type="SquadList" Name="AddSquadListVar1" IsNull="true" />
+		<TriggerVar ID="87" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+		<TriggerVar ID="123" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+		<TriggerVar ID="124" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+		<TriggerVar ID="125" Type="Unit" Name="ExternUnitVar2" IsNull="true" />
+		<TriggerVar ID="126" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+		<TriggerVar ID="127" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+		<TriggerVar ID="152" Type="Squad" Name="SquadVar3" IsNull="true" />
+		<TriggerVar ID="153" Type="Squad" Name="TargetVar1" IsNull="true" />
+		<TriggerVar ID="168" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+		<TriggerVar ID="169" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="170" Type="LOSType" Name="" IsNull="false">LOSFullVisible</TriggerVar>
+		<TriggerVar ID="171" Type="Integer" Name="SearchScaleVar2" IsNull="true" />
+		<TriggerVar ID="172" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="173" Type="Vector" Name="SuggestionVar2" IsNull="true" />
+		<TriggerVar ID="179" Type="Float" Name="CostMultiplierVar1" IsNull="true" />
+		<TriggerVar ID="183" Type="Vector" Name="FacingVar1" IsNull="true" />
+		<TriggerVar ID="201" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="202" Type="Integer" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="203" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+		<TriggerVar ID="204" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="205" Type="LOSType" Name="" IsNull="false">LOSFullVisible</TriggerVar>
+		<TriggerVar ID="206" Type="PlacementRule" Name="PlacementRuleVar3" IsNull="true" />
+		<TriggerVar ID="207" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="210" Type="UILocation" Name="UILocationVar1" IsNull="false" />
+		<TriggerVar ID="211" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="212" Type="Integer" Name="" IsNull="false">0</TriggerVar>
+		<TriggerVar ID="213" Type="Trigger" Name="TriggerVar1" IsNull="false">44</TriggerVar>
+		<TriggerVar ID="214" Type="VectorList" Name="LocationsVar1" IsNull="false" />
+		<TriggerVar ID="215" Type="Trigger" Name="TriggerVar2" IsNull="false">43</TriggerVar>
+		<TriggerVar ID="216" Type="Integer" Name="LocationsIntVar1" IsNull="false" />
+		<TriggerVar ID="217" Type="Float" Name="PercentToAVar1" IsNull="true" />
+		<TriggerVar ID="218" Type="VectorList" Name="FirstLocationsVar1" IsNull="false" />
+		<TriggerVar ID="219" Type="VectorList" Name="SecondLocationsVar1" IsNull="false" />
+		<TriggerVar ID="220" Type="Trigger" Name="TriggerVar3" IsNull="false">45</TriggerVar>
+		<TriggerVar ID="221" Type="Operator" Name="" IsNull="false">LessThan</TriggerVar>
+		<TriggerVar ID="222" Type="Trigger" Name="TriggerVar4" IsNull="false">46</TriggerVar>
+		<TriggerVar ID="223" Type="ListPosition" Name="" IsNull="false">First</TriggerVar>
+		<TriggerVar ID="224" Type="Trigger" Name="TriggerVar5" IsNull="false">48</TriggerVar>
+		<TriggerVar ID="225" Type="Trigger" Name="TriggerVar6" IsNull="false">47</TriggerVar>
+		<TriggerVar ID="226" Type="Trigger" Name="TriggerVar7" IsNull="false">48</TriggerVar>
+		<TriggerVar ID="227" Type="Trigger" Name="TriggerVar8" IsNull="false">48</TriggerVar>
+		<TriggerVar ID="228" Type="Trigger" Name="TriggerVar9" IsNull="false">47</TriggerVar>
+		<TriggerVar ID="229" Type="Trigger" Name="TriggerVar10" IsNull="false">50</TriggerVar>
+		<TriggerVar ID="230" Type="Trigger" Name="TriggerVar11" IsNull="false">51</TriggerVar>
+		<TriggerVar ID="231" Type="Trigger" Name="TriggerVar12" IsNull="false">52</TriggerVar>
+		<TriggerVar ID="232" Type="Trigger" Name="TriggerVar13" IsNull="false">53</TriggerVar>
+		<TriggerVar ID="233" Type="Trigger" Name="TriggerVar14" IsNull="false">55</TriggerVar>
+		<TriggerVar ID="234" Type="Trigger" Name="TriggerVar15" IsNull="false">49</TriggerVar>
+		<TriggerVar ID="235" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="236" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="237" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="238" Type="Trigger" Name="TriggerVar16" IsNull="false">57</TriggerVar>
+		<TriggerVar ID="239" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="240" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="241" Type="Trigger" Name="TriggerVar17" IsNull="false">58</TriggerVar>
+		<TriggerVar ID="242" Type="Operator" Name="" IsNull="false">EqualTo</TriggerVar>
+		<TriggerVar ID="243" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+		<TriggerVar ID="244" Type="Trigger" Name="TriggerVar18" IsNull="false">59</TriggerVar>
+		<TriggerVar ID="245" Type="Trigger" Name="TriggerVar19" IsNull="false">59</TriggerVar>
+		<TriggerVar ID="246" Type="Trigger" Name="TriggerVar20" IsNull="false">60</TriggerVar>
+		<TriggerVar ID="247" Type="Trigger" Name="TriggerVar21" IsNull="false">60</TriggerVar>
+		<TriggerVar ID="248" Type="Trigger" Name="TriggerVar22" IsNull="false">61</TriggerVar>
+		<TriggerVar ID="249" Type="Trigger" Name="TriggerVar23" IsNull="false">61</TriggerVar>
+		<TriggerVar ID="250" Type="Trigger" Name="TriggerVar24" IsNull="false">52</TriggerVar>
+		<TriggerVar ID="251" Type="Trigger" Name="TriggerVar25" IsNull="false">53</TriggerVar>
+		<TriggerVar ID="252" Type="Trigger" Name="TriggerVar26" IsNull="false">54</TriggerVar>
+		<TriggerVar ID="253" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="254" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="255" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+		<TriggerVar ID="256" Type="Trigger" Name="TriggerVar27" IsNull="false">62</TriggerVar>
+		<TriggerVar ID="257" Type="Trigger" Name="TriggerVar28" IsNull="false">56</TriggerVar>
+		<TriggerVar ID="258" Type="Trigger" Name="TriggerVar29" IsNull="false">42</TriggerVar>
+		<TriggerVar ID="259" Type="Trigger" Name="TriggerVar30" IsNull="false">13</TriggerVar>
+	</TriggerVars>
+	<Triggers>
+		<Trigger ID="1" Name="Query Owner And Cost" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="10" Y="83" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="33" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+						<Output Name="ExternPower" SigID="2" Optional="true">38</Output>
+						<Output Name="ExternSquad" SigID="3" Optional="true">123</Output>
+						<Output Name="ExternSquadList" SigID="7" Optional="true">124</Output>
+						<Output Name="ExternUnit" SigID="4" Optional="true">125</Output>
+						<Output Name="ExternUnitList" SigID="6" Optional="true">126</Output>
+						<Output Name="ExternCost" SigID="5" Optional="true">127</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="4" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">6</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="44" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="2" Name="Pay Cost Or Cancel" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="363" Y="84" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="12" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Power" SigID="2" Optional="false">38</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="105" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">258</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="21" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="13" Name="newTrigger13" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1416" Y="84" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="13" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Power" SigID="2" Optional="false">38</Input>
+					</Condition>
+					<Condition ID="41" Type="CheckPlacement" DBID="82" Version="4" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+						<Input Name="Location" SigID="2" Optional="false">22</Input>
+						<Input Name="PlacementProtoObject" SigID="3" Optional="true">168</Input>
+						<Input Name="CheckObstruction" SigID="4" Optional="true">169</Input>
+						<Input Name="LOSType" SigID="5" Optional="true">170</Input>
+						<Input Name="SearchScale" SigID="6" Optional="true">171</Input>
+						<Input Name="LOSCenterOnly" SigID="8" Optional="true">172</Input>
+						<Output Name="Suggestion" SigID="7" Optional="true">173</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="64" Type="PowerChargeUseOf" DBID="77" Version="5" CommentOut="false">
+					<Input Name="Owner" SigID="1" Optional="false">1</Input>
+					<Input Name="Power" SigID="2" Optional="false">38</Input>
+					<Input Name="Squad" SigID="4" Optional="true">152</Input>
+					<Input Name="Target" SigID="5" Optional="true">153</Input>
+					<Input Name="CostMultiplier" SigID="6" Optional="true">179</Input>
+				</Effect>
+				<Effect ID="65" Type="CreateUnit" DBID="154" Version="2" CommentOut="false">
+					<Input Name="ProtoObject" SigID="1" Optional="false">79</Input>
+					<Input Name="UnitOwner" SigID="2" Optional="false">1</Input>
+					<Input Name="CreateLocation" SigID="3" Optional="false">22</Input>
+					<Input Name="Facing" SigID="10" Optional="true">183</Input>
+					<Input Name="StartBuilt" SigID="4" Optional="false">82</Input>
+					<Output Name="CreatedUnit" SigID="5" Optional="true">83</Output>
+					<Output Name="AddToUnitList" SigID="6" Optional="true">84</Output>
+					<Output Name="CreatedSquad" SigID="7" Optional="true">85</Output>
+					<Output Name="AddToSquadList" SigID="8" Optional="true">86</Output>
+					<Output Name="ClearExisting" SigID="9" Optional="true">87</Output>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="29" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="42" Name="Player NPC?" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="277" Y="191" GroupID="-1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="44" Type="PlayerIsHuman" DBID="426" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="Player" SigID="1" Optional="false">1</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="67" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">233</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="68" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">215</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="43" Name="Can Get Proper NPC Location?" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="346" Y="259" GroupID="0">
+			<TriggerConditions>
+				<And>
+					<Condition ID="45" Type="CompareInteger" DBID="14" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstInteger" SigID="1" Optional="false">202</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">211</Input>
+						<Input Name="SecondInteger" SigID="3" Optional="false">212</Input>
+					</Condition>
+					<Condition ID="46" Type="CanRetrieveExternalLocation" DBID="440" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="Location" SigID="1" Optional="false">22</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="69" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">228</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="70" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">213</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="44" Name="Get NPC Location cont." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="349" Y="440" GroupID="0">
+			<TriggerConditions>
+				<And>
+					<Condition ID="47" Type="CanRetrieveExternalLocationList" DBID="441" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Output Name="VectorList" SigID="2" Optional="false">214</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="71" Type="LocationListGetSize" DBID="291" Version="1" CommentOut="false">
+					<Input Name="LocationList" SigID="1" Optional="false">214</Input>
+					<Output Name="Size" SigID="2" Optional="false">216</Output>
+				</Effect>
+				<Effect ID="72" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">220</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="73" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">227</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="45" Name="Get NPC Location cont." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="358" Y="600" GroupID="0">
+			<TriggerConditions>
+				<And>
+					<Condition ID="48" Type="CompareInteger" DBID="14" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstInteger" SigID="1" Optional="false">202</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">221</Input>
+						<Input Name="SecondInteger" SigID="3" Optional="false">216</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="74" Type="LocationListPartition" DBID="309" Version="1" CommentOut="false">
+					<Input Name="SrcLocationList" SigID="1" Optional="false">214</Input>
+					<Input Name="PercentToA" SigID="2" Optional="true">217</Input>
+					<Input Name="NumToA" SigID="3" Optional="true">202</Input>
+					<Output Name="LocationListA" SigID="4" Optional="false">218</Output>
+					<Output Name="LocationListB" SigID="5" Optional="false">219</Output>
+				</Effect>
+				<Effect ID="75" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">222</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="76" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">226</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="46" Name="Get NPC Location cont." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="361" Y="797" GroupID="0">
+			<TriggerConditions>
+				<And>
+					<Condition ID="49" Type="CanGetOneLocation" DBID="565" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="LocationList" SigID="1" Optional="false">219</Input>
+						<Input Name="ListPosition" SigID="2" Optional="false">223</Input>
+						<Output Name="FoundLocation" SigID="3" Optional="false">22</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="77" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">225</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="78" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">224</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="47" Name="Success" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="959" Y="423" GroupID="0">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="79" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">231</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="48" Name="Fail" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="964" Y="649" GroupID="0">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="80" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">232</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="49" Name="Wait for our UILoc to have a result." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="644" Y="271" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="50" Type="UILocationWaiting" DBID="331" Version="1" CommentOut="false" Invert="true" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">210</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="81" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">229</Input>
+				</Effect>
+				<Effect ID="82" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">230</Input>
+				</Effect>
+				<Effect ID="83" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">256</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="50" Name="Handle the cancel result" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1166" Y="356" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="51" Type="UILocationCancel" DBID="17" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">210</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="84" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">238</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="51" Name="Handle the lock error result." Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1162" Y="613" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="52" Type="UILocationUILockError" DBID="327" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">210</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="85" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">241</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="52" Name="Success" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1352" Y="99" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="106" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">259</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="53" Name="Cancel" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1355" Y="237" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue />
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="54" Name="Fail" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="1357" Y="384" GroupID="-1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue />
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="55" Name="newTrigger23" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="224" Y="270" GroupID="1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="86" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">38</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">235</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="87" Type="InputUILocation" DBID="84" Version="4" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+					<Input Name="ProtoObject" SigID="3" Optional="true">203</Input>
+					<Input Name="CheckObstruction" SigID="4" Optional="true">204</Input>
+					<Input Name="LOSType" SigID="5" Optional="true">205</Input>
+					<Input Name="PlacementRule" SigID="6" Optional="true">206</Input>
+					<Input Name="LOSCenterOnly" SigID="7" Optional="true">207</Input>
+					<Output Name="UILocation" SigID="2" Optional="false">210</Output>
+				</Effect>
+				<Effect ID="88" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">234</Input>
+				</Effect>
+				<Effect ID="89" Type="SetUIPowerRadius" DBID="79" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+					<Input Name="Power" SigID="2" Optional="false">38</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="56" Name="newTrigger24" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1621" Y="92" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="53" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">201</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">236</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">237</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="90" Type="UIUnlock" DBID="330" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="91" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">244</Input>
+				</Effect>
+				<Effect ID="92" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">38</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">253</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="93" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">245</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="57" Name="newTrigger25" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1619" Y="356" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="54" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">201</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">239</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">240</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="94" Type="UIUnlock" DBID="330" Version="1" CommentOut="false">
+					<Input Name="Player" SigID="1" Optional="false">1</Input>
+				</Effect>
+				<Effect ID="95" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">246</Input>
+				</Effect>
+				<Effect ID="96" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">38</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">254</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="97" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">247</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="58" Name="newTrigger26" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1615" Y="618" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="55" Type="CompareBool" DBID="114" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="FirstBool" SigID="1" Optional="false">201</Input>
+						<Input Name="CompareType" SigID="2" Optional="false">242</Input>
+						<Input Name="SecondBool" SigID="3" Optional="false">243</Input>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="98" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">248</Input>
+				</Effect>
+				<Effect ID="99" Type="UITogglePowerOverlay" DBID="726" Version="1" CommentOut="false">
+					<Input Name="ProtoPowerID" SigID="1" Optional="false">38</Input>
+					<Input Name="OnOff" SigID="2" Optional="false">255</Input>
+					<Input Name="PlayerID" SigID="3" Optional="false">1</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse>
+				<Effect ID="100" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">249</Input>
+				</Effect>
+			</TriggerEffectsOnFalse>
+		</Trigger>
+		<Trigger ID="59" Name="newTrigger27" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2080" Y="129" GroupID="1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="101" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">250</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="60" Name="newTrigger28" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2077" Y="385" GroupID="1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="102" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">251</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="61" Name="newTrigger29" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="false" X="2097" Y="656" GroupID="1">
+			<TriggerConditions>
+				<And />
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="103" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">252</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+		<Trigger ID="62" Name="Handle the OK result" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1165" Y="89" GroupID="1">
+			<TriggerConditions>
+				<And>
+					<Condition ID="56" Type="UILocationOK" DBID="16" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+						<Input Name="UILocation" SigID="1" Optional="false">210</Input>
+						<Output Name="ResultLocation" SigID="2" Optional="false">22</Output>
+					</Condition>
+				</And>
+			</TriggerConditions>
+			<TriggerEffectsOnTrue>
+				<Effect ID="104" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+					<Input Name="Trigger" SigID="1" Optional="false">257</Input>
+				</Effect>
+			</TriggerEffectsOnTrue>
+			<TriggerEffectsOnFalse />
+		</Trigger>
+	</Triggers>
+	<EditorData>
+		<TriggerMappings>
+			<TriggerTemplateMapping ID="40" Name="\powers\poweruilocation.xml" Image="" X="758" Y="71" SizeX="570" SizeY="107" GroupID="-1" CommentOut="false" Obsolete="false" DoNotUse="false">
+				<InputMapping Name="Player" SigID="-1" Optional="false" Type="Player" BindID="0">1</InputMapping>
+				<InputMapping Name="ProtoPowerID" SigID="-1" Optional="false" Type="Power" BindID="102">38</InputMapping>
+				<InputMapping Name="Unlock" SigID="-1" Optional="false" Type="Bool" BindID="105">201</InputMapping>
+				<InputMapping Name="LocationIndex" SigID="-1" Optional="false" Type="Integer" BindID="8">202</InputMapping>
+				<InputMapping Name="ProtoObject" SigID="-1" Optional="true" Type="ProtoObject" BindID="2">203</InputMapping>
+				<InputMapping Name="CheckObstruction" SigID="-1" Optional="true" Type="Bool" BindID="3">204</InputMapping>
+				<InputMapping Name="LOSType" SigID="-1" Optional="true" Type="LOSType" BindID="4">205</InputMapping>
+				<InputMapping Name="PlacementRule" SigID="-1" Optional="true" Type="PlacementRule" BindID="5">206</InputMapping>
+				<InputMapping Name="LOSCenterOnly" SigID="-1" Optional="true" Type="Bool" BindID="6">207</InputMapping>
+				<OutputMapping Name="Location" SigID="-1" Optional="false" Type="Vector" BindID="11">22</OutputMapping>
+				<TriggerInput Name="On" BindID="0,Activate" Color="0,114,54">2,Effect.True;</TriggerInput>
+				<TriggerOutput Name="T" BindID="19,Effect.True" Color="142,223,250">13,Activate;</TriggerOutput>
+				<TriggerOutput Name="C" BindID="20,Effect.True" Color="245,238,113" />
+				<TriggerOutput Name="F" BindID="21,Effect.True" Color="255,157,0" />
+			</TriggerTemplateMapping>
+		</TriggerMappings>
+		<UIData>
+			<NoteNodes />
+			<Groups />
+			<UserClasses />
+		</UIData>
+		<TriggerSystem Name="Script" Type="Scenario" NextTriggerVarID="209" NextTriggerID="41" NextConditionID="43" NextEffectID="66" External="false">
+			<TriggerGroups />
+			<TriggerVars>
+				<TriggerVar ID="1" Type="Player" Name="PowerOwner" IsNull="false" />
+				<TriggerVar ID="6" Type="Trigger" Name="" IsNull="false">2</TriggerVar>
+				<TriggerVar ID="22" Type="Vector" Name="BuildingLoc" IsNull="false" />
+				<TriggerVar ID="38" Type="Power" Name="Power" IsNull="false" />
+				<TriggerVar ID="79" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+				<TriggerVar ID="82" Type="Bool" Name="" IsNull="false">False</TriggerVar>
+				<TriggerVar ID="83" Type="Unit" Name="UnitVar2" IsNull="true" />
+				<TriggerVar ID="84" Type="UnitList" Name="AddUnitListVar1" IsNull="true" />
+				<TriggerVar ID="85" Type="Squad" Name="SquadVar1" IsNull="true" />
+				<TriggerVar ID="86" Type="SquadList" Name="AddSquadListVar1" IsNull="true" />
+				<TriggerVar ID="87" Type="Bool" Name="ClearExistingVar1" IsNull="true">False</TriggerVar>
+				<TriggerVar ID="123" Type="Squad" Name="ExternSquadVar2" IsNull="true" />
+				<TriggerVar ID="124" Type="SquadList" Name="ExternSquadListVar1" IsNull="true" />
+				<TriggerVar ID="125" Type="Unit" Name="ExternUnitVar2" IsNull="true" />
+				<TriggerVar ID="126" Type="UnitList" Name="ExternUnitListVar1" IsNull="true" />
+				<TriggerVar ID="127" Type="Cost" Name="ExternCostVar2" IsNull="true" />
+				<TriggerVar ID="152" Type="Squad" Name="SquadVar3" IsNull="true" />
+				<TriggerVar ID="153" Type="Squad" Name="TargetVar1" IsNull="true" />
+				<TriggerVar ID="168" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+				<TriggerVar ID="169" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="170" Type="LOSType" Name="" IsNull="false">LOSFullVisible</TriggerVar>
+				<TriggerVar ID="171" Type="Integer" Name="SearchScaleVar2" IsNull="true" />
+				<TriggerVar ID="172" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="173" Type="Vector" Name="SuggestionVar2" IsNull="true" />
+				<TriggerVar ID="179" Type="Float" Name="CostMultiplierVar1" IsNull="true" />
+				<TriggerVar ID="183" Type="Vector" Name="FacingVar1" IsNull="true" />
+				<TriggerVar ID="201" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="202" Type="Integer" Name="" IsNull="false">0</TriggerVar>
+				<TriggerVar ID="203" Type="ProtoObject" Name="" IsNull="false">cov_con_turret_01</TriggerVar>
+				<TriggerVar ID="204" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+				<TriggerVar ID="205" Type="LOSType" Name="" IsNull="false">LOSFullVisible</TriggerVar>
+				<TriggerVar ID="206" Type="PlacementRule" Name="PlacementRuleVar3" IsNull="true" />
+				<TriggerVar ID="207" Type="Bool" Name="" IsNull="false">True</TriggerVar>
+			</TriggerVars>
+			<Triggers>
+				<Trigger ID="1" Name="Query Owner And Cost" Active="true" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="10" Y="83" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="33" Type="CanRetrieveExternals" DBID="192" Version="2" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Output Name="ExternPlayer" SigID="1" Optional="true">1</Output>
+								<Output Name="ExternPower" SigID="2" Optional="true">38</Output>
+								<Output Name="ExternSquad" SigID="3" Optional="true">123</Output>
+								<Output Name="ExternSquadList" SigID="7" Optional="true">124</Output>
+								<Output Name="ExternUnit" SigID="4" Optional="true">125</Output>
+								<Output Name="ExternUnitList" SigID="6" Optional="true">126</Output>
+								<Output Name="ExternCost" SigID="5" Optional="true">127</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="4" Type="TriggerActivate" DBID="31" Version="1" CommentOut="false">
+							<Input Name="Trigger" SigID="1" Optional="false">6</Input>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="44" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="2" Name="Pay Cost Or Cancel" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="363" Y="84" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="12" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Power" SigID="2" Optional="false">38</Input>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue />
+					<TriggerEffectsOnFalse>
+						<Effect ID="21" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+				<Trigger ID="13" Name="newTrigger13" Active="false" EvaluateFrequency="0" EvalLimit="0" CommentOut="false" ConditionalTrigger="true" X="1416" Y="84" GroupID="-1">
+					<TriggerConditions>
+						<And>
+							<Condition ID="13" Type="CanUsePower" DBID="27" Version="1" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Power" SigID="2" Optional="false">38</Input>
+							</Condition>
+							<Condition ID="41" Type="CheckPlacement" DBID="82" Version="4" CommentOut="false" Invert="false" Async="false" AsyncParameterKey="0">
+								<Input Name="Player" SigID="1" Optional="false">1</Input>
+								<Input Name="Location" SigID="2" Optional="false">22</Input>
+								<Input Name="PlacementProtoObject" SigID="3" Optional="true">168</Input>
+								<Input Name="CheckObstruction" SigID="4" Optional="true">169</Input>
+								<Input Name="LOSType" SigID="5" Optional="true">170</Input>
+								<Input Name="SearchScale" SigID="6" Optional="true">171</Input>
+								<Input Name="LOSCenterOnly" SigID="8" Optional="true">172</Input>
+								<Output Name="Suggestion" SigID="7" Optional="true">173</Output>
+							</Condition>
+						</And>
+					</TriggerConditions>
+					<TriggerEffectsOnTrue>
+						<Effect ID="64" Type="PowerChargeUseOf" DBID="77" Version="5" CommentOut="false">
+							<Input Name="Owner" SigID="1" Optional="false">1</Input>
+							<Input Name="Power" SigID="2" Optional="false">38</Input>
+							<Input Name="Squad" SigID="4" Optional="true">152</Input>
+							<Input Name="Target" SigID="5" Optional="true">153</Input>
+							<Input Name="CostMultiplier" SigID="6" Optional="true">179</Input>
+						</Effect>
+						<Effect ID="65" Type="CreateUnit" DBID="154" Version="2" CommentOut="false">
+							<Input Name="ProtoObject" SigID="1" Optional="false">79</Input>
+							<Input Name="UnitOwner" SigID="2" Optional="false">1</Input>
+							<Input Name="CreateLocation" SigID="3" Optional="false">22</Input>
+							<Input Name="Facing" SigID="10" Optional="true">183</Input>
+							<Input Name="StartBuilt" SigID="4" Optional="false">82</Input>
+							<Output Name="CreatedUnit" SigID="5" Optional="true">83</Output>
+							<Output Name="AddToUnitList" SigID="6" Optional="true">84</Output>
+							<Output Name="CreatedSquad" SigID="7" Optional="true">85</Output>
+							<Output Name="AddToSquadList" SigID="8" Optional="true">86</Output>
+							<Output Name="ClearExisting" SigID="9" Optional="true">87</Output>
+						</Effect>
+					</TriggerEffectsOnTrue>
+					<TriggerEffectsOnFalse>
+						<Effect ID="29" Type="Shutdown" DBID="56" Version="1" CommentOut="false" />
+					</TriggerEffectsOnFalse>
+				</Trigger>
+			</Triggers>
+			<EditorData>
+				<TriggerMappings />
+				<UIData>
+					<NoteNodes />
+					<Groups />
+					<UserClasses />
+				</UIData>
+			</EditorData>
+		</TriggerSystem>
+	</EditorData>
+</TriggerSystem>

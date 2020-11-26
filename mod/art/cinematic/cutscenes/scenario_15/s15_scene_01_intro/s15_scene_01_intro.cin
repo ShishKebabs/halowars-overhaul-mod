@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<cinematic scenariofile="CampaignUNSC\wow\PHXscn15\PHXscn15" soundfile="">
+	<head>
+		<model name="pelican_01" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="pelican_02" type="proto" player="1" modelfile="unsc_air_pelican_01" />
+		<model name="particles_01" type="proto" modelfile="cine_objects_particleobject_01" />
+		<model name="particles_02" type="proto" modelfile="cine_objects_particleobject_01" />--Particles--</head>
+	<body>
+		<shot name="Shot1" camera="cinematic\cutscenes\Scenario_15\S15_Scene_01_Intro\Scene_01_Camera">
+			<animatedmodel model="pelican_01" animationfile="cinematic\cutscenes\Scenario_15\S15_Scene_01_Intro\Scene_01_Pelican_01" />
+			<animatedmodel model="pelican_02" animationfile="cinematic\cutscenes\Scenario_15\S15_Scene_01_Intro\Scene_01_Pelican_02" />
+			<animatedmodel model="particles_01" animationfile="cinematic\cutscenes\Scenario_15\S15_Scene_01_Intro\Scene_01_Particles_01" />
+			<tag type="Particle" time="7.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="10.5f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="2.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<animatedmodel model="particles_02" animationfile="cinematic\cutscenes\Scenario_15\S15_Scene_01_Intro\Scene_01_Particles_02" />
+			<tag type="Particle" time="6.8f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="10.0f" tomodel="particles_02" tobone="GrannyRootBone" />
+			<tag type="Particle" time="8.0f" name="effects\vehicle_fx\unsc\pelican\idledust_snow_cinematic_01" lifespan="2.0f" tomodel="particles_01" tobone="GrannyRootBone" />
+			<tag type="Chat" time="0" queue="true" duration="0" stringid="24762" sound="play_scn_15_serina_01" talkinghead="scn_15_serina_01" />
+			<tag type="Chat" time="4" queue="true" duration="0" stringid="24766" sound="play_scn_15_cutter_01" talkinghead="scn_15_cutter_01" />
+			<tag type="Chat" time="8" queue="true" duration="0" stringid="24771" sound="play_scn_15_anders_01" talkinghead="scn_15_anders_02" />--Chats---</shot>
+	</body>
+</cinematic>
