@@ -1949,6 +1949,12 @@
 			<TechStatus status="Active">unsc_cyclops_upgrade1</TechStatus>
 		</Prereqs>
 		<Effects>
+			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
+				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
+			</Effect>
+			<Effect type="Data" amount="1" subtype="ActionEnable" action="RepairOther" relativity="Absolute">
+				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
+			</Effect>
 			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
 			</Effect> -->
@@ -1957,11 +1963,8 @@
 			</Effect> -->
 			<!-- <Effect type="Data" amount="1.25" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
-			</Effect> -->
-			<Effect type="Data" amount="1" subtype="ActionEnable" action="RepairOther" relativity="Absolute">
-				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>
-			<!-- <Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade2">
+			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade2">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
 			</Effect> -->
 		</Effects>
@@ -1982,6 +1985,12 @@
 			<TechStatus status="Active">unsc_cyclops_upgrade1</TechStatus>
 		</Prereqs>
 		<Effects>
+			<Effect type="Data" amount="1.6" subtype="MaximumVelocity" relativity="Percent">
+				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
+			</Effect>
+			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade3">
+				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
+			</Effect>
 			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
 			</Effect>
@@ -1991,12 +2000,6 @@
 			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
 			</Effect>-->
-			<Effect type="Data" amount="1.6" subtype="MaximumVelocity" relativity="Percent">
-				<Target type="ProtoUnit">unsc_inf_cyclops_01</Target>
-			</Effect>
-			<Effect type="Data" subtype="Icon" iconType="unit" iconName="unsc_cyclops_upgrade3">
-				<Target type="ProtoSquad">unsc_inf_cyclops_01</Target>
-			</Effect>
 		</Effects>
 	</Tech>
 	<Tech name="unsc_gremlin_upgrade1" type="Normal">
