@@ -3,12 +3,12 @@
 	<Weapon>
 		<Name>ShadeTurret</Name>
 		<AttackRate>0.5</AttackRate>
-		<DamagePerSecond>300</DamagePerSecond>
+		<DamagePerSecond>500</DamagePerSecond>
 		<WeaponType>SmallArms</WeaponType>
 		<Projectile>fx_proj_shadePlasma_02</Projectile>
 		<ImpactEffect size="Medium">cov_shadeplasma_01</ImpactEffect>
 		<MaxVelocityLead>30</MaxVelocityLead>
-		<MaxRange>100</MaxRange>
+		<MaxRange>250</MaxRange>
 		<Hardpoint>ShadeTurret</Hardpoint>
 		<TargetPriority type="Aircraft">1</TargetPriority>
 	</Weapon>
@@ -20,11 +20,10 @@
 		<Projectile>fx_proj_scarabBeam_01</Projectile>
 		<ImpactEffect size="Medium">Tankshell</ImpactEffect>
 		<MaxVelocityLead>4</MaxVelocityLead>
-		<MaxRange>100</MaxRange>
-		<MinRange>6</MinRange>
+		<MaxRange>250</MaxRange>
 		<Hardpoint>Turret</Hardpoint>
 		<EnableHeightBonusDamage />
-		<AOERadius>6</AOERadius>
+		<AOERadius>12</AOERadius>
 		<AOEPrimaryTargetFactor>0</AOEPrimaryTargetFactor>
 		<AOEDistanceFactor>0.5</AOEDistanceFactor>
 		<AOEDamageFactor>0.75</AOEDamageFactor>
@@ -34,11 +33,11 @@
 		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
 		<PhysicsForceMin>600</PhysicsForceMin>
 		<PhysicsForceMax>900</PhysicsForceMax>
-		<TargetPriority type="TurretBuilding">10</TargetPriority>
 		<TargetPriority type="GroundVehicle">5</TargetPriority>
-		<TargetPriority type="Flying">2</TargetPriority>
-		<TargetPriority type="Infantry">1</TargetPriority>
-		<TargetPriority type="Building">-3</TargetPriority>
+		<TargetPriority type="Building">3</TargetPriority>
+		<TargetPriority type="Infantry">2</TargetPriority>
+		<TargetPriority type="Flying">1</TargetPriority>
+		<TargetPriority type="TurretBuilding">-5</TargetPriority>
 	</Weapon>
 	<Action>
 		<Name>ShadeTurretAttackAction</Name>

@@ -42,7 +42,7 @@
 		<LeashDistance>45</LeashDistance>
 		<LeashDeadzone>15</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth trainerAnim="TrainAir" spawnpoint="bone_spawnPoint03">Trained</Birth>
 		<HPBar offset="0,7,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -73,7 +73,7 @@
 		<LeashDistance>45</LeashDistance>
 		<LeashDeadzone>15</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth trainerAnim="TrainAir" spawnpoint="bone_spawnPoint03">Trained</Birth>
 		<HPBar offset="0,7,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -248,8 +248,8 @@
 		<RolloverTextID>3073</RolloverTextID>
 		<PrereqTextID>233</PrereqTextID>
 		<RoleTextID>504</RoleTextID>
-		<BuildPoints>26</BuildPoints>
-		<Cost resourcetype="Supplies">350</Cost>
+		<BuildPoints>36</BuildPoints>
+		<Cost resourcetype="Supplies">500</Cost>
 		<Cost resourcetype="Power">3</Cost>
 		<SubSelectSort>5075</SubSelectSort>
 		<Birth anim0="Train" anim1="Train" anim2="Train" trainerAnim="TrainVehicles" spawnpoint="bone_spawnPoint01" endPoint="bone_endPoint01">Trained</Birth>
@@ -409,7 +409,7 @@
 			<ConformToTerrain>true</ConformToTerrain>
 		</Selection>
 	</Squad>
-	<Squad name="unsc_inf_flameMarine_01" formationType="Line" dbid="874">
+	<Squad name="unsc_inf_flameMarine_01" formationType="Flock" dbid="874">
 		<PortraitIcon>ui\flash\HUD\hud_menu\hud_menu_icons\final_unsc\inf_flamemarine</PortraitIcon>
 		<MinimapIcon size="8">Circle</MinimapIcon>
 		<MinimapScale>1</MinimapScale>
@@ -423,13 +423,13 @@
 		<LeashDistance>65</LeashDistance>
 		<LeashDeadzone>35</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>45</AggroDistance>
-		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" anim3="ElephantTrain" trainerAnim="TrainInfantry" spawnpoint="bone_spawnPoint02" endPoint="bone_endPoint02">Trained</Birth>
+		<AggroDistance>21</AggroDistance>
+		<Birth spawnpoint="bone_endPoint02" endPoint="bone_endPoint02">Trained</Birth>
 		<HPBar offset="0,9,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
-			<Unit count="2" role="normal">unsc_inf_flameMarine_01</Unit>
+			<Unit count="3" role="normal">unsc_inf_flameMarine_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_marine_walk_01</Sound>
 		<Sound Type="StopMove">stop_ani_marine_walk_01</Sound>
@@ -529,14 +529,14 @@
 		<RolloverTextID>3001</RolloverTextID>
 		<StatsNameID>25679</StatsNameID>
 		<RoleTextID>500</RoleTextID>
-		<BuildPoints>8</BuildPoints>
+		<BuildPoints>10</BuildPoints>
 		<Cost resourcetype="Supplies">100</Cost>
 		<SubSelectSort>3000</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
-		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" anim3="ElephantTrain" trainerAnim="TrainInfantry" spawnpoint="bone_spawnPoint02" endPoint="bone_endPoint02">Trained</Birth>
+		<AggroDistance>19.5</AggroDistance>
+		<Birth spawnpoint="bone_endPoint02" endPoint="bone_endPoint02">Trained</Birth>
 		<HPBar offset="0,9,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
@@ -639,20 +639,20 @@
 		<DisplayNameID>3000</DisplayNameID>
 		<RolloverTextID>3001</RolloverTextID>
 		<RoleTextID>500</RoleTextID>
-		<BuildPoints>8</BuildPoints>
+		<BuildPoints>10</BuildPoints>
 		<Cost resourcetype="Supplies">100</Cost>
 		<SubSelectSort>3000</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
-		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" anim3="ElephantTrain" trainerAnim="TrainInfantry" spawnpoint="bone_spawnPoint02" endPoint="bone_endPoint01">Trained</Birth>
+		<AggroDistance>19.5</AggroDistance>
+		<Birth spawnpoint="bone_endPoint02" endPoint="bone_endPoint02">Trained</Birth>
 		<HPBar offset="0,9,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
 			<Unit count="4" role="normal">unsc_inf_marine_01</Unit>
-			<Unit count="1" role="normal">unsc_inf_marine_02</Unit>
+			<Unit count="2" role="normal">unsc_inf_marine_02</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_marine_walk_01</Sound>
 		<Sound Type="StopMove">stop_ani_marine_walk_01</Sound>
@@ -750,14 +750,14 @@
 		<DisplayNameID>3000</DisplayNameID>
 		<RolloverTextID>3001</RolloverTextID>
 		<RoleTextID>500</RoleTextID>
-		<BuildPoints>8</BuildPoints>
+		<BuildPoints>10</BuildPoints>
 		<Cost resourcetype="Supplies">100</Cost>
 		<SubSelectSort>3000</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
-		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" anim3="ElephantTrain" trainerAnim="TrainInfantry" spawnpoint="bone_spawnPoint02" endPoint="bone_endPoint01">Trained</Birth>
+		<AggroDistance>19.5</AggroDistance>
+		<Birth spawnpoint="bone_endPoint02" endPoint="bone_endPoint02">Trained</Birth>
 		<HPBar offset="0,9,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
@@ -861,14 +861,13 @@
 		<RolloverTextID>23525</RolloverTextID>
 		<PrereqTextID>231</PrereqTextID>
 		<RoleTextID>507</RoleTextID>
-		<BuildPoints>20</BuildPoints>
-		<Cost resourcetype="Supplies">125</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<BuildPoints>30</BuildPoints>
+		<Cost resourcetype="Supplies">250</Cost>
 		<SubSelectSort>3200</SubSelectSort>
 		<LeashDistance>80</LeashDistance>
 		<LeashDeadzone>20</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>40</AggroDistance>
+		<AggroDistance>5</AggroDistance>
 		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" trainerAnim="TrainVehicles" spawnpoint="bone_spawnPoint01" endPoint="bone_endPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -891,13 +890,13 @@
 		<StatsNameID>25679</StatsNameID>
 		<RoleTextID>500</RoleTextID>
 		<Cost resourcetype="Supplies">100</Cost>
-		<BuildPoints>8</BuildPoints>
+		<BuildPoints>10</BuildPoints>
 		<SubSelectSort>3000</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<Birth anim0="Train" anim1="Train" anim2="TrainAirlock" anim3="ElephantTrain" trainerAnim="TrainInfantry" spawnpoint="bone_spawnPoint02" endPoint="bone_endPoint02">Trained</Birth>
-		<AggroDistance>35</AggroDistance>
+		<Birth spawnpoint="bone_endPoint02" endPoint="bone_endPoint02">Trained</Birth>
+		<AggroDistance>19.5</AggroDistance>
 		<HPBar offset="0,9,0">UNSC_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
@@ -932,8 +931,8 @@
 		<RolloverTextID>3015</RolloverTextID>
 		<PrereqTextID>231</PrereqTextID>
 		<RoleTextID>519</RoleTextID>
-		<BuildPoints>16</BuildPoints>
-		<Cost resourcetype="Supplies">300</Cost>
+		<BuildPoints>30</BuildPoints>
+		<Cost resourcetype="Supplies">500</Cost>
 		<Cost resourcetype="Power">1</Cost>
 		<SubSelectSort>1000</SubSelectSort>
 		<LeashDistance>35</LeashDistance>
@@ -1080,10 +1079,10 @@
 		<LeashDistance>45</LeashDistance>
 		<LeashDeadzone>15</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint03">Trained</Birth>
 		<Cost resourcetype="Supplies">200</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">0</Cost>
 		<SubSelectSort>8100</SubSelectSort>
 		<HPBar offset="0,7,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1108,7 +1107,7 @@
 		<RoleTextID>505</RoleTextID>
 		<BuildPoints>19</BuildPoints>
 		<Cost resourcetype="Supplies">250</Cost>
-		<Cost resourcetype="Power">2</Cost>
+		<Cost resourcetype="Power">1</Cost>
 		<SubSelectSort>8000</SubSelectSort>
 		<LeashDistance>25</LeashDistance>
 		<LeashDeadzone>5</LeashDeadzone>
@@ -1182,9 +1181,9 @@
 		<RolloverTextID>3071</RolloverTextID>
 		<PrereqTextID>243</PrereqTextID>
 		<RoleTextID>507</RoleTextID>
-		<BuildPoints>23</BuildPoints>
+		<BuildPoints>20</BuildPoints>
 		<Cost resourcetype="Supplies">300</Cost>
-		<Cost resourcetype="Power">2</Cost>
+		<Cost resourcetype="Power">1</Cost>
 		<SubSelectSort>6300</SubSelectSort>
 		<LeashDistance>15</LeashDistance>
 		<LeashDeadzone>5</LeashDeadzone>
@@ -1213,7 +1212,7 @@
 		<RolloverTextID>3061</RolloverTextID>
 		<PrereqTextID>246</PrereqTextID>
 		<RoleTextID>508</RoleTextID>
-		<BuildPoints>120</BuildPoints>
+		<BuildPoints>80</BuildPoints>
 		<LeashDistance>15</LeashDistance>
 		<LeashDeadzone>5</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
@@ -1246,7 +1245,7 @@
 		<RoleTextID>501</RoleTextID>
 		<BuildPoints>26</BuildPoints>
 		<Cost resourcetype="Supplies">350</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">0</Cost>
 		<SubSelectSort>6500</SubSelectSort>
 		<LeashDistance>20</LeashDistance>
 		<LeashDeadzone>5</LeashDeadzone>
@@ -1275,12 +1274,12 @@
 		<PrereqTextID>240</PrereqTextID>
 		<RoleTextID>518</RoleTextID>
 		<BuildPoints>15</BuildPoints>
-		<Cost resourcetype="Supplies">200</Cost>
+		<Cost resourcetype="Supplies">150</Cost>
 		<SubSelectSort>620</SubSelectSort>
 		<LeashDistance>45</LeashDistance>
 		<LeashDeadzone>15</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,10,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1318,7 +1317,7 @@
 		<LeashDistance>45</LeashDistance>
 		<LeashDeadzone>15</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,9,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1413,7 +1412,7 @@
 		<LeashDistance>80</LeashDistance>
 		<LeashDeadzone>40</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>40</AggroDistance>
+		<AggroDistance>20</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,10,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1471,7 +1470,7 @@
 		<LeashDistance>80</LeashDistance>
 		<LeashDeadzone>40</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>40</AggroDistance>
+		<AggroDistance>20</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,10,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1582,7 +1581,7 @@
 		<LeashDistance>80</LeashDistance>
 		<LeashDeadzone>40</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>40</AggroDistance>
+		<AggroDistance>20</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<Cost resourcetype="Supplies">125</Cost>
 		<Cost resourcetype="Power">1</Cost>
@@ -1694,20 +1693,20 @@
 		<RolloverTextID>3047</RolloverTextID>
 		<PrereqTextID>241</PrereqTextID>
 		<RoleTextID>519</RoleTextID>
-		<BuildPoints>24</BuildPoints>
+		<BuildPoints>16</BuildPoints>
 		<Cost resourcetype="Supplies">150</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">0</Cost>
 		<SubSelectSort>4800</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>25</AggroDistance>
+		<AggroDistance>18</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
-			<Unit count="2" role="normal">cov_inf_brute_01</Unit>
+			<Unit count="3" role="normal">cov_inf_brute_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -1818,7 +1817,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -1933,7 +1932,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2045,7 +2044,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2161,7 +2160,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2272,13 +2271,13 @@
 		<DisplayNameID>24165</DisplayNameID>
 		<RolloverTextID>24166</RolloverTextID>
 		<RoleTextID>24167</RoleTextID>
-		<BuildPoints>20</BuildPoints>
+		<BuildPoints>30</BuildPoints>
 		<Cost resourcetype="Supplies">250</Cost>
 		<SubSelectSort>4100</SubSelectSort>
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>30</AggroDistance>
+		<AggroDistance>19</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint03">Trained</Birth>
 		<HPBar offset="0,9,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2307,7 +2306,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2422,7 +2421,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2430,7 +2429,7 @@
 		<Units>
 			<Unit count="1" role="normal">cov_inf_eliteLeader_01</Unit>
 			<Unit count="3" role="normal">cov_inf_grunt_01</Unit>
-			<Unit count="1" role="normal">cov_inf_grunt_02</Unit>
+			<Unit count="2" role="normal">cov_inf_grunt_02</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -2538,7 +2537,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_Health</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2655,7 +2654,7 @@
 		<LeashDistance>55</LeashDistance>
 		<LeashDeadzone>25</LeashDeadzone>
 		<LeashRecallDelay>2500</LeashRecallDelay>
-		<AggroDistance>35</AggroDistance>
+		<AggroDistance>19.5</AggroDistance>
 		<Birth anim0="Train" trainerAnim="Research" spawnpoint="bone_spawnPoint01" endPoint="bone_spawnPoint01">Trained</Birth>
 		<HPBar offset="0,8,0">COV_HealthShield</HPBar>
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
@@ -2757,7 +2756,7 @@
 			<ConformToTerrain>true</ConformToTerrain>
 		</Selection>
 	</Squad>
-	<Squad name="cov_inf_hunter_01" formationType="Line" dbid="910">
+	<Squad name="cov_inf_hunter_01" formationType="Flock" dbid="910">
 		<PortraitIcon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\inf_hunter</PortraitIcon>
 		<MinimapIcon size="8">Circle</MinimapIcon>
 		<MinimapScale>1</MinimapScale>
@@ -2767,7 +2766,7 @@
 		<PrereqTextID>242</PrereqTextID>
 		<BuildPoints>20</BuildPoints>
 		<Cost resourcetype="Supplies">250</Cost>
-		<Cost resourcetype="Power">1</Cost>
+		<Cost resourcetype="Power">0</Cost>
 		<SubSelectSort>4700</SubSelectSort>
 		<LeashDistance>35</LeashDistance>
 		<LeashDeadzone>5</LeashDeadzone>
@@ -2836,7 +2835,7 @@
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
-			<Unit count="2" role="normal">creep_rebel_sniper_01</Unit>
+			<Unit count="4" role="normal">creep_rebel_sniper_01</Unit>
 		</Units>
 		<Flag>Repairable</Flag>
 		<Flag>KBAware</Flag>
@@ -2861,7 +2860,7 @@
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
-			<Unit count="4" role="normal">creep_rebel_infantry_01</Unit>
+			<Unit count="15" role="normal">creep_rebel_infantry_01</Unit>
 		</Units>
 		<Flag>Repairable</Flag>
 		<Flag>KBAware</Flag>
@@ -2886,7 +2885,7 @@
 		<AbilityRecoveryBar Centered="UNSC_Ability_Centered">UNSC_Ability</AbilityRecoveryBar>
 		<VeterancyBar Centered="UNSC_Star_Centered">UNSC_Star</VeterancyBar>
 		<Units>
-			<Unit count="6" role="normal">creep_inf_grunt_01</Unit>
+			<Unit count="10" role="normal">creep_inf_grunt_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -3739,7 +3738,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="9" role="normal">fld_inf_infectionForm_01</Unit>
+			<Unit count="15" role="normal">fld_inf_infectionForm_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_fif_movement</Sound>
 		<Sound Type="StopMove">stop_fif_movement</Sound>
@@ -3764,7 +3763,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="3" role="normal">fld_inf_infectionForm_01</Unit>
+			<Unit count="15" role="normal">fld_inf_infectionForm_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_fif_movement</Sound>
 		<Sound Type="StopMove">stop_fif_movement</Sound>
@@ -3789,7 +3788,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="3" role="normal">fld_inf_infectionForm_02</Unit>
+			<Unit count="15" role="normal">fld_inf_infectionForm_02</Unit>
 		</Units>
 		<Sound Type="StartMove">play_fif_movement</Sound>
 		<Sound Type="StopMove">stop_fif_movement</Sound>
@@ -3814,7 +3813,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>20</AggroDistance>
 		<Units>
-			<Unit count="2" role="normal">fld_inf_infectedBrute_01</Unit>
+			<Unit count="3" role="normal">fld_inf_infectedBrute_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -3862,7 +3861,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>35</AggroDistance>
 		<Units>
-			<Unit count="8" role="normal">fld_inf_infectedGrunt_01</Unit>
+			<Unit count="10" role="normal">fld_inf_infectedGrunt_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -3886,7 +3885,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="2" role="normal">fld_inf_infectedElite_01</Unit>
+			<Unit count="3" role="normal">fld_inf_infectedElite_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_cov_grunts_walk</Sound>
 		<Sound Type="StopMove">stop_ani_cov_grunts_move</Sound>
@@ -3910,7 +3909,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="2" role="normal">fld_inf_flameMarine_01</Unit>
+			<Unit count="3" role="normal">fld_inf_flameMarine_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_marine_walk_01</Sound>
 		<Sound Type="StopMove">stop_ani_marine_walk_01</Sound>
@@ -3934,7 +3933,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>30</AggroDistance>
 		<Units>
-			<Unit count="4" role="normal">fld_inf_infectedMarine_01</Unit>
+			<Unit count="10" role="normal">fld_inf_infectedMarine_01</Unit>
 		</Units>
 		<Sound Type="StartMove">play_ani_marine_walk_01</Sound>
 		<Sound Type="StopMove">stop_ani_marine_walk_01</Sound>
@@ -4160,7 +4159,7 @@
 		<LeashRecallDelay>2500</LeashRecallDelay>
 		<AggroDistance>40</AggroDistance>
 		<Units>
-			<Unit count="4" role="normal">fld_air_swarm_01</Unit>
+			<Unit count="6" role="normal">fld_air_swarm_01</Unit>
 		</Units>
 		<Selection>
 			<ConformToTerrain>false</ConformToTerrain>

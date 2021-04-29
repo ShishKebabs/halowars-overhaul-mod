@@ -5,7 +5,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>240</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<Hardpoint>Torso</Hardpoint>
 		<AOERadius>4</AOERadius>
 		<AOEPrimaryTargetFactor>0.25</AOEPrimaryTargetFactor>
@@ -19,7 +19,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>750</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<Hardpoint>Torso</Hardpoint>
 		<AOERadius>6</AOERadius>
 		<AOEPrimaryTargetFactor>0.25</AOEPrimaryTargetFactor>
@@ -208,6 +208,12 @@
 		<WorkRate>1</WorkRate>
 		<WorkRange>3</WorkRange>
 	</Action>
+	<Action>
+		<Name>MedicHeal</Name>
+		<ActionType>Heal</ActionType>
+		<WorkRate>20</WorkRate>
+		<MinIdleDuration>0</MinIdleDuration>
+	</Action>
 	<Tactic>
 		<TargetRule>
 			<GaiaOwned />
@@ -266,5 +272,6 @@
 		</TargetRule>
 		<PersistentSquadAction>Cloak</PersistentSquadAction>
 		<PersistentSquadAction>FiendishReturn</PersistentSquadAction>
+		<PersistentAction>MedicHeal</PersistentAction>
 	</Tactic>
 </TacticData>
