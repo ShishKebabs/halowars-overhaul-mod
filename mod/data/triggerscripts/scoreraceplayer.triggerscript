@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ScoreRacePlayer.triggerscript" Type="TriggerScript" NextTriggerVarID="593" NextTriggerID="65" NextConditionID="78" NextEffectID="152" External="false">
 	<TriggerGroups>
-		<Group ID="1" Name="Shutdown and cleanup on player loss"></Group>
+		<Group ID="1" Name="Shutdown and cleanup on player loss">21,22</Group>
 		<Group ID="2" Name="Base loss condition w/ timer">4,5,6,7,9,11,12,30</Group>
 		<Group ID="3" Name="Loss condition on no military or bases">1,28,31</Group>
 		<Group ID="4" Name="Empty game sanity check">40,41</Group>
-		<Group ID="5" Name="AutoResign AI players if human allies resign"></Group>
+		<Group ID="5" Name="AutoResign AI players if human allies resign">49,51,52,53,54,57,58</Group>
 	</TriggerGroups>
 	<TriggerVars>
 		<TriggerVar ID="0" Type="Player" Name="Player" IsNull="false" />
@@ -32,7 +32,7 @@
 		<TriggerVar ID="32" Type="UnitList" Name="FoundUnitsVar2" IsNull="true" />
 		<TriggerVar ID="33" Type="Integer" Name="FoundUnitCountVar2" IsNull="true" />
 		<TriggerVar ID="35" Type="Bool" Name="" IsNull="false">False</TriggerVar>
-		<TriggerVar ID="36" Type="Time" Name="" IsNull="false">120000</TriggerVar>
+		<TriggerVar ID="36" Type="Time" Name="" IsNull="false">60000</TriggerVar>
 		<TriggerVar ID="37" Type="Time" Name="" IsNull="false">0</TriggerVar>
 		<TriggerVar ID="39" Type="Integer" Name="Timer" IsNull="false" />
 		<TriggerVar ID="42" Type="PlayerList" Name="FilterPlayerListVar3" IsNull="true" />
