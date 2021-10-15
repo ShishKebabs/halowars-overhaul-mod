@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <TriggerSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="WaveAttackPlayer.triggerscript" Type="TriggerScript" NextTriggerVarID="2623" NextTriggerID="309" NextConditionID="161" NextEffectID="632" External="false">
 	<TriggerGroups>
-		<Group ID="1" Name="Shutdown and cleanup"></Group>
+		<Group ID="1" Name="Shutdown and cleanup">21,22</Group>
 		<Group ID="2" Name="Base loss condition w/ timer">4,85</Group>
 		<Group ID="3" Name="Loss condition on no military or bases">1,28</Group>
 		<Group ID="4" Name="Empty game sanity check">40,41</Group>
-		<Group ID="5" Name="AutoResign AI players if human allies resign"></Group>
+		<Group ID="5" Name="AutoResign AI players if human allies resign">49,51,52,53,54,57,58</Group>
 		<Group ID="6" Name="Initailize">66,68,70,71,72,73,74,75,76,77</Group>
 		<Group ID="7" Name="Handle Waves">79,80,86,87,88,90,92,93,175,232,239,240,241,242,243,244,245,246,251,252,253,266,271,290,291,94,98,116,117,118,119,123,124,125,126,129,133,134,135,136,137,138,139,140,141,142,143,186,187,295,95,97,145,146,147,149,150,151,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,183,285,99,214,215,216,176,177,189,190,192,194,195,197,199,200,201,202,203,204,205,206,286,298,299,217,218,219,220,222,223,224,225,227,84,247,249,263,267,268,269,270</Group>
 		<Group ID="8" Name="Handle Timers">81,83,257,258,259,260,261</Group>
@@ -242,7 +242,7 @@
 		<TriggerVar ID="893" Type="Bool" Name="InvertRelationVar23" IsNull="true">False</TriggerVar>
 		<TriggerVar ID="894" Type="Bool" Name="EffectAllActionsVar9" IsNull="true">False</TriggerVar>
 		<TriggerVar ID="896" Type="PlayerList" Name="PlayerListVar30" IsNull="true" />
-		<TriggerVar ID="897" Type="ProtoSquad" Name="" IsNull="false">unsc_veh_scorpion_01</TriggerVar>
+		<TriggerVar ID="897" Type="ProtoSquad" Name="" IsNull="false">unsc_veh_cobra_01</TriggerVar>
 		<TriggerVar ID="898" Type="Float" Name="" IsNull="false">0</TriggerVar>
 		<TriggerVar ID="899" Type="Float" Name="AmountAsPercentVar24" IsNull="true" />
 		<TriggerVar ID="900" Type="String" Name="ActionNameVar24" IsNull="true" />
@@ -649,10 +649,10 @@
 		<TriggerVar ID="1623" Type="Trigger" Name="TriggerVar14" IsNull="false">119</TriggerVar>
 		<TriggerVar ID="1624" Type="Trigger" Name="TriggerVar15" IsNull="false">126</TriggerVar>
 		<TriggerVar ID="1629" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
-		<TriggerVar ID="1630" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_warthog_01,unsc_veh_warthog_01,unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
+		<TriggerVar ID="1630" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_warthog_01,unsc_veh_warthog_01,unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_cobra_01,unsc_veh_cobra_01</TriggerVar>
 		<TriggerVar ID="1631" Type="Bool" Name="" IsNull="false">True</TriggerVar>
 		<TriggerVar ID="1633" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
-		<TriggerVar ID="1634" Type="ProtoSquadList" Name="" IsNull="false">unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
+		<TriggerVar ID="1634" Type="ProtoSquadList" Name="" IsNull="false">unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_veh_cobra_01,unsc_veh_cobra_01,unsc_veh_cobra_01</TriggerVar>
 		<TriggerVar ID="1635" Type="Bool" Name="" IsNull="false">True</TriggerVar>
 		<TriggerVar ID="1637" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
 		<TriggerVar ID="1638" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
@@ -7498,7 +7498,7 @@
 				<TriggerVar ID="893" Type="Bool" Name="InvertRelationVar23" IsNull="true">False</TriggerVar>
 				<TriggerVar ID="894" Type="Bool" Name="EffectAllActionsVar9" IsNull="true">False</TriggerVar>
 				<TriggerVar ID="896" Type="PlayerList" Name="PlayerListVar30" IsNull="true" />
-				<TriggerVar ID="897" Type="ProtoSquad" Name="" IsNull="false">unsc_veh_scorpion_01</TriggerVar>
+				<TriggerVar ID="897" Type="ProtoSquad" Name="" IsNull="false">unsc_veh_cobra_01</TriggerVar>
 				<TriggerVar ID="898" Type="Float" Name="" IsNull="false">0</TriggerVar>
 				<TriggerVar ID="899" Type="Float" Name="AmountAsPercentVar24" IsNull="true" />
 				<TriggerVar ID="900" Type="String" Name="ActionNameVar24" IsNull="true" />
@@ -7905,10 +7905,10 @@
 				<TriggerVar ID="1623" Type="Trigger" Name="TriggerVar14" IsNull="false">119</TriggerVar>
 				<TriggerVar ID="1624" Type="Trigger" Name="TriggerVar15" IsNull="false">126</TriggerVar>
 				<TriggerVar ID="1629" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
-				<TriggerVar ID="1630" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_warthog_01,unsc_veh_warthog_01,unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
+				<TriggerVar ID="1630" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_warthog_01,unsc_veh_warthog_01,unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_cobra_01,unsc_veh_cobra_01</TriggerVar>
 				<TriggerVar ID="1631" Type="Bool" Name="" IsNull="false">True</TriggerVar>
 				<TriggerVar ID="1633" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
-				<TriggerVar ID="1634" Type="ProtoSquadList" Name="" IsNull="false">unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
+				<TriggerVar ID="1634" Type="ProtoSquadList" Name="" IsNull="false">unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_inf_marine_01,unsc_veh_cobra_01,unsc_veh_cobra_01,unsc_veh_cobra_01</TriggerVar>
 				<TriggerVar ID="1635" Type="Bool" Name="" IsNull="false">True</TriggerVar>
 				<TriggerVar ID="1637" Type="ProtoSquad" Name="" IsNull="true">unsc_inf_marine_01</TriggerVar>
 				<TriggerVar ID="1638" Type="ProtoSquadList" Name="" IsNull="false">unsc_veh_wolverine_01,unsc_veh_wolverine_01,unsc_veh_scorpion_01,unsc_veh_scorpion_01</TriggerVar>
