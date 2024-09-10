@@ -1725,13 +1725,13 @@
 			<Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
 				<Target type="ProtoSquad">unsc_inf_marine_03</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Damage" action="RocketWeapon" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_medic_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Damage" action="RocketWeapon" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_marine_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Damage" action="RocketWeapon" relativity="Percent">
 				<Target type="ProtoUnit">unsc_inf_marine_02</Target>
 			</Effect>
 			<Effect type="TransformProtoSquad" FromType="unsc_inf_marine_01" ToType="unsc_inf_marine_03" />
@@ -2098,25 +2098,13 @@
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="machineGunAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="3" subtype="Hitpoints" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
-			<Effect type="Data" amount="3" subtype="Hitpoints" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
-			</Effect>
-			<!-- <Effect type="Data" amount="1" subtype="Techlevel" allactions="1" relativity="Absolute">
-				<Target type="ProtoSquad">unsc_veh_warthog_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="1" subtype="ActionEnable" action="machineGunAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
@@ -2124,7 +2112,7 @@
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
-			</Effect>-->
+			</Effect>
 		</Effects>
 	</Tech>
 	<Tech name="unsc_warthog_upgrade2" type="Normal">
@@ -2151,31 +2139,31 @@
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="GrenadeLauncherAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+		 <Effect type="Data" amount="1.5" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.0" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="2.0" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="AmmoMax" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="AmmoRegenRate" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1" subtype="ActionEnable" action="GrenadeLauncherAttackAction" relativity="Absolute">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="Percent">
+			<Effect type="Data" amount="1.5" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.0" subtype="Hitpoints" relativity="Percent">
+			<Effect type="Data" amount="2.0" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="AmmoMax" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.5" subtype="AmmoRegenRate" relativity="Percent">
+			<Effect type="Data" amount="1.25" subtype="AmmoRegenRate" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
 		</Effects>
@@ -2210,9 +2198,6 @@
 			<Effect type="Data" amount="1.75" subtype="Damage" allactions="1" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
-			<Effect type="Data" amount="1.0" subtype="Hitpoints" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
-			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthog_01</Target>
 			</Effect>
@@ -2226,9 +2211,6 @@
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.75" subtype="Damage" allactions="1" relativity="Percent">
-				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
-			</Effect>
-			<Effect type="Data" amount="1.0" subtype="Hitpoints" relativity="Percent">
 				<Target type="ProtoUnit">unsc_veh_warthogLCE_01</Target>
 			</Effect>
 			<Effect type="Data" amount="1.25" subtype="AmmoMax" relativity="Percent">
