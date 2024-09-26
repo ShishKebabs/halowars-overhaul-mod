@@ -10,7 +10,7 @@
 	<sunRotation>271.836</sunRotation>
 	<sunUnitColor>197,212,167</sunUnitColor>
 	<setTerrainColor>197,212,167</setTerrainColor>
-	<SunParticleColor>255,255,255</SunParticleColor>
+	<SunParticleColor>237,245,223</SunParticleColor>
 	<terrainSpecularPower>64.33</terrainSpecularPower>
 	<terrainBumpStrength>1.324</terrainBumpStrength>
 	<TerrainAODiffuseIntensity>1</TerrainAODiffuseIntensity>
@@ -43,14 +43,14 @@
 	<whitePointMin>1.35</whitePointMin>
 	<whitePointMax>32</whitePointMax>
 	<zFogColor>148,150,30</zFogColor>
-	<zFogIntensity>0.462</zFogIntensity>
-	<zFogStart>58.692</zFogStart>
-	<zFogDensity>5.165</zFogDensity>
+	<zFogIntensity>0</zFogIntensity>
+	<zFogStart>120</zFogStart>
+	<zFogDensity>0</zFogDensity>
 	<planarFogColor>38,74,7</planarFogColor>
 	<planarFogIntensity>2.673</planarFogIntensity>
 	<planarFogStart>4.19</planarFogStart>
 	<planarFogDensity>16</planarFogDensity>
-	<dofEnabled>true</dofEnabled>
+	<dofEnabled>false</dofEnabled>
 	<dofNearRange>350</dofNearRange>
 	<dofFocalPlaneDist>100</dofFocalPlaneDist>
 	<dofFarRange>450</dofFarRange>
@@ -59,15 +59,36 @@
 		<Name>LocalLight</Name>
 		<Type>omni</Type>
 		<Priority>127</Priority>
-		<Position>341.6252,44.1217,366.6776</Position>
-		<Radius>24.253</Radius>
+		<Position>613.8545,4.2853,634.0464</Position>
+		<Radius>6.93</Radius>
 		<Specular>false</Specular>
-		<Intensity>6.8</Intensity>
-		<Color>93,50,112</Color>
-		<Shadows>false</Shadows>
+		<Intensity>3.6</Intensity>
+		<Color>217,191,160</Color>
+		<Shadows>true</Shadows>
 		<ShadowDarkness>0.5</ShadowDarkness>
 		<Fogged>true</Fogged>
 		<FoggedShadows>true</FoggedShadows>
+		<LightBuffered>false</LightBuffered>
+		<TerrainOnly>false</TerrainOnly>
+		<FarAttnStart>0.5</FarAttnStart>
+		<DecayDist>70</DecayDist>
+		<Direction>0,-1,0</Direction>
+		<OuterAngle>70</OuterAngle>
+		<InnerAngle>40</InnerAngle>
+	</Light>
+	<Light>
+		<Name>LocalLight</Name>
+		<Type>omni</Type>
+		<Priority>127</Priority>
+		<Position>318.0959,17.8125,24.8881</Position>
+		<Radius>21.891</Radius>
+		<Specular>false</Specular>
+		<Intensity>10</Intensity>
+		<Color>251,175,93</Color>
+		<Shadows>true</Shadows>
+		<ShadowDarkness>0.5</ShadowDarkness>
+		<Fogged>false</Fogged>
+		<FoggedShadows>false</FoggedShadows>
 		<LightBuffered>true</LightBuffered>
 		<TerrainOnly>false</TerrainOnly>
 		<FarAttnStart>0.5</FarAttnStart>
@@ -80,15 +101,15 @@
 		<Name>LocalLight</Name>
 		<Type>omni</Type>
 		<Priority>127</Priority>
-		<Position>350.7996,56.7018,325.8937</Position>
-		<Radius>24.253</Radius>
+		<Position>342.1657,14.139,44.7559</Position>
+		<Radius>16.074</Radius>
 		<Specular>false</Specular>
-		<Intensity>6.8</Intensity>
-		<Color>93,50,112</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
+		<Intensity>6</Intensity>
+		<Color>233,252,136</Color>
+		<Shadows>true</Shadows>
+		<ShadowDarkness>0.84</ShadowDarkness>
+		<Fogged>false</Fogged>
+		<FoggedShadows>false</FoggedShadows>
 		<LightBuffered>true</LightBuffered>
 		<TerrainOnly>false</TerrainOnly>
 		<FarAttnStart>0.5</FarAttnStart>
@@ -97,110 +118,5 @@
 		<OuterAngle>70</OuterAngle>
 		<InnerAngle>40</InnerAngle>
 	</Light>
-	<TLight>
-		<Name>LocalLight</Name>
-		<Type>omni</Type>
-		<Priority>127</Priority>
-		<Position>357.9318,32.1737,552.0916</Position>
-		<Radius>26.864</Radius>
-		<Specular>true</Specular>
-		<Intensity>3.6</Intensity>
-		<Color>7,74,40</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
-		<LightBuffered>true</LightBuffered>
-		<TerrainOnly>true</TerrainOnly>
-		<FarAttnStart>0.5</FarAttnStart>
-		<DecayDist>70</DecayDist>
-		<Direction>0,-1,0</Direction>
-		<OuterAngle>70</OuterAngle>
-		<InnerAngle>40</InnerAngle>
-	</TLight>
-	<TLight>
-		<Name>LocalLight</Name>
-		<Type>omni</Type>
-		<Priority>127</Priority>
-		<Position>360.9381,31.7453,578.0204</Position>
-		<Radius>26.864</Radius>
-		<Specular>true</Specular>
-		<Intensity>3.6</Intensity>
-		<Color>7,74,40</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
-		<LightBuffered>true</LightBuffered>
-		<TerrainOnly>true</TerrainOnly>
-		<FarAttnStart>0.5</FarAttnStart>
-		<DecayDist>70</DecayDist>
-		<Direction>0,-1,0</Direction>
-		<OuterAngle>70</OuterAngle>
-		<InnerAngle>40</InnerAngle>
-	</TLight>
-	<TLight>
-		<Name>LocalLight</Name>
-		<Type>omni</Type>
-		<Priority>127</Priority>
-		<Position>360.3867,38.4214,598.3968</Position>
-		<Radius>26.864</Radius>
-		<Specular>true</Specular>
-		<Intensity>3.6</Intensity>
-		<Color>7,74,40</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
-		<LightBuffered>true</LightBuffered>
-		<TerrainOnly>true</TerrainOnly>
-		<FarAttnStart>0.5</FarAttnStart>
-		<DecayDist>70</DecayDist>
-		<Direction>0,-1,0</Direction>
-		<OuterAngle>70</OuterAngle>
-		<InnerAngle>40</InnerAngle>
-	</TLight>
-	<TLight>
-		<Name>LocalLight</Name>
-		<Type>omni</Type>
-		<Priority>127</Priority>
-		<Position>333.6117,37.1071,616.6519</Position>
-		<Radius>26.864</Radius>
-		<Specular>true</Specular>
-		<Intensity>3.6</Intensity>
-		<Color>7,74,40</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
-		<LightBuffered>true</LightBuffered>
-		<TerrainOnly>true</TerrainOnly>
-		<FarAttnStart>0.5</FarAttnStart>
-		<DecayDist>70</DecayDist>
-		<Direction>0,-1,0</Direction>
-		<OuterAngle>70</OuterAngle>
-		<InnerAngle>40</InnerAngle>
-	</TLight>
-	<TLight>
-		<Name>LocalLight</Name>
-		<Type>omni</Type>
-		<Priority>127</Priority>
-		<Position>268.3944,41.0479,603.994</Position>
-		<Radius>26.864</Radius>
-		<Specular>true</Specular>
-		<Intensity>3.6</Intensity>
-		<Color>7,74,40</Color>
-		<Shadows>false</Shadows>
-		<ShadowDarkness>0.5</ShadowDarkness>
-		<Fogged>true</Fogged>
-		<FoggedShadows>true</FoggedShadows>
-		<LightBuffered>true</LightBuffered>
-		<TerrainOnly>true</TerrainOnly>
-		<FarAttnStart>0.5</FarAttnStart>
-		<DecayDist>70</DecayDist>
-		<Direction>0,-1,0</Direction>
-		<OuterAngle>70</OuterAngle>
-		<InnerAngle>40</InnerAngle>
-	</TLight>
 	<ObjectPropertyForFLSGen>_Position3352_,_3352_</ObjectPropertyForFLSGen>
 </lightSet>

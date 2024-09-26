@@ -32,13 +32,13 @@
 			<PrereqTextID>5011</PrereqTextID>
 			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\pelicandrp</Icon>
 			<IconLocation>6</IconLocation>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<FlashUI>
 				<CircleMenuFrameIDNormal>18</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>19</CircleMenuFrameIDHighlight>
@@ -87,11 +87,16 @@
 			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 			<IconLocation>0</IconLocation>
 			<MinDistanceToSquad>0</MinDistanceToSquad>
-			<MaxDistanceToSquad>70</MaxDistanceToSquad>
+			<MaxDistanceToSquad>120</MaxDistanceToSquad>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<BaseDataLevel>
 				<Data type="protoobject" name="Projectile">pow_proj_cleansing_01</Data>
 				<Data type="float" name="MinBeamDistance">0</Data>
-				<Data type="float" name="MaxBeamDistance">70</Data>
+				<Data type="float" name="MaxBeamDistance">120</Data>
 				<Data type="float" name="TickLength">0.2</Data>
 				<Data type="float" name="SuppliesPerTick">10</Data>
 				<Data type="float" name="CommandInterval">0.2</Data>
@@ -127,10 +132,13 @@
 			<LeaderPower />
 			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 			<IconLocation>0</IconLocation>
-			<CameraEffectIn>RagePower</CameraEffectIn>
-			<CameraEffectOut>RagePowerToNormal</CameraEffectOut>
 			<MinDistanceToSquad>0</MinDistanceToSquad>
 			<MaxDistanceToSquad>63</MaxDistanceToSquad>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<BaseDataLevel>
 				<Data type="float" name="TickLength">0.2</Data>
 				<Data type="float" name="SuppliesPerTick">1.25</Data>
@@ -141,11 +149,12 @@
 				<Data type="float" name="TeleportLateralDistance">5</Data>
 				<Data type="float" name="TeleportJumpDistance">10</Data>
 				<Data type="float" name="TimeBetweenRetarget">1</Data>
-				<Data type="float" name="MotionBlurAmount">0.25</Data>
-				<Data type="float" name="MotionBlurDistance">0.3</Data>
-				<Data type="float" name="MotionBlurTime">0.35</Data>
-				<Data type="float" name="CameraZoom">60</Data>
-				<Data type="float" name="CameraHeight">1</Data>
+				<Data type="float" name="MotionBlurAmount">0.0</Data>
+				<Data type="float" name="MotionBlurDistance">0.0</Data>
+				<Data type="float" name="MotionBlurTime">0.0</Data>
+				<Data type="float" name="CameraDistance">200</Data>
+				<Data type="float" name="CameraHeight">200</Data>
+				<Data type="float" name="CameraZoom">200</Data>
 				<Data type="float" name="HintTime">3</Data>
 				<Data type="float" name="DistanceVsAngleWeight">0.15</Data>
 				<Data type="float" name="MovementProjectionMultiplier">4</Data>
@@ -207,22 +216,26 @@
 			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\placeholder</Icon>
 			<IconLocation>0</IconLocation>
 			<MinDistanceToSquad>0</MinDistanceToSquad>
-			<MaxDistanceToSquad>55</MaxDistanceToSquad>
-			<CameraEffectIn>WavePower</CameraEffectIn>
-			<CameraEffectOut>WavePowerToNormal</CameraEffectOut>
+			<MaxDistanceToSquad>120</MaxDistanceToSquad>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<BaseDataLevel>
 				<Data type="float" name="TickLength">0.2</Data>
 				<Data type="float" name="SuppliesPerTick">10</Data>
 				<Data type="float" name="CommandInterval">0.2</Data>
 				<Data type="float" name="HintTime">1</Data>
 				<Data type="float" name="MinBallDistance">0</Data>
-				<Data type="float" name="MaxBallDistance">55</Data>
+				<Data type="float" name="MaxBallDistance">120</Data>
 				<Data type="float" name="MaxBallHeight">25</Data>
 				<Data type="float" name="MaxBallSpeedStagnant">30</Data>
 				<Data type="float" name="MaxBallSpeedPulling">15</Data>
-				<Data type="float" name="CameraDistance">50</Data>
-				<Data type="float" name="CameraHeight">55</Data>
-				<Data type="float" name="CameraHoverPointDistance">30</Data>
+				<Data type="float" name="CameraDistance">200</Data>
+				<Data type="float" name="CameraHeight">200</Data>
+				<Data type="float" name="CameraZoom">200</Data>
+				<Data type="float" name="CameraHoverPointDistance">200</Data>
 				<Data type="float" name="CameraMaxBallAngle">30</Data>
 				<Data type="float" name="ExplodeTime">1.5</Data>
 				<Data type="float" name="ExplosionForceOnDebris">15</Data>
@@ -304,13 +317,13 @@
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<BaseDataLevel>
 				<Data type="bool" name="RequiresLOS">true</Data>
 				<Data type="protoobject" name="Arrow">pow_gp_arrow</Data>
@@ -383,13 +396,13 @@
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<BaseDataLevel>
 				<Data type="bool" name="RequiresLOS">true</Data>
 				<Data type="protoobject" name="Arrow">pow_gp_arrow</Data>
@@ -462,13 +475,13 @@
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<BaseDataLevel>
 				<Data type="protoobject" name="CryoObject">fx_cryoBomb</Data>
 				<Data type="float" name="CryoRadius">45</Data>
@@ -527,20 +540,20 @@
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<DataLevel level="0">
 				<Data type="protoobject" name="RepairObject">fx_repairPower</Data>
 				<Data type="protoobject" name="RepairAttachment">fx_repairing</Data>
 				<Data type="float" name="RepairRadius">35</Data>
 				<Data type="objecttype" name="FilterType">Military</Data>
 				<Data type="float" name="TickDuration">0.125</Data>
-				<Data type="int" name="NumTicks">200</Data>
+				<Data type="int" name="NumTicks">300</Data>
 				<Data type="float" name="RepairCombatValuePerTick">0.1</Data>
 				<Data type="bool" name="SpreadAmongSquads">true</Data>
 				<Data type="float" name="CooldownTimeIfDamaged">5</Data>
@@ -571,13 +584,13 @@
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>150</CameraZoomMin>
-			<CameraZoomMax>150</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<DataLevel level="0">
 				<Data type="protoobject" name="DisruptionObject">fx_disruptionPower</Data>
 				<Data type="protoobject" name="PulseObject">fx_disruptionRing</Data>
@@ -618,13 +631,13 @@
 			<LeaderPower />
 			<Icon>ui\flash\HUD\hud_menu\hud_menu_icons\final_cov\odst_drop</Icon>
 			<IconLocation>7</IconLocation>
-			<CameraZoomMin>200</CameraZoomMin>
-			<CameraZoomMax>200</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<FlashUI>
 				<CircleMenuFrameIDNormal>12</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>13</CircleMenuFrameIDHighlight>
@@ -658,15 +671,13 @@
 				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>200</CameraZoomMin>
-			<CameraZoomMax>200</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
-			<CameraEffectIn>OrbitalPower</CameraEffectIn>
-			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<BaseDataLevel>
 				<Data type="bool" name="RequiresLOS">true</Data>
 				<Data type="protoobject" name="TargetBeam">fx_proj_maccannontargetbeam_01</Data>
@@ -738,15 +749,13 @@
 				<CircleMenuFrameIDNormal>14</CircleMenuFrameIDNormal>
 				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
 			</FlashUI>
-			<CameraZoomMin>200</CameraZoomMin>
-			<CameraZoomMax>200</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 			<CameraEnableUserScroll>true</CameraEnableUserScroll>
 			<CameraEnableUserYaw>false</CameraEnableUserYaw>
-			<CameraEnableUserZoom>false</CameraEnableUserZoom>
-			<CameraEffectIn>OrbitalPower</CameraEffectIn>
-			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+			<CameraEnableUserZoom>true</CameraEnableUserZoom>
 			<BaseDataLevel>
 				<Data type="bool" name="RequiresLOS">true</Data>
 				<Data type="protoobject" name="TargetBeam">fx_proj_maccannontargetbeam_01</Data>
@@ -831,12 +840,10 @@
 				<CircleMenuFrameIDHighlight>15</CircleMenuFrameIDHighlight>
 			</FlashUI>
 			<Minigame>TwoButtonPress</Minigame>
-			<CameraZoomMin>200</CameraZoomMin>
-			<CameraZoomMax>200</CameraZoomMax>
-			<CameraPitchMin>55</CameraPitchMin>
-			<CameraPitchMax>55</CameraPitchMax>
-			<CameraEffectIn>OrbitalPower</CameraEffectIn>
-			<CameraEffectOut>OrbitalPowerToNormal</CameraEffectOut>
+			<CameraZoomMin>20</CameraZoomMin>
+			<CameraZoomMin>250</CameraZoomMax>
+			<CameraPitchMin>50</CameraPitchMin>
+			<CameraPitchMax>50</CameraPitchMax>
 		</Attributes>
 		<TriggerScript>UnscCpgn1OrbitalBombard.triggerscript</TriggerScript>
 	</Power>

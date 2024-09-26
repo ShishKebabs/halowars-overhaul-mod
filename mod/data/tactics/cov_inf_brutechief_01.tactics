@@ -5,7 +5,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>221.5</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<ThrowUnits />
 		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
 		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
@@ -22,7 +22,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>221.5</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<ThrowUnits />
 		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
 		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
@@ -40,7 +40,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>221.5</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<ThrowUnits />
 		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
 		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
@@ -60,7 +60,7 @@
 		<AttackRate>0.5</AttackRate>
 		<DamagePerSecond>221.5</DamagePerSecond>
 		<WeaponType>leaderPower</WeaponType>
-		<MaxRange>3</MaxRange>
+		<MaxRange>5</MaxRange>
 		<AOERadius>6</AOERadius>
 		<AOEPrimaryTargetFactor>0.5</AOEPrimaryTargetFactor>
 		<AOEDistanceFactor>0.25</AOEDistanceFactor>
@@ -195,6 +195,12 @@
 		<WorkRate>1</WorkRate>
 		<WorkRange>3</WorkRange>
 	</Action>
+	<Action>
+		<Name>MedicHeal</Name>
+		<ActionType>Heal</ActionType>
+		<WorkRate>20</WorkRate>
+		<MinIdleDuration>0</MinIdleDuration>
+	</Action>
 	<Tactic>
 		<PersistentAction>Charge</PersistentAction>
 		<TargetRule>
@@ -262,5 +268,6 @@
 			<TargetType>TeleportDropoff</TargetType>
 			<Action>UngarrisonTeleport</Action>
 		</TargetRule>
+		<PersistentAction>MedicHeal</PersistentAction>
 	</Tactic>
 </TacticData>
